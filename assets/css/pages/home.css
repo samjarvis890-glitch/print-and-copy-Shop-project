@@ -1,0 +1,1203 @@
+/* ==========================================================================
+   PRINTWORKS PRINT & COPY — HOMEPAGE SPECIFIC STYLESHEET
+   Sections:
+   1. Hero Banner with Quick CTAs & Value Metrics
+   2. Popular Services (Equal-Height Cards with Margin-Top Auto)
+   3. 4-Step Production Process & Workflow Assurance
+   4. Paper Stocks & Material Showcase
+   5. Finishing & Binding Craftsmanship
+   6. Curated Print Gallery Showcase (Interactive Lightbox)
+   7. Instant Print & Copy Estimator & Downtown Counter
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   GLOBAL SECTION HEADER SYSTEM
+   -------------------------------------------------------------------------- */
+.fg-section {
+  padding-block: 5.5rem;
+  position: relative;
+}
+
+.fg-section-alt {
+  background-color: var(--bg-alt);
+}
+
+.fg-section-header {
+  margin-bottom: 3.5rem;
+}
+
+.fg-section-header.text-center {
+  text-align: center;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.fg-section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  background-color: var(--fg-blue-light);
+  border: 1px solid rgba(53, 106, 230, 0.2);
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg-blue);
+  margin-bottom: 1rem;
+}
+
+.fg-section-badge-yellow {
+  background-color: var(--fg-yellow-light);
+  border-color: rgba(255, 215, 106, 0.4);
+  color: #8C6B00;
+}
+
+[data-theme="dark"] .fg-section-badge-yellow {
+  color: var(--fg-yellow);
+}
+
+.fg-section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.fg-section-desc {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   1. HERO SECTION
+   -------------------------------------------------------------------------- */
+.fg-hero {
+  padding-top: 3.5rem;
+  padding-bottom: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at 10% 20%, rgba(235, 241, 253, 0.7) 0%, transparent 45%),
+              radial-gradient(circle at 90% 80%, rgba(255, 249, 230, 0.8) 0%, transparent 40%);
+}
+
+.fg-hero-container {
+  padding-bottom: 4rem;
+}
+
+[data-theme="dark"] .fg-hero {
+  background: radial-gradient(circle at 10% 20%, rgba(29, 45, 80, 0.4) 0%, transparent 45%),
+              radial-gradient(circle at 90% 80%, rgba(50, 42, 20, 0.3) 0%, transparent 40%);
+}
+
+.fg-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.fg-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fg-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  background-color: var(--fg-yellow-light);
+  border: 1px solid rgba(255, 215, 106, 0.5);
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: #7A5C00;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.25rem;
+}
+
+[data-theme="dark"] .fg-hero-eyebrow {
+  color: var(--fg-yellow);
+}
+
+.fg-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.35rem, 4.2vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  margin-bottom: 1.25rem;
+}
+
+.fg-hero-title .highlight-blue {
+  color: var(--fg-blue);
+  position: relative;
+  display: inline-block;
+}
+
+.fg-hero-title .highlight-yellow {
+  background: linear-gradient(120deg, var(--fg-yellow) 0%, #FFE599 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fg-hero-lead {
+  font-size: 1.1875rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  max-width: 580px;
+}
+
+.fg-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+/* Feature Badges under CTAs */
+.fg-hero-chips {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.fg-hero-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.fg-hero-chip i {
+  color: var(--fg-blue);
+  font-size: 1.1rem;
+}
+
+/* Hero Media Wrapper */
+.fg-hero-media {
+  position: relative;
+}
+
+.fg-hero-img-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
+  background-color: var(--bg-surface);
+}
+
+.fg-hero-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+/* Floating Metrics Badge on Hero */
+.fg-hero-floating-badge {
+  position: absolute;
+  bottom: -1.25rem;
+  left: 2rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.4rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+[dir="rtl"] .fg-hero-floating-badge {
+  left: auto;
+  right: 2rem;
+}
+
+.fg-floating-badge-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background-color: var(--fg-blue);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.fg-floating-badge-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.fg-floating-badge-sub {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   STATS COUNTER BAR
+   -------------------------------------------------------------------------- */
+.fg-stats-bar {
+  padding-block: 2.25rem;
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.fg-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.fg-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fg-stat-number {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--fg-blue);
+  line-height: 1.1;
+  margin-bottom: 0.35rem;
+}
+
+.fg-stat-label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   2. POPULAR PRINTING & COPYING SERVICES (CARDS)
+   -------------------------------------------------------------------------- */
+.fg-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch; /* Cards stretch to equal height */
+}
+
+.fg-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+
+.fg-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: rgba(53, 106, 230, 0.35);
+}
+
+.fg-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: var(--bg-alt);
+  position: relative;
+}
+
+.fg-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.fg-card:hover .fg-card-img {
+  transform: scale(1.04);
+}
+
+.fg-card-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--fg-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+[dir="rtl"] .fg-card-badge {
+  left: auto;
+  right: 1rem;
+}
+
+.fg-card-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows bottom button alignment */
+}
+
+.fg-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+.fg-card-desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.fg-card-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.fg-card-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.fg-card-feature-item i {
+  color: #10B981;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.fg-card-footer {
+  margin-top: auto; /* Push button to bottom baseline */
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fg-card-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.fg-card-price-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  letter-spacing: 0.05em;
+}
+
+.fg-card-price-val {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--fg-blue);
+}
+
+/* --------------------------------------------------------------------------
+   3. 4-STEP SEAMLESS PRODUCTION PROCESS
+   -------------------------------------------------------------------------- */
+.fg-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+.fg-process-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.fg-process-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--fg-blue);
+}
+
+.fg-process-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.fg-process-num {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: var(--fg-blue-light);
+  line-height: 1;
+}
+
+[data-theme="dark"] .fg-process-num {
+  color: rgba(74, 126, 248, 0.25);
+}
+
+.fg-process-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+}
+
+.fg-process-title {
+  font-family: var(--font-heading);
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+.fg-process-desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.fg-process-badge {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--fg-blue);
+}
+
+.fg-process-banner {
+  margin-top: 3.5rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: stretch;
+}
+
+.fg-process-banner-content {
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fg-process-banner-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+.fg-process-banner-desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.fg-process-banner-chips {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.fg-process-banner-media {
+  position: relative;
+  min-height: 260px;
+}
+
+.fg-process-banner-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .fg-process-banner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. PAPER STOCKS & PRINT FINISHES (SPLIT LAYOUT)
+   -------------------------------------------------------------------------- */
+.fg-split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.fg-paper-stocks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.fg-stock-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.4rem;
+  transition: all var(--transition-fast);
+}
+
+.fg-stock-card:hover {
+  border-color: var(--fg-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.fg-stock-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--fg-blue);
+  background-color: var(--fg-blue-light);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.6rem;
+}
+
+.fg-stock-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.4rem;
+}
+
+.fg-stock-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   5. FINISHING & BINDING OPTIONS (4 CARDS)
+   -------------------------------------------------------------------------- */
+.fg-options-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+.fg-option-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all var(--transition-fast);
+}
+
+.fg-option-card:hover {
+  border-color: var(--fg-blue);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.fg-option-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background-color: var(--fg-yellow-light);
+  color: #8C6B00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+[data-theme="dark"] .fg-option-icon {
+  color: var(--fg-yellow);
+}
+
+.fg-option-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.fg-option-desc {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.fg-option-specs {
+  margin-top: auto;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--fg-blue);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* --------------------------------------------------------------------------
+   6. CURATED PRINT GALLERY (INTERACTIVE LIGHTBOX)
+   -------------------------------------------------------------------------- */
+.fg-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.fg-gallery-item {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  background-color: var(--bg-surface);
+  aspect-ratio: 4 / 3;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.fg-gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.fg-gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.fg-gallery-item:hover .fg-gallery-img {
+  transform: scale(1.05);
+}
+
+.fg-gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(21, 29, 40, 0.88) 0%, rgba(21, 29, 40, 0.2) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.fg-gallery-item:hover .fg-gallery-overlay,
+.fg-gallery-item:focus-visible .fg-gallery-overlay {
+  opacity: 1;
+}
+
+.fg-gallery-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--fg-yellow);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.fg-gallery-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.fg-gallery-zoom {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+[dir="rtl"] .fg-gallery-zoom {
+  right: auto;
+  left: 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   7. WHY CHOOSE PRINTWORKS (FEATURE TRUST BADGES)
+   -------------------------------------------------------------------------- */
+.fg-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+.fg-feature-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all var(--transition-fast);
+}
+
+.fg-feature-card:hover {
+  border-color: var(--fg-blue);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.fg-feature-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-md);
+  background-color: var(--fg-mint-light);
+  color: #0E7490;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+[data-theme="dark"] .fg-feature-icon {
+  color: var(--fg-mint);
+}
+
+.fg-feature-title {
+  font-family: var(--font-heading);
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.6rem;
+}
+
+.fg-feature-desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   8. INSTANT PRINT ESTIMATOR CALCULATOR
+   -------------------------------------------------------------------------- */
+.fg-calculator-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 3rem;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.fg-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.fg-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fg-form-group-full {
+  grid-column: span 2;
+}
+
+.fg-form-label {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.fg-select, .fg-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border-medium);
+  background-color: var(--bg-input);
+  color: var(--text-main);
+  font-size: 0.9375rem;
+  transition: all var(--transition-fast);
+}
+
+.fg-select:focus, .fg-input:focus {
+  border-color: var(--border-focus);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(53, 106, 230, 0.15);
+}
+
+/* Calculator Result Panel */
+.fg-calc-result-panel {
+  background: linear-gradient(135deg, var(--fg-blue) 0%, var(--fg-blue-dark) 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.fg-calc-result-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fg-yellow);
+  margin-bottom: 0.5rem;
+}
+
+.fg-calc-price-display {
+  font-family: var(--font-heading);
+  font-size: 3.25rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.fg-calc-turnaround-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.9rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-full);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.fg-calc-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  color: #E2E8F0;
+  margin-bottom: 1.75rem;
+  text-align: left;
+  width: 100%;
+}
+
+[dir="rtl"] .fg-calc-perks {
+  text-align: right;
+}
+
+/* --------------------------------------------------------------------------
+   9. VERIFIED REVIEWS & TESTIMONIALS
+   -------------------------------------------------------------------------- */
+.fg-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.fg-review-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast);
+}
+
+.fg-review-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--fg-blue);
+}
+
+.fg-review-stars {
+  color: #F59E0B;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.fg-review-quote {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-main);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.fg-review-author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: auto;
+}
+
+.fg-review-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  font-weight: 800;
+  font-family: var(--font-heading);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.fg-review-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.fg-review-name {
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.fg-review-org {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   10. FAQ ACCORDION
+   -------------------------------------------------------------------------- */
+.fg-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 840px;
+  margin-inline: auto;
+}
+
+.fg-faq-item {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.fg-faq-item.is-open {
+  border-color: var(--fg-blue);
+}
+
+.fg-faq-question {
+  width: 100%;
+  padding: 1.35rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--text-main);
+  background-color: transparent;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+[dir="rtl"] .fg-faq-question {
+  text-align: right;
+}
+
+.fg-faq-question:hover {
+  color: var(--fg-blue);
+}
+
+.fg-faq-icon {
+  font-size: 1.25rem;
+  color: var(--fg-blue);
+  transition: transform var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.fg-faq-item.is-open .fg-faq-icon {
+  transform: rotate(180deg);
+}
+
+.fg-faq-answer {
+  display: none;
+  padding: 0 1.5rem 1.35rem 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.fg-faq-item.is-open .fg-faq-answer {
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   11. CLOSING CALL-TO-ACTION BANNER
+   -------------------------------------------------------------------------- */
+.fg-closing-cta {
+  background: linear-gradient(135deg, #1C335A 0%, #152033 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  position: relative;
+  padding: 4.5rem 3rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 3rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fg-closing-content {
+  position: relative;
+  z-index: 2;
+}
+
+.fg-closing-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  color: #FFFFFF;
+}
+
+.fg-closing-desc {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: #CBD5E1;
+  margin-bottom: 2rem;
+  max-width: 560px;
+}
+
+.fg-closing-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.fg-closing-counter-box {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 2;
+}
+
+.fg-closing-counter-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--fg-yellow);
+  margin-bottom: 1rem;
+}
+
+.fg-closing-counter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: #F1F5F9;
+}
+
+.fg-closing-counter-info i {
+  color: var(--fg-yellow);
+  margin-right: 0.5rem;
+}
+
+[dir="rtl"] .fg-closing-counter-info i {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}

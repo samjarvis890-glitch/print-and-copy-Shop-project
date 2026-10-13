@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printing Guides and Articles | PRINTWORKS PRINT &amp; COPY</title>
+  <meta name="description" content="Explore comprehensive printing guides, paper stock comparisons, document preparation advice, and finishing choices from PRINTWORKS PRINT &amp; COPY.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+  <!-- Instant Theme & Direction Initialization (Prevents visible flash) -->
+  <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem('printworks_theme');
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        const savedDir = localStorage.getItem('printworks_dir');
+        if (savedDir) {
+          document.documentElement.setAttribute('dir', savedDir);
+          document.documentElement.setAttribute('lang', savedDir === 'rtl' ? 'ar' : 'en');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages/blog.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       GLOBAL NAVBAR (DESKTOP 1281px+ | TABLET & MOBILE COLLAPSE 1280px-)
+       ======================================================================== -->
+  <header class="fg-navbar" role="banner">
+    <div class="fg-container fg-navbar-inner">
+
+      <!-- Brand Logo (Left Side) -->
+      <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-light" width="240" height="48">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-dark" width="240" height="48">
+      </a>
+
+      <!-- Desktop Navigation Menu (Visible on 1281px+) -->
+      <nav class="fg-nav-menu" aria-label="Primary Navigation">
+        <!-- Home Dropdown -->
+        <div class="fg-nav-dropdown">
+          <a href="index.html" class="fg-nav-link" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <i class="bi bi-chevron-down" style="font-size: 0.75rem;" aria-hidden="true"></i>
+          </a>
+          <div class="fg-dropdown-menu" role="menu">
+            <a href="index.html" class="fg-dropdown-link" role="menuitem">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home 1 (Main)</span>
+            </a>
+            <a href="home2.html" class="fg-dropdown-link" role="menuitem">
+              <i class="bi bi-layout-text-window-reverse" aria-hidden="true"></i>
+              <span>Home 2 (Express)</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="fg-nav-link">About</a>
+        <a href="services.html" class="fg-nav-link">Services</a>
+        <a href="pricing.html" class="fg-nav-link">Pricing</a>
+        <a href="blog.html" class="fg-nav-link active" aria-current="page">Blog</a>
+        <a href="contact.html" class="fg-nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Side Controls & Actions -->
+      <div class="fg-nav-controls">
+        <!-- Dark Mode Toggle Button -->
+        <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+        </button>
+
+        <!-- RTL / LTR Direction Toggle Button -->
+        <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+          <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+        </button>
+
+        <!-- Desktop Action Button (Get a Quote) -->
+        <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary fg-navbar-cta">
+          <span>Get a Quote</span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Mobile & Tablet Hamburger Menu Toggle (<= 1280px) -->
+        <button type="button" class="fg-hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MOBILE & TABLET DRAWER MENU (MANDATORY RULE COMPLIANCE)
+       Contains ALL navigation items, Home dropdown, utilities & login button
+       ======================================================================== -->
+  <div class="fg-drawer-backdrop" aria-hidden="true"></div>
+
+  <aside id="mobile-drawer" class="fg-drawer" aria-label="Mobile Navigation Drawer" aria-hidden="true">
+    <div class="fg-drawer-header">
+      <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-light" width="200" height="40">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-dark" width="200" height="40">
+      </a>
+      <button type="button" class="fg-drawer-close" aria-label="Close navigation menu">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="fg-drawer-body">
+      <nav class="fg-drawer-nav" aria-label="Mobile Menu Links">
+        <!-- Home Dropdown -->
+        <div class="fg-drawer-dropdown">
+          <button type="button" class="fg-drawer-link fg-drawer-dropdown-btn" aria-expanded="false">
+            <span class="fg-drawer-link-inner">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home</span>
+            </span>
+            <i class="bi bi-chevron-down fg-drawer-chevron" aria-hidden="true"></i>
+          </button>
+          <div class="fg-drawer-submenu">
+            <a href="index.html" class="fg-drawer-sublink">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home 1 (Main)</span>
+            </a>
+            <a href="home2.html" class="fg-drawer-sublink">
+              <i class="bi bi-layout-text-window-reverse" aria-hidden="true"></i>
+              <span>Home 2 (Express)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- About -->
+        <a href="about.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-info-circle" aria-hidden="true"></i>
+            <span>About</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Services -->
+        <a href="services.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-printer" aria-hidden="true"></i>
+            <span>Services</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Pricing -->
+        <a href="pricing.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-tag" aria-hidden="true"></i>
+            <span>Pricing</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Blog (Active) -->
+        <a href="blog.html" class="fg-drawer-link active" aria-current="page">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-journal-text" aria-hidden="true"></i>
+            <span>Blog</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Contact -->
+        <a href="contact.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+            <span>Contact</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+      <div class="fg-drawer-divider"></div>
+
+      <!-- Drawer Theme & Direction Controls -->
+      <div class="fg-drawer-controls">
+        <span class="fg-drawer-controls-label">Preferences</span>
+        <div class="fg-drawer-toggle-group">
+          <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+            <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drawer Footer with Login Button -->
+    <div class="fg-drawer-footer">
+      <button type="button" class="fg-btn fg-btn-primary fg-login-btn" style="width: 100%;">
+        <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+        <span>Login / Account</span>
+      </button>
+      <a href="contact.html#order-enquiry" class="fg-btn fg-btn-secondary" style="width: 100%;">
+        <i class="bi bi-calculator" aria-hidden="true"></i>
+        <span>Instant Quote</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       MAIN CONTENT: EXACTLY SEVEN UNIQUE EDITORIAL CONTENT SECTIONS
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 1: THE PRINT JOURNAL (OVERSIZED EDITORIAL MASTHEAD)
+         ---------------------------------------------------------------------- -->
+    <section id="blog-masthead" class="fg-blog-masthead" aria-labelledby="masthead-heading">
+      <div class="fg-container">
+        <div class="fg-masthead-grid">
+
+          <!-- Left Slim Vertical Label Column (Desktop) -->
+          <aside class="fg-masthead-vertical-col" aria-hidden="true">
+            <span class="fg-masthead-vert-issue">VOL. 07</span>
+            <span class="fg-masthead-vert-text">PAPER / PROCESS / PRINT</span>
+            <span class="fg-masthead-vert-dot"></span>
+          </aside>
+
+          <!-- Center Asymmetrical Typographic Content -->
+          <div class="fg-masthead-content">
+            <div class="fg-masthead-eyebrow-row">
+              <span class="fg-blog-eyebrow">
+                <i class="bi bi-journal-bookmark-fill" aria-hidden="true"></i>
+                THE PRINT JOURNAL
+              </span>
+              <span class="fg-masthead-issue-tag">Knowledge Journal</span>
+            </div>
+
+            <h1 id="masthead-heading" class="fg-masthead-h1">
+              BETTER PRINTING <br>
+              BEGINS WITH <span class="fg-highlight-text">BETTER IDEAS.</span>
+            </h1>
+
+            <p class="fg-masthead-desc">
+              Discover practical guides to paper, documents, printing choices, and finishing details that help you make more informed decisions about your next print project.
+            </p>
+
+            <div class="fg-masthead-cta-row">
+              <a href="#latest-articles" class="fg-masthead-jump-btn">
+                <span>Explore Articles</span>
+                <i class="bi bi-arrow-down" aria-hidden="true"></i>
+              </a>
+              <div class="fg-masthead-meta-pill">
+                <i class="bi bi-book-half" aria-hidden="true"></i>
+                <span>7 Practical Editorial Guides</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Offset Editorial Inset Photo -->
+          <div class="fg-masthead-media-col">
+            <figure class="fg-masthead-inset-card">
+              <img src="assets/images/blog/blog-masthead.webp" alt="Editorial paper stock samples, open notebook, and printed proofs on studio table" width="1200" height="800">
+              <figcaption class="fg-masthead-inset-caption">
+                <span class="fg-masthead-caption-tag">Studio Notebook</span>
+                <span>Tactile proofing &amp; layout review</span>
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 2: EXPLORE THE KNOWLEDGE LIBRARY (NUMBERED EDITORIAL INDEX)
+         ---------------------------------------------------------------------- -->
+    <section id="blog-topics" class="fg-blog-section fg-blog-topics" aria-labelledby="topics-heading">
+      <div class="fg-container">
+
+        <div class="fg-blog-section-header">
+          <span class="fg-blog-eyebrow">
+            <i class="bi bi-collection-fill" aria-hidden="true"></i>
+            CURATED TOPICS
+          </span>
+          <h2 id="topics-heading" class="fg-blog-heading">Explore the Knowledge Library</h2>
+          <p class="fg-blog-lead">
+            Select a specialized category below to filter our technical guides and document preparation workflows.
+          </p>
+        </div>
+
+        <!-- Accessible Category Filter Controls -->
+        <div class="fg-topics-filter-bar" role="toolbar" aria-label="Filter articles by topic">
+          <span class="fg-filter-label"><i class="bi bi-funnel-fill" aria-hidden="true"></i> Filter:</span>
+          <button type="button" class="fg-topic-filter-btn is-active" data-filter="all" aria-pressed="true">
+            All Articles (7)
+          </button>
+          <button type="button" class="fg-topic-filter-btn" data-filter="Printing Basics" aria-pressed="false">
+            01 Printing Basics
+          </button>
+          <button type="button" class="fg-topic-filter-btn" data-filter="Paper &amp; Materials" aria-pressed="false">
+            02 Paper &amp; Materials
+          </button>
+          <button type="button" class="fg-topic-filter-btn" data-filter="Document Preparation" aria-pressed="false">
+            03 Document Preparation
+          </button>
+          <button type="button" class="fg-topic-filter-btn" data-filter="Finishing &amp; Binding" aria-pressed="false">
+            04 Finishing &amp; Binding
+          </button>
+          <button type="button" class="fg-topic-filter-btn" data-filter="Business Printing" aria-pressed="false">
+            05 Business Printing
+          </button>
+          <button type="button" class="fg-topic-filter-btn" data-filter="Study &amp; Office Guides" aria-pressed="false">
+            06 Study &amp; Office Guides
+          </button>
+        </div>
+
+        <!-- Full-Width Numbered Editorial Index Rows -->
+        <div class="fg-topic-list" role="region" aria-label="Knowledge Library Index List">
+
+          <!-- Category 1 -->
+          <div class="fg-topic-row" data-category="Printing Basics" role="button" tabindex="0" aria-label="Filter by Printing Basics category">
+            <span class="fg-topic-num">01</span>
+            <h3 class="fg-topic-name">Printing Basics</h3>
+            <p class="fg-topic-desc">Understanding resolution, DPI thresholds, toner vs ink technologies, and single-sided versus duplex tumbling.</p>
+            <span class="fg-topic-action">
+              <span>View Guides</span>
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="fg-topic-row" data-category="Paper &amp; Materials" role="button" tabindex="0" aria-label="Filter by Paper and Materials category">
+            <span class="fg-topic-num">02</span>
+            <h3 class="fg-topic-name">Paper &amp; Materials</h3>
+            <p class="fg-topic-desc">Comparing paper weights from 80gsm to 350gsm, tactile textures, opacity, and coated versus uncoated stocks.</p>
+            <span class="fg-topic-action">
+              <span>View Guides</span>
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="fg-topic-row" data-category="Document Preparation" role="button" tabindex="0" aria-label="Filter by Document Preparation category">
+            <span class="fg-topic-num">03</span>
+            <h3 class="fg-topic-name">Document Preparation</h3>
+            <p class="fg-topic-desc">Standard bleed specifications, safe margins, PDF export presets, and embedding vector fonts cleanly.</p>
+            <span class="fg-topic-action">
+              <span>View Guides</span>
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="fg-topic-row" data-category="Finishing &amp; Binding" role="button" tabindex="0" aria-label="Filter by Finishing and Binding category">
+            <span class="fg-topic-num">04</span>
+            <h3 class="fg-topic-name">Finishing &amp; Binding</h3>
+            <p class="fg-topic-desc">Choosing between twin-loop wire, plastic coil, saddle stitch, thermal tape, and protective lamination.</p>
+            <span class="fg-topic-action">
+              <span>View Guides</span>
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <!-- Category 5 -->
+          <div class="fg-topic-row" data-category="Business Printing" role="button" tabindex="0" aria-label="Filter by Business Printing category">
+            <span class="fg-topic-num">05</span>
+            <h3 class="fg-topic-name">Business Printing</h3>
+            <p class="fg-topic-desc">Specifications for corporate identity collateral, annual reports, presentation decks, and event posters.</p>
+            <span class="fg-topic-action">
+              <span>View Guides</span>
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <!-- Category 6 -->
+          <div class="fg-topic-row" data-category="Study &amp; Office Guides" role="button" tabindex="0" aria-label="Filter by Study and Office Guides category">
+            <span class="fg-topic-num">06</span>
+            <h3 class="fg-topic-name">Study &amp; Office Guides</h3>
+            <p class="fg-topic-desc">Fast, cost-efficient formatting for lecture slides, thesis binding, architectural plans, and office handouts.</p>
+            <span class="fg-topic-action">
+              <span>View Guides</span>
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 3: STORIES WORTH READING (FEATURED STORY + READING COLUMN)
+         ---------------------------------------------------------------------- -->
+    <section id="latest-articles" class="fg-blog-section fg-latest-articles" aria-labelledby="stories-heading">
+      <div class="fg-container">
+
+        <div class="fg-blog-section-header">
+          <span class="fg-blog-eyebrow">
+            <i class="bi bi-pen-fill" aria-hidden="true"></i>
+            FEATURED ARTICLES
+          </span>
+          <h2 id="stories-heading" class="fg-blog-heading">Stories Worth Reading</h2>
+          <p class="fg-blog-lead">
+            In-depth perspectives from our workshop bench on paper mechanics, digital prepress, and color discipline.
+          </p>
+        </div>
+
+        <!-- Asymmetric Editorial Story Layout -->
+        <div class="fg-stories-layout">
+
+          <!-- Left Side: Large Featured Editorial Story -->
+          <article class="fg-featured-card" data-category="Paper &amp; Materials">
+            <div class="fg-featured-media">
+              <span class="fg-cat-badge cat-paper fg-featured-tag-float">
+                <i class="bi bi-layers-half" aria-hidden="true"></i>
+                Paper &amp; Materials
+              </span>
+              <img src="assets/images/blog/blog-featured-paper.webp" alt="Tactile luxury paper stocks, card envelopes, and stationery sheets fanned out on table" width="1200" height="800">
+            </div>
+
+            <div class="fg-featured-body">
+              <div class="fg-featured-meta-row">
+                <span><i class="bi bi-clock" aria-hidden="true"></i> 5 min read</span>
+                <span>•</span>
+                <span>Essential Guide</span>
+              </div>
+
+              <h3 class="fg-featured-title">
+                <a href="#article-paper-selection" data-article-id="article-paper-selection">
+                  Choosing Paper That Suits Your Print Project
+                </a>
+              </h3>
+
+              <p class="fg-featured-excerpt">
+                Paper size, weight, texture, finish, and intended use directly influence both the aesthetic appeal and practical durability of any printed document. Learn how to balance GSM thickness with handling comfort and ink holdout.
+              </p>
+
+              <div class="fg-featured-footer">
+                <button type="button" class="fg-read-btn" data-article-id="article-paper-selection" aria-haspopup="dialog">
+                  <span>Read Full Article</span>
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+                <span class="fg-masthead-meta-pill">Editorial Desk</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Right Side: Narrow Vertical Reading Column -->
+          <div class="fg-sidebar-column">
+
+            <!-- Article 2 -->
+            <article class="fg-secondary-card" data-category="Document Preparation">
+              <div class="fg-secondary-media">
+                <img src="assets/images/blog/blog-file-check.webp" alt="Architectural and graphic drafting desk with layout proofs and rulers" width="1000" height="700">
+              </div>
+
+              <div class="fg-secondary-body">
+                <div class="fg-secondary-meta-row">
+                  <span class="fg-cat-badge cat-file">Document Preparation</span>
+                  <span class="fg-secondary-read-time"><i class="bi bi-clock" aria-hidden="true"></i> 4 min read</span>
+                </div>
+
+                <h3 class="fg-secondary-title">
+                  <a href="#article-file-check" data-article-id="article-file-check">
+                    The Final File Check Before Printing
+                  </a>
+                </h3>
+
+                <p class="fg-secondary-excerpt">
+                  Why verifying page dimensions, orientation, bleed margins, and page order prevents unexpected crop lines and reprints.
+                </p>
+
+                <div class="fg-secondary-footer">
+                  <button type="button" class="fg-inline-read-link" data-article-id="article-file-check" aria-haspopup="dialog">
+                    <span>Read Article</span>
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="fg-secondary-card" data-category="Printing Basics">
+              <div class="fg-secondary-media">
+                <img src="assets/images/blog/blog-color-guide.webp" alt="Color swatch cards, CMYK print samples, and paper palettes on workbench" width="1000" height="700">
+              </div>
+
+              <div class="fg-secondary-body">
+                <div class="fg-secondary-meta-row">
+                  <span class="fg-cat-badge cat-color">Printing Basics</span>
+                  <span class="fg-secondary-read-time"><i class="bi bi-clock" aria-hidden="true"></i> 3 min read</span>
+                </div>
+
+                <h3 class="fg-secondary-title">
+                  <a href="#article-color-guide" data-article-id="article-color-guide">
+                    Color or Monochrome? Making the Right Choice
+                  </a>
+                </h3>
+
+                <p class="fg-secondary-excerpt">
+                  Balancing document purpose, visual readability, and budget: when black-and-white excels and when full CMYK is essential.
+                </p>
+
+                <div class="fg-secondary-footer">
+                  <button type="button" class="fg-inline-read-link" data-article-id="article-color-guide" aria-haspopup="dialog">
+                    <span>Read Article</span>
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+        <!-- Filter Notice if No Matching Articles -->
+        <div id="fg-empty-filter-notice" style="display: none; text-align: center; padding: 3rem 1rem;">
+          <i class="bi bi-journal-x" style="font-size: 2.5rem; color: var(--text-subtle); margin-bottom: 1rem; display: block;"></i>
+          <h3 style="font-family: var(--font-heading); color: var(--text-main); margin-bottom: 0.5rem;">No matching articles found in this view</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Try choosing "All Articles" or another category.</p>
+          <button type="button" class="fg-btn fg-btn-primary" onclick="document.querySelector('.fg-topic-filter-btn[data-filter=\'all\']').click()">
+            Show All Articles
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 4: THE ANATOMY OF A PRINT JOB (VERTICAL EDITORIAL PROCESS)
+         ---------------------------------------------------------------------- -->
+    <section id="print-anatomy" class="fg-blog-section fg-print-anatomy" aria-labelledby="anatomy-heading">
+      <div class="fg-container">
+
+        <div class="fg-blog-section-header" style="text-align: center; max-width: 720px; margin-inline: auto;">
+          <span class="fg-blog-eyebrow">
+            <i class="bi bi-bezier2" aria-hidden="true"></i>
+            PRODUCTION DISCIPLINE
+          </span>
+          <h2 id="anatomy-heading" class="fg-blog-heading">The Anatomy of a Print Job</h2>
+          <p class="fg-blog-lead" style="margin-inline: auto;">
+            A disciplined, three-stage editorial workflow ensures every file transitions smoothly from digital layout to crisp physical print.
+          </p>
+        </div>
+
+        <!-- Vertical Process Sequence with Alternating Image & Text -->
+        <div class="fg-process-timeline">
+
+          <!-- Stage 1 -->
+          <div class="fg-process-stage">
+            <div class="fg-stage-card">
+              <div class="fg-stage-badge-row">
+                <span class="fg-stage-number">STAGE 01</span>
+                <span class="fg-cat-badge cat-file">Pre-Flight</span>
+              </div>
+              <h3 class="fg-stage-title">Prepare the Document</h3>
+              <p class="fg-stage-desc">
+                Before hitting print, inspect page dimensions, layout orientation, and safety margins. Verify that high-resolution vector assets are linked and that no text sits within 5mm of the trim edge.
+              </p>
+              <ul class="fg-stage-checkpoints">
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Standardize page size (A4, A3, Letter) and avoid scaled distortions</li>
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Ensure 3mm minimum bleed for edge-to-edge artwork</li>
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Embed all typography and flatten complex transparency layers</li>
+              </ul>
+            </div>
+
+            <figure class="fg-stage-media">
+              <img src="assets/images/blog/blog-process-file.webp" alt="Digital workstation inspecting document layout, safe zones, and margins" width="1000" height="700">
+              <figcaption class="fg-stage-caption">
+                <strong>Pre-flight Layout</strong>
+                <span>Safety margins &amp; trim validation</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Stage 2 (Alternating side) -->
+          <div class="fg-process-stage is-reversed">
+            <figure class="fg-stage-media">
+              <img src="assets/images/blog/blog-process-paper.webp" alt="Hands examining and comparing printed proof sheets under studio light" width="1000" height="700">
+              <figcaption class="fg-stage-caption">
+                <strong>Specification Review</strong>
+                <span>Matching substrate to document purpose</span>
+              </figcaption>
+            </figure>
+
+            <div class="fg-stage-card">
+              <div class="fg-stage-badge-row">
+                <span class="fg-stage-number">STAGE 02</span>
+                <span class="fg-cat-badge cat-paper">Substrate &amp; Mode</span>
+              </div>
+              <h3 class="fg-stage-title">Confirm the Requirements</h3>
+              <p class="fg-stage-desc">
+                Match the physical attributes to the document's life span. Confirm paper weight (GSM), surface finish (matte or silk), single or double-sided tumble direction, and exact quantity.
+              </p>
+              <ul class="fg-stage-checkpoints">
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Select appropriate GSM weight for handling frequency and rigidity</li>
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Confirm duplex orientation (flip on long vs short edge)</li>
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Specify binding style early to accommodate spine margin allowances</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="fg-process-stage">
+            <div class="fg-stage-card">
+              <div class="fg-stage-badge-row">
+                <span class="fg-stage-number">STAGE 03</span>
+                <span class="fg-cat-badge cat-binding">Quality Audit</span>
+              </div>
+              <h3 class="fg-stage-title">Review the Result</h3>
+              <p class="fg-stage-desc">
+                Examine the first printed sheet or available sample before proceeding with larger volume runs. Check ink density, color balance, fold registration, and trim crispness.
+              </p>
+              <ul class="fg-stage-checkpoints">
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Verify text crispness and contrast against paper brightness</li>
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Inspect mechanical trim alignment across multi-page collations</li>
+                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Test lay-flat functionality on bound sample booklets</li>
+              </ul>
+            </div>
+
+            <figure class="fg-stage-media">
+              <img src="assets/images/blog/blog-process-output.webp" alt="Freshly printed full-color sheets and editorial materials from digital press" width="1000" height="700">
+              <figcaption class="fg-stage-caption">
+                <strong>Press Output</strong>
+                <span>Calibrated digital print quality inspection</span>
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 5: A CLOSER LOOK AT PAPER (FLOATING ANNOTATION LABELS)
+         ---------------------------------------------------------------------- -->
+    <section id="paper-notes" class="fg-blog-section fg-paper-notes" aria-labelledby="paper-notes-heading">
+      <div class="fg-container">
+
+        <div class="fg-blog-section-header">
+          <span class="fg-blog-eyebrow">
+            <i class="bi bi-palette-fill" aria-hidden="true"></i>
+            MATERIAL JOURNAL
+          </span>
+          <h2 id="paper-notes-heading" class="fg-blog-heading">A Closer Look at Paper</h2>
+          <p class="fg-blog-lead">
+            Paper selection depends on the job, equipment, and intended purpose. Explore the four tactile pillars that define every printed piece.
+          </p>
+        </div>
+
+        <!-- Layered Editorial Composition with Annotated Focus Points -->
+        <div class="fg-paper-display-wrapper">
+
+          <!-- Main Macro Photo -->
+          <div class="fg-paper-hero-img-box">
+            <img src="assets/images/blog/blog-paper-notes.webp" alt="Detailed macro overhead view of textured cardstock and fine paper surfaces" width="1400" height="900">
+          </div>
+
+          <!-- 4 Distinct Floating / Reflow Annotation Callouts -->
+          <div class="fg-paper-annotations-grid">
+
+            <!-- Annotation 1: Size -->
+            <div class="fg-annotation-card pin-size">
+              <div class="fg-annotation-pin">01</div>
+              <h3 class="fg-annotation-label">Size &amp; Proportion</h3>
+              <p class="fg-annotation-desc">
+                Choose dimensions suitable for the intended document: standard A4/A3 for operational documents, or custom trims for bespoke menus.
+              </p>
+            </div>
+
+            <!-- Annotation 2: Weight -->
+            <div class="fg-annotation-card pin-weight">
+              <div class="fg-annotation-pin">02</div>
+              <h3 class="fg-annotation-label">Weight &amp; Thickness</h3>
+              <p class="fg-annotation-desc">
+                Consider handling requirements: lightweight 80gsm for mailings, 120gsm for smooth opacity, and 300gsm+ for sturdy cover stock.
+              </p>
+            </div>
+
+            <!-- Annotation 3: Surface -->
+            <div class="fg-annotation-card pin-surface">
+              <div class="fg-annotation-pin">03</div>
+              <h3 class="fg-annotation-label">Surface &amp; Texture</h3>
+              <p class="fg-annotation-desc">
+                Understand how texture and smoothness influence presentation: toothy uncoated stock absorbs notes, while calendered sheets sharpen type.
+              </p>
+            </div>
+
+            <!-- Annotation 4: Finish -->
+            <div class="fg-annotation-card pin-finish">
+              <div class="fg-annotation-pin">04</div>
+              <h3 class="fg-annotation-label">Finish &amp; Protection</h3>
+              <p class="fg-annotation-desc">
+                Evaluate final durability: glare-free silk matte for reading comfort, gloss for vibrant photographs, and laminates for moisture protection.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 6: PRACTICAL GUIDES FOR EVERYDAY PRINTING (READING SHELF)
+         ---------------------------------------------------------------------- -->
+    <section id="practical-guides" class="fg-blog-section fg-practical-guides" aria-labelledby="guides-heading">
+      <div class="fg-container">
+
+        <div class="fg-blog-section-header">
+          <span class="fg-blog-eyebrow">
+            <i class="bi bi-bookshelf" aria-hidden="true"></i>
+            WORKSHOP REFERENCE
+          </span>
+          <h2 id="guides-heading" class="fg-blog-heading">Practical Guides for Everyday Printing</h2>
+          <p class="fg-blog-lead">
+            Concise, battle-tested advice for preparing corporate documents, student notes, and bound proposals with confidence.
+          </p>
+        </div>
+
+        <!-- Typographic Reading Shelf: Horizontal Article Rows -->
+        <div class="fg-guides-shelf">
+
+          <!-- Guide 1 -->
+          <article class="fg-guide-row" data-category="Document Preparation">
+            <div class="fg-guide-thumb">
+              <img src="assets/images/blog/blog-guide-readiness.webp" alt="Pre-flight checklist sheets, binder notes, and pen on studio desk" width="900" height="650">
+            </div>
+
+            <div class="fg-guide-title-col">
+              <span class="fg-cat-badge cat-file">Document Preparation</span>
+              <h3 class="fg-guide-title">
+                <a href="#article-readiness-guide" data-article-id="article-readiness-guide">
+                  Before You Print: A Document Readiness Guide
+                </a>
+              </h3>
+              <span class="fg-guide-meta-sub"><i class="bi bi-clock" aria-hidden="true"></i> 4 min read</span>
+            </div>
+
+            <p class="fg-guide-desc-col">
+              Ten critical pre-flight checkpoints: converting RGB to CMYK color space, setting 3mm bleed, flattening transparency layers, and packaging raster assets.
+            </p>
+
+            <div class="fg-guide-action-col">
+              <button type="button" class="fg-read-btn" data-article-id="article-readiness-guide" aria-haspopup="dialog">
+                <span>Read Guide</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Guide 2 -->
+          <article class="fg-guide-row" data-category="Printing Basics">
+            <div class="fg-guide-thumb">
+              <img src="assets/images/blog/blog-guide-duplex.webp" alt="Open booklet, catalog, and double-sided printed handbook pages" width="900" height="650">
+            </div>
+
+            <div class="fg-guide-title-col">
+              <span class="fg-cat-badge cat-color">Printing Basics</span>
+              <h3 class="fg-guide-title">
+                <a href="#article-duplex-printing" data-article-id="article-duplex-printing">
+                  Understanding Single-Sided and Double-Sided Printing
+                </a>
+              </h3>
+              <span class="fg-guide-meta-sub"><i class="bi bi-clock" aria-hidden="true"></i> 3 min read</span>
+            </div>
+
+            <p class="fg-guide-desc-col">
+              How duplex printing conserves paper bulk, the crucial difference between long-edge and short-edge tumbling, and when single-sided is strictly necessary.
+            </p>
+
+            <div class="fg-guide-action-col">
+              <button type="button" class="fg-read-btn" data-article-id="article-duplex-printing" aria-haspopup="dialog">
+                <span>Read Guide</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Guide 3 -->
+          <article class="fg-guide-row" data-category="Study &amp; Office Guides">
+            <div class="fg-guide-thumb">
+              <img src="assets/images/blog/blog-guide-studynotes.webp" alt="Neatly organized university study notes, coursepack syllabus, yellow highlighter, and sticky note tabs" width="900" height="650" loading="lazy">
+            </div>
+
+            <div class="fg-guide-title-col">
+              <span class="fg-cat-badge cat-paper">Study &amp; Office Guides</span>
+              <h3 class="fg-guide-title">
+                <a href="#article-study-notes" data-article-id="article-study-notes">
+                  Preparing Study Notes and Office Documents
+                </a>
+              </h3>
+              <span class="fg-guide-meta-sub"><i class="bi bi-clock" aria-hidden="true"></i> 4 min read</span>
+            </div>
+
+            <p class="fg-guide-desc-col">
+              Optimal page layouts for intensive reading: setting wide margins for annotations, formatting 2-up slide handouts, and selecting protective clear covers.
+            </p>
+
+            <div class="fg-guide-action-col">
+              <button type="button" class="fg-read-btn" data-article-id="article-study-notes" aria-haspopup="dialog">
+                <span>Read Guide</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Guide 4 -->
+          <article class="fg-guide-row" data-category="Finishing &amp; Binding">
+            <div class="fg-guide-thumb">
+              <img src="assets/images/blog/blog-guide-binding.webp" alt="Display of document binding methods including plastic spiral comb, wire-o coil, and clean tape binding" width="900" height="650" loading="lazy">
+            </div>
+
+            <div class="fg-guide-title-col">
+              <span class="fg-cat-badge cat-binding">Finishing &amp; Binding</span>
+              <h3 class="fg-guide-title">
+                <a href="#article-binding-finishing" data-article-id="article-binding-finishing">
+                  Questions to Ask About Binding and Finishing
+                </a>
+              </h3>
+              <span class="fg-guide-meta-sub"><i class="bi bi-clock" aria-hidden="true"></i> 5 min read</span>
+            </div>
+
+            <p class="fg-guide-desc-col">
+              Deciding between plastic coil, wire-o, saddle stitch, and thermal tape based on page count, lay-flat requirements, and shelf longevity.
+            </p>
+
+            <div class="fg-guide-action-col">
+              <button type="button" class="fg-read-btn" data-article-id="article-binding-finishing" aria-haspopup="dialog">
+                <span>Read Guide</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 7: KEEP LEARNING, KEEP PRINTING (COMPACT EDITORIAL INVITATION)
+         ---------------------------------------------------------------------- -->
+    <section id="blog-closing" class="fg-blog-section fg-blog-closing" aria-labelledby="closing-heading">
+      <div class="fg-container">
+
+        <div class="fg-closing-panel">
+
+          <!-- Left Editorial Content & Staggered Action Rows -->
+          <div class="fg-closing-content">
+            <span class="fg-blog-eyebrow">
+              <i class="bi bi-lightbulb-fill" aria-hidden="true"></i>
+              NEXT STEPS
+            </span>
+            <h2 id="closing-heading" class="fg-closing-h2">
+              YOUR NEXT PRINT PROJECT STARTS WITH A GOOD QUESTION.
+            </h2>
+            <p class="fg-closing-desc">
+              Explore a practical guide, learn about the available services, or review the information you need before planning your next print job.
+            </p>
+
+            <!-- Staggered Typographic Next-Step Links -->
+            <div class="fg-staggered-links">
+
+              <!-- Action 1 -->
+              <a href="services.html" class="fg-staggered-item">
+                <div class="fg-staggered-left">
+                  <span class="fg-staggered-idx">01</span>
+                  <div>
+                    <div class="fg-staggered-label">Explore Services</div>
+                    <div class="fg-staggered-sub">Discover our full capabilities in copying, blueprints, booklets &amp; finishing</div>
+                  </div>
+                </div>
+                <i class="bi bi-arrow-right fg-staggered-icon" aria-hidden="true"></i>
+              </a>
+
+              <!-- Action 2 -->
+              <a href="pricing.html" class="fg-staggered-item">
+                <div class="fg-staggered-left">
+                  <span class="fg-staggered-idx">02</span>
+                  <div>
+                    <div class="fg-staggered-label">Understand Pricing</div>
+                    <div class="fg-staggered-sub">View transparent unit rates, volume discounts, and calculate instant estimates</div>
+                  </div>
+                </div>
+                <i class="bi bi-arrow-right fg-staggered-icon" aria-hidden="true"></i>
+              </a>
+
+              <!-- Action 3 -->
+              <a href="contact.html#order-enquiry" class="fg-staggered-item">
+                <div class="fg-staggered-left">
+                  <span class="fg-staggered-idx">03</span>
+                  <div>
+                    <div class="fg-staggered-label">Contact the Team</div>
+                    <div class="fg-staggered-sub">Speak with our print specialists or submit your file for an exact quotation</div>
+                  </div>
+                </div>
+                <i class="bi bi-arrow-right fg-staggered-icon" aria-hidden="true"></i>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Right Supporting Photograph Inset -->
+          <div class="fg-closing-media-col">
+            <figure class="fg-closing-card-inset">
+              <img src="assets/images/blog/blog-closing.webp" alt="Calm editorial reading space with open notebook, coffee, and sunlight" width="1200" height="800">
+            </figure>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       ACCESSIBLE EDITORIAL ARTICLE READER MODAL (IN-PAGE KNOWLEDGE READER)
+       ======================================================================== -->
+  <div id="article-reader-modal" class="fg-article-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="reader-title">
+    <div class="fg-article-modal-card">
+      <button type="button" class="fg-article-modal-close" aria-label="Close article reader">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+
+      <div class="fg-article-reader-header">
+        <div class="fg-article-reader-meta">
+          <span id="reader-badge" class="fg-cat-badge">Category</span>
+          <span id="reader-time" style="font-size: 0.8125rem; color: var(--text-muted);"><i class="bi bi-clock" aria-hidden="true"></i> 5 min read</span>
+          <span style="font-size: 0.8125rem; color: var(--text-muted);">•</span>
+          <span style="font-size: 0.8125rem; color: var(--text-muted);">PRINTWORKS Journal</span>
+        </div>
+        <h2 id="reader-title" class="fg-article-reader-title">Article Headline</h2>
+        <p id="reader-lead" class="fg-article-reader-lead">Article Lead Excerpt</p>
+      </div>
+
+      <div id="reader-content" class="fg-article-reader-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SHARED FOOTER (IDENTICAL TO index.html)
+       ======================================================================== -->
+  <footer class="fg-footer" role="contentinfo">
+    <div class="fg-container">
+
+      <!-- Five Column Grid -->
+      <div class="fg-footer-grid">
+
+        <!-- Column 1: Brand Information & Socials -->
+        <div class="fg-footer-col fg-footer-brand-col">
+          <a href="index.html" class="fg-footer-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+            <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-footer-logo" width="220" height="44">
+          </a>
+          <span class="fg-footer-tagline">PRECISION PRINTS. PROUD RESULTS.</span>
+          <p class="fg-footer-desc">
+            Your neighborhood printing, photocopying, binding, and finishing specialists. Dedicated to crisp quality, fast turnarounds, and friendly service.
+          </p>
+          <div class="fg-footer-socials" aria-label="Social media channels">
+            <a href="https://instagram.com" class="fg-social-btn" aria-label="Follow PRINTWORKS on Instagram" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://facebook.com" class="fg-social-btn" aria-label="Follow PRINTWORKS on Facebook" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://linkedin.com" class="fg-social-btn" aria-label="Connect with PRINTWORKS on LinkedIn" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Explore Navigation -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Explore</h3>
+          <ul class="fg-footer-links">
+            <li><a href="index.html" class="fg-footer-link">Home 1 (Main)</a></li>
+            <li><a href="home2.html" class="fg-footer-link">Home 2 (Express)</a></li>
+            <li><a href="about.html" class="fg-footer-link">About</a></li>
+            <li><a href="services.html" class="fg-footer-link">Services</a></li>
+            <li><a href="pricing.html" class="fg-footer-link">Pricing</a></li>
+            <li><a href="blog.html" class="fg-footer-link">Blog</a></li>
+            <li><a href="contact.html" class="fg-footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Core Printing Services -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Services</h3>
+          <ul class="fg-footer-links">
+            <li><a href="services.html#copying" class="fg-footer-link">Document Copying</a></li>
+            <li><a href="services.html#blueprints" class="fg-footer-link">Architectural Plans</a></li>
+            <li><a href="services.html#booklets" class="fg-footer-link">Bound Booklets</a></li>
+            <li><a href="services.html#stationery" class="fg-footer-link">Business Cards</a></li>
+            <li><a href="services.html#stickers" class="fg-footer-link">Vinyl Stickers</a></li>
+            <li><a href="services.html#posters" class="fg-footer-link">Large Posters</a></li>
+            <li><a href="services.html#scanning" class="fg-footer-link">High-Res Scanning</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Paper & Finishes -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Paper &amp; Finishes</h3>
+          <ul class="fg-footer-links">
+            <li><a href="services.html#stocks" class="fg-footer-link">Silk Matte 350gsm</a></li>
+            <li><a href="services.html#stocks" class="fg-footer-link">Recycled Kraft Stock</a></li>
+            <li><a href="services.html#stocks" class="fg-footer-link">High-Gloss Coated</a></li>
+            <li><a href="services.html#finishing" class="fg-footer-link">Twin-Loop Wire Binding</a></li>
+            <li><a href="services.html#finishing" class="fg-footer-link">Soft-Touch Lamination</a></li>
+            <li><a href="services.html#finishing" class="fg-footer-link">Metallic Foil Stamping</a></li>
+            <li><a href="services.html#finishing" class="fg-footer-link">Perfect Spine Binding</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Store & Counter (Say Hello) -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Say Hello</h3>
+          <div class="fg-footer-contact-list">
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              <span>450 Printing Plaza, Suite 102, Downtown District</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-clock-fill" aria-hidden="true"></i>
+              <span>Mon – Fri: 8:00 AM – 7:00 PM<br>Saturday: 9:00 AM – 5:00 PM</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+              <span>(555) 789-3456</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+              <span>hello@printworksprint.com</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="fg-footer-bottom">
+        <div>
+          &copy; 2026 PRINTWORKS PRINT &amp; COPY. All rights reserved. Precision Prints. Proud Results.
+        </div>
+        <div class="fg-footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="accessibility.html">Accessibility Statement</a>
+        </div>
+        <button type="button" class="fg-back-to-top" aria-label="Scroll back to top of page" title="Back to top">
+          <i class="bi bi-arrow-up" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       ACCESSIBLE LOGIN MODAL (SHARED)
+       ======================================================================== -->
+  <div id="login-modal" class="fg-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="fg-modal-card">
+      <button type="button" class="fg-modal-close" aria-label="Close login dialog">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-light" style="height: 38px; margin: 0 auto 0.75rem auto;">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-dark" style="height: 38px; margin: 0 auto 0.75rem auto;">
+        <h2 id="modal-title" style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: var(--text-main);">
+          Customer Portal Login
+        </h2>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">
+          Track your print orders, download invoice proofs, or reorder past jobs.
+        </p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Demo customer account login. Please visit our front counter for portal registration.');">
+        <div class="fg-form-group" style="margin-bottom: 1rem;">
+          <label for="login-email" class="fg-form-label">Email Address</label>
+          <input type="email" id="login-email" class="fg-input" placeholder="name@company.com" required>
+        </div>
+        <div class="fg-form-group" style="margin-bottom: 1.5rem;">
+          <label for="login-password" class="fg-form-label">Password</label>
+          <input type="password" id="login-password" class="fg-input" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="fg-btn fg-btn-primary" style="width: 100%; margin-bottom: 0.75rem;">
+          <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+          <span>Sign In to Your Account</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/pages/blog.js"></script>
+</body>
+</html>

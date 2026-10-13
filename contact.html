@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact and Shop Location | PRINTWORKS PRINT &amp; COPY</title>
+  <meta name="description" content="Contact PRINTWORKS PRINT &amp; COPY. Submit print and photocopy enquiries, view our walk-in shop location in Downtown District, and prepare your project specifications.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+  <!-- Instant Theme & Direction Initialization (Prevents visible flash) -->
+  <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem('printworks_theme');
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        const savedDir = localStorage.getItem('printworks_dir');
+        if (savedDir) {
+          document.documentElement.setAttribute('dir', savedDir);
+          document.documentElement.setAttribute('lang', savedDir === 'rtl' ? 'ar' : 'en');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages/contact.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       GLOBAL NAVBAR (DESKTOP 1281px+ | TABLET & MOBILE COLLAPSE 1280px-)
+       ======================================================================== -->
+  <header class="fg-navbar" role="banner">
+    <div class="fg-container fg-navbar-inner">
+
+      <!-- Brand Logo (Left Side) -->
+      <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-light" width="240" height="48">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-dark" width="240" height="48">
+      </a>
+
+      <!-- Desktop Navigation Menu (Visible on 1281px+) -->
+      <nav class="fg-nav-menu" aria-label="Primary Navigation">
+        <!-- Home Dropdown -->
+        <div class="fg-nav-dropdown">
+          <a href="index.html" class="fg-nav-link" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <i class="bi bi-chevron-down" style="font-size: 0.75rem;" aria-hidden="true"></i>
+          </a>
+          <div class="fg-dropdown-menu" role="menu">
+            <a href="index.html" class="fg-dropdown-link" role="menuitem">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home 1 (Main)</span>
+            </a>
+            <a href="home2.html" class="fg-dropdown-link" role="menuitem">
+              <i class="bi bi-layout-text-window-reverse" aria-hidden="true"></i>
+              <span>Home 2 (Express)</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="fg-nav-link">About</a>
+        <a href="services.html" class="fg-nav-link">Services</a>
+        <a href="pricing.html" class="fg-nav-link">Pricing</a>
+        <a href="blog.html" class="fg-nav-link">Blog</a>
+        <a href="contact.html" class="fg-nav-link active" aria-current="page">Contact</a>
+      </nav>
+
+      <!-- Right Side Controls & Actions -->
+      <div class="fg-nav-controls">
+        <!-- Dark Mode Toggle Button -->
+        <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+        </button>
+
+        <!-- RTL / LTR Direction Toggle Button -->
+        <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+          <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+        </button>
+
+        <!-- Desktop Action Button (Get a Quote) -->
+        <a href="#order-enquiry" class="fg-btn fg-btn-primary fg-navbar-cta">
+          <span>Get a Quote</span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Mobile & Tablet Hamburger Menu Toggle (<= 1280px) -->
+        <button type="button" class="fg-hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MOBILE & TABLET DRAWER MENU (MANDATORY RULE COMPLIANCE)
+       Contains ALL navigation items, Home dropdown, utilities & login button
+       ======================================================================== -->
+  <div class="fg-drawer-backdrop" aria-hidden="true"></div>
+
+  <aside id="mobile-drawer" class="fg-drawer" aria-label="Mobile Navigation Drawer" aria-hidden="true">
+    <div class="fg-drawer-header">
+      <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-light" width="200" height="40">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-dark" width="200" height="40">
+      </a>
+      <button type="button" class="fg-drawer-close" aria-label="Close navigation menu">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="fg-drawer-body">
+      <nav class="fg-drawer-nav" aria-label="Mobile Menu Links">
+        <!-- Home Dropdown -->
+        <div class="fg-drawer-dropdown">
+          <button type="button" class="fg-drawer-link fg-drawer-dropdown-btn" aria-expanded="false">
+            <span class="fg-drawer-link-inner">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home</span>
+            </span>
+            <i class="bi bi-chevron-down fg-drawer-chevron" aria-hidden="true"></i>
+          </button>
+          <div class="fg-drawer-submenu">
+            <a href="index.html" class="fg-drawer-sublink">
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+              <span>Home 1</span>
+            </a>
+            <a href="home2.html" class="fg-drawer-sublink">
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+              <span>Home 2</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- About -->
+        <a href="about.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-info-circle" aria-hidden="true"></i>
+            <span>About</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Services -->
+        <a href="services.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-printer" aria-hidden="true"></i>
+            <span>Services</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Pricing -->
+        <a href="pricing.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-tag" aria-hidden="true"></i>
+            <span>Pricing</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Blog -->
+        <a href="blog.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-journal-text" aria-hidden="true"></i>
+            <span>Blog</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Contact (Active) -->
+        <a href="contact.html" class="fg-drawer-link active" aria-current="page">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+            <span>Contact</span>
+          </span>
+          <i class="bi bi-check2" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+      <div class="fg-drawer-divider"></div>
+
+      <!-- Drawer Theme & Direction Controls -->
+      <div class="fg-drawer-controls">
+        <span class="fg-drawer-controls-label">Preferences</span>
+        <div class="fg-drawer-toggle-group">
+          <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+            <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drawer Footer with Login Button -->
+    <div class="fg-drawer-footer">
+      <button type="button" class="fg-btn fg-btn-primary fg-login-btn" style="width: 100%;">
+        <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+        <span>Login / Account</span>
+      </button>
+      <a href="#order-enquiry" class="fg-btn fg-btn-secondary" style="width: 100%;">
+        <i class="bi bi-calculator" aria-hidden="true"></i>
+        <span>Instant Quote</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       MAIN CONTACT CONTENT: EXACTLY SEVEN UNIQUE CONTENT SECTIONS
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 1: CONTACT INTRODUCTION — LET'S TALK PRINTING
+         Concept: Vertical directory rail, editorial typography, panoramic strip
+         ---------------------------------------------------------------------- -->
+    <section id="contact-intro" class="contact-intro-section" aria-labelledby="contact-intro-heading">
+      <div class="fg-container">
+
+        <div class="contact-intro-grid">
+          <!-- Narrow Vertical Directory Rail -->
+          <nav class="contact-directory-rail" aria-label="Contact Section Rail">
+            <a href="#order-enquiry" class="contact-rail-item" title="Jump to Enquiry Form">
+              <span class="contact-rail-icon"><i class="bi bi-pencil-square" aria-hidden="true"></i></span>
+              <span class="contact-rail-label">Enquiries</span>
+            </a>
+            <a href="#contact-help" class="contact-rail-item" title="Jump to Service Categories">
+              <span class="contact-rail-icon"><i class="bi bi-printer" aria-hidden="true"></i></span>
+              <span class="contact-rail-label">Printing</span>
+            </a>
+            <a href="#shop-map" class="contact-rail-item" title="Jump to Shop Location & Map">
+              <span class="contact-rail-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></span>
+              <span class="contact-rail-label">Directions</span>
+            </a>
+          </nav>
+
+          <!-- Editorial Heading & Intro Content -->
+          <div class="contact-intro-content">
+            <span class="contact-intro-eyebrow">CONTACT &amp; ENQUIRIES</span>
+            <h1 id="contact-intro-heading" class="contact-intro-heading">
+              <span class="contact-intro-heading-line">LET’S TALK ABOUT YOUR</span>
+              <span class="contact-intro-heading-line highlight">NEXT PRINT JOB.</span>
+            </h1>
+            <p class="contact-intro-lead">
+              Have a question about printing, photocopying, paper options, or finishing? Share what you need, and use the information on this page to prepare your enquiry.
+            </p>
+            <div class="contact-intro-actions">
+              <a href="#order-enquiry" class="fg-btn fg-btn-primary">
+                <span>Send an Enquiry</span>
+                <i class="bi bi-arrow-down-short" aria-hidden="true"></i>
+              </a>
+              <a href="#shop-map" class="fg-btn fg-btn-secondary">
+                <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                <span>View the Map</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Narrow Panoramic Horizontal Strip Image -->
+        <div class="contact-panoramic-strip">
+          <img src="assets/images/contact/contact-intro.webp" alt="Welcoming commercial printing worktable with neatly prepared documents and print materials" class="contact-panoramic-img" width="1920" height="800">
+          <div class="contact-panoramic-badge">
+            <h3 class="contact-panoramic-badge-title">
+              <i class="bi bi-chat-heart-fill" aria-hidden="true"></i>
+              <span>Friendly Counter Assistance</span>
+            </h3>
+            <p class="contact-panoramic-badge-text">
+              Walk in with your hard copies or reach out online. Our team helps you confirm paper weights, file formats, and turnaround requirements.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 2: HOW CAN WE HELP?
+         Concept: Interactive horizontal enquiry selector with distinct editorial rows
+         ---------------------------------------------------------------------- -->
+    <section id="contact-help" class="contact-section" aria-labelledby="contact-help-heading">
+      <div class="fg-container">
+
+        <div class="contact-section-header">
+          <span class="contact-badge">
+            <i class="bi bi-grid-1x2" aria-hidden="true"></i>
+            <span>Enquiry Categories</span>
+          </span>
+          <h2 id="contact-help-heading" class="contact-section-title">
+            HOW CAN WE HELP YOU TODAY?
+          </h2>
+          <p class="contact-section-subtitle">
+            Select an enquiry category below to automatically focus our contact form with the appropriate subject matter and project specifications.
+          </p>
+        </div>
+
+        <div class="help-selector-grid">
+          <!-- Category 1: Printing -->
+          <div class="help-category-card is-active" data-category="printing" role="button" tabindex="0" aria-label="Select Printing Enquiry category">
+            <div>
+              <div class="help-card-icon-wrap">
+                <i class="bi bi-file-earmark-richtext-fill" aria-hidden="true"></i>
+              </div>
+              <h3 class="help-card-title">Printing Enquiry</h3>
+              <p class="help-card-desc">
+                Questions about document printing, architectural plans, color brochures, or paper weights.
+              </p>
+            </div>
+            <span class="help-card-action">
+              <span>Select Category</span>
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <!-- Category 2: Photocopying -->
+          <div class="help-category-card" data-category="copying" role="button" tabindex="0" aria-label="Select Photocopying Enquiry category">
+            <div>
+              <div class="help-card-icon-wrap">
+                <i class="bi bi-files" aria-hidden="true"></i>
+              </div>
+              <h3 class="help-card-title">Photocopying Enquiry</h3>
+              <p class="help-card-desc">
+                Questions about black-and-white or color duplication, collated sets, and volume runs.
+              </p>
+            </div>
+            <span class="help-card-action">
+              <span>Select Category</span>
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <!-- Category 3: Binding & Finishing -->
+          <div class="help-category-card" data-category="finishing" role="button" tabindex="0" aria-label="Select Binding & Finishing category">
+            <div>
+              <div class="help-card-icon-wrap">
+                <i class="bi bi-journal-bookmark-fill" aria-hidden="true"></i>
+              </div>
+              <h3 class="help-card-title">Binding &amp; Finishing</h3>
+              <p class="help-card-desc">
+                Questions about twin-loop wire binding, thermal lamination, trimming, or stapling options.
+              </p>
+            </div>
+            <span class="help-card-action">
+              <span>Select Category</span>
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <!-- Category 4: General -->
+          <div class="help-category-card" data-category="general" role="button" tabindex="0" aria-label="Select General Question category">
+            <div>
+              <div class="help-card-icon-wrap">
+                <i class="bi bi-question-circle-fill" aria-hidden="true"></i>
+              </div>
+              <h3 class="help-card-title">General Question</h3>
+              <p class="help-card-desc">
+                Enquiries regarding counter operating hours, collection times, or customized specifications.
+              </p>
+            </div>
+            <span class="help-card-action">
+              <span>Select Category</span>
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="help-notice-box">
+          <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+          <div>
+            <strong>Service availability notice:</strong> All specialty binding stocks, oversized paper sizes, and same-day scheduling must be confirmed with our front desk prior to production.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 3: SEND YOUR ENQUIRY
+         Concept: Professional enquiry workspace with accessible form & prep panel
+         ---------------------------------------------------------------------- -->
+    <section id="order-enquiry" class="contact-section contact-section-alt" aria-labelledby="order-enquiry-heading">
+      <div class="fg-container">
+
+        <div class="contact-section-header">
+          <span class="contact-badge">
+            <i class="bi bi-envelope-check" aria-hidden="true"></i>
+            <span>Enquiry Workspace</span>
+          </span>
+          <h2 id="order-enquiry-heading" class="contact-section-title">
+            WHAT WOULD YOU LIKE US TO HELP WITH?
+          </h2>
+          <p class="contact-section-subtitle">
+            Provide the details of your print request below. We review every specification carefully to formulate clear, honest advice and accurate quotations.
+          </p>
+        </div>
+
+        <div class="enquiry-workspace-grid">
+          <!-- Left: Main Accessible Enquiry Form -->
+          <div class="enquiry-form-card">
+            <div class="enquiry-form-header">
+              <h3 class="enquiry-form-title">Customer Project Enquiry</h3>
+              <p class="enquiry-form-subtitle">Complete the fields below to prepare your quotation enquiry.</p>
+            </div>
+
+            <!-- Honest Demo Mode Feedback Alert -->
+            <div id="contact-demo-alert" class="contact-alert contact-alert-demo" role="status" aria-live="polite">
+              <h5>
+                <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                <span>Client-Side Validation Passed (Demo Mode)</span>
+              </h5>
+              <p style="margin: 0 0 0.5rem 0;">
+                Thank you, <strong id="demo-summary-name">Customer</strong>! All required project specifications were validated successfully.
+              </p>
+              <small style="color: var(--text-muted); display: block;">
+                <strong>Backend Integration Notice:</strong> This static website demonstration does not submit messages over an active email server. In production, this form connects to your verified server endpoint or mailer API to deliver notifications directly to <strong>hello@printworksprint.com</strong>.
+              </small>
+            </div>
+
+            <div id="contact-error-alert" class="contact-alert contact-alert-error" role="alert" aria-live="assertive">
+              <i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i>
+              <span>Please review and correct the highlighted fields before submitting your enquiry.</span>
+            </div>
+
+            <form id="contact-enquiry-form" novalidate>
+              <div class="enquiry-fields-grid">
+
+                <!-- Field 1: Full Name -->
+                <div>
+                  <label for="contact-name" class="contact-form-label">
+                    Full Name <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input type="text" id="contact-name" name="name" class="contact-input" placeholder="e.g. Sarah Jenkins" required autocomplete="name">
+                  <div id="error-contact-name" class="contact-field-error" aria-live="polite"></div>
+                </div>
+
+                <!-- Field 2: Email Address -->
+                <div>
+                  <label for="contact-email" class="contact-form-label">
+                    Email Address <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input type="email" id="contact-email" name="email" class="contact-input" placeholder="name@company.com" required autocomplete="email">
+                  <div id="error-contact-email" class="contact-field-error" aria-live="polite"></div>
+                </div>
+
+                <!-- Field 3: Phone Number (Optional) -->
+                <div>
+                  <label for="contact-phone" class="contact-form-label">
+                    Phone Number <span style="font-size: 0.75rem; color: var(--text-subtle);">(Optional)</span>
+                  </label>
+                  <input type="tel" id="contact-phone" name="phone" class="contact-input" placeholder="(555) 000-0000" autocomplete="tel">
+                </div>
+
+                <!-- Field 4: Enquiry Type -->
+                <div>
+                  <label for="enquiry-type" class="contact-form-label">
+                    Enquiry Type <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <select id="enquiry-type" name="enquiry_type" class="contact-select" required>
+                    <option value="printing" selected>Document Printing</option>
+                    <option value="copying">Photocopying</option>
+                    <option value="finishing">Binding &amp; Finishing</option>
+                    <option value="general">General Enquiry</option>
+                  </select>
+                  <div id="error-enquiry-type" class="contact-field-error" aria-live="polite"></div>
+                </div>
+
+                <!-- Field 5: Subject -->
+                <div class="form-group-full">
+                  <label for="contact-subject" class="contact-form-label">
+                    Subject <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input type="text" id="contact-subject" name="subject" class="contact-input" placeholder="e.g. 50-Page Bound Report Quotation" required>
+                  <div id="error-contact-subject" class="contact-field-error" aria-live="polite"></div>
+                </div>
+
+                <!-- Field 6: Message -->
+                <div class="form-group-full">
+                  <label for="contact-message" class="contact-form-label">
+                    Message &amp; Specifications <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <textarea id="contact-message" name="message" class="contact-textarea" placeholder="Describe your job details..." required></textarea>
+                  <div id="error-contact-message" class="contact-field-error" aria-live="polite"></div>
+                  <p class="contact-field-hint">
+                    Tell us what you need, including paper size, color or black-and-white printing, quantity, and any finishing requirements you already know.
+                  </p>
+                </div>
+
+                <!-- Field 7: Preferred Contact Method -->
+                <div class="form-group-full">
+                  <label for="contact-pref" class="contact-form-label">
+                    Preferred Response Method <span style="font-size: 0.75rem; color: var(--text-subtle);">(Optional)</span>
+                  </label>
+                  <select id="contact-pref" name="preferred_method" class="contact-select">
+                    <option value="email">Reply via Email</option>
+                    <option value="phone">Contact via Phone</option>
+                    <option value="either">Either Email or Phone</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <div class="enquiry-form-actions">
+                <button type="submit" class="fg-btn fg-btn-primary" style="width: 100%; justify-content: center;">
+                  <span>Send Enquiry</span>
+                  <i class="bi bi-send-fill" aria-hidden="true"></i>
+                </button>
+                <p class="enquiry-privacy-note">
+                  <i class="bi bi-shield-lock-fill" aria-hidden="true"></i>
+                  <span>Submitted information is used exclusively to respond to your printing enquiry and is never sold or shared.</span>
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right: Document Preparation Panel & Photography -->
+          <div class="enquiry-prep-column">
+            <div class="enquiry-photo-wrap">
+              <img src="assets/images/contact/contact-process.webp" alt="Hands arranging printed documents and paper samples on a tidy commercial worktable" width="1200" height="900" loading="lazy">
+            </div>
+
+            <div class="enquiry-checklist-card">
+              <h4>
+                <i class="bi bi-clipboard2-check-fill" aria-hidden="true"></i>
+                <span>Details That Speed Up Your Quote</span>
+              </h4>
+              <ul class="enquiry-prep-list">
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <div><strong>Quantity:</strong> Number of copies or total identical sets needed.</div>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <div><strong>Color Mode:</strong> Full color calibrated CMYK or monochrome black-and-white.</div>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <div><strong>Sheet Size:</strong> Standard A4, larger A3, or custom millimeter sizes.</div>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <div><strong>Finishing:</strong> Wire binding, spiral coil, corner stapling, or lamination.</div>
+                </li>
+              </ul>
+
+              <div class="enquiry-counter-direct-box">
+                <i class="bi bi-clock-fill" style="color: var(--fg-blue); margin-inline-end: 0.35rem;" aria-hidden="true"></i>
+                <span>Need urgent same-day turnaround? Visit our service counter in person during operating hours.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 4: SHOP LOCATION AND VISIBLE MAP (MANDATORY PROMINENT SECTION)
+         Concept: Prominent map container with clearly labeled unavailable state & location column
+         ---------------------------------------------------------------------- -->
+    <section id="shop-map" class="contact-section" aria-labelledby="shop-map-heading">
+      <div class="fg-container">
+
+        <div class="contact-section-header">
+          <span class="contact-badge">
+            <i class="bi bi-geo-alt" aria-hidden="true"></i>
+            <span>Shop Location &amp; Directions</span>
+          </span>
+          <h2 id="shop-map-heading" class="contact-section-title">
+            FIND YOUR WAY TO OUR SHOP.
+          </h2>
+          <p class="contact-section-subtitle">
+            View the shop location and use the available counter information to plan your in-person visit for print pickups, proof reviews, and walk-in copying.
+          </p>
+        </div>
+
+        <div class="shop-map-grid">
+          <!-- Left: Prominent Visible Map Area -->
+          <div class="shop-map-container" role="region" aria-label="Shop Location Map Area">
+            <!-- Clearly Labeled Map-Unavailable State Panel (Preserves integrity without fake map screenshot) -->
+            <div class="map-unavailable-panel">
+              <img src="assets/images/contact/contact-map-fallback.webp" alt="" class="map-unavailable-backdrop-img" width="1200" height="650" loading="lazy" aria-hidden="true">
+              <div class="map-unavailable-content">
+                <div class="map-unavailable-icon">
+                  <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                </div>
+                <h3 class="map-unavailable-heading">SHOP LOCATION TO BE CONFIRMED</h3>
+                <p class="map-unavailable-desc">
+                  The exact shop address has not yet been configured. Add the verified business location to display the interactive map and directions.
+                </p>
+                <div class="map-unavailable-counter-badge">
+                  <i class="bi bi-pin-map-fill" aria-hidden="true"></i>
+                  <span>Front Desk: 450 Printing Plaza, Suite 102</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Location Information Column -->
+          <div class="shop-location-panel">
+            <div class="location-panel-header">
+              <h3 class="location-panel-title">Counter Details</h3>
+              <p class="location-panel-subtitle">Visit or call our production facility directly.</p>
+            </div>
+
+            <div class="location-info-list">
+              <!-- Address -->
+              <div class="location-info-item">
+                <div class="location-info-icon">
+                  <i class="bi bi-building" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <span class="location-info-label">Shop Address</span>
+                  <p class="location-info-value">450 Printing Plaza, Suite 102</p>
+                  <p class="location-info-sub">Downtown District</p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="location-info-item">
+                <div class="location-info-icon">
+                  <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <span class="location-info-label">Telephone</span>
+                  <p class="location-info-value">(555) 789-3456</p>
+                  <p class="location-info-sub">Direct counter inquiries during open hours</p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="location-info-item">
+                <div class="location-info-icon">
+                  <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <span class="location-info-label">Email Address</span>
+                  <p class="location-info-value">hello@printworksprint.com</p>
+                  <p class="location-info-sub">Send artwork files and quotation inquiries</p>
+                </div>
+              </div>
+
+              <!-- Hours -->
+              <div class="location-info-item">
+                <div class="location-info-icon">
+                  <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <span class="location-info-label">Operating Hours</span>
+                  <p class="location-info-value">Mon – Fri: 8:00 AM – 7:00 PM</p>
+                  <p class="location-info-sub">Saturday: 9:00 AM – 5:00 PM (Sunday Closed)</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="border-top: 1px solid var(--border-light); padding-top: 1.25rem;">
+              <a href="#order-enquiry" class="fg-btn fg-btn-primary" style="width: 100%; justify-content: center;">
+                <span>Send Enquiry to Counter</span>
+                <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 5: BEFORE YOU CONTACT US
+         Concept: Vertical question-and-answer rail with numbered prompts & side note
+         ---------------------------------------------------------------------- -->
+    <section id="contact-checklist" class="contact-section contact-section-alt" aria-labelledby="contact-checklist-heading">
+      <div class="fg-container">
+
+        <div class="contact-section-header">
+          <span class="contact-badge">
+            <i class="bi bi-list-ol" aria-hidden="true"></i>
+            <span>Preparation Guide</span>
+          </span>
+          <h2 id="contact-checklist-heading" class="contact-section-title">
+            BEFORE YOU CONTACT US
+          </h2>
+          <p class="contact-section-subtitle">
+            Having these five project details in mind helps our printing specialists understand your exact request and calculate accurate job costs promptly.
+          </p>
+        </div>
+
+        <div class="before-contact-grid">
+          <!-- Left: Numbered Q&A Rail -->
+          <div class="qa-rail-list">
+            <!-- Prompt 1 -->
+            <div class="qa-rail-item">
+              <span class="qa-rail-num">01</span>
+              <div class="qa-rail-body">
+                <h3 class="qa-rail-question">What do you need?</h3>
+                <p class="qa-rail-answer">
+                  Describe whether you need document printing, photocopying, booklet binding, or laminated presentation sheets.
+                </p>
+              </div>
+            </div>
+
+            <!-- Prompt 2 -->
+            <div class="qa-rail-item">
+              <span class="qa-rail-num">02</span>
+              <div class="qa-rail-body">
+                <h3 class="qa-rail-question">How many copies?</h3>
+                <p class="qa-rail-answer">
+                  Share the approximate number of pages per document, and how many duplicate sets or finished copies are required.
+                </p>
+              </div>
+            </div>
+
+            <!-- Prompt 3 -->
+            <div class="qa-rail-item">
+              <span class="qa-rail-num">03</span>
+              <div class="qa-rail-body">
+                <h3 class="qa-rail-question">Which paper or print type?</h3>
+                <p class="qa-rail-answer">
+                  Mention paper size (A4, A3, letter) and whether you require calibrated CMYK color or monochrome black-and-white.
+                </p>
+              </div>
+            </div>
+
+            <!-- Prompt 4 -->
+            <div class="qa-rail-item">
+              <span class="qa-rail-num">04</span>
+              <div class="qa-rail-body">
+                <h3 class="qa-rail-question">Is finishing required?</h3>
+                <p class="qa-rail-answer">
+                  Mention wire binding, plastic comb coils, corner stapling, hole-punching, or laminating, subject to availability.
+                </p>
+              </div>
+            </div>
+
+            <!-- Prompt 5 -->
+            <div class="qa-rail-item">
+              <span class="qa-rail-num">05</span>
+              <div class="qa-rail-body">
+                <h3 class="qa-rail-question">Is there anything else to know?</h3>
+                <p class="qa-rail-answer">
+                  Add any special instructions such as strict deadline dates, custom packaging, or courier collection timing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contrasting Side Note -->
+          <div class="spec-sidenote-card">
+            <div>
+              <h3>
+                <i class="bi bi-lightbulb-fill" aria-hidden="true"></i>
+                <span>Not sure about the specifications?</span>
+              </h3>
+              <p class="spec-sidenote-text">
+                Do not worry if you do not know every detail yet. Provide what you know, and our printing specialists will guide you through the remaining choices when reviewing your enquiry.
+              </p>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem; color: var(--text-muted);">
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <i class="bi bi-check2" style="color: var(--fg-blue);" aria-hidden="true"></i>
+                  <span>Paper sample books available at our front desk</span>
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <i class="bi bi-check2" style="color: var(--fg-blue);" aria-hidden="true"></i>
+                  <span>Pre-flight file checking for margin and bleed</span>
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <i class="bi bi-check2" style="color: var(--fg-blue);" aria-hidden="true"></i>
+                  <span>Binding thickness recommendation upon request</span>
+                </li>
+              </ul>
+            </div>
+
+            <a href="#order-enquiry" class="fg-btn fg-btn-primary" style="justify-content: center;">
+              <span>Start Your Enquiry</span>
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 6: WHAT HAPPENS AFTER YOU ENQUIRE?
+         Concept: Staggered three-stage editorial timeline with alternating elements
+         ---------------------------------------------------------------------- -->
+    <section id="contact-timeline" class="contact-section" aria-labelledby="contact-timeline-heading">
+      <div class="fg-container">
+
+        <div class="contact-section-header text-center">
+          <span class="contact-badge">
+            <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+            <span>Communication Stages</span>
+          </span>
+          <h2 id="contact-timeline-heading" class="contact-section-title">
+            WHAT HAPPENS AFTER YOU ENQUIRE?
+          </h2>
+          <p class="contact-section-subtitle">
+            Here is how our customer communication process works from initial specification submission through to project confirmation.
+          </p>
+        </div>
+
+        <div class="timeline-stages-wrapper">
+          <div class="timeline-vertical-line" aria-hidden="true"></div>
+
+          <!-- Stage 01 -->
+          <div class="timeline-stage-row">
+            <div class="timeline-stage-card">
+              <span class="timeline-stage-tag">Stage 01</span>
+              <h3 class="timeline-stage-title">Share Your Requirements</h3>
+              <p class="timeline-stage-desc">
+                Describe your document printing, photocopying, or finishing needs through our online enquiry form or visit our front counter.
+              </p>
+            </div>
+            <div class="timeline-stage-marker" aria-label="Step 1">01</div>
+            <div class="timeline-media-card">
+              <img src="assets/images/contact/contact-details.webp" alt="Printed documents and paper samples being reviewed at a clean commercial worktable" width="1200" height="800" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Stage 02 -->
+          <div class="timeline-stage-row">
+            <div class="timeline-media-card" style="display: none;">
+              <!-- Responsive placeholder -->
+            </div>
+            <div class="timeline-stage-marker" aria-label="Step 2">02</div>
+            <div class="timeline-stage-card">
+              <span class="timeline-stage-tag">Stage 02</span>
+              <h3 class="timeline-stage-title">Clarify the Details</h3>
+              <p class="timeline-stage-desc">
+                Our specialists examine your file readiness, paper stock options, and finishing requirements. We clarify any questions to avoid surprises.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stage 03 -->
+          <div class="timeline-stage-row">
+            <div class="timeline-stage-card">
+              <span class="timeline-stage-tag">Stage 03</span>
+              <h3 class="timeline-stage-title">Confirm the Next Step</h3>
+              <p class="timeline-stage-desc">
+                Review the agreed specifications, confirmed rate, and turnaround schedule before committing to print production.
+              </p>
+            </div>
+            <div class="timeline-stage-marker" aria-label="Step 3">03</div>
+            <div class="timeline-media-card" style="display: none;">
+              <!-- Responsive placeholder -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 7: CHOOSE YOUR NEXT STEP
+         Concept: Compact editorial action menu with vertically arranged destination links
+         ---------------------------------------------------------------------- -->
+    <section id="contact-closing" class="contact-section contact-section-alt" aria-labelledby="contact-closing-heading">
+      <div class="fg-container">
+
+        <div class="next-step-outer">
+          <div class="next-step-card">
+            <div>
+              <span class="contact-badge">
+                <i class="bi bi-signpost-split" aria-hidden="true"></i>
+                <span>Action Menu</span>
+              </span>
+              <h2 id="contact-closing-heading" class="next-step-title">
+                READY TO TAKE THE NEXT STEP?
+              </h2>
+              <p class="next-step-lead">
+                Whether you need service information, pricing guidance, or help preparing an enquiry, start with the option that best matches your needs.
+              </p>
+
+              <div class="next-step-rows-list">
+                <!-- Action 1: Explore Services -->
+                <a href="services.html" class="next-step-row-item">
+                  <div class="next-step-row-left">
+                    <i class="bi bi-printer next-step-row-icon" aria-hidden="true"></i>
+                    <div>
+                      <h3 class="next-step-row-heading">Explore Our Services</h3>
+                      <p class="next-step-row-sub">Browse document printing, binding, posters, and scanning.</p>
+                    </div>
+                  </div>
+                  <i class="bi bi-arrow-right next-step-row-arrow" aria-hidden="true"></i>
+                </a>
+
+                <!-- Action 2: Review Pricing Guide -->
+                <a href="pricing.html" class="next-step-row-item">
+                  <div class="next-step-row-left">
+                    <i class="bi bi-tag next-step-row-icon" aria-hidden="true"></i>
+                    <div>
+                      <h3 class="next-step-row-heading">Review the Pricing Guide</h3>
+                      <p class="next-step-row-sub">Understand rate sheets, cost factors, and finish specimens.</p>
+                    </div>
+                  </div>
+                  <i class="bi bi-arrow-right next-step-row-arrow" aria-hidden="true"></i>
+                </a>
+
+                <!-- Action 3: Send Your Enquiry (Prominent) -->
+                <a href="#order-enquiry" class="next-step-row-item next-step-row-primary">
+                  <div class="next-step-row-left">
+                    <i class="bi bi-envelope-check next-step-row-icon" aria-hidden="true"></i>
+                    <div>
+                      <h3 class="next-step-row-heading">Send Your Enquiry</h3>
+                      <p class="next-step-row-sub">Submit your job parameters to our counter team directly.</p>
+                    </div>
+                  </div>
+                  <i class="bi bi-arrow-right next-step-row-arrow" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Supporting Imagery in restrained corner -->
+            <div class="next-step-media-container">
+              <img src="assets/images/contact/contact-closing.webp" alt="Neatly arranged printed documents and paper samples on a professional commercial worktable" width="1400" height="900" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER (MUST MATCH INDEX.HTML EXACTLY)
+       ======================================================================== -->
+  <footer class="fg-footer" role="contentinfo">
+    <div class="fg-container">
+
+      <div class="fg-footer-grid">
+
+        <!-- Column 1: Brand & Contact Overview -->
+        <div class="fg-footer-col fg-footer-brand-col">
+          <a href="index.html" class="fg-brand fg-footer-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+            <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img" width="220" height="44">
+          </a>
+          <span class="fg-footer-tagline">PRECISION PRINTS. PROUD RESULTS.</span>
+          <p class="fg-footer-desc">
+            Your neighborhood printing, photocopying, binding, and finishing specialists. Dedicated to crisp quality, fast turnarounds, and friendly service.
+          </p>
+          <div class="fg-footer-socials" aria-label="Social media channels">
+            <a href="https://instagram.com" class="fg-social-btn" aria-label="Follow PRINTWORKS on Instagram" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://facebook.com" class="fg-social-btn" aria-label="Follow PRINTWORKS on Facebook" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://linkedin.com" class="fg-social-btn" aria-label="Connect with PRINTWORKS on LinkedIn" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Explore Navigation -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Explore</h3>
+          <ul class="fg-footer-links">
+            <li><a href="index.html" class="fg-footer-link">Home 1 (Main)</a></li>
+            <li><a href="home2.html" class="fg-footer-link">Home 2 (Express)</a></li>
+            <li><a href="about.html" class="fg-footer-link">About</a></li>
+            <li><a href="services.html" class="fg-footer-link">Services</a></li>
+            <li><a href="pricing.html" class="fg-footer-link">Pricing</a></li>
+            <li><a href="blog.html" class="fg-footer-link">Blog</a></li>
+            <li><a href="contact.html" class="fg-footer-link active" aria-current="page">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Core Printing Services -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Services</h3>
+          <ul class="fg-footer-links">
+            <li><a href="services.html#printing" class="fg-footer-link">Document Printing</a></li>
+            <li><a href="services.html#copying" class="fg-footer-link">Document Copying</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Bound Booklets</a></li>
+            <li><a href="services.html#business-study" class="fg-footer-link">Business Documents</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Wire &amp; Spiral Binding</a></li>
+            <li><a href="services.html#printing" class="fg-footer-link">Large A3 Posters</a></li>
+            <li><a href="services.html#copying" class="fg-footer-link">High-Res Scanning</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Paper & Finishes -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Paper &amp; Finishes</h3>
+          <ul class="fg-footer-links">
+            <li><a href="services.html#specifications" class="fg-footer-link">Silk Matte 350gsm</a></li>
+            <li><a href="services.html#specifications" class="fg-footer-link">Recycled Kraft Stock</a></li>
+            <li><a href="services.html#specifications" class="fg-footer-link">High-Gloss Coated</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Twin-Loop Wire Binding</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Soft-Touch Lamination</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Metallic Foil Stamping</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Perfect Spine Binding</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Store & Counter (Say Hello) -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Say Hello</h3>
+          <div class="fg-footer-contact-list">
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              <span>450 Printing Plaza, Suite 102, Downtown District</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-clock-fill" aria-hidden="true"></i>
+              <span>Mon – Fri: 8:00 AM – 7:00 PM<br>Saturday: 9:00 AM – 5:00 PM</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+              <span>(555) 789-3456</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+              <span>hello@printworksprint.com</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="fg-footer-bottom">
+        <div>
+          &copy; 2026 PRINTWORKS PRINT &amp; COPY. All rights reserved. Precision Prints. Proud Results.
+        </div>
+        <div class="fg-footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="accessibility.html">Accessibility Statement</a>
+        </div>
+        <button type="button" class="fg-back-to-top" aria-label="Scroll back to top of page" title="Back to top">
+          <i class="bi bi-arrow-up" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       ACCESSIBLE LOGIN MODAL
+       ======================================================================== -->
+  <div id="login-modal" class="fg-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="fg-modal-card">
+      <button type="button" class="fg-modal-close" aria-label="Close login dialog">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-light" style="height: 38px; margin: 0 auto 0.75rem auto;">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-dark" style="height: 38px; margin: 0 auto 0.75rem auto;">
+        <h2 id="modal-title" style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: var(--text-main);">
+          Customer Portal Login
+        </h2>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">
+          Track your print orders, download invoice proofs, or reorder past jobs.
+        </p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Demo customer account login. Please visit our front counter for portal registration.');">
+        <div class="fg-form-group" style="margin-bottom: 1rem;">
+          <label for="login-email" class="fg-form-label">Email Address</label>
+          <input type="email" id="login-email" class="fg-input" placeholder="name@company.com" required>
+        </div>
+        <div class="fg-form-group" style="margin-bottom: 1.5rem;">
+          <label for="login-password" class="fg-form-label">Password</label>
+          <input type="password" id="login-password" class="fg-input" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="fg-btn fg-btn-primary" style="width: 100%; margin-bottom: 0.75rem;">
+          <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+          <span>Sign In to Your Account</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/pages/contact.js"></script>
+</body>
+</html>

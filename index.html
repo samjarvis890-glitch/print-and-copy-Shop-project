@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRINTWORKS PRINT &amp; COPY — Precision Prints. Proud Results. | Professional Print Shop</title>
+  <meta name="description" content="PRINTWORKS PRINT &amp; COPY delivers fast, crisp document printing, architectural blueprints, booklets, stationery, and premium finishing. Walk-ins welcome &amp; express same-day turnaround.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+  <!-- Instant Theme & Direction Initialization (Prevents visible flash) -->
+  <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem('printworks_theme');
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        const savedDir = localStorage.getItem('printworks_dir');
+        if (savedDir) {
+          document.documentElement.setAttribute('dir', savedDir);
+          document.documentElement.setAttribute('lang', savedDir === 'rtl' ? 'ar' : 'en');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages/home.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       GLOBAL NAVBAR (DESKTOP 1281px+ | TABLET & MOBILE COLLAPSE 1280px-)
+       ======================================================================== -->
+  <header class="fg-navbar" role="banner">
+    <div class="fg-container fg-navbar-inner">
+
+      <!-- Brand Logo (Left Side) -->
+      <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-light" width="240" height="48">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-dark" width="240" height="48">
+      </a>
+
+      <!-- Desktop Navigation Menu (Visible on 1281px+) -->
+      <nav class="fg-nav-menu" aria-label="Primary Navigation">
+        <!-- Home Dropdown -->
+        <div class="fg-nav-dropdown">
+          <a href="index.html" class="fg-nav-link active" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <i class="bi bi-chevron-down" style="font-size: 0.75rem;" aria-hidden="true"></i>
+          </a>
+          <div class="fg-dropdown-menu" role="menu">
+            <a href="index.html" class="fg-dropdown-link active" role="menuitem">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home 1 (Main)</span>
+            </a>
+            <a href="home2.html" class="fg-dropdown-link" role="menuitem">
+              <i class="bi bi-layout-text-window-reverse" aria-hidden="true"></i>
+              <span>Home 2 (Express)</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="fg-nav-link">About</a>
+        <a href="services.html" class="fg-nav-link">Services</a>
+        <a href="pricing.html" class="fg-nav-link">Pricing</a>
+        <a href="blog.html" class="fg-nav-link">Blog</a>
+        <a href="contact.html" class="fg-nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Side Controls & Actions -->
+      <div class="fg-nav-controls">
+        <!-- Dark Mode Toggle Button -->
+        <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+        </button>
+
+        <!-- RTL / LTR Direction Toggle Button -->
+        <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+          <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+        </button>
+
+        <!-- Desktop Action Button (Get a Quote / Login) -->
+        <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary fg-navbar-cta">
+          <span>Get a Quote</span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Mobile & Tablet Hamburger Menu Toggle (<= 1280px) -->
+        <button type="button" class="fg-hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MOBILE & TABLET DRAWER MENU (MANDATORY RULE COMPLIANCE)
+       Contains ALL navigation items, Home dropdown, utilities & login button
+       ======================================================================== -->
+  <div class="fg-drawer-backdrop" aria-hidden="true"></div>
+
+  <aside id="mobile-drawer" class="fg-drawer" aria-label="Mobile Navigation Drawer" aria-hidden="true">
+    <div class="fg-drawer-header">
+      <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-light" width="200" height="40">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-dark" width="200" height="40">
+      </a>
+      <button type="button" class="fg-drawer-close" aria-label="Close navigation menu">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="fg-drawer-body">
+      <nav class="fg-drawer-nav" aria-label="Mobile Menu Links">
+        <!-- Home Dropdown -->
+        <div class="fg-drawer-dropdown is-expanded">
+          <button type="button" class="fg-drawer-link fg-drawer-dropdown-btn active" aria-expanded="true">
+            <span class="fg-drawer-link-inner">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home</span>
+            </span>
+            <i class="bi bi-chevron-down fg-drawer-chevron" aria-hidden="true"></i>
+          </button>
+          <div class="fg-drawer-submenu">
+            <a href="index.html" class="fg-drawer-sublink active">
+              <i class="bi bi-check2" aria-hidden="true"></i>
+              <span>Home 1</span>
+            </a>
+            <a href="home2.html" class="fg-drawer-sublink">
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+              <span>Home 2</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- About -->
+        <a href="about.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-info-circle" aria-hidden="true"></i>
+            <span>About</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Services -->
+        <a href="services.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-printer" aria-hidden="true"></i>
+            <span>Services</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Pricing -->
+        <a href="pricing.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-tag" aria-hidden="true"></i>
+            <span>Pricing</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Blog -->
+        <a href="blog.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-journal-text" aria-hidden="true"></i>
+            <span>Blog</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Contact -->
+        <a href="contact.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+            <span>Contact</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+      <div class="fg-drawer-divider"></div>
+
+      <!-- Drawer Theme & Direction Controls -->
+      <div class="fg-drawer-controls">
+        <span class="fg-drawer-controls-label">Preferences</span>
+        <div class="fg-drawer-toggle-group">
+          <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+            <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drawer Footer with Login Button -->
+    <div class="fg-drawer-footer">
+      <button type="button" class="fg-btn fg-btn-primary fg-login-btn" style="width: 100%;">
+        <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+        <span>Login / Account</span>
+      </button>
+      <a href="contact.html#order-enquiry" class="fg-btn fg-btn-secondary" style="width: 100%;">
+        <i class="bi bi-calculator" aria-hidden="true"></i>
+        <span>Instant Quote</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       MAIN HOMEPAGE CONTENT
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 1: HERO & PERFORMANCE STRIP
+         ---------------------------------------------------------------------- -->
+    <section id="hero" class="fg-hero" aria-labelledby="hero-heading">
+      <div class="fg-container fg-hero-container">
+        <div class="fg-hero-grid">
+
+          <!-- Left Column: Copy & Actions -->
+          <div class="fg-hero-content">
+            <div class="fg-hero-eyebrow">
+              <i class="bi bi-sun-fill" aria-hidden="true"></i>
+              <span>PRECISION PRINTS. PROUD RESULTS.</span>
+            </div>
+
+            <h1 id="hero-heading" class="fg-hero-title">
+              Fast, crisp, feel-good <span class="highlight-blue">printing</span> for everyday work &amp; big ideas.
+            </h1>
+
+            <p class="fg-hero-lead">
+              From crisp document photocopying and architectural blueprints to wire-bound lookbooks and vibrant vinyl stickers—we make printing effortless, precise, and delightfully stress-free.
+            </p>
+
+            <div class="fg-hero-actions">
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
+                <i class="bi bi-calculator" aria-hidden="true"></i>
+                <span>Get an Instant Quote</span>
+              </a>
+              <a href="#services" class="fg-btn fg-btn-outline">
+                <span>Explore Services</span>
+                <i class="bi bi-arrow-down-short" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="fg-hero-chips">
+              <div class="fg-hero-chip">
+                <i class="bi bi-clock-history" aria-hidden="true"></i>
+                <span>Same-Day Turnaround</span>
+              </div>
+              <div class="fg-hero-chip">
+                <i class="bi bi-door-open" aria-hidden="true"></i>
+                <span>Walk-Ins Welcome</span>
+              </div>
+              <div class="fg-hero-chip">
+                <i class="bi bi-recycle" aria-hidden="true"></i>
+                <span>Eco-Friendly Papers</span>
+              </div>
+              <div class="fg-hero-chip">
+                <i class="bi bi-patch-check" aria-hidden="true"></i>
+                <span>2400 DPI Calibration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Hero Visual Asset -->
+          <div class="fg-hero-media">
+            <div class="fg-hero-img-card">
+              <img src="assets/images/index/hero-print-studio.webp" alt="PRINTWORKS Print &amp; Copy studio with modern production printers, vibrant color proofs, and architectural blueprints" class="fg-hero-img" width="1920" height="1080" fetchpriority="high">
+            </div>
+
+            <!-- Floating Trust Metric -->
+            <div class="fg-hero-floating-badge" aria-hidden="true">
+              <div class="fg-floating-badge-icon">
+                <i class="bi bi-printer-fill"></i>
+              </div>
+              <div>
+                <div class="fg-floating-badge-title">2-Hour Express</div>
+                <div class="fg-floating-badge-sub">Rush orders ready on counter</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Performance Metrics Strip -->
+      <div class="fg-stats-bar" aria-label="Key Performance Metrics">
+        <div class="fg-container">
+          <div class="fg-stats-grid">
+            <div class="fg-stat-item">
+              <span class="fg-stat-number">2400 DPI</span>
+              <span class="fg-stat-label">Ultra HD Digital Resolution</span>
+            </div>
+            <div class="fg-stat-item">
+              <span class="fg-stat-number">50,000+</span>
+              <span class="fg-stat-label">Projects Printed Locally</span>
+            </div>
+            <div class="fg-stat-item">
+              <span class="fg-stat-number">2 Hours</span>
+              <span class="fg-stat-label">Fastest Counter Rush Service</span>
+            </div>
+            <div class="fg-stat-item">
+              <span class="fg-stat-number">4.9 / 5.0</span>
+              <span class="fg-stat-label">Customer Satisfaction Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 2: POPULAR PRINTING & COPYING SERVICES
+         ---------------------------------------------------------------------- -->
+    <section id="services" class="fg-section" aria-labelledby="services-heading">
+      <div class="fg-container">
+        
+        <div class="fg-section-header text-center">
+          <span class="fg-section-badge">
+            <i class="bi bi-stars" aria-hidden="true"></i>
+            <span>Our Core Capabilities</span>
+          </span>
+          <h2 id="services-heading" class="fg-section-title">
+            Popular Printing, Copying &amp; Finishing Services
+          </h2>
+          <p class="fg-section-desc">
+            Professional printing engineered for precision, vivid color accuracy, and fast turnarounds. Perfect for businesses, creatives, students, and everyday walk-in tasks.
+          </p>
+        </div>
+
+        <!-- 6 Equal-Height Service Cards Grid -->
+        <div class="fg-services-grid">
+
+          <!-- Card 1: Document Printing & Copying -->
+          <article class="fg-card">
+            <div class="fg-card-img-wrap">
+              <img src="assets/images/index/service-doc-printing.webp" alt="Stacks of crisp color prints, bound reports, and business cards" class="fg-card-img" width="1400" height="900" loading="lazy">
+              <span class="fg-card-badge">Daily Favorite</span>
+            </div>
+            <div class="fg-card-body">
+              <h3 class="fg-card-title">Document Printing &amp; Copying</h3>
+              <p class="fg-card-desc">
+                High-speed black &amp; white and vivid full-color printing for reports, presentations, contracts, and classroom manuals. Walk-in flash drives and cloud files welcome.
+              </p>
+              <div class="fg-card-features">
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Single or double-sided duplexing</span>
+                </div>
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Standard 80gsm to 160gsm premium text</span>
+                </div>
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Collation, hole punching &amp; stapling</span>
+                </div>
+              </div>
+              <div class="fg-card-footer">
+                <div class="fg-card-price">
+                  <span class="fg-card-price-label">Starting at</span>
+                  <span class="fg-card-price-val">$0.10 / page</span>
+                </div>
+                <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">Order Copies</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Large Format & Blueprints -->
+          <article class="fg-card">
+            <div class="fg-card-img-wrap">
+              <img src="assets/images/index/service-blueprints.webp" alt="Large format architectural blueprint drawings, scale ruler, compass, and engineering plots" class="fg-card-img" width="1200" height="900" loading="lazy">
+              <span class="fg-card-badge">Precision CAD</span>
+            </div>
+            <div class="fg-card-body">
+              <h3 class="fg-card-title">Large Format &amp; Blueprints</h3>
+              <p class="fg-card-desc">
+                Crisp architectural schematics, engineering plans, elevation drawings, and wide-format posters up to 60 inches wide. Razor-sharp vector line reproduction.
+              </p>
+              <div class="fg-card-features">
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Architectural A0, A1, A2 &amp; Arch E sizes</span>
+                </div>
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Heavyweight bond, vellum &amp; matte film</span>
+                </div>
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Full-scale scanning &amp; digital archiving</span>
+                </div>
+              </div>
+              <div class="fg-card-footer">
+                <div class="fg-card-price">
+                  <span class="fg-card-price-label">Starting at</span>
+                  <span class="fg-card-price-val">$4.50 / plot</span>
+                </div>
+                <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">Plot Plans</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Booklets, Catalogs & Binding -->
+          <article class="fg-card">
+            <div class="fg-card-img-wrap">
+              <img src="assets/images/index/service-binding.webp" alt="Wire-bound booklets, spiral coil manuals, and product catalogs with clear protective covers" class="fg-card-img" width="1400" height="900" loading="lazy">
+              <span class="fg-card-badge">Custom Finishes</span>
+            </div>
+            <div class="fg-card-body">
+              <h3 class="fg-card-title">Booklets &amp; Multi-Page Binding</h3>
+              <p class="fg-card-desc">
+                Turn loose sheets into professional booklets, conference guides, employee handbooks, and portfolios with durable twin-loop wire, spiral coil, or saddle stitching.
+              </p>
+              <div class="fg-card-features">
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>360° flat-opening wire &amp; spiral coils</span>
+                </div>
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Clear acetate front &amp; vinyl back covers</span>
+                </div>
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Saddle-stitched magazine style folding</span>
+                </div>
+              </div>
+              <div class="fg-card-footer">
+                <div class="fg-card-price">
+                  <span class="fg-card-price-label">Starting at</span>
+                  <span class="fg-card-price-val">$3.50 / unit</span>
+                </div>
+                <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">Bind Booklets</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Business Cards & Corporate Stationery -->
+          <article class="fg-card">
+            <div class="fg-card-img-wrap">
+              <img src="assets/images/index/service-business-cards.webp" alt="Luxury embossed business cards with gold foil stamping, matching envelopes, and stationery" class="fg-card-img" width="1200" height="900" loading="lazy">
+              <span class="fg-card-badge">Executive Quality</span>
+            </div>
+            <div class="fg-card-body">
+              <h3 class="fg-card-title">Business Cards &amp; Stationery</h3>
+              <p class="fg-card-desc">
+                Make memorable first impressions with ultra-thick 350gsm–450gsm cardstock, velvet soft-touch lamination, metallic foil stamping, matching envelopes, and letterheads.
+              </p>
+              <div class="fg-card-features">
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Standard, square &amp; mini custom die-cuts</span>
+                </div>
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Gold, silver &amp; holographic foil stamping</span>
+                </div>
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>FSC-certified sustainable cotton papers</span>
+                </div>
+              </div>
+              <div class="fg-card-footer">
+                <div class="fg-card-price">
+                  <span class="fg-card-price-label">Packs of 100 from</span>
+                  <span class="fg-card-price-val">$24.00</span>
+                </div>
+                <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">Print Cards</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Custom Stickers, Labels & Decals -->
+          <article class="fg-card">
+            <div class="fg-card-img-wrap">
+              <img src="assets/images/index/service-stickers.webp" alt="Custom die-cut vinyl stickers, roll labels, and retail packaging decals" class="fg-card-img" width="1200" height="900" loading="lazy">
+              <span class="fg-card-badge">Water-Resistant</span>
+            </div>
+            <div class="fg-card-body">
+              <h3 class="fg-card-title">Die-Cut Stickers &amp; Product Labels</h3>
+              <p class="fg-card-desc">
+                Durable, weatherproof vinyl stickers and roll labels for retail packaging, bottles, laptops, and giveaway swag. Precision kiss-cut or die-cut to any custom contour.
+              </p>
+              <div class="fg-card-features">
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>UV &amp; scratch-resistant outdoor vinyl</span>
+                </div>
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Glossy, matte &amp; transparent substrates</span>
+                </div>
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>No minimum order quantity required</span>
+                </div>
+              </div>
+              <div class="fg-card-footer">
+                <div class="fg-card-price">
+                  <span class="fg-card-price-label">Starting at</span>
+                  <span class="fg-card-price-val">$0.35 / sticker</span>
+                </div>
+                <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">Make Stickers</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Marketing Flyers, Menus & Posters -->
+          <article class="fg-card">
+            <div class="fg-card-img-wrap">
+              <img src="assets/images/index/service-posters.webp" alt="Vibrant promotional marketing flyers, folded event brochures, and display posters" class="fg-card-img" width="1200" height="900" loading="lazy">
+              <span class="fg-card-badge">High Impact</span>
+            </div>
+            <div class="fg-card-body">
+              <h3 class="fg-card-title">Posters, Menus &amp; Marketing Flyers</h3>
+              <p class="fg-card-desc">
+                High-definition promotional collateral for store openings, art exhibits, dining menus, and corporate showcases. Vibrant Pantone-matched inks on sturdy coated stock.
+              </p>
+              <div class="fg-card-features">
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Tri-fold, z-fold &amp; gatefold configurations</span>
+                </div>
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Heavyweight wipe-clean matte lamination</span>
+                </div>
+                <div class="fg-card-feature-item">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <span>Foam-board mounting for easel display</span>
+                </div>
+              </div>
+              <div class="fg-card-footer">
+                <div class="fg-card-price">
+                  <span class="fg-card-price-label">Starting at</span>
+                  <span class="fg-card-price-val">$0.45 / flyer</span>
+                </div>
+                <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">Print Flyers</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 3: 4-STEP PRODUCTION PROCESS & WORKFLOW ASSURANCE
+         ---------------------------------------------------------------------- -->
+    <section id="process" class="fg-section fg-section-alt" aria-labelledby="process-heading">
+      <div class="fg-container">
+
+        <div class="fg-section-header text-center">
+          <span class="fg-section-badge fg-section-badge-yellow">
+            <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+            <span>Simple &amp; Painless</span>
+          </span>
+          <h2 id="process-heading" class="fg-section-title">
+            How It Works — From Digital File to Finished Print
+          </h2>
+          <p class="fg-section-desc">
+            We’ve eliminated confusing print technical jargon. Whether ordering online or stepping up to our counter, our 4-step workflow ensures flawless output every time.
+          </p>
+        </div>
+
+        <div class="fg-process-grid">
+
+          <!-- Step 1 -->
+          <div class="fg-process-card">
+            <div class="fg-process-header">
+              <span class="fg-process-num">01</span>
+              <div class="fg-process-icon">
+                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h3 class="fg-process-title">Submit Files or Walk In</h3>
+            <p class="fg-process-desc">
+              Upload PDF, AI, Word, or CAD files via our web portal or drop by our counter with your flash drive. We support all industry standards.
+            </p>
+            <span class="fg-process-badge">
+              <i class="bi bi-check2-circle" aria-hidden="true"></i>
+              <span>Instant Confirmation</span>
+            </span>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="fg-process-card">
+            <div class="fg-process-header">
+              <span class="fg-process-num">02</span>
+              <div class="fg-process-icon">
+                <i class="bi bi-palette" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h3 class="fg-process-title">Choose Paper &amp; Finishes</h3>
+            <p class="fg-process-desc">
+              Select your stock weight from 80gsm to 450gsm, touch our physical sample swatch book, and pick binding, lamination, or foil accents.
+            </p>
+            <span class="fg-process-badge">
+              <i class="bi bi-check2-circle" aria-hidden="true"></i>
+              <span>Free Paper Samples</span>
+            </span>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="fg-process-card">
+            <div class="fg-process-header">
+              <span class="fg-process-num">03</span>
+              <div class="fg-process-icon">
+                <i class="bi bi-check2-square" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h3 class="fg-process-title">Pre-Flight Proofing</h3>
+            <p class="fg-process-desc">
+              Our print specialists check your bleeds, color profiles, resolution, and margins before running the presses to guarantee zero mistakes.
+            </p>
+            <span class="fg-process-badge">
+              <i class="bi bi-check2-circle" aria-hidden="true"></i>
+              <span>Zero-Error Guarantee</span>
+            </span>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="fg-process-card">
+            <div class="fg-process-header">
+              <span class="fg-process-num">04</span>
+              <div class="fg-process-icon">
+                <i class="bi bi-box-seam" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h3 class="fg-process-title">Rapid Pickup or Delivery</h3>
+            <p class="fg-process-desc">
+              Collect your neatly packaged, inspected order from our front counter or select same-day local courier delivery straight to your office.
+            </p>
+            <span class="fg-process-badge">
+              <i class="bi bi-check2-circle" aria-hidden="true"></i>
+              <span>Ready in 2–4 Hours</span>
+            </span>
+          </div>
+
+        </div>
+
+        <!-- Production Assurance Banner -->
+        <div class="fg-process-banner">
+          <div class="fg-process-banner-content">
+            <span class="fg-section-badge">
+              <i class="bi bi-shield-check" aria-hidden="true"></i>
+              <span>Quality Assurance</span>
+            </span>
+            <h3 class="fg-process-banner-title">
+              Calibrated Digital Presses &amp; Free Pre-Flight Review
+            </h3>
+            <p class="fg-process-banner-desc">
+              Every morning our digital press engines are spectrophotometer-calibrated for exact CMYK and Pantone color accuracy. Before we run any order, our technicians review your file margins, fonts, and resolution to guarantee zero costly mistakes.
+            </p>
+            <div class="fg-process-banner-chips">
+              <div class="fg-hero-chip">
+                <i class="bi bi-patch-check-fill"></i>
+                <span>2400 DPI Ultra HD</span>
+              </div>
+              <div class="fg-hero-chip">
+                <i class="bi bi-tree-fill"></i>
+                <span>100% FSC Sustainable</span>
+              </div>
+              <div class="fg-hero-chip">
+                <i class="bi bi-clock-history"></i>
+                <span>2-Hour Rush Available</span>
+              </div>
+            </div>
+          </div>
+          <div class="fg-process-banner-media">
+            <img src="assets/images/index/process-digital-press.webp" alt="PRINTWORKS modern high-speed digital color printing press in operation with touchscreen job console" class="fg-card-img" width="1400" height="900" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 4: PAPER STOCKS & BINDERY CRAFTSMANSHIP
+         ---------------------------------------------------------------------- -->
+    <section id="stocks" class="fg-section" aria-labelledby="stocks-heading">
+      <div class="fg-container">
+
+        <!-- Top Part: Split Paper Stocks Overview -->
+        <div class="fg-split-section">
+          
+          <!-- Left Column: Photographic Paper Swatches -->
+          <div class="fg-split-visual">
+            <div class="fg-hero-img-card">
+              <img src="assets/images/index/paper-stocks-swatches.webp" alt="Fanned-out tactile paper swatches including silk matte, recycled kraft, high-gloss coated, linen bond, and CMYK calibration strip" class="fg-card-img" width="1400" height="900" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Right Column: Description & Stock Cards -->
+          <div class="fg-split-content">
+            <span class="fg-section-badge">
+              <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+              <span>Tactile Materials</span>
+            </span>
+            <h2 id="stocks-heading" class="fg-section-title">
+              Hand-Picked Paper Stocks Engineered for Every Application
+            </h2>
+            <p class="fg-section-desc" style="margin-bottom: 2rem;">
+              The paper you choose sets the mood before a single word is read. We source sustainably certified papers from top mills to guarantee true color rendering and satisfying hand-feel.
+            </p>
+
+            <div class="fg-paper-stocks-grid">
+              
+              <div class="fg-stock-card">
+                <span class="fg-stock-tag">350 GSM Heavy</span>
+                <h3 class="fg-stock-title">Silk Matte Cardstock</h3>
+                <p class="fg-stock-desc">
+                  Low glare, ultra-smooth surface for business cards, lookbooks, and high-end restaurant menus.
+                </p>
+              </div>
+
+              <div class="fg-stock-card">
+                <span class="fg-stock-tag">300 GSM Organic</span>
+                <h3 class="fg-stock-title">100% Recycled Kraft</h3>
+                <p class="fg-stock-desc">
+                  Warm rustic fiber flecks with genuine eco-conscious credibility for tags and artisanal packaging.
+                </p>
+              </div>
+
+              <div class="fg-stock-card">
+                <span class="fg-stock-tag">250 GSM Vivid</span>
+                <h3 class="fg-stock-title">High-Gloss Coated</h3>
+                <p class="fg-stock-desc">
+                  Maximum color saturation and luminous reflection for marketing flyers, photos, and posters.
+                </p>
+              </div>
+
+              <div class="fg-stock-card">
+                <span class="fg-stock-tag">120 GSM Texture</span>
+                <h3 class="fg-stock-title">Linen Textured Bond</h3>
+                <p class="fg-stock-desc">
+                  Subtle woven fabric texture delivering timeless prestige for corporate letterheads and legal briefs.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Lower Part: Bindery & Finishing Craftsmanship Grid -->
+        <div class="fg-finishing-wrap">
+          <div class="fg-section-header text-center" style="margin-top: 5rem; margin-bottom: 2.75rem;">
+            <span class="fg-section-badge fg-section-badge-yellow">
+              <i class="bi bi-gem" aria-hidden="true"></i>
+              <span>Finishing Touches</span>
+            </span>
+            <h3 class="fg-section-title" style="font-size: clamp(1.75rem, 2.5vw, 2.25rem);">
+              Durable Binding, Protective Laminates &amp; Foil Accents
+            </h3>
+            <p class="fg-section-desc">
+              Give your documents longevity and luxury appeal. From waterproof food menus to executive pitch decks, we provide full bindery finishing on-site.
+            </p>
+          </div>
+
+          <div class="fg-options-grid">
+
+            <div class="fg-option-card">
+              <div class="fg-option-icon">
+                <i class="bi bi-journal-album" aria-hidden="true"></i>
+              </div>
+              <h4 class="fg-option-title">Twin-Loop Wire Binding</h4>
+              <p class="fg-option-desc">
+                Opens 360° completely flat for manuals, financial reports, and study guides. Available in silver, matte black, and bronze metal loops.
+              </p>
+              <div class="fg-option-specs">
+                <i class="bi bi-check-circle" aria-hidden="true"></i>
+                <span>Up to 280 sheets capacity</span>
+              </div>
+            </div>
+
+            <div class="fg-option-card">
+              <div class="fg-option-icon">
+                <i class="bi bi-shield-check" aria-hidden="true"></i>
+              </div>
+              <h4 class="fg-option-title">Velvet Soft-Touch Laminate</h4>
+              <p class="fg-option-desc">
+                Non-reflective matte film that provides a luxurious peach-skin touch and complete moisture resistance for menus and card covers.
+              </p>
+              <div class="fg-option-specs">
+                <i class="bi bi-check-circle" aria-hidden="true"></i>
+                <span>Zero glare under ambient light</span>
+              </div>
+            </div>
+
+            <div class="fg-option-card">
+              <div class="fg-option-icon">
+                <i class="bi bi-sparkles" aria-hidden="true"></i>
+              </div>
+              <h4 class="fg-option-title">Metallic Foil Stamping</h4>
+              <p class="fg-option-desc">
+                Gleaming hot-foil accents in Gold, Silver, Copper, or Holographic foil to highlight corporate logos, certificates, and wedding suites.
+              </p>
+              <div class="fg-option-specs">
+                <i class="bi bi-check-circle" aria-hidden="true"></i>
+                <span>Micro-detail crisp embossing</span>
+              </div>
+            </div>
+
+            <div class="fg-option-card">
+              <div class="fg-option-icon">
+                <i class="bi bi-book" aria-hidden="true"></i>
+              </div>
+              <h4 class="fg-option-title">Perfect Book Binding</h4>
+              <p class="fg-option-desc">
+                Square-spine paperback book finish using polyurethane reactive adhesive (PUR) for catalogs, quarterly journals, and published books.
+              </p>
+              <div class="fg-option-specs">
+                <i class="bi bi-check-circle" aria-hidden="true"></i>
+                <span>Bookstore-quality spine</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 5: CURATED PRINT WORK GALLERY (INTERACTIVE LIGHTBOX)
+         ---------------------------------------------------------------------- -->
+    <section id="gallery" class="fg-section fg-section-alt" aria-labelledby="gallery-heading">
+      <div class="fg-container">
+
+        <div class="fg-section-header text-center">
+          <span class="fg-section-badge">
+            <i class="bi bi-images" aria-hidden="true"></i>
+            <span>Recent Work Showcase</span>
+          </span>
+          <h2 id="gallery-heading" class="fg-section-title">
+            Crafted with Care at Our Downtown Print Counter
+          </h2>
+          <p class="fg-section-desc">
+            Explore authentic commercial work produced for local businesses, architects, agencies, and independent creators. Click any project to inspect high-resolution details.
+          </p>
+        </div>
+
+        <div class="fg-gallery-grid">
+
+          <!-- Gallery 1 -->
+          <div class="fg-gallery-item" tabindex="0" role="button" aria-label="View Corporate Identity Suite in lightbox">
+            <img src="assets/images/index/gallery-corporate-identity.webp" alt="Corporate identity branding stationery suite including business cards, letterhead, and presentation folder" class="fg-gallery-img" width="1200" height="900" loading="lazy">
+            <div class="fg-gallery-overlay">
+              <span class="fg-gallery-category">Stationery &amp; Branding</span>
+              <h3 class="fg-gallery-title">Corporate Identity Suite</h3>
+              <div class="fg-gallery-zoom" aria-hidden="true">
+                <i class="bi bi-arrows-angle-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery 2 -->
+          <div class="fg-gallery-item" tabindex="0" role="button" aria-label="View Architectural Blueprints in lightbox">
+            <img src="assets/images/index/gallery-blueprints.webp" alt="Large format architectural engineering elevation plans and schematics" class="fg-gallery-img" width="1200" height="900" loading="lazy">
+            <div class="fg-gallery-overlay">
+              <span class="fg-gallery-category">Large Format Engineering</span>
+              <h3 class="fg-gallery-title">Architectural Blueprints</h3>
+              <div class="fg-gallery-zoom" aria-hidden="true">
+                <i class="bi bi-arrows-angle-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery 3 -->
+          <div class="fg-gallery-item" tabindex="0" role="button" aria-label="View Art Catalogs & Lookbooks in lightbox">
+            <img src="assets/images/index/gallery-art-catalog.webp" alt="Perfect-bound art exhibition catalog and photography lookbook" class="fg-gallery-img" width="1200" height="900" loading="lazy">
+            <div class="fg-gallery-overlay">
+              <span class="fg-gallery-category">Perfect-Bound Books</span>
+              <h3 class="fg-gallery-title">Art Catalogs &amp; Lookbooks</h3>
+              <div class="fg-gallery-zoom" aria-hidden="true">
+                <i class="bi bi-arrows-angle-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery 4 -->
+          <div class="fg-gallery-item" tabindex="0" role="button" aria-label="View Die-Cut Product Labels in lightbox">
+            <img src="assets/images/index/gallery-stickers-labels.webp" alt="Custom waterproof vinyl stickers and packaging labels" class="fg-gallery-img" width="1200" height="900" loading="lazy">
+            <div class="fg-gallery-overlay">
+              <span class="fg-gallery-category">Vinyl Stickers &amp; Packaging</span>
+              <h3 class="fg-gallery-title">Die-Cut Product Labels</h3>
+              <div class="fg-gallery-zoom" aria-hidden="true">
+                <i class="bi bi-arrows-angle-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery 5 -->
+          <div class="fg-gallery-item" tabindex="0" role="button" aria-label="View Event Signage & Posters in lightbox">
+            <img src="assets/images/index/gallery-event-posters.webp" alt="Mounted foam-board event posters with saturated color graphics" class="fg-gallery-img" width="1200" height="900" loading="lazy">
+            <div class="fg-gallery-overlay">
+              <span class="fg-gallery-category">Foam-Board Mounted Prints</span>
+              <h3 class="fg-gallery-title">Event Signage &amp; Posters</h3>
+              <div class="fg-gallery-zoom" aria-hidden="true">
+                <i class="bi bi-arrows-angle-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery 6 -->
+          <div class="fg-gallery-item" tabindex="0" role="button" aria-label="View Water-Resistant Menus in lightbox">
+            <img src="assets/images/index/gallery-laminated-menus.webp" alt="Heavy laminated café and restaurant beverage menu suite" class="fg-gallery-img" width="1200" height="900" loading="lazy">
+            <div class="fg-gallery-overlay">
+              <span class="fg-gallery-category">Velvet Matte Lamination</span>
+              <h3 class="fg-gallery-title">Water-Resistant Menus</h3>
+              <div class="fg-gallery-zoom" aria-hidden="true">
+                <i class="bi bi-arrows-angle-expand"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 6: INSTANT PRINT ESTIMATOR & STORE COUNTER VISIT
+         ---------------------------------------------------------------------- -->
+    <section id="estimator" class="fg-section" aria-labelledby="estimator-heading">
+      <div class="fg-container">
+
+        <div class="fg-section-header text-center">
+          <span class="fg-section-badge fg-section-badge-yellow">
+            <i class="bi bi-calculator-fill" aria-hidden="true"></i>
+            <span>Transparent Pricing</span>
+          </span>
+          <h2 id="estimator-heading" class="fg-section-title">
+            Instant Print &amp; Copy Cost Estimator
+          </h2>
+          <p class="fg-section-desc">
+            Calculate estimated turnaround and price in seconds. No email registration required to see your estimate. Walk-ins always welcome.
+          </p>
+        </div>
+
+        <!-- Estimator Interactive Calculator Card -->
+        <div class="fg-calculator-card">
+
+          <!-- Left: Configurator Form -->
+          <form id="fg-estimator-form" class="fg-form-grid" onsubmit="event.preventDefault();">
+            
+            <div class="fg-form-group">
+              <label for="calc-service" class="fg-form-label">Service Type</label>
+              <select id="calc-service" class="fg-select">
+                <option value="document">Document Copying &amp; Printing</option>
+                <option value="booklet">Wire-Bound Booklets &amp; Manuals</option>
+                <option value="blueprint">Architectural Blueprints (Large Format)</option>
+                <option value="business_cards">Business Cards (Standard 3.5×2")</option>
+                <option value="posters">Event Posters &amp; Signage</option>
+                <option value="stickers">Die-Cut Vinyl Stickers</option>
+              </select>
+            </div>
+
+            <div class="fg-form-group">
+              <label for="calc-stock" class="fg-form-label">Paper Stock</label>
+              <select id="calc-stock" class="fg-select">
+                <option value="silk">Silk Matte Cardstock (350 GSM)</option>
+                <option value="gloss">High-Gloss Coated (250 GSM)</option>
+                <option value="kraft">100% Recycled Kraft Eco-Stock</option>
+                <option value="uncoated">Premium Uncoated Text (100 GSM)</option>
+              </select>
+            </div>
+
+            <div class="fg-form-group">
+              <label for="calc-quantity" class="fg-form-label">Quantity</label>
+              <input type="number" id="calc-quantity" class="fg-input" value="100" min="1" max="10000" step="1">
+            </div>
+
+            <div class="fg-form-group">
+              <label for="calc-binding" class="fg-form-label">Binding &amp; Finishing</label>
+              <select id="calc-binding" class="fg-select">
+                <option value="none">No Binding (Clean Cut Sheets)</option>
+                <option value="wire">Twin-Loop Wire Binding</option>
+                <option value="spiral">Durable Spiral Coil Binding</option>
+                <option value="perfect">Perfect Book Spine Binding</option>
+                <option value="laminate">Velvet Soft-Touch Lamination</option>
+              </select>
+            </div>
+
+            <div class="fg-form-group fg-form-group-full">
+              <label for="calc-speed" class="fg-form-label">Required Turnaround Time</label>
+              <select id="calc-speed" class="fg-select">
+                <option value="standard">Standard Pickup (24–48 Hours)</option>
+                <option value="same_day">🚀 Same-Day Counter Ready</option>
+                <option value="rush_2hr">⚡ 2-Hour Express Emergency Rush</option>
+              </select>
+            </div>
+
+          </form>
+
+          <!-- Right: Dynamic Price & Action Panel -->
+          <div class="fg-calc-result-panel">
+            <span class="fg-calc-result-label">Estimated Order Total</span>
+            <div id="calc-price-display" class="fg-calc-price-display">$34.80</div>
+
+            <div id="calc-turnaround-badge" class="fg-calc-turnaround-badge">
+              <i class="bi bi-clock-history"></i>
+              <span>Standard Pickup (24-48 Hours)</span>
+            </div>
+
+            <div class="fg-calc-perks">
+              <div>✓ Includes complimentary file pre-flight check</div>
+              <div>✓ Color profile calibration verified</div>
+              <div>✓ Walk-in pickup or citywide courier</div>
+            </div>
+
+            <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary" style="width: 100%;">
+              <i class="bi bi-send" aria-hidden="true"></i>
+              <span>Proceed to Order — Get a Quote</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Closing Counter Visit CTA Card -->
+        <div class="fg-closing-cta" style="margin-top: 4.5rem;">
+          <div class="fg-closing-content">
+            <h3 id="closing-heading" class="fg-closing-title">
+              Ready to bring your print project to life?
+            </h3>
+            <p class="fg-closing-desc">
+              Visit our friendly downtown counter or send your files online. We’re open six days a week with free paper consultations and express same-day turnarounds.
+            </p>
+            <div class="fg-closing-actions">
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
+                <i class="bi bi-send" aria-hidden="true"></i>
+                <span>Get a Quote Now</span>
+              </a>
+              <a href="contact.html" class="fg-btn fg-btn-outline" style="color: #FFFFFF; border-color: rgba(255, 255, 255, 0.4);">
+                <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                <span>Get Counter Directions</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="fg-closing-counter-box">
+            <div style="margin-bottom: 1.25rem; border-radius: var(--radius-md); overflow: hidden; max-height: 140px;">
+              <img src="assets/images/index/counter-storefront.webp" alt="PRINTWORKS friendly downtown print shop service counter and production area" style="width: 100%; height: 140px; object-fit: cover; display: block;" width="1920" height="900" loading="lazy">
+            </div>
+            <div class="fg-closing-counter-title">
+              <i class="bi bi-shop" aria-hidden="true"></i>
+              <span>Downtown Print Counter</span>
+            </div>
+            <div class="fg-closing-counter-info">
+              <div><i class="bi bi-pin-map-fill"></i> 450 Printing Plaza, Suite 102, Downtown</div>
+              <div><i class="bi bi-clock-fill"></i> Mon – Fri: 8:00 AM – 7:00 PM</div>
+              <div><i class="bi bi-calendar-event"></i> Saturday: 9:00 AM – 5:00 PM (Sun: Closed)</div>
+              <div><i class="bi bi-telephone-fill"></i> (555) 789-3456 · Direct Counter Phone</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER (5 BALANCED AREAS & WCAG COMPLIANT CONTRAST)
+       ======================================================================== -->
+  <footer class="fg-footer" role="contentinfo">
+    <div class="fg-container">
+      
+      <div class="fg-footer-grid">
+
+        <!-- Column 1: Brand & Identity -->
+        <div class="fg-footer-brand-col">
+          <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+            <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-footer-logo-img" width="220" height="44">
+          </a>
+          <span class="fg-footer-tagline">PRECISION PRINTS. PROUD RESULTS.</span>
+          <p class="fg-footer-desc">
+            Your neighborhood printing, photocopying, binding, and finishing specialists. Dedicated to crisp quality, fast turnarounds, and friendly service.
+          </p>
+          <div class="fg-footer-socials" aria-label="Social media channels">
+            <a href="https://instagram.com" class="fg-social-btn" aria-label="Follow PRINTWORKS on Instagram" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://facebook.com" class="fg-social-btn" aria-label="Follow PRINTWORKS on Facebook" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://linkedin.com" class="fg-social-btn" aria-label="Connect with PRINTWORKS on LinkedIn" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Explore Navigation -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Explore</h3>
+          <ul class="fg-footer-links">
+            <li><a href="index.html" class="fg-footer-link">Home 1 (Main)</a></li>
+            <li><a href="home2.html" class="fg-footer-link">Home 2 (Express)</a></li>
+            <li><a href="about.html" class="fg-footer-link">About</a></li>
+            <li><a href="services.html" class="fg-footer-link">Services</a></li>
+            <li><a href="pricing.html" class="fg-footer-link">Pricing</a></li>
+            <li><a href="blog.html" class="fg-footer-link">Blog</a></li>
+            <li><a href="contact.html" class="fg-footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Core Printing Services -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Services</h3>
+          <ul class="fg-footer-links">
+            <li><a href="services.html#copying" class="fg-footer-link">Document Copying</a></li>
+            <li><a href="services.html#blueprints" class="fg-footer-link">Architectural Plans</a></li>
+            <li><a href="services.html#booklets" class="fg-footer-link">Bound Booklets</a></li>
+            <li><a href="services.html#stationery" class="fg-footer-link">Business Cards</a></li>
+            <li><a href="services.html#stickers" class="fg-footer-link">Vinyl Stickers</a></li>
+            <li><a href="services.html#posters" class="fg-footer-link">Large Posters</a></li>
+            <li><a href="services.html#scanning" class="fg-footer-link">High-Res Scanning</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Paper & Finishes -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Paper &amp; Finishes</h3>
+          <ul class="fg-footer-links">
+            <li><a href="services.html#stocks" class="fg-footer-link">Silk Matte 350gsm</a></li>
+            <li><a href="services.html#stocks" class="fg-footer-link">Recycled Kraft Stock</a></li>
+            <li><a href="services.html#stocks" class="fg-footer-link">High-Gloss Coated</a></li>
+            <li><a href="services.html#finishing" class="fg-footer-link">Twin-Loop Wire Binding</a></li>
+            <li><a href="services.html#finishing" class="fg-footer-link">Soft-Touch Lamination</a></li>
+            <li><a href="services.html#finishing" class="fg-footer-link">Metallic Foil Stamping</a></li>
+            <li><a href="services.html#finishing" class="fg-footer-link">Perfect Spine Binding</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Store & Counter (Say Hello) -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Say Hello</h3>
+          <div class="fg-footer-contact-list">
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              <span>450 Printing Plaza, Suite 102, Downtown District</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-clock-fill" aria-hidden="true"></i>
+              <span>Mon – Fri: 8:00 AM – 7:00 PM<br>Saturday: 9:00 AM – 5:00 PM</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+              <span>(555) 789-3456</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+              <span>hello@printworksprint.com</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="fg-footer-bottom">
+        <div>
+          &copy; 2026 PRINTWORKS PRINT &amp; COPY. All rights reserved. Precision Prints. Proud Results.
+        </div>
+        <div class="fg-footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="accessibility.html">Accessibility Statement</a>
+        </div>
+        <button type="button" class="fg-back-to-top" aria-label="Scroll back to top of page" title="Back to top">
+          <i class="bi bi-arrow-up" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       ACCESSIBLE LOGIN MODAL
+       ======================================================================== -->
+  <div id="login-modal" class="fg-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="fg-modal-card">
+      <button type="button" class="fg-modal-close" aria-label="Close login dialog">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-light" style="height: 38px; margin: 0 auto 0.75rem auto;">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-dark" style="height: 38px; margin: 0 auto 0.75rem auto;">
+        <h2 id="modal-title" style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: var(--text-main);">
+          Customer Portal Login
+        </h2>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">
+          Track your print orders, download invoice proofs, or reorder past jobs.
+        </p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Demo customer account login. Please visit our front counter for portal registration.');">
+        <div class="fg-form-group" style="margin-bottom: 1rem;">
+          <label for="login-email" class="fg-form-label">Email Address</label>
+          <input type="email" id="login-email" class="fg-input" placeholder="name@company.com" required>
+        </div>
+        <div class="fg-form-group" style="margin-bottom: 1.5rem;">
+          <label for="login-password" class="fg-form-label">Password</label>
+          <input type="password" id="login-password" class="fg-input" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="fg-btn fg-btn-primary" style="width: 100%; margin-bottom: 0.75rem;">
+          <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+          <span>Sign In to Your Account</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       ACCESSIBLE GALLERY LIGHTBOX MODAL
+       ======================================================================== -->
+  <div id="gallery-lightbox" class="fg-lightbox-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Print Showcase Lightbox Image View">
+    <button type="button" class="fg-lightbox-close" aria-label="Close image preview">
+      <i class="bi bi-x-lg" aria-hidden="true"></i>
+    </button>
+    <div class="fg-lightbox-content">
+      <img src="assets/images/index/gallery-corporate-identity.webp" alt="Print showcase preview" class="fg-lightbox-img">
+      <div class="fg-lightbox-caption">
+        <div class="fg-lightbox-title">Corporate Identity Suite</div>
+        <div class="fg-lightbox-sub">Stationery &amp; Branding</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+</body>
+</html>
+

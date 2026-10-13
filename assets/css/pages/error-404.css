@@ -1,0 +1,434 @@
+/* ==========================================================================
+   PRINTWORKS PRINT & COPY — 404 ERROR PAGE STYLESHEET
+   Creative "Paper Jam in Tray 404" Fullscreen Experience
+   Fits 100% of viewport without navbar or footer
+   ========================================================================== */
+
+/* Fullscreen Viewport Wrapper */
+.error-page-wrapper {
+  min-height: 100vh;
+  min-height: 100dvh;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  padding: clamp(0.75rem, 2vh, 1.5rem) clamp(1rem, 3vw, 2.5rem);
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  font-family: var(--font-body);
+}
+
+/* Subtle Print Workshop Background Grid */
+.error-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(53, 106, 230, 0.07) 1px, transparent 0),
+    linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+  background-size: 24px 24px, 48px 48px, 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+[data-theme="dark"] .error-bg-grid {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255, 215, 106, 0.06) 1px, transparent 0),
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Top Header Bar */
+.error-top-bar {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+.error-top-brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.error-top-brand img {
+  height: clamp(32px, 4.5vh, 44px);
+  width: auto;
+  object-fit: contain;
+}
+
+.error-top-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Central Creative Stage */
+.error-stage {
+  flex: 1;
+  width: 100%;
+  max-width: 860px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  padding-block: clamp(0.5rem, 1.5vh, 1.25rem);
+}
+
+/* Print Sheet Container (Simulates Physical Printed Document) */
+.error-document-sheet {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 40px -10px rgba(38, 50, 56, 0.12), 0 0 0 1px rgba(53, 106, 230, 0.08);
+  padding: clamp(1.25rem, 2.7vh, 2rem) clamp(1.25rem, 3.5vw, 2.5rem);
+  width: 100%;
+  max-width: 780px;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  animation: sheetPop 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="dark"] .error-document-sheet {
+  box-shadow: 0 18px 45px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 215, 106, 0.15);
+}
+
+@keyframes sheetPop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Printer Calibration Color Bars */
+.cmyk-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: clamp(0.75rem, 1.6vh, 1.25rem);
+}
+
+.cmyk-block {
+  width: clamp(24px, 3.5vw, 36px);
+  height: 6px;
+  border-radius: 3px;
+}
+
+.cmyk-cyan { background-color: #00A8E8; }
+.cmyk-magenta { background-color: #E8175D; }
+.cmyk-yellow { background-color: #FFD76A; }
+.cmyk-black { background-color: #263238; }
+
+[data-theme="dark"] .cmyk-black { background-color: #CBD5E1; }
+
+/* Registration Marks (Crosshair targets at sheet corners) */
+.reg-mark {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--text-muted);
+  border-radius: 50%;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.reg-mark::before,
+.reg-mark::after {
+  content: '';
+  position: absolute;
+  background-color: var(--text-muted);
+}
+
+.reg-mark::before {
+  top: 50%;
+  left: -4px;
+  right: -4px;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
+.reg-mark::after {
+  left: 50%;
+  top: -4px;
+  bottom: -4px;
+  width: 1px;
+  transform: translateX(-50%);
+}
+
+.reg-tl { top: 10px; left: 10px; }
+.reg-tr { top: 10px; right: 10px; }
+.reg-bl { bottom: 10px; left: 10px; }
+.reg-br { bottom: 10px; right: 10px; }
+
+/* Status Pill */
+.error-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.95rem;
+  border-radius: var(--radius-full);
+  background-color: #FFF3CD;
+  color: #856404;
+  font-size: clamp(0.72rem, 1.4vw, 0.82rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: clamp(0.5rem, 1.4vh, 1rem);
+  border: 1px solid rgba(255, 215, 106, 0.6);
+}
+
+[data-theme="dark"] .error-status-badge {
+  background-color: rgba(255, 215, 106, 0.15);
+  color: var(--fg-yellow);
+  border-color: rgba(255, 215, 106, 0.3);
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #E8175D;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 0 rgba(232, 23, 93, 0.7);
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(232, 23, 93, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(232, 23, 93, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(232, 23, 93, 0); }
+}
+
+/* Giant Creative 404 Headline with Printer Visual */
+.error-visual-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  margin-bottom: clamp(0.35rem, 1vh, 0.75rem);
+}
+
+.error-code {
+  font-family: var(--font-heading);
+  font-size: clamp(3.75rem, 10.5vh, 6.25rem);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--fg-blue);
+  letter-spacing: -0.04em;
+  margin: 0;
+  text-shadow: 0 4px 18px rgba(53, 106, 230, 0.15);
+}
+
+[data-theme="dark"] .error-code {
+  color: var(--fg-yellow);
+  text-shadow: 0 4px 20px rgba(255, 215, 106, 0.25);
+}
+
+/* Animated Printer Icon Container */
+.error-printer-illustration {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(2.5rem, 7vh, 4.25rem);
+  color: var(--fg-blue);
+  animation: gentleBob 3s ease-in-out infinite;
+}
+
+[data-theme="dark"] .error-printer-illustration {
+  color: var(--fg-yellow);
+}
+
+@keyframes gentleBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.paper-sheet-jammed {
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  background: var(--fg-yellow);
+  color: #263238;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transform: rotate(12deg);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Error Headings */
+.error-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 2.8vh, 1.85rem);
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: clamp(0.35rem, 1vh, 0.65rem);
+  line-height: 1.25;
+}
+
+.error-desc {
+  font-size: clamp(0.85rem, 1.7vh, 1rem);
+  color: var(--text-muted);
+  max-width: 580px;
+  margin-inline: auto;
+  line-height: 1.5;
+  margin-bottom: clamp(1rem, 2vh, 1.4rem);
+}
+
+/* Creative Job Ticket / Diagnostic Strip */
+.error-job-ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.75rem, 2.5vw, 1.75rem);
+  background-color: var(--bg-alt);
+  border: 1px dashed var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: clamp(0.5rem, 1.2vh, 0.75rem) clamp(0.75rem, 2vw, 1.25rem);
+  margin-bottom: clamp(1rem, 2.2vh, 1.5rem);
+  flex-wrap: wrap;
+  font-size: clamp(0.72rem, 1.35vw, 0.82rem);
+  color: var(--text-muted);
+}
+
+.ticket-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.ticket-item strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* Recovery Action Buttons */
+.error-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.5rem, 1.5vw, 1rem);
+  flex-wrap: wrap;
+}
+
+.error-actions .fg-btn {
+  padding: clamp(0.55rem, 1.2vh, 0.8rem) clamp(1rem, 2vw, 1.4rem);
+  font-size: clamp(0.82rem, 1.5vh, 0.9375rem);
+}
+
+/* Bottom Quick Links Bar (NO FOOTER, just clean return routes) */
+.error-quick-bar {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+.error-quick-label {
+  font-size: clamp(0.7rem, 1.2vh, 0.75rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+
+.error-quick-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  flex-wrap: wrap;
+}
+
+.error-quick-link {
+  font-size: clamp(0.78rem, 1.4vh, 0.875rem);
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.error-quick-link:hover {
+  color: var(--fg-blue);
+}
+
+[data-theme="dark"] .error-quick-link:hover {
+  color: var(--fg-yellow);
+}
+
+.error-quick-dot {
+  color: var(--border-medium);
+  font-size: 0.7rem;
+}
+
+/* RTL Support */
+[dir="rtl"] .paper-sheet-jammed {
+  right: auto;
+  left: -6px;
+  transform: rotate(-12deg);
+}
+
+/* Responsive Adaptations for ultra-compact or short screens */
+@media (max-height: 680px) {
+  .error-page-wrapper {
+    padding: 0.5rem 1rem;
+  }
+  .error-stage {
+    padding-block: 0.25rem;
+  }
+  .error-document-sheet {
+    padding: 0.85rem 1.25rem;
+  }
+  .error-code {
+    font-size: 3.25rem;
+  }
+  .error-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.25rem;
+  }
+  .error-desc {
+    font-size: 0.82rem;
+    margin-bottom: 0.75rem;
+  }
+  .error-job-ticket {
+    display: none; /* Hide ticket on ultra-short screens so everything fits without scroll */
+  }
+}
+
+@media (max-width: 480px) {
+  .error-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  .error-actions .fg-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .error-job-ticket {
+    gap: 0.5rem;
+  }
+}

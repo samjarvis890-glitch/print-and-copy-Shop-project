@@ -1,0 +1,1126 @@
+/* ==========================================================================
+   PRINTWORKS PRINT & COPY — SERVICES PAGE STYLESHEET
+   Practical Service Catalogue & Specification Guide
+   Sections:
+   1. Find the Right Printing Service (Directory Header & Panoramic Strip)
+   2. Document Printing (Large Service Specification Layout)
+   3. Photocopying (Vertical Image & Use-Case Composition)
+   4. Binding & Finishing (Horizontal Finishing Showcase)
+   5. Business & Study Documents (Two-Sided Editorial Comparison)
+   6. Choose Your Print Specifications (Structured Specification Guide)
+   7. Let's Get Your Print Job Started (Quotation-Preparation Panel)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   GLOBAL SERVICES DESIGN UTILITIES
+   -------------------------------------------------------------------------- */
+.sv-section {
+  padding-block: 5.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.sv-section-alt {
+  background-color: var(--bg-alt);
+}
+
+.sv-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  border: 1px solid rgba(53, 106, 230, 0.2);
+  margin-bottom: 1rem;
+}
+
+.sv-tag-yellow {
+  background-color: var(--fg-yellow-light);
+  color: #8C6B00;
+  border-color: rgba(255, 215, 106, 0.4);
+}
+[data-theme="dark"] .sv-tag-yellow {
+  color: var(--fg-yellow);
+}
+
+.sv-tag-mint {
+  background-color: var(--fg-mint-light);
+  color: #156E49;
+  border-color: rgba(191, 234, 216, 0.5);
+}
+[data-theme="dark"] .sv-tag-mint {
+  color: #6EE7B7;
+}
+
+.sv-tag-lavender {
+  background-color: var(--fg-lavender-light);
+  color: #5B3FB8;
+  border-color: rgba(232, 225, 255, 0.5);
+}
+[data-theme="dark"] .sv-tag-lavender {
+  color: #C4B5FD;
+}
+
+.sv-tag-peach {
+  background-color: var(--fg-peach-light);
+  color: #B4461B;
+  border-color: rgba(255, 224, 210, 0.5);
+}
+[data-theme="dark"] .sv-tag-peach {
+  color: #FFA07A;
+}
+
+.sv-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-blue);
+  margin-bottom: 0.875rem;
+}
+
+.sv-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+.sv-desc {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 680px;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 1 — FIND THE RIGHT PRINTING SERVICE (DIRECTORY HEADER)
+   -------------------------------------------------------------------------- */
+.sv-intro-section {
+  padding-top: 3.5rem;
+  padding-bottom: 5.5rem;
+  background: linear-gradient(180deg, var(--bg-page) 0%, rgba(235, 241, 253, 0.35) 100%);
+  border-bottom: 1px solid var(--border-light);
+}
+[data-theme="dark"] .sv-intro-section {
+  background: linear-gradient(180deg, var(--bg-page) 0%, rgba(29, 45, 80, 0.2) 100%);
+}
+
+.sv-intro-header-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 3rem;
+  align-items: end;
+  margin-bottom: 2.75rem;
+}
+
+.sv-intro-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.35rem, 5.2vw, 4.25rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.sv-intro-title-highlight {
+  color: var(--fg-blue);
+  position: relative;
+  display: inline-block;
+}
+
+.sv-intro-title-highlight::after {
+  content: "";
+  position: absolute;
+  bottom: 0.06em;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 0.16em;
+  background-color: var(--fg-yellow);
+  z-index: -1;
+  opacity: 0.85;
+  border-radius: 2px;
+}
+
+.sv-intro-desc-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sv-intro-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Compact Service Directory Index Panel */
+.sv-directory-index-bar {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.sv-index-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-light);
+  color: var(--text-main);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.sv-index-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--fg-blue);
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+}
+
+.sv-index-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-surface);
+  display: grid;
+  place-items: center;
+  font-size: 0.95rem;
+  color: var(--fg-blue);
+  flex-shrink: 0;
+}
+
+.sv-index-text {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+/* Horizontal Photographic Strip */
+.sv-panoramic-strip {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-lg);
+  background-color: var(--bg-surface);
+}
+
+.sv-panoramic-img-wrap {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  max-height: 480px;
+  overflow: hidden;
+}
+
+.sv-panoramic-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sv-panoramic-badge-overlay {
+  position: absolute;
+  bottom: 1.5rem;
+  inset-inline-start: 1.5rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.875rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+[data-theme="dark"] .sv-panoramic-badge-overlay {
+  background: rgba(26, 34, 50, 0.94);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.sv-overlay-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--fg-blue);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+}
+
+.sv-overlay-title {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.sv-overlay-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 2 — DOCUMENT PRINTING (SPECIFICATION LAYOUT)
+   -------------------------------------------------------------------------- */
+.sv-printing-section {
+  background-color: var(--bg-page);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.sv-printing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.sv-printing-media-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.sv-printing-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.sv-printing-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sv-printing-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Structured Specification List */
+.sv-spec-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.sv-spec-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.sv-spec-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--fg-blue);
+}
+
+.sv-spec-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.sv-spec-card-title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+}
+
+.sv-spec-card-desc {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.sv-disclaimer-note {
+  background-color: var(--fg-mint-light);
+  border-inline-start: 4px solid #156E49;
+  border-radius: var(--radius-sm);
+  padding: 0.875rem 1.25rem;
+  font-size: 0.8125rem;
+  color: var(--text-main);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+[data-theme="dark"] .sv-disclaimer-note {
+  border-inline-start-color: #6EE7B7;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 3 — PHOTOCOPYING (VERTICAL IMAGE & USE-CASE COMPOSITION)
+   -------------------------------------------------------------------------- */
+.sv-copying-section {
+  background-color: var(--bg-alt);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.sv-copying-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.sv-copying-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.sv-copy-item {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.sv-copy-item:hover {
+  transform: translateX(4px);
+  border-color: var(--fg-blue);
+}
+[dir="rtl"] .sv-copy-item:hover {
+  transform: translateX(-4px);
+}
+
+.sv-copy-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--fg-yellow-light);
+  color: #8C6B00;
+  display: grid;
+  place-items: center;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+[data-theme="dark"] .sv-copy-icon {
+  color: var(--fg-yellow);
+}
+
+.sv-copy-item-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.sv-copy-item-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Tall Vertical Photograph Column */
+.sv-copying-media-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.sv-copying-img-wrap {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  max-height: 580px;
+  overflow: hidden;
+}
+
+.sv-copying-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sv-copying-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  inset-inline-start: 1.5rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.875rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-md);
+}
+[data-theme="dark"] .sv-copying-badge {
+  background: rgba(26, 34, 50, 0.94);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 4 — BINDING & FINISHING (HORIZONTAL SHOWCASE)
+   -------------------------------------------------------------------------- */
+.sv-binding-section {
+  background-color: var(--bg-page);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.sv-binding-featured-banner {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.sv-binding-banner-content {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sv-binding-banner-img-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  overflow: hidden;
+}
+
+.sv-binding-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Sub-row of Detail Images & Finishing Cards */
+.sv-binding-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.sv-finish-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.sv-finish-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--fg-blue);
+  box-shadow: var(--shadow-md);
+}
+
+.sv-finish-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.sv-finish-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sv-finish-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.sv-finish-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.sv-finish-desc {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.sv-finish-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-subtle);
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-light);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 5 — BUSINESS & STUDY DOCUMENTS (TWO-SIDED COMPARISON)
+   -------------------------------------------------------------------------- */
+.sv-comparison-section {
+  background-color: var(--bg-alt);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.sv-comparison-deck {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+/* Study Column */
+.sv-compare-col {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.sv-col-study {
+  background: linear-gradient(180deg, var(--fg-mint-light) 0%, var(--bg-surface) 100%);
+}
+
+.sv-col-business {
+  background: linear-gradient(180deg, var(--fg-peach-light) 0%, var(--bg-surface) 100%);
+}
+
+[data-theme="dark"] .sv-col-study {
+  background: linear-gradient(180deg, #182C23 0%, var(--bg-surface) 100%);
+}
+
+[data-theme="dark"] .sv-col-business {
+  background: linear-gradient(180deg, #33231B 0%, var(--bg-surface) 100%);
+}
+
+.sv-compare-img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.sv-compare-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sv-compare-body {
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.sv-compare-title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.6rem;
+}
+
+.sv-compare-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.sv-compare-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--border-light);
+}
+
+.sv-compare-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.sv-compare-list-item i {
+  color: var(--fg-blue);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 6 — CHOOSE YOUR PRINT SPECIFICATIONS (STRUCTURED GUIDE)
+   -------------------------------------------------------------------------- */
+.sv-spec-guide-section {
+  background-color: var(--bg-page);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.sv-guide-layout {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Horizontal Specification Matrix Rows */
+.sv-matrix-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sv-matrix-row-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: center;
+  gap: 1.5rem;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.sv-matrix-row-card:hover {
+  border-color: var(--fg-blue);
+  transform: translateX(4px);
+}
+[dir="rtl"] .sv-matrix-row-card:hover {
+  transform: translateX(-4px);
+}
+
+.sv-matrix-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sv-matrix-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.sv-matrix-name {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.sv-matrix-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.sv-opt-chip {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-light);
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Side Preparation Help Card */
+.sv-guide-side-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 100px;
+}
+
+.sv-guide-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.sv-guide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sv-guide-side-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sv-guide-side-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.sv-guide-side-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 7 — LET'S GET YOUR PRINT JOB STARTED (CLOSING PANEL)
+   -------------------------------------------------------------------------- */
+.sv-closing-section {
+  padding-block: 5rem;
+  background-color: var(--bg-page);
+}
+
+.sv-closing-card {
+  background: linear-gradient(135deg, var(--fg-blue-light) 0%, var(--bg-surface) 100%);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  align-items: center;
+}
+[data-theme="dark"] .sv-closing-card {
+  background: linear-gradient(135deg, var(--bg-surface) 0%, #162032 100%);
+}
+
+.sv-closing-content {
+  padding: 4rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sv-closing-checklist-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.sv-closing-check-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-main);
+  background-color: var(--bg-surface);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-light);
+}
+
+.sv-closing-check-item i {
+  color: var(--fg-blue);
+}
+
+.sv-closing-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.sv-closing-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  overflow: hidden;
+}
+
+.sv-closing-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE DESIGN ADAPTATIONS FOR SERVICES PAGE
+   -------------------------------------------------------------------------- */
+/* LARGE TABLET (1025px - 1280px) — iPad Pro 13" & similar */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .sv-section {
+    padding-block: 5rem;
+  }
+
+  .sv-intro-header-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .sv-directory-index-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sv-printing-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .sv-copying-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .sv-binding-featured-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .sv-binding-detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .sv-comparison-deck {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .sv-guide-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .sv-guide-side-card {
+    position: static;
+    max-width: 640px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .sv-closing-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* TABLET (<= 1024px) */
+@media (max-width: 1024px) {
+  .sv-section {
+    padding-block: 4.5rem;
+  }
+
+  .sv-intro-header-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .sv-directory-index-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sv-printing-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .sv-copying-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .sv-copying-media-card {
+    max-width: 540px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .sv-binding-featured-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .sv-binding-detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .sv-comparison-deck {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .sv-guide-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .sv-guide-side-card {
+    position: static;
+    max-width: 580px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .sv-closing-card {
+    grid-template-columns: 1fr;
+  }
+
+  .sv-closing-content {
+    padding: 2.5rem 2rem;
+  }
+
+  .sv-closing-img-wrap {
+    min-height: 280px;
+    max-height: 360px;
+  }
+}
+
+/* MOBILE (<= 768px) */
+@media (max-width: 768px) {
+  .sv-section {
+    padding-block: 3.5rem;
+  }
+
+  .sv-intro-section {
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .sv-intro-title {
+    font-size: 2.25rem;
+    line-height: 1.1;
+  }
+
+  .sv-directory-index-bar {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .sv-spec-list {
+    grid-template-columns: 1fr;
+  }
+
+  .sv-copy-item {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .sv-binding-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sv-matrix-row-card {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .sv-closing-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sv-closing-actions .fg-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* EXTRA SMALL SCREENS (<= 480px) */
+@media (max-width: 480px) {
+  .sv-intro-title {
+    font-size: 1.85rem;
+  }
+
+  .sv-title {
+    font-size: 1.75rem;
+  }
+
+  .sv-binding-banner-content {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .sv-closing-content {
+    padding: 2rem 1.25rem;
+  }
+}

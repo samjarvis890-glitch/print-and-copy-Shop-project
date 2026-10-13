@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printing Prices and Quotations | PRINTWORKS PRINT &amp; COPY</title>
+  <meta name="description" content="PRINTWORKS PRINT &amp; COPY transparent pricing guide. Explore rate structures for document printing, photocopying tiers, binding specimens, quotation factors, and project preparation.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+  <!-- Instant Theme & Direction Initialization (Prevents visible flash) -->
+  <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem('printworks_theme');
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        const savedDir = localStorage.getItem('printworks_dir');
+        if (savedDir) {
+          document.documentElement.setAttribute('dir', savedDir);
+          document.documentElement.setAttribute('lang', savedDir === 'rtl' ? 'ar' : 'en');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages/pricing.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       GLOBAL NAVBAR (DESKTOP 1281px+ | TABLET & MOBILE COLLAPSE 1280px-)
+       ======================================================================== -->
+  <header class="fg-navbar" role="banner">
+    <div class="fg-container fg-navbar-inner">
+
+      <!-- Brand Logo (Left Side) -->
+      <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-light" width="240" height="48">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-dark" width="240" height="48">
+      </a>
+
+      <!-- Desktop Navigation Menu (Visible on 1281px+) -->
+      <nav class="fg-nav-menu" aria-label="Primary Navigation">
+        <!-- Home Dropdown -->
+        <div class="fg-nav-dropdown">
+          <a href="index.html" class="fg-nav-link" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <i class="bi bi-chevron-down" style="font-size: 0.75rem;" aria-hidden="true"></i>
+          </a>
+          <div class="fg-dropdown-menu" role="menu">
+            <a href="index.html" class="fg-dropdown-link" role="menuitem">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home 1 (Main)</span>
+            </a>
+            <a href="home2.html" class="fg-dropdown-link" role="menuitem">
+              <i class="bi bi-layout-text-window-reverse" aria-hidden="true"></i>
+              <span>Home 2 (Express)</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="fg-nav-link">About</a>
+        <a href="services.html" class="fg-nav-link">Services</a>
+        <a href="pricing.html" class="fg-nav-link active" aria-current="page">Pricing</a>
+        <a href="blog.html" class="fg-nav-link">Blog</a>
+        <a href="contact.html" class="fg-nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Side Controls & Actions -->
+      <div class="fg-nav-controls">
+        <!-- Dark Mode Toggle Button -->
+        <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+        </button>
+
+        <!-- RTL / LTR Direction Toggle Button -->
+        <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+          <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+        </button>
+
+        <!-- Desktop Action Button (Get a Quote) -->
+        <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary fg-navbar-cta">
+          <span>Get a Quote</span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Mobile & Tablet Hamburger Menu Toggle (<= 1280px) -->
+        <button type="button" class="fg-hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MOBILE & TABLET DRAWER MENU (MANDATORY RULE COMPLIANCE)
+       Contains ALL navigation items, Home dropdown, utilities & login button
+       ======================================================================== -->
+  <div class="fg-drawer-backdrop" aria-hidden="true"></div>
+
+  <aside id="mobile-drawer" class="fg-drawer" aria-label="Mobile Navigation Drawer" aria-hidden="true">
+    <div class="fg-drawer-header">
+      <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-light" width="200" height="40">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-dark" width="200" height="40">
+      </a>
+      <button type="button" class="fg-drawer-close" aria-label="Close navigation menu">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="fg-drawer-body">
+      <nav class="fg-drawer-nav" aria-label="Mobile Menu Links">
+        <!-- Home Dropdown -->
+        <div class="fg-drawer-dropdown">
+          <button type="button" class="fg-drawer-link fg-drawer-dropdown-btn" aria-expanded="false">
+            <span class="fg-drawer-link-inner">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home</span>
+            </span>
+            <i class="bi bi-chevron-down fg-drawer-chevron" aria-hidden="true"></i>
+          </button>
+          <div class="fg-drawer-submenu">
+            <a href="index.html" class="fg-drawer-sublink">
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+              <span>Home 1</span>
+            </a>
+            <a href="home2.html" class="fg-drawer-sublink">
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+              <span>Home 2</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- About -->
+        <a href="about.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-info-circle" aria-hidden="true"></i>
+            <span>About</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Services -->
+        <a href="services.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-printer" aria-hidden="true"></i>
+            <span>Services</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Pricing (Active) -->
+        <a href="pricing.html" class="fg-drawer-link active" aria-current="page">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-tag" aria-hidden="true"></i>
+            <span>Pricing</span>
+          </span>
+          <i class="bi bi-check2" aria-hidden="true"></i>
+        </a>
+
+        <!-- Blog -->
+        <a href="blog.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-journal-text" aria-hidden="true"></i>
+            <span>Blog</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Contact -->
+        <a href="contact.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+            <span>Contact</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+      <div class="fg-drawer-divider"></div>
+
+      <!-- Drawer Theme & Direction Controls -->
+      <div class="fg-drawer-controls">
+        <span class="fg-drawer-controls-label">Preferences</span>
+        <div class="fg-drawer-toggle-group">
+          <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+            <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drawer Footer with Login Button -->
+    <div class="fg-drawer-footer">
+      <button type="button" class="fg-btn fg-btn-primary fg-login-btn" style="width: 100%;">
+        <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+        <span>Login / Account</span>
+      </button>
+      <a href="contact.html#order-enquiry" class="fg-btn fg-btn-secondary" style="width: 100%;">
+        <i class="bi bi-calculator" aria-hidden="true"></i>
+        <span>Instant Quote</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       MAIN PRICING CONTENT: EXACTLY SEVEN UNIQUE CONTENT SECTIONS
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 1: PRICING DESK — UNDERSTAND YOUR PRINT COSTS
+         Concept: Typographic pricing desk with a vertical price-index motif
+         ---------------------------------------------------------------------- -->
+    <section id="pricing-intro" class="pricing-desk-section" aria-labelledby="pricing-intro-heading">
+      <div class="fg-container">
+
+        <div class="pricing-desk-grid">
+          <!-- Narrow Vertical Price Index Motif -->
+          <nav class="pricing-desk-index" aria-label="Pricing Guide Navigation">
+            <a href="#printing-prices" class="pricing-index-item" title="Jump to Printing Rates">
+              <span class="pricing-index-num">01</span>
+              <span class="pricing-index-label">Print</span>
+            </a>
+            <a href="#copying-prices" class="pricing-index-item" title="Jump to Copying Rates">
+              <span class="pricing-index-num">02</span>
+              <span class="pricing-index-label">Copy</span>
+            </a>
+            <a href="#finishing-prices" class="pricing-index-item" title="Jump to Finishing Rates">
+              <span class="pricing-index-num">03</span>
+              <span class="pricing-index-label">Finish</span>
+            </a>
+            <a href="contact.html#order-enquiry" class="pricing-index-item" title="Request Custom Quote">
+              <span class="pricing-index-num">04</span>
+              <span class="pricing-index-label">Quote</span>
+            </a>
+          </nav>
+
+          <!-- Editorial Heading & Intro Content -->
+          <div class="pricing-desk-content">
+            <span class="pricing-desk-eyebrow">YOUR PRINTING COST GUIDE</span>
+            <h1 id="pricing-intro-heading" class="pricing-desk-heading">
+              <span class="pricing-desk-heading-line">CLEARER PRINTING PRICES.</span>
+              <span class="pricing-desk-heading-line highlight">BETTER-PLANNED PROJECTS.</span>
+            </h1>
+            <p class="pricing-desk-lead">
+              Every print job has different requirements. Explore the factors that influence your total cost and request a quotation based on your actual printing needs.
+            </p>
+            <div class="pricing-desk-actions">
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
+                <span>Request a Quote</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+              <div class="pricing-desk-meta">
+                <div class="pricing-desk-meta-item">
+                  <i class="bi bi-shield-check" aria-hidden="true"></i>
+                  <span>No hidden setup fees</span>
+                </div>
+                <div class="pricing-desk-meta-item">
+                  <i class="bi bi-clock-history" aria-hidden="true"></i>
+                  <span>Same-day estimate response</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Asymmetrical Horizontal Strip / Cropped Image Band -->
+        <div class="pricing-desk-banner-wrap">
+          <img src="assets/images/pricing/pricing-intro.webp" alt="Neatly arranged commercial printing paper sheets and document samples on a pricing desk" class="pricing-desk-banner-img" width="1920" height="850">
+          <div class="pricing-desk-banner-overlay">
+            <h3 class="pricing-desk-banner-overlay-title">
+              <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+              <span>Transparent Project Pricing</span>
+            </h3>
+            <p class="pricing-desk-banner-overlay-text">
+              We calculate your investment using certified paper weights, toner requirements, and finishing specifications. Review our rate structures below.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 2: PRINTING PRICE GUIDE
+         Concept: Clean, structured rate-sheet table with strong editorial typography
+         ---------------------------------------------------------------------- -->
+    <section id="printing-prices" class="pricing-section" aria-labelledby="printing-prices-heading">
+      <div class="fg-container">
+
+        <div class="pricing-section-header">
+          <span class="pricing-badge">
+            <i class="bi bi-table" aria-hidden="true"></i>
+            <span>Rate-Sheet Specifications</span>
+          </span>
+          <h2 id="printing-prices-heading" class="pricing-section-title">
+            PRINTING RATE STRUCTURE &amp; SPECIFICATIONS
+          </h2>
+          <p class="pricing-section-subtitle">
+            Rates reflect paper stocks, ink density, volume scale, and single versus double-sided impressions. Review the essential parameters below before requesting your project estimate.
+          </p>
+        </div>
+
+        <div class="rate-sheet-container">
+          <div class="rate-sheet-table-wrap">
+            <table class="rate-sheet-table">
+              <thead>
+                <tr>
+                  <th scope="col">Printing Requirement</th>
+                  <th scope="col">Specifications to Confirm</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Price Status</th>
+                  <th scope="col">Next Step</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Printing Requirement">
+                    <p class="rate-item-title">Black-and-White Document Printing</p>
+                    <span class="rate-item-tag">High-contrast laser impressions</span>
+                  </td>
+                  <td data-label="Specifications to Confirm">
+                    <div class="rate-item-specs">
+                      80gsm Bond or 100gsm Uncoated; A4 or US Letter; standard text or dense charts.
+                    </div>
+                  </td>
+                  <td data-label="Quantity">
+                    <span class="rate-item-qty">Single copies to bulk sets</span>
+                  </td>
+                  <td data-label="Price Status">
+                    <span class="rate-status-badge rate-status-confirm">
+                      <i class="bi bi-clock-history" aria-hidden="true"></i>
+                      Confirm current rate
+                    </span>
+                  </td>
+                  <td data-label="Next Step">
+                    <a href="contact.html#order-enquiry" class="rate-item-link">
+                      <span>Request Rate</span>
+                      <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="Printing Requirement">
+                    <p class="rate-item-title">Full-Color Digital Printing</p>
+                    <span class="rate-item-tag">Vibrant calibrated CMYK output</span>
+                  </td>
+                  <td data-label="Specifications to Confirm">
+                    <div class="rate-item-specs">
+                      120gsm Premium Smooth, 160gsm Color Copy, or 250gsm Silk; graphic density.
+                    </div>
+                  </td>
+                  <td data-label="Quantity">
+                    <span class="rate-item-qty">10 to 500+ sheets</span>
+                  </td>
+                  <td data-label="Price Status">
+                    <span class="rate-status-badge rate-status-depends">
+                      <i class="bi bi-sliders" aria-hidden="true"></i>
+                      Depends on specifications
+                    </span>
+                  </td>
+                  <td data-label="Next Step">
+                    <a href="contact.html#order-enquiry" class="rate-item-link">
+                      <span>Request Rate</span>
+                      <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="Printing Requirement">
+                    <p class="rate-item-title">Single-Sided Documents (Simplex)</p>
+                    <span class="rate-item-tag">Clean front-only sheet feeding</span>
+                  </td>
+                  <td data-label="Specifications to Confirm">
+                    <div class="rate-item-specs">
+                      Invoices, notices, flyers, letters; standard or heavyweight paper stocks.
+                    </div>
+                  </td>
+                  <td data-label="Quantity">
+                    <span class="rate-item-qty">Short runs or bulk stacks</span>
+                  </td>
+                  <td data-label="Price Status">
+                    <span class="rate-status-badge rate-status-confirm">
+                      <i class="bi bi-clock-history" aria-hidden="true"></i>
+                      Confirm current rate
+                    </span>
+                  </td>
+                  <td data-label="Next Step">
+                    <a href="contact.html#order-enquiry" class="rate-item-link">
+                      <span>Request Rate</span>
+                      <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="Printing Requirement">
+                    <p class="rate-item-title">Double-Sided Documents (Duplex)</p>
+                    <span class="rate-item-tag">Aligned front-and-back pages</span>
+                  </td>
+                  <td data-label="Specifications to Confirm">
+                    <div class="rate-item-specs">
+                      Book chapters, training packets; 100gsm+ opaque paper prevents show-through.
+                    </div>
+                  </td>
+                  <td data-label="Quantity">
+                    <span class="rate-item-qty">20+ pages / multi-copy sets</span>
+                  </td>
+                  <td data-label="Price Status">
+                    <span class="rate-status-badge rate-status-depends">
+                      <i class="bi bi-sliders" aria-hidden="true"></i>
+                      Depends on specifications
+                    </span>
+                  </td>
+                  <td data-label="Next Step">
+                    <a href="contact.html#order-enquiry" class="rate-item-link">
+                      <span>Request Rate</span>
+                      <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="Printing Requirement">
+                    <p class="rate-item-title">Large &amp; Custom Formats (A3 / Tabloid)</p>
+                    <span class="rate-item-tag">Oversized technical &amp; visual media</span>
+                  </td>
+                  <td data-label="Specifications to Confirm">
+                    <div class="rate-item-specs">
+                      Architectural drawings, event posters, spreadsheets; 120gsm to 300gsm card.
+                    </div>
+                  </td>
+                  <td data-label="Quantity">
+                    <span class="rate-item-qty">Individual drawings or full sets</span>
+                  </td>
+                  <td data-label="Price Status">
+                    <span class="rate-status-badge rate-status-quote">
+                      <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+                      Quotation required
+                    </span>
+                  </td>
+                  <td data-label="Next Step">
+                    <a href="contact.html#order-enquiry" class="rate-item-link">
+                      <span>Request Rate</span>
+                      <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="Printing Requirement">
+                    <p class="rate-item-title">Bulk Document Printing &amp; Distribution</p>
+                    <span class="rate-item-tag">High-volume production batches</span>
+                  </td>
+                  <td data-label="Specifications to Confirm">
+                    <div class="rate-item-specs">
+                      500+ sheets, multi-part collated packages, bundled and shrink-wrapped orders.
+                    </div>
+                  </td>
+                  <td data-label="Quantity">
+                    <span class="rate-item-qty">500 to 10,000+ units</span>
+                  </td>
+                  <td data-label="Price Status">
+                    <span class="rate-status-badge rate-status-quote">
+                      <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+                      Quotation required
+                    </span>
+                  </td>
+                  <td data-label="Next Step">
+                    <a href="contact.html#order-enquiry" class="rate-item-link">
+                      <span>Request Rate</span>
+                      <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="rate-sheet-footer-note">
+            <p>
+              <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+              <span>Final quotations depend on your requested print specifications, selected paper weight, color coverage, and volume tier.</span>
+            </p>
+            <a href="contact.html#order-enquiry" class="ticket-secondary-link">
+              <span>Request a printing quote</span>
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 3: PHOTOCOPYING COST GUIDE
+         Concept: Two-part comparison board with oversized quantity scale & spec panel
+         ---------------------------------------------------------------------- -->
+    <section id="copying-prices" class="pricing-section pricing-section-alt" aria-labelledby="copying-prices-heading">
+      <div class="fg-container">
+
+        <div class="pricing-section-header">
+          <span class="pricing-badge">
+            <i class="bi bi-files" aria-hidden="true"></i>
+            <span>Duplication Analysis</span>
+          </span>
+          <h2 id="copying-prices-heading" class="pricing-section-title">
+            PHOTOCOPYING COST &amp; SPECIFICATION GUIDE
+          </h2>
+          <p class="pricing-section-subtitle">
+            Photocopying costs correspond directly to original format type, single versus double-sided orientation, paper weight, and the overall volume tier of your run.
+          </p>
+        </div>
+
+        <div class="copying-board-grid">
+          <!-- Left: Oversized Quantity Scale -->
+          <div class="copying-scale-panel">
+            <div class="copying-scale-header">
+              <h3>Volume Scale &amp; Duplicate Categories</h3>
+              <p>We classify duplication orders by production scope to apply accurate scheduling and counter handling.</p>
+            </div>
+
+            <div class="copying-tiers-list">
+              <div class="copying-tier-card">
+                <div class="copying-tier-top">
+                  <span class="copying-tier-label">
+                    <i class="bi bi-file-earmark" aria-hidden="true"></i>
+                    A few pages
+                  </span>
+                  <span class="rate-status-badge rate-status-confirm">Walk-in Counter</span>
+                </div>
+                <p class="copying-tier-desc">
+                  Quick walk-in copy runs, single certificates, passport copies, identification forms, or reference sheets produced while you wait.
+                </p>
+              </div>
+
+              <div class="copying-tier-card">
+                <div class="copying-tier-top">
+                  <span class="copying-tier-label">
+                    <i class="bi bi-collection" aria-hidden="true"></i>
+                    Multiple sets
+                  </span>
+                  <span class="rate-status-badge rate-status-depends">Batch Confirmation</span>
+                </div>
+                <p class="copying-tier-desc">
+                  Board meeting packets, training manuals, study coursepacks, double-sided collated handouts, and conference presentations.
+                </p>
+              </div>
+
+              <div class="copying-tier-card">
+                <div class="copying-tier-top">
+                  <span class="copying-tier-label">
+                    <i class="bi bi-boxes" aria-hidden="true"></i>
+                    Bulk copying
+                  </span>
+                  <span class="rate-status-badge rate-status-quote">Volume Quote</span>
+                </div>
+                <p class="copying-tier-desc">
+                  Legal case documentation, historical paper archives, corporate manuals, multi-binder training packages, and institutional duplication.
+                </p>
+              </div>
+            </div>
+
+            <div class="copying-tier-notice">
+              <small style="color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+                <i class="bi bi-info-circle" aria-hidden="true"></i>
+                <span>Rates must be confirmed for the specific job based on document condition and collation needs.</span>
+              </small>
+            </div>
+          </div>
+
+          <!-- Right: Specification Panel with Photography -->
+          <div class="copying-spec-panel">
+            <div class="copying-img-wrap">
+              <img src="assets/images/pricing/pricing-copying.webp" alt="Commercial digital photocopier duplicating documents into output tray" width="1000" height="1200" loading="lazy">
+            </div>
+
+            <div class="copying-checklist-card">
+              <h4>
+                <i class="bi bi-clipboard-check" aria-hidden="true"></i>
+                <span>Information to Provide for Your Copying Quote</span>
+              </h4>
+              <ul class="copying-spec-items">
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <div>
+                    <strong>Black-and-White vs. Color:</strong> High-contrast crisp monochrome copying or calibrated full-color laser duplication.
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <div>
+                    <strong>Total Page Count &amp; Sets:</strong> Number of master pages plus how many duplicate sets are required.
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <div>
+                    <strong>Orientation &amp; Paper Size:</strong> Standard A4, larger A3, or custom sizes; single-sided (simplex) or double-sided (duplex).
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  <div>
+                    <strong>Finishing &amp; Collation:</strong> Corner stapling, 2/4-hole punching, or slip-sheet dividers between sets.
+                  </div>
+                </li>
+              </ul>
+
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary" style="width: 100%; justify-content: center;">
+                <span>Confirm Copying Rate</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 4: BINDING AND FINISHING OPTIONS
+         Concept: Horizontal material-specimen strip with dual photography
+         ---------------------------------------------------------------------- -->
+    <section id="finishing-prices" class="pricing-section" aria-labelledby="finishing-prices-heading">
+      <div class="fg-container">
+
+        <div class="pricing-section-header">
+          <span class="pricing-badge">
+            <i class="bi bi-journal-bookmark" aria-hidden="true"></i>
+            <span>Material &amp; Binding Specimens</span>
+          </span>
+          <h2 id="finishing-prices-heading" class="pricing-section-title">
+            BINDING &amp; FINISHING RATE FACTORS
+          </h2>
+          <p class="pricing-section-subtitle">
+            Finishing transforms loose impressions into professional corporate and academic publications. Every binding technique and material selection carries distinct production requirements.
+          </p>
+        </div>
+
+        <!-- Horizontal Photographic Specimen Band -->
+        <div class="specimen-gallery-banner">
+          <div class="specimen-img-card">
+            <img src="assets/images/pricing/pricing-finishing-main.webp" alt="Neatly bound printed documents and corporate booklets arranged on a worktable" width="1400" height="900" loading="lazy">
+            <div class="specimen-caption">
+              <p class="specimen-caption-title">Document Assembly &amp; Twin-Loop Wire</p>
+              <p class="specimen-caption-sub">Professional 360-degree flat-lay presentations</p>
+            </div>
+          </div>
+
+          <div class="specimen-img-card">
+            <img src="assets/images/pricing/pricing-finishing-detail.webp" alt="Macro detail of paper edges, binding coils, and document finishing materials" width="900" height="700" loading="lazy">
+            <div class="specimen-caption">
+              <p class="specimen-caption-title">Precision Trimming &amp; Edge Finishes</p>
+              <p class="specimen-caption-sub">Clean guillotine edges and protective laminates</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horizontal Specimen Cards Grid -->
+        <div class="specimens-strip-grid">
+          <div class="specimen-detail-card">
+            <div>
+              <span class="specimen-card-num">Specimen 01</span>
+              <h3 class="specimen-card-title">Twin-Loop Wire Binding</h3>
+              <p class="specimen-card-text">
+                Durable double-O wire coils that lay flat or fold completely back. Preferred for corporate proposals, reports, and manuals.
+              </p>
+              <ul class="specimen-card-params">
+                <li><i class="bi bi-caret-right-fill" aria-hidden="true"></i> Wire gauge diameter</li>
+                <li><i class="bi bi-caret-right-fill" aria-hidden="true"></i> Clear frosted cover front</li>
+                <li><i class="bi bi-caret-right-fill" aria-hidden="true"></i> Heavy leatherette backing</li>
+              </ul>
+            </div>
+            <span class="rate-status-badge rate-status-quote">Rate upon specification</span>
+          </div>
+
+          <div class="specimen-detail-card">
+            <div>
+              <span class="specimen-card-num">Specimen 02</span>
+              <h3 class="specimen-card-title">Plastic Spiral &amp; Comb</h3>
+              <p class="specimen-card-text">
+                Flexible, resilient binding that allows pages to be added or revised easily. Ideal for student dissertations and workshop guidebooks.
+              </p>
+              <ul class="specimen-card-params">
+                <li><i class="bi bi-caret-right-fill" aria-hidden="true"></i> Total sheet thickness</li>
+                <li><i class="bi bi-caret-right-fill" aria-hidden="true"></i> Quantity of copy sets</li>
+                <li><i class="bi bi-caret-right-fill" aria-hidden="true"></i> Protective card back</li>
+              </ul>
+            </div>
+            <span class="rate-status-badge rate-status-quote">Rate upon specification</span>
+          </div>
+
+          <div class="specimen-detail-card">
+            <div>
+              <span class="specimen-card-num">Specimen 03</span>
+              <h3 class="specimen-card-title">Corner &amp; Edge Stapling</h3>
+              <p class="specimen-card-text">
+                Heavy-duty industrial wire stitching for multi-page notices, meeting memos, and agendas from 2 to 60 sheets.
+              </p>
+              <ul class="specimen-card-params">
+                <li><i class="bi bi-caret-right-fill" aria-hidden="true"></i> Single top-left corner</li>
+                <li><i class="bi bi-caret-right-fill" aria-hidden="true"></i> Dual spine side-staple</li>
+                <li><i class="bi bi-caret-right-fill" aria-hidden="true"></i> Automated set collation</li>
+              </ul>
+            </div>
+            <span class="rate-status-badge rate-status-confirm">Confirm with quantity</span>
+          </div>
+
+          <div class="specimen-detail-card">
+            <div>
+              <span class="specimen-card-num">Specimen 04</span>
+              <h3 class="specimen-card-title">Lamination &amp; Covers</h3>
+              <p class="specimen-card-text">
+                Thermal encapsulation in gloss, matte, or soft-touch velvet to protect menus, ID badges, and reference sheets from moisture.
+              </p>
+              <ul class="specimen-card-params">
+                <li><i class="bi bi-caret-right-fill" aria-hidden="true"></i> 75 to 250 micron film</li>
+                <li><i class="bi bi-caret-right-fill" aria-hidden="true"></i> Sealed edge or flush-cut</li>
+                <li><i class="bi bi-caret-right-fill" aria-hidden="true"></i> A4, A3, or custom sizing</li>
+              </ul>
+            </div>
+            <span class="rate-status-badge rate-status-depends">Depends on micron &amp; size</span>
+          </div>
+        </div>
+
+        <div class="specimen-notice-box">
+          <i class="bi bi-exclamation-circle-fill" aria-hidden="true"></i>
+          <div>
+            <strong>Finishing requirements can affect the final quotation.</strong> Confirm the available options and applicable rate before placing an order.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 5: WHAT SHAPES YOUR FINAL QUOTE?
+         Concept: Large central quotation equation surrounded by five connected factors
+         ---------------------------------------------------------------------- -->
+    <section id="quote-factors" class="pricing-section pricing-section-alt" aria-labelledby="quote-factors-heading">
+      <div class="fg-container">
+
+        <div class="pricing-section-header text-center">
+          <span class="pricing-badge">
+            <i class="bi bi-diagram-3" aria-hidden="true"></i>
+            <span>Cost Composition</span>
+          </span>
+          <h2 id="quote-factors-heading" class="pricing-section-title">
+            WHAT SHAPES YOUR FINAL QUOTE?
+          </h2>
+          <p class="pricing-section-subtitle">
+            Understand how our print specialists evaluate your project details to formulate an accurate, honest quotation without arbitrary surcharges.
+          </p>
+        </div>
+
+        <div class="equation-diagram-wrapper">
+          <!-- Central Quotation Equation Banner -->
+          <div class="equation-banner">
+            <span class="equation-part">Print Requirements</span>
+            <span class="equation-symbol">+</span>
+            <span class="equation-part">Materials</span>
+            <span class="equation-symbol">+</span>
+            <span class="equation-part">Quantity</span>
+            <span class="equation-symbol">+</span>
+            <span class="equation-part">Finishing</span>
+            <span class="equation-symbol">+</span>
+            <span class="equation-part">Job Details</span>
+            <span class="equation-symbol">=</span>
+            <span class="equation-result">Quotation</span>
+          </div>
+
+          <!-- Five Connected Factors Diagram -->
+          <div class="factors-diagram-grid">
+            <!-- Factor 1 -->
+            <div class="factor-node">
+              <span class="factor-node-num">01</span>
+              <div class="factor-icon-wrap">
+                <i class="bi bi-printer-fill" aria-hidden="true"></i>
+              </div>
+              <h3 class="factor-title">Print Requirements</h3>
+              <p class="factor-desc">
+                Color coverage versus monochrome grayscale, single-sided or double-sided impressions, and text density.
+              </p>
+            </div>
+
+            <!-- Factor 2 -->
+            <div class="factor-node">
+              <span class="factor-node-num">02</span>
+              <div class="factor-icon-wrap">
+                <i class="bi bi-layers-fill" aria-hidden="true"></i>
+              </div>
+              <h3 class="factor-title">Materials</h3>
+              <p class="factor-desc">
+                Standard paper sheet sizes (A4, A3, custom), grammage weight (80gsm to 350gsm), and surface texture.
+              </p>
+            </div>
+
+            <!-- Factor 3 -->
+            <div class="factor-node">
+              <span class="factor-node-num">03</span>
+              <div class="factor-icon-wrap">
+                <i class="bi bi-stack" aria-hidden="true"></i>
+              </div>
+              <h3 class="factor-title">Quantity</h3>
+              <p class="factor-desc">
+                Total page count per document, number of duplicate sets, and volume scale advantages for larger runs.
+              </p>
+            </div>
+
+            <!-- Factor 4 -->
+            <div class="factor-node">
+              <span class="factor-node-num">04</span>
+              <div class="factor-icon-wrap">
+                <i class="bi bi-journal-bookmark-fill" aria-hidden="true"></i>
+              </div>
+              <h3 class="factor-title">Finishing</h3>
+              <p class="factor-desc">
+                Wire or spiral binding, corner stapling, hole punching, folding, collating, or protective lamination.
+              </p>
+            </div>
+
+            <!-- Factor 5 -->
+            <div class="factor-node">
+              <span class="factor-node-num">05</span>
+              <div class="factor-icon-wrap">
+                <i class="bi bi-file-earmark-check-fill" aria-hidden="true"></i>
+              </div>
+              <h3 class="factor-title">Job Details</h3>
+              <p class="factor-desc">
+                Print-ready PDF formatting, bleed alignment, turnaround urgency, and specialized handling instructions.
+              </p>
+            </div>
+          </div>
+
+          <div class="equation-confirm-note">
+            <i class="bi bi-shield-check" style="color: var(--fg-blue); margin-inline-end: 0.5rem;" aria-hidden="true"></i>
+            <span>Quotations should be confirmed with our counter team before committing to an order to verify file readiness and turnaround schedules.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 6: PREPARE YOUR PRINT QUOTE
+         Concept: Document-preparation panel with a two-column specification worksheet
+         ---------------------------------------------------------------------- -->
+    <section id="quote-preparation" class="pricing-section" aria-labelledby="quote-preparation-heading">
+      <div class="fg-container">
+
+        <div class="pricing-section-header">
+          <span class="pricing-badge">
+            <i class="bi bi-ui-checks" aria-hidden="true"></i>
+            <span>Specification Worksheet</span>
+          </span>
+          <h2 id="quote-preparation-heading" class="pricing-section-title">
+            PREPARE YOUR PRINT QUOTE SPECIFICATIONS
+          </h2>
+          <p class="pricing-section-subtitle">
+            Gather these eight key project specifications before requesting your price to ensure the fastest and most accurate estimate possible.
+          </p>
+        </div>
+
+        <div class="worksheet-layout">
+          <!-- Left: Specification Worksheet Card -->
+          <div class="worksheet-card">
+            <div class="worksheet-card-header">
+              <div>
+                <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin: 0 0 0.25rem 0;">
+                  Customer Specification Checklist
+                </h3>
+                <span style="font-size: 0.8125rem; color: var(--text-muted);">
+                  Informational guide for requesting rapid commercial quotations
+                </span>
+              </div>
+              <span class="worksheet-doc-badge">Reference Guide</span>
+            </div>
+
+            <div class="worksheet-prompts-grid">
+              <!-- Prompt 1 -->
+              <div class="worksheet-prompt-item">
+                <span class="worksheet-prompt-num">Field 01</span>
+                <h4 class="worksheet-prompt-question">What do you need printed or copied?</h4>
+                <p class="worksheet-prompt-hint">
+                  E.g., corporate booklets, architectural blueprints, flyers, study reports, or certificates.
+                </p>
+              </div>
+
+              <!-- Prompt 2 -->
+              <div class="worksheet-prompt-item">
+                <span class="worksheet-prompt-num">Field 02</span>
+                <h4 class="worksheet-prompt-question">What is the paper size?</h4>
+                <p class="worksheet-prompt-hint">
+                  Standard A4 (210×297mm), A3 (297×420mm), US Letter, or custom millimeter dimensions.
+                </p>
+              </div>
+
+              <!-- Prompt 3 -->
+              <div class="worksheet-prompt-item">
+                <span class="worksheet-prompt-num">Field 03</span>
+                <h4 class="worksheet-prompt-question">Is the job color or black-and-white?</h4>
+                <p class="worksheet-prompt-hint">
+                  Full CMYK color, monochrome grayscale, or specific mixed color insert sheets.
+                </p>
+              </div>
+
+              <!-- Prompt 4 -->
+              <div class="worksheet-prompt-item">
+                <span class="worksheet-prompt-num">Field 04</span>
+                <h4 class="worksheet-prompt-question">How many pages and copies are required?</h4>
+                <p class="worksheet-prompt-hint">
+                  Total page count per master document, and the exact count of duplicate copy sets.
+                </p>
+              </div>
+
+              <!-- Prompt 5 -->
+              <div class="worksheet-prompt-item">
+                <span class="worksheet-prompt-num">Field 05</span>
+                <h4 class="worksheet-prompt-question">Is printing single-sided or double-sided?</h4>
+                <p class="worksheet-prompt-hint">
+                  Simplex (front face only) or duplex (front and back with gutter margins).
+                </p>
+              </div>
+
+              <!-- Prompt 6 -->
+              <div class="worksheet-prompt-item">
+                <span class="worksheet-prompt-num">Field 06</span>
+                <h4 class="worksheet-prompt-question">Is binding or finishing required?</h4>
+                <p class="worksheet-prompt-hint">
+                  Twin-loop wire, plastic comb, corner stapling, hole punching, or loose collated sheets.
+                </p>
+              </div>
+
+              <!-- Prompt 7 -->
+              <div class="worksheet-prompt-item">
+                <span class="worksheet-prompt-num">Field 07</span>
+                <h4 class="worksheet-prompt-question">Do you have a print-ready file?</h4>
+                <p class="worksheet-prompt-hint">
+                  High-resolution PDF, 300 DPI image assets, fonts embedded, and optional 3mm bleed.
+                </p>
+              </div>
+
+              <!-- Prompt 8 -->
+              <div class="worksheet-prompt-item">
+                <span class="worksheet-prompt-num">Field 08</span>
+                <h4 class="worksheet-prompt-question">Are there any special instructions?</h4>
+                <p class="worksheet-prompt-hint">
+                  Specific deadline requirements, packaging preferences, or courier collection.
+                </p>
+              </div>
+            </div>
+
+            <div class="worksheet-action-row">
+              <p class="worksheet-action-helper">
+                Bring these details to our front counter or submit them via our online enquiry form.
+              </p>
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary worksheet-action-btn">
+                <span>Use These Details to Request a Quote</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Sidebar with Photograph and Tips -->
+          <div class="worksheet-sidebar">
+            <div class="worksheet-photo-wrap">
+              <img src="assets/images/pricing/pricing-checklist.webp" alt="Overhead photograph of organized paperwork, specification sheets, and paper swatch cards on a clean desk" width="1200" height="800" loading="lazy">
+            </div>
+
+            <div class="worksheet-tips-card">
+              <h4>
+                <i class="bi bi-lightbulb-fill" aria-hidden="true"></i>
+                <span>Pre-Flight Best Practices</span>
+              </h4>
+              <ul class="worksheet-tips-list">
+                <li>
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>Export documents as PDF/X-1a or PDF/X-4 for reliable color reproduction.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>Ensure full-bleed artwork extends at least 3mm beyond the final page boundary.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2" aria-hidden="true"></i>
+                  <span>Leave at least 10mm inner margin if choosing wire or comb binding.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 7: REQUEST A PRICE FOR YOUR PRINT JOB
+         Concept: Outlined quotation-ticket closing panel with graphic frame
+         ---------------------------------------------------------------------- -->
+    <section id="pricing-closing" class="pricing-section" aria-labelledby="pricing-closing-heading">
+      <div class="fg-container">
+
+        <div class="pricing-ticket-outer">
+          <div class="pricing-ticket-frame">
+            <div class="pricing-ticket-grid">
+              <div>
+                <span class="ticket-header-pill">
+                  <i class="bi bi-ticket-perforated" aria-hidden="true"></i>
+                  <span>Direct Quotation Desk</span>
+                </span>
+                <h2 id="pricing-closing-heading" class="ticket-title">
+                  LET’S PRICE YOUR NEXT PRINT JOB.
+                </h2>
+                <p class="ticket-desc">
+                  Bring your files directly to our service counter or share your project specifications online. Our print team will examine your exact requirements and provide a clear, competitive quotation without delays.
+                </p>
+
+                <div class="ticket-actions-row">
+                  <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
+                    <span>Get a Quote</span>
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </a>
+                  <a href="services.html" class="ticket-secondary-link">
+                    <span>Explore Printing Services</span>
+                    <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+
+                <div class="ticket-counter-meta">
+                  <div class="ticket-meta-box">
+                    <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                    <div>
+                      <strong>Walk-in Counter</strong><br>
+                      450 Printing Plaza, Suite 102
+                    </div>
+                  </div>
+                  <div class="ticket-meta-box">
+                    <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                    <div>
+                      <strong>Operating Hours</strong><br>
+                      Mon – Fri: 8 AM – 7 PM | Sat: 9 AM – 5 PM
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ticket-image-container">
+                <img src="assets/images/pricing/pricing-closing.webp" alt="Professionally printed stationery suite and documents in a commercial print shop" width="1400" height="900" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER (MUST MATCH INDEX.HTML EXACTLY)
+       ======================================================================== -->
+  <footer class="fg-footer" role="contentinfo">
+    <div class="fg-container">
+
+      <div class="fg-footer-grid">
+
+        <!-- Column 1: Brand & Contact Overview -->
+        <div class="fg-footer-col fg-footer-brand-col">
+          <a href="index.html" class="fg-brand fg-footer-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+            <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img" width="220" height="44">
+          </a>
+          <span class="fg-footer-tagline">PRECISION PRINTS. PROUD RESULTS.</span>
+          <p class="fg-footer-desc">
+            Your neighborhood printing, photocopying, binding, and finishing specialists. Dedicated to crisp quality, fast turnarounds, and friendly service.
+          </p>
+          <div class="fg-footer-socials" aria-label="Social media channels">
+            <a href="https://instagram.com" class="fg-social-btn" aria-label="Follow PRINTWORKS on Instagram" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://facebook.com" class="fg-social-btn" aria-label="Follow PRINTWORKS on Facebook" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://linkedin.com" class="fg-social-btn" aria-label="Connect with PRINTWORKS on LinkedIn" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Explore Navigation -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Explore</h3>
+          <ul class="fg-footer-links">
+            <li><a href="index.html" class="fg-footer-link">Home 1 (Main)</a></li>
+            <li><a href="home2.html" class="fg-footer-link">Home 2 (Express)</a></li>
+            <li><a href="about.html" class="fg-footer-link">About</a></li>
+            <li><a href="services.html" class="fg-footer-link">Services</a></li>
+            <li><a href="pricing.html" class="fg-footer-link active" aria-current="page">Pricing</a></li>
+            <li><a href="blog.html" class="fg-footer-link">Blog</a></li>
+            <li><a href="contact.html" class="fg-footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Core Printing Services -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Services</h3>
+          <ul class="fg-footer-links">
+            <li><a href="services.html#printing" class="fg-footer-link">Document Printing</a></li>
+            <li><a href="services.html#copying" class="fg-footer-link">Document Copying</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Bound Booklets</a></li>
+            <li><a href="services.html#business-study" class="fg-footer-link">Business Documents</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Wire &amp; Spiral Binding</a></li>
+            <li><a href="services.html#printing" class="fg-footer-link">Large A3 Posters</a></li>
+            <li><a href="services.html#copying" class="fg-footer-link">High-Res Scanning</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Paper & Finishes -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Paper &amp; Finishes</h3>
+          <ul class="fg-footer-links">
+            <li><a href="services.html#specifications" class="fg-footer-link">Silk Matte 350gsm</a></li>
+            <li><a href="services.html#specifications" class="fg-footer-link">Recycled Kraft Stock</a></li>
+            <li><a href="services.html#specifications" class="fg-footer-link">High-Gloss Coated</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Twin-Loop Wire Binding</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Soft-Touch Lamination</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Metallic Foil Stamping</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Perfect Spine Binding</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Store & Counter (Say Hello) -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Say Hello</h3>
+          <div class="fg-footer-contact-list">
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              <span>450 Printing Plaza, Suite 102, Downtown District</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-clock-fill" aria-hidden="true"></i>
+              <span>Mon – Fri: 8:00 AM – 7:00 PM<br>Saturday: 9:00 AM – 5:00 PM</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+              <span>(555) 789-3456</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+              <span>hello@printworksprint.com</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="fg-footer-bottom">
+        <div>
+          &copy; 2026 PRINTWORKS PRINT &amp; COPY. All rights reserved. Precision Prints. Proud Results.
+        </div>
+        <div class="fg-footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="accessibility.html">Accessibility Statement</a>
+        </div>
+        <button type="button" class="fg-back-to-top" aria-label="Scroll back to top of page" title="Back to top">
+          <i class="bi bi-arrow-up" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       ACCESSIBLE LOGIN MODAL
+       ======================================================================== -->
+  <div id="login-modal" class="fg-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="fg-modal-card">
+      <button type="button" class="fg-modal-close" aria-label="Close login dialog">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-light" style="height: 38px; margin: 0 auto 0.75rem auto;">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-dark" style="height: 38px; margin: 0 auto 0.75rem auto;">
+        <h2 id="modal-title" style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: var(--text-main);">
+          Customer Portal Login
+        </h2>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">
+          Track your print orders, download invoice proofs, or reorder past jobs.
+        </p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Demo customer account login. Please visit our front counter for portal registration.');">
+        <div class="fg-form-group" style="margin-bottom: 1rem;">
+          <label for="login-email" class="fg-form-label">Email Address</label>
+          <input type="email" id="login-email" class="fg-input" placeholder="name@company.com" required>
+        </div>
+        <div class="fg-form-group" style="margin-bottom: 1.5rem;">
+          <label for="login-password" class="fg-form-label">Password</label>
+          <input type="password" id="login-password" class="fg-input" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="fg-btn fg-btn-primary" style="width: 100%; margin-bottom: 0.75rem;">
+          <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+          <span>Sign In to Your Account</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/pages/pricing.js"></script>
+</body>
+</html>

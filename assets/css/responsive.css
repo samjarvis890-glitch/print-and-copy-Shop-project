@@ -1,0 +1,556 @@
+/* ==========================================================================
+   PRINTWORKS PRINT & COPY — RESPONSIVE & ADAPTIVE STYLESHEET
+   Tested Viewports: 320, 360, 375, 390, 414, 430, 480, 576, 768, 820, 834,
+                     1024, 1280, 1366, 1440, 1600, 1920 px
+   
+   GLOBAL NAVIGATION BREAKPOINTS:
+   - Desktop (1281px+): Logo | All Menus | Dark Mode | RTL | Login / CTA
+   - Tablet (768px - 1280px): Logo | Dark Mode | RTL | Hamburger
+   - Mobile (< 768px): Logo | Dark Mode | RTL | Hamburger
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. DESKTOP VIEW (1281px and above)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1281px) {
+  .fg-nav-menu {
+    display: flex !important;
+  }
+  
+  .fg-hamburger-btn {
+    display: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. TABLET & MOBILE GLOBAL NAVIGATION COLLAPSE (1280px and below)
+   Mandatory user rule: Collapse into hamburger menu on all screens <= 1280px.
+   Right side shows: Dark Mode Icon | RTL Icon | Hamburger Menu Button.
+   Desktop navigation links and desktop standalone CTA are hidden from header.
+   ALL items are housed inside the full slide-out drawer menu.
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  .fg-nav-menu {
+    display: none !important;
+  }
+
+  .fg-navbar-cta {
+    display: none !important;
+  }
+
+  .fg-hamburger-btn {
+    display: inline-flex !important;
+  }
+
+  .fg-nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+  }
+
+  /* Grid adaptations for large tablets / small laptops */
+  .fg-services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .fg-footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+    gap: 1.75rem;
+  }
+
+  .fg-hero-grid {
+    gap: 2.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2b. LARGE TABLET FIX (1025px - 1280px) — iPad Pro 13" (1032×1376)
+   Covers the gap between 1024px and 1280px breakpoints.
+   Footer goes to 3-column layout; sections get proper spacing.
+   -------------------------------------------------------------------------- */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Footer: 3-column layout (brand + 2 link columns + contact col below) */
+  .fg-footer-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.25rem;
+    margin-bottom: 3rem;
+  }
+
+  .fg-footer-brand-col {
+    grid-column: 1 / -1; /* Full width brand on top row */
+    max-width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--footer-border);
+  }
+
+  .fg-footer-brand-col > .fg-footer-socials {
+    margin-top: 0;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  /* Footer bottom bar: keep horizontal on large tablets */
+  .fg-footer-bottom {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Services: 3 columns keep well */
+  .fg-services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Stats: keep 4 columns */
+  .fg-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  /* Features: 2×2 grid */
+  .fg-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Gallery: 2 columns */
+  .fg-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Options grid: 2 columns */
+  .fg-options-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Process: 2 columns */
+  .fg-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Closing CTA: horizontal layout */
+  .fg-closing-cta {
+    padding: 3.5rem 2.5rem;
+  }
+
+  /* Section padding */
+  .fg-section {
+    padding-block: 5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLET LANDSCAPE & PORTRAIT (768px - 1024px)
+   Focus on balanced alignment, eliminating off-center CTA bugs.
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .fg-section {
+    padding-block: 4.5rem;
+  }
+
+  /* Hero Section Stacking */
+  .fg-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .fg-hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .fg-hero-lead {
+    margin-inline: auto;
+  }
+
+  .fg-hero-actions {
+    justify-content: center;
+  }
+
+  .fg-hero-chips {
+    justify-content: center;
+  }
+
+  .fg-hero-media {
+    max-width: 680px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  /* Stats Bar */
+  .fg-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Services Grid (2 Columns on Tablet) */
+  .fg-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* 4-Step Process (2 Columns on Tablet) */
+  .fg-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Split Section (Paper Stocks) Stacking */
+  .fg-split-section {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Finishing Options (2 Columns) */
+  .fg-options-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Gallery (2 Columns) */
+  .fg-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Features (2 Columns) */
+  .fg-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Print Estimator Calculator */
+  .fg-calculator-card {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 2.25rem;
+  }
+
+  /* Reviews (Stacked cleanly on tablet) */
+  .fg-reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 640px;
+    margin-inline: auto;
+  }
+
+  /* Closing CTA Banner */
+  .fg-closing-cta {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .fg-closing-desc {
+    margin-inline: auto;
+  }
+
+  .fg-closing-actions {
+    justify-content: center;
+  }
+
+  /* Footer Layout for Tablet: 2 Rows */
+  .fg-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .fg-footer-brand-col {
+    grid-column: span 2;
+    max-width: 480px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. MEDIUM MOBILE (576px - 767px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  :root {
+    --navbar-height: 70px;
+  }
+
+  .fg-section {
+    padding-block: 3.5rem;
+  }
+
+  .fg-section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .fg-section-title {
+    font-size: 1.85rem;
+  }
+
+  .fg-hero {
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .fg-hero-title {
+    font-size: 2.15rem;
+  }
+
+  .fg-hero-floating-badge {
+    position: static;
+    margin-top: 1.25rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Services Grid (Single Column on narrow mobile) */
+  .fg-services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Process Cards */
+  .fg-process-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Paper Stocks & Options */
+  .fg-paper-stocks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fg-options-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Gallery */
+  .fg-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Features */
+  .fg-features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Instant Estimator Calculator Mobile Fix */
+  .fg-calculator-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem 1.25rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .fg-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.15rem;
+    width: 100%;
+  }
+
+  .fg-form-group,
+  .fg-form-group-full,
+  .fg-form-grid > * {
+    grid-column: 1 / -1 !important;
+    width: 100%;
+  }
+
+  .fg-select,
+  .fg-input {
+    width: 100%;
+    min-height: 48px;
+    font-size: 0.9375rem;
+    box-sizing: border-box;
+  }
+
+  .fg-calc-result-panel {
+    padding: 2rem 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .fg-calc-price-display {
+    font-size: 2.75rem;
+  }
+
+  .fg-calc-perks {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Footer */
+  .fg-footer {
+    padding-top: 3.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .fg-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .fg-footer-brand-col {
+    grid-column: span 1;
+  }
+
+  .fg-footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .fg-footer-bottom-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. COMPACT MOBILE (320px - 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .fg-container {
+    padding-inline: 0.75rem;
+  }
+
+  .fg-brand-img {
+    height: 30px;
+    max-width: 140px;
+  }
+
+  .fg-nav-controls {
+    gap: 0.35rem;
+  }
+
+  .fg-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .fg-hero-actions .fg-btn {
+    width: 100%;
+  }
+
+  .fg-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .fg-card-body {
+    padding: 1.25rem;
+  }
+
+  .fg-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .fg-card-footer .fg-btn {
+    width: 100%;
+  }
+
+  .fg-closing-cta {
+    padding: 2rem 1.25rem;
+  }
+
+  .fg-closing-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .fg-closing-actions .fg-btn {
+    width: 100%;
+  }
+
+  /* Estimator Calculator Compact Mobile */
+  .fg-calculator-card {
+    padding: 1.15rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .fg-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .fg-form-group,
+  .fg-form-group-full,
+  .fg-form-grid > * {
+    grid-column: 1 / -1 !important;
+    width: 100%;
+  }
+
+  .fg-select,
+  .fg-input {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.875rem;
+  }
+
+  .fg-calc-result-panel {
+    padding: 1.5rem 1rem;
+  }
+
+  .fg-calc-price-display {
+    font-size: 2.35rem;
+  }
+
+  .fg-calc-perks {
+    font-size: 0.8rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .fg-drawer {
+    max-width: 100%; /* Full screen drawer on compact mobile */
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. RTL (RIGHT-TO-LEFT) SPECIFIC OVERRIDES
+   -------------------------------------------------------------------------- */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .fg-hero-content {
+  align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  [dir="rtl"] .fg-hero-content {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+[dir="rtl"] .fg-card-feature-item i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .fg-drawer-link i.bi-chevron-right {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .fg-btn i.bi-arrow-right {
+  transform: rotate(180deg);
+}
+
+/* --------------------------------------------------------------------------
+   7. ACCESSIBILITY: REDUCED MOTION PREFERENCES
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

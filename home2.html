@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Print Edit — PRINTWORKS PRINT &amp; COPY | Editorial Printing &amp; Document Craft</title>
+  <meta name="description" content="Discover The Print Edit by PRINTWORKS PRINT &amp; COPY. Creative editorial printing guide, paper stock comparisons, binding craftsmanship, and simple print job planning.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+  <!-- Instant Theme & Direction Initialization (Prevents visible flash) -->
+  <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem('printworks_theme');
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        const savedDir = localStorage.getItem('printworks_dir');
+        if (savedDir) {
+          document.documentElement.setAttribute('dir', savedDir);
+          document.documentElement.setAttribute('lang', savedDir === 'rtl' ? 'ar' : 'en');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages/home2.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       GLOBAL NAVBAR (DESKTOP 1281px+ | TABLET & MOBILE COLLAPSE 1280px-)
+       Reused identically from index.html with Home 2 marked as active
+       ======================================================================== -->
+  <header class="fg-navbar" role="banner">
+    <div class="fg-container fg-navbar-inner">
+
+      <!-- Brand Logo (Left Side) -->
+      <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-light" width="240" height="48">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-dark" width="240" height="48">
+      </a>
+
+      <!-- Desktop Navigation Menu (Visible on 1281px+) -->
+      <nav class="fg-nav-menu" aria-label="Primary Navigation">
+        <!-- Home Dropdown -->
+        <div class="fg-nav-dropdown">
+          <a href="home2.html" class="fg-nav-link active" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <i class="bi bi-chevron-down" style="font-size: 0.75rem;" aria-hidden="true"></i>
+          </a>
+          <div class="fg-dropdown-menu" role="menu">
+            <a href="index.html" class="fg-dropdown-link" role="menuitem">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home 1 (Main)</span>
+            </a>
+            <a href="home2.html" class="fg-dropdown-link active" role="menuitem" aria-current="page">
+              <i class="bi bi-layout-text-window-reverse" aria-hidden="true"></i>
+              <span>Home 2 (Express)</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="fg-nav-link">About</a>
+        <a href="services.html" class="fg-nav-link">Services</a>
+        <a href="pricing.html" class="fg-nav-link">Pricing</a>
+        <a href="blog.html" class="fg-nav-link">Blog</a>
+        <a href="contact.html" class="fg-nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Side Controls & Actions -->
+      <div class="fg-nav-controls">
+        <!-- Dark Mode Toggle Button -->
+        <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+        </button>
+
+        <!-- RTL / LTR Direction Toggle Button -->
+        <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+          <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+        </button>
+
+        <!-- Desktop Action Button (Get a Quote) -->
+        <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary fg-navbar-cta">
+          <span>Get a Quote</span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Mobile & Tablet Hamburger Menu Toggle (<= 1280px) -->
+        <button type="button" class="fg-hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MOBILE & TABLET DRAWER MENU (MANDATORY RULE COMPLIANCE)
+       Contains ALL navigation items, Home dropdown, utilities & login button
+       ======================================================================== -->
+  <div class="fg-drawer-backdrop" aria-hidden="true"></div>
+
+  <aside id="mobile-drawer" class="fg-drawer" aria-label="Mobile Navigation Drawer" aria-hidden="true">
+    <div class="fg-drawer-header">
+      <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-light" width="200" height="40">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-dark" width="200" height="40">
+      </a>
+      <button type="button" class="fg-drawer-close" aria-label="Close navigation menu">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="fg-drawer-body">
+      <nav class="fg-drawer-nav" aria-label="Mobile Menu Links">
+        <!-- Home Dropdown -->
+        <div class="fg-drawer-dropdown is-expanded">
+          <button type="button" class="fg-drawer-link fg-drawer-dropdown-btn active" aria-expanded="true">
+            <span class="fg-drawer-link-inner">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home</span>
+            </span>
+            <i class="bi bi-chevron-down fg-drawer-chevron" aria-hidden="true"></i>
+          </button>
+          <div class="fg-drawer-submenu">
+            <a href="index.html" class="fg-drawer-sublink">
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+              <span>Home 1</span>
+            </a>
+            <a href="home2.html" class="fg-drawer-sublink active" aria-current="page">
+              <i class="bi bi-check2" aria-hidden="true"></i>
+              <span>Home 2</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- About -->
+        <a href="about.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-info-circle" aria-hidden="true"></i>
+            <span>About</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Services -->
+        <a href="services.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-printer" aria-hidden="true"></i>
+            <span>Services</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Pricing -->
+        <a href="pricing.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-tag" aria-hidden="true"></i>
+            <span>Pricing</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Blog -->
+        <a href="blog.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-journal-text" aria-hidden="true"></i>
+            <span>Blog</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Contact -->
+        <a href="contact.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+            <span>Contact</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+      <div class="fg-drawer-divider"></div>
+
+      <!-- Drawer Theme & Direction Controls -->
+      <div class="fg-drawer-controls">
+        <span class="fg-drawer-controls-label">Preferences</span>
+        <div class="fg-drawer-toggle-group">
+          <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+            <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drawer Footer with Login Button -->
+    <div class="fg-drawer-footer">
+      <button type="button" class="fg-btn fg-btn-primary fg-login-btn" style="width: 100%;">
+        <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+        <span>Login / Account</span>
+      </button>
+      <a href="contact.html#order-enquiry" class="fg-btn fg-btn-secondary" style="width: 100%;">
+        <i class="bi bi-calculator" aria-hidden="true"></i>
+        <span>Instant Quote</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       MAIN CONTENT: EXACTLY SEVEN UNIQUE EDITORIAL SECTIONS
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 1 — THE PRINT EDIT (EDITORIAL HERO SPREAD)
+         ---------------------------------------------------------------------- -->
+    <section id="editorial-hero" class="h2-section h2-hero-section" aria-labelledby="h2-hero-title">
+      <div class="fg-container">
+
+        <!-- Top Editorial Masthead Bar -->
+        <div class="h2-hero-masthead">
+          <div class="h2-masthead-left">
+            <span class="h2-editorial-tag">THE PRINT EDIT</span>
+            <span class="h2-masthead-vol">CREATIVE PRINTING GUIDE · VOL. 02</span>
+          </div>
+          <div class="h2-masthead-meta">
+            <span><i class="bi bi-clock-history" aria-hidden="true"></i> Same-Day Service</span>
+            <span><i class="bi bi-geo-alt" aria-hidden="true"></i> Downtown Print Studio</span>
+            <span><i class="bi bi-shield-check" aria-hidden="true"></i> Walk-Ins Welcome</span>
+          </div>
+        </div>
+
+        <!-- Headline & Editorial Intro Block -->
+        <div class="h2-hero-headline-block">
+          <h1 id="h2-hero-title" class="h2-hero-title">
+            GOOD IDEAS DESERVE A <span class="h2-hero-title-accent">GREAT PRINT.</span>
+          </h1>
+
+          <div class="h2-hero-sub-grid">
+            <p class="h2-hero-desc">
+              From everyday documents to polished presentations, discover practical ways to bring your ideas onto paper with clarity, texture, and lasting impact.
+            </p>
+            <div class="h2-hero-actions">
+              <a href="services.html" class="fg-btn fg-btn-primary">
+                <span>EXPLORE OUR SERVICES</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-secondary">
+                <span>REQUEST A QUOTE</span>
+                <i class="bi bi-chat-left-dots" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wide Panoramic Photographic Composition -->
+        <div class="h2-hero-panoramic-card h2-paper-shadow">
+          <div class="h2-hero-img-wrap">
+            <img 
+              src="assets/images/home2/home2-hero.webp" 
+              alt="Creative print studio workspace with editorial proofs, sample paper sheets, and printed publications"
+              class="h2-hero-img"
+              width="1920" 
+              height="1080"
+              loading="eager"
+            >
+            <div class="h2-hero-badge-overlay">
+              <div class="h2-badge-icon">
+                <i class="bi bi-journal-bookmark" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="h2-badge-text-title">Studio Quality Output</div>
+                <div class="h2-badge-text-sub">Precision Digital Press</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial Specifications Strip -->
+          <div class="h2-hero-specs-strip">
+            <div class="h2-spec-item">
+              <span class="h2-spec-label">Print Turnaround</span>
+              <span class="h2-spec-val">Same-day express or 24h standard</span>
+            </div>
+            <div class="h2-spec-item">
+              <span class="h2-spec-label">Minimum Order</span>
+              <span class="h2-spec-val">From 1 single copy to 1,000+ sets</span>
+            </div>
+            <div class="h2-spec-item">
+              <span class="h2-spec-label">Curated Paper Stocks</span>
+              <span class="h2-spec-val">80gsm to 350gsm premium cards</span>
+            </div>
+            <div class="h2-spec-item">
+              <span class="h2-spec-label">Hardcopy Proofing</span>
+              <span class="h2-spec-val">Sample prints inspected before run</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 2 — THE PRINTING NOTEBOOK (EDITORIAL PANELS)
+         ---------------------------------------------------------------------- -->
+    <section id="printing-notebook" class="h2-section h2-notebook-section" aria-labelledby="notebook-title">
+      <div class="fg-container">
+
+        <!-- Section Header -->
+        <div class="h2-section-header">
+          <div class="h2-section-eyebrow">
+            <i class="bi bi-book-half" aria-hidden="true"></i>
+            <span>THE PRINTING NOTEBOOK</span>
+          </div>
+          <h2 id="notebook-title" class="h2-section-title">
+            Document formats tailored to your purpose.
+          </h2>
+          <p class="h2-section-lead">
+            Whether for daily office workflow, scholarly coursework, executive decisions, or high-stakes pitches, explore how structured formatting elevates every document.
+          </p>
+        </div>
+
+        <!-- Horizontal Magazine-Style Feature Strip Layout -->
+        <div class="h2-notebook-layout">
+
+          <!-- Left Featured Overview Card -->
+          <div class="h2-notebook-featured-card">
+            <div class="h2-notebook-img-wrap">
+              <img 
+                src="assets/images/home2/home2-notebook.webp" 
+                alt="Neatly arranged stationery, spiral notebooks, and printed reports on a clean wooden studio surface"
+                class="h2-notebook-img"
+                width="1400" 
+                height="900"
+                loading="lazy"
+              >
+            </div>
+            <div class="h2-notebook-featured-content">
+              <div class="h2-notebook-meta">
+                <span class="h2-editorial-tag h2-editorial-tag-yellow">CORE CATEGORIES</span>
+                <span style="font-size: 0.8125rem; color: var(--text-subtle);">Document Library</span>
+              </div>
+              <h3 class="h2-notebook-featured-title">
+                Crafted for clarity, durability, and reader engagement.
+              </h3>
+              <p class="h2-notebook-featured-desc">
+                Different documents have distinct reading ergonomics. A report needs clean page turns, while presentation handouts require immediate visual punch and tactile heft.
+              </p>
+              <div class="h2-notebook-highlights">
+                <div class="h2-highlight-box">
+                  <span class="h2-highlight-title">Crisp Text Rendering</span>
+                  <span class="h2-highlight-desc">1200 DPI razor-sharp black &amp; color typography</span>
+                </div>
+                <div class="h2-highlight-box">
+                  <span class="h2-highlight-title">Precision Binding</span>
+                  <span class="h2-highlight-desc">Lie-flat wire, comb, saddle stitch, and thermal spine</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Four Editorial Category Panels -->
+          <div class="h2-notebook-panels">
+
+            <!-- Category 1: Everyday Documents -->
+            <article class="h2-notebook-panel-card">
+              <div class="h2-panel-index">01</div>
+              <div class="h2-panel-content">
+                <div class="h2-panel-top">
+                  <h3 class="h2-panel-title">Everyday Documents</h3>
+                  <span class="h2-editorial-tag h2-editorial-tag-mint">High Volume</span>
+                </div>
+                <p class="h2-panel-desc">
+                  High-speed double-sided copying, training dossiers, invoices, policy handbooks, and clear administrative paperwork with accurate collation and clean corner staples.
+                </p>
+                <div class="h2-panel-footer">
+                  <span class="h2-panel-specs"><i class="bi bi-file-earmark-text"></i> Standard 80–100gsm Bond · Black &amp; White or Color</span>
+                  <a href="services.html" class="h2-panel-link">
+                    <span>Explore details</span>
+                    <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Category 2: Study Materials -->
+            <article class="h2-notebook-panel-card">
+              <div class="h2-panel-index">02</div>
+              <div class="h2-panel-content">
+                <div class="h2-panel-top">
+                  <h3 class="h2-panel-title">Study Materials</h3>
+                  <span class="h2-editorial-tag h2-editorial-tag-yellow">Academic</span>
+                </div>
+                <p class="h2-panel-desc">
+                  Academic dissertations, lecture packs, research papers, and revision workbooks bound with durable coil or wire for comfortable 360-degree flat folding on student desks.
+                </p>
+                <div class="h2-panel-footer">
+                  <span class="h2-panel-specs"><i class="bi bi-mortarboard"></i> 90–120gsm Smooth Stock · Frosted Protective Front</span>
+                  <a href="services.html" class="h2-panel-link">
+                    <span>Explore details</span>
+                    <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Category 3: Business Reports -->
+            <article class="h2-notebook-panel-card">
+              <div class="h2-panel-index">03</div>
+              <div class="h2-panel-content">
+                <div class="h2-panel-top">
+                  <h3 class="h2-panel-title">Business Reports</h3>
+                  <span class="h2-editorial-tag h2-editorial-tag-lavender">Corporate</span>
+                </div>
+                <p class="h2-panel-desc">
+                  Annual financial reviews, strategic audits, board room binders, and executive briefs featuring custom dividers, tabs, acetate covers, and solid card backs.
+                </p>
+                <div class="h2-panel-footer">
+                  <span class="h2-panel-specs"><i class="bi bi-briefcase"></i> 120–160gsm Silk Matte · Twin-Loop Silver Wire</span>
+                  <a href="services.html" class="h2-panel-link">
+                    <span>Explore details</span>
+                    <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Category 4: Presentation Handouts -->
+            <article class="h2-notebook-panel-card">
+              <div class="h2-panel-index">04</div>
+              <div class="h2-panel-content">
+                <div class="h2-panel-top">
+                  <h3 class="h2-panel-title">Presentation Handouts</h3>
+                  <span class="h2-editorial-tag h2-editorial-tag-peach">Client Pitch</span>
+                </div>
+                <p class="h2-panel-desc">
+                  Landscape leave-behinds, portfolio catalogs, marketing one-sheets, and conference takeaways printed with rich saturation and full-bleed borderless precision.
+                </p>
+                <div class="h2-panel-footer">
+                  <span class="h2-panel-specs"><i class="bi bi-easel"></i> 250–350gsm Heavy Art Card · Satin Finish</span>
+                  <a href="services.html" class="h2-panel-link">
+                    <span>Explore details</span>
+                    <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 3 — PAPER MAKES A DIFFERENCE (SPLIT COMPARISON)
+         ---------------------------------------------------------------------- -->
+    <section id="paper-difference" class="h2-section h2-paper-section" aria-labelledby="paper-title">
+      <div class="fg-container">
+
+        <div class="h2-paper-split-layout">
+
+          <!-- Left Side: Explanatory Content & Comparison Matrix -->
+          <div class="h2-paper-copy-block">
+            <div class="h2-section-eyebrow">
+              <i class="bi bi-layers" aria-hidden="true"></i>
+              <span>MATERIAL INTELLIGENCE</span>
+            </div>
+            <h2 id="paper-title" class="h2-section-title">
+              Paper makes all the difference in your hands.
+            </h2>
+            <p class="h2-section-lead">
+              The weight, texture, and brightness of paper transform how a reader perceives your information. Explore the core variables before choosing your stock.
+            </p>
+
+            <!-- Structured Comparison Matrix -->
+            <div class="h2-paper-matrix">
+              <!-- Point 1: Paper Size -->
+              <div class="h2-matrix-card">
+                <div class="h2-matrix-header">
+                  <div class="h2-matrix-icon"><i class="bi bi-aspect-ratio"></i></div>
+                  <h3 class="h2-matrix-title">Paper Size</h3>
+                </div>
+                <p class="h2-matrix-list">
+                  <strong>A4 &amp; US Letter:</strong> Universal standard for office paperwork and reports.<br>
+                  <strong>A3 &amp; Tabloid:</strong> Ideal for schematics, financial spreadsheets, and posters.<br>
+                  <strong>A5 Booklets:</strong> Compact pocket guides and event programs.
+                </p>
+              </div>
+
+              <!-- Point 2: Paper Weight -->
+              <div class="h2-matrix-card">
+                <div class="h2-matrix-header">
+                  <div class="h2-matrix-icon"><i class="bi bi-speedometer2"></i></div>
+                  <h3 class="h2-matrix-title">Paper Weight (GSM)</h3>
+                </div>
+                <p class="h2-matrix-list">
+                  <strong>80gsm:</strong> Everyday standard copy bond.<br>
+                  <strong>100–120gsm:</strong> Smooth premium stationery, zero show-through.<br>
+                  <strong>250–350gsm:</strong> Sturdy cardstock for covers, cards, and invites.
+                </p>
+              </div>
+
+              <!-- Point 3: Surface & Finish -->
+              <div class="h2-matrix-card">
+                <div class="h2-matrix-header">
+                  <div class="h2-matrix-icon"><i class="bi bi-palette"></i></div>
+                  <h3 class="h2-matrix-title">Surface &amp; Finish</h3>
+                </div>
+                <p class="h2-matrix-list">
+                  <strong>Uncoated Bond:</strong> Natural tooth, effortless to write on.<br>
+                  <strong>Silk Matte:</strong> Non-glare, velvety touch, sharp readability.<br>
+                  <strong>Gloss Coated:</strong> Vibrant colors and rich photograph depth.
+                </p>
+              </div>
+
+              <!-- Point 4: Intended Use & Availability -->
+              <div class="h2-matrix-card">
+                <div class="h2-matrix-header">
+                  <div class="h2-matrix-icon"><i class="bi bi-check-circle"></i></div>
+                  <h3 class="h2-matrix-title">Intended Use &amp; Stock</h3>
+                </div>
+                <p class="h2-matrix-list">
+                  <strong>Everyday Utility:</strong> Quick copies and internal packets.<br>
+                  <strong>Executive Presentation:</strong> Heavy covers, premium bind.<br>
+                  <strong>In-Stock Guarantee:</strong> Common weights kept ready at our counter.
+                </p>
+              </div>
+            </div>
+
+            <!-- Practical Counter Note -->
+            <div class="h2-paper-note">
+              <i class="bi bi-info-circle-fill" style="font-size: 1.15rem; color: #156E49;" aria-hidden="true"></i>
+              <div>
+                <strong>Counter Swatch Inspection:</strong> Feel physical weight swatches at our front desk anytime before finalizing your full print order.
+              </div>
+            </div>
+
+            <div>
+              <a href="services.html" class="fg-btn fg-btn-primary">
+                <span>EXPLORE PRINTING OPTIONS</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Side: Large Paper Sample Photograph -->
+          <div class="h2-paper-showcase">
+            <div class="h2-paper-frame">
+              <div class="h2-paper-img-wrap">
+                <img 
+                  src="assets/images/home2/home2-paper.webp" 
+                  alt="High resolution commercial photograph of tactile fanned-out paper stocks, weights, and fine textures"
+                  class="h2-paper-img"
+                  width="1400" 
+                  height="900"
+                  loading="lazy"
+                >
+              </div>
+              <div class="h2-paper-swatches-badge">
+                <div class="h2-swatch-badge-title">Tactile Swatch Library</div>
+                <div class="h2-swatch-badge-desc">18+ Curated Paper Stocks in Stock</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 4 — FROM FILE TO FINISHED PAGE (PROCESS TIMELINE)
+         ---------------------------------------------------------------------- -->
+    <section id="print-workflow" class="h2-section h2-workflow-section" aria-labelledby="workflow-title">
+      <div class="fg-container">
+
+        <!-- Section Header -->
+        <div class="h2-section-header text-center">
+          <div class="h2-section-eyebrow">
+            <i class="bi bi-diagram-3" aria-hidden="true"></i>
+            <span>PRODUCTION JOURNEY</span>
+          </div>
+          <h2 id="workflow-title" class="h2-section-title">
+            From file to finished page.
+          </h2>
+          <p class="h2-section-lead">
+            A transparent 5-step path from your digital file or hardcopy original to a crisply produced, neatly packaged document ready for your audience.
+          </p>
+        </div>
+
+        <!-- Horizontal Process Timeline (Converts to Vertical on Mobile) -->
+        <div class="h2-workflow-timeline-wrapper">
+          <div class="h2-timeline-track">
+
+            <!-- Step 1 -->
+            <div class="h2-timeline-step-card">
+              <div class="h2-step-num-bubble">01</div>
+              <h3 class="h2-step-title">Prepare Your Document</h3>
+              <p class="h2-step-desc">
+                Save your file as a PDF with embedded fonts, high-resolution imagery, and clean page margins for crisp border trimming.
+              </p>
+              <div class="h2-step-tip">
+                <i class="bi bi-lightbulb" aria-hidden="true"></i>
+                <span>PDF export is recommended</span>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="h2-timeline-step-card">
+              <div class="h2-step-num-bubble">02</div>
+              <h3 class="h2-step-title">Confirm Specifications</h3>
+              <p class="h2-step-desc">
+                Specify single or double-sided printing, full-color or black-and-white, and select your preferred paper weight at our counter.
+              </p>
+              <div class="h2-step-tip">
+                <i class="bi bi-sliders" aria-hidden="true"></i>
+                <span>Staff assist with specs</span>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="h2-timeline-step-card">
+              <div class="h2-step-num-bubble">03</div>
+              <h3 class="h2-step-title">Choose Required Quantity</h3>
+              <p class="h2-step-desc">
+                From a single proof copy to several hundred collated sets. We accommodate both short-run tests and volume runs.
+              </p>
+              <div class="h2-step-tip">
+                <i class="bi bi-box-seam" aria-hidden="true"></i>
+                <span>No minimum page penalty</span>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="h2-timeline-step-card">
+              <div class="h2-step-num-bubble">04</div>
+              <h3 class="h2-step-title">Discuss Finishing Options</h3>
+              <p class="h2-step-desc">
+                Select your binding style—wire, plastic comb, saddle stitch, hole punch, or protective clear acetate covers.
+              </p>
+              <div class="h2-step-tip">
+                <i class="bi bi-scissors" aria-hidden="true"></i>
+                <span>Durable lie-flat binds</span>
+              </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="h2-timeline-step-card">
+              <div class="h2-step-num-bubble">05</div>
+              <h3 class="h2-step-title">Confirm Quote &amp; Next Steps</h3>
+              <p class="h2-step-desc">
+                Review transparent pricing and turnaround timeframe before production starts. Collect in-store or request local delivery.
+              </p>
+              <div class="h2-step-tip">
+                <i class="bi bi-check2-circle" aria-hidden="true"></i>
+                <span>Clear upfront estimates</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Workflow Equipment & Consultation Banner -->
+        <div class="h2-workflow-banner">
+          <div class="h2-workflow-banner-img-wrap">
+            <img 
+              src="assets/images/home2/home2-workflow.webp" 
+              alt="Print shop specialist and client reviewing digital layout proofs and test sheets at the counter with digital press in background"
+              class="h2-workflow-banner-img"
+              width="1400" 
+              height="900"
+              loading="lazy"
+            >
+          </div>
+          <div class="h2-workflow-banner-content">
+            <span class="h2-editorial-tag h2-editorial-tag-mint" style="margin-bottom: 0.75rem;">COUNTER CONSULTATION</span>
+            <h3 class="h2-workflow-banner-title">Bring your files on USB or email them ahead.</h3>
+            <p class="h2-workflow-banner-desc">
+              We welcome walk-in customers with flash drives, hardcopy originals for photocopying, or files sent via our enquiry form. Our counter specialists review page dimensions and proofing on the spot before press.
+            </p>
+            <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
+              <span>GET A QUOTE FOR YOUR JOB</span>
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 5 — SMALL DETAILS, BETTER PRESENTATION (ASYMMETRICAL GALLERY)
+         ---------------------------------------------------------------------- -->
+    <section id="finishing-details" class="h2-section h2-finishing-section" aria-labelledby="finishing-title">
+      <div class="fg-container">
+
+        <!-- Section Header -->
+        <div class="h2-section-header">
+          <div class="h2-section-eyebrow">
+            <i class="bi bi-patch-check" aria-hidden="true"></i>
+            <span>BINDING &amp; CRAFTSMANSHIP</span>
+          </div>
+          <h2 id="finishing-title" class="h2-section-title">
+            Small details make for a better presentation.
+          </h2>
+          <p class="h2-section-lead">
+            A document isn't finished until its edges are clean, pages are bound securely, and protective covers ensure it arrives on the client's desk looking pristine.
+          </p>
+        </div>
+
+        <!-- Asymmetrical Editorial Gallery Layout -->
+        <div class="h2-finishing-grid">
+
+          <!-- Left Side: Large Document Photograph Card -->
+          <div class="h2-finishing-main-card">
+            <div class="h2-finishing-main-img-wrap">
+              <img 
+                src="assets/images/home2/home2-finishing-main.webp" 
+                alt="Neatly bound corporate presentation booklet with durable wire loop spine and matte cover sheet"
+                class="h2-finishing-main-img"
+                width="1400" 
+                height="1000"
+                loading="lazy"
+              >
+            </div>
+            <div class="h2-finishing-main-content">
+              <span class="h2-editorial-tag h2-editorial-tag-lavender" style="margin-bottom: 0.75rem; width: fit-content;">SHOWCASE FINISH</span>
+              <h3 class="h2-finishing-main-title">Wire-Bound Document Portfolios</h3>
+              <p class="h2-finishing-main-desc">
+                Ideal for formal tender submissions, engineering dossiers, and executive proposals. Lie-flat convenience enables easy desktop review and margin note-taking without stressing the spine.
+              </p>
+              <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+                <span style="font-size: 0.8125rem; color: var(--text-muted);"><i class="bi bi-shield-check"></i> Standard 3:1 &amp; 2:1 pitch metal wire in black, white, and silver</span>
+                <a href="services.html" class="fg-btn fg-btn-secondary" style="padding: 0.45rem 1rem; font-size: 0.8125rem;">
+                  <span>VIEW SERVICES</span>
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Smaller Supporting Detail Photo + Options -->
+          <div class="h2-finishing-side-column">
+
+            <!-- Detail Photo Card -->
+            <div class="h2-finishing-detail-card">
+              <div class="h2-detail-img-wrap">
+                <img 
+                  src="assets/images/home2/home2-finishing-detail.webp" 
+                  alt="Macro close-up photograph of staple alignment, precision trimming, and clean paper edges"
+                  class="h2-detail-img"
+                  width="1000" 
+                  height="750"
+                  loading="lazy"
+                >
+              </div>
+              <div class="h2-detail-content">
+                <h3 class="h2-detail-title">Precision Edge Trimming</h3>
+                <p class="h2-detail-desc">
+                  Hydraulic guillotine cutting guarantees razor-straight borders and clean corners across multipage booklets.
+                </p>
+              </div>
+            </div>
+
+            <!-- Finishing Feature Cards -->
+            <div class="h2-finishing-options-deck">
+
+              <!-- Feature 1 -->
+              <div class="h2-finish-opt-box">
+                <div class="h2-finish-opt-icon"><i class="bi bi-file-earmark-check"></i></div>
+                <h4 class="h2-finish-opt-title">Stapled Document Sets</h4>
+                <p class="h2-finish-opt-desc">
+                  Heavy-duty corner and dual saddle stitching for multi-page agendas, notices, and handbooks up to 60 sheets.
+                </p>
+              </div>
+
+              <!-- Feature 2 -->
+              <div class="h2-finish-opt-box">
+                <div class="h2-finish-opt-icon"><i class="bi bi-journals"></i></div>
+                <h4 class="h2-finish-opt-title">Protective Cover Sheets</h4>
+                <p class="h2-finish-opt-desc">
+                  Frosted matte or crystal-clear acetate front covers paired with premium black linen backings for spill resistance.
+                </p>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="h2-finish-opt-box">
+                <div class="h2-finish-opt-icon"><i class="bi bi-layers-half"></i></div>
+                <h4 class="h2-finish-opt-title">Satin &amp; Gloss Lamination</h4>
+                <p class="h2-finish-opt-desc">
+                  Heat-sealed protective lamination from 75 to 250 microns for badges, reusable menus, and wipeable charts.
+                </p>
+              </div>
+
+              <!-- Feature 4 -->
+              <div class="h2-finish-opt-box">
+                <div class="h2-finish-opt-icon"><i class="bi bi-folder2-open"></i></div>
+                <h4 class="h2-finish-opt-title">Custom Folding &amp; Scoring</h4>
+                <p class="h2-finish-opt-desc">
+                  Bi-fold, tri-fold, and Z-fold brochures with pre-scored crease lines to prevent ink cracking along folds.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 6 — A CLEARER WAY TO PLAN YOUR PRINT JOB (CHECKLIST PANEL)
+         ---------------------------------------------------------------------- -->
+    <section id="job-planner" class="h2-section h2-checklist-section" aria-labelledby="checklist-title">
+      <div class="fg-container">
+
+        <!-- Section Header -->
+        <div class="h2-section-header text-center">
+          <div class="h2-section-eyebrow">
+            <i class="bi bi-clipboard-check" aria-hidden="true"></i>
+            <span>JOB PREPARATION</span>
+          </div>
+          <h2 id="checklist-title" class="h2-section-title">
+            A clearer way to plan your print job.
+          </h2>
+          <p class="h2-section-lead">
+            Save time and ensure an accurate quote. Review these six key questions before contacting our print counter or submitting an online enquiry.
+          </p>
+        </div>
+
+        <!-- Document-Inspired Checklist Panel with Contrasting Sidebar -->
+        <div class="h2-checklist-card-frame">
+
+          <!-- Contrasting Colored Sidebar -->
+          <div class="h2-checklist-sidebar">
+            <div class="h2-checklist-sidebar-top">
+              <span class="h2-editorial-tag h2-editorial-tag-lavender">PLANNER GUIDE</span>
+              <div class="h2-sidebar-img-wrap">
+                <img 
+                  src="assets/images/home2/home2-checklist.webp" 
+                  alt="Clipboard with printed job specification checklist, metal pen, and architectural ruler on desk"
+                  class="h2-sidebar-img"
+                  width="1200" 
+                  height="900"
+                  loading="lazy"
+                >
+              </div>
+              <h3 class="h2-sidebar-title">Counter-Ready Specifications</h3>
+              <p class="h2-sidebar-desc">
+                Having your answers ready helps us provide an immediate, itemized estimate with zero guesswork.
+              </p>
+
+              <div class="h2-sidebar-tips-list">
+                <div class="h2-sidebar-tip-item">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Double-sided saves paper &amp; bulk</span>
+                </div>
+                <div class="h2-sidebar-tip-item">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>PDF prevents accidental font shifts</span>
+                </div>
+                <div class="h2-sidebar-tip-item">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Express orders handled at front desk</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="h2-sidebar-counter-card">
+              <div class="h2-counter-card-title">Front Counter Hours</div>
+              <div class="h2-counter-card-text">
+                Mon – Fri: 8:00 AM – 7:00 PM<br>
+                Sat: 9:00 AM – 5:00 PM<br>
+                Phone: (555) 789-3456
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Interactive Checklist Body -->
+          <div class="h2-checklist-body">
+            <div class="h2-checklist-header">
+              <div>
+                <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem;">
+                  Interactive Job Readiness Checklist
+                </h3>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">
+                  Click items as you confirm each detail for your printing request.
+                </p>
+              </div>
+              <div class="h2-checklist-progress-wrap">
+                <i class="bi bi-check2-all" style="color: var(--fg-blue);" aria-hidden="true"></i>
+                <span class="h2-progress-badge">0 of 6 Ready</span>
+              </div>
+            </div>
+
+            <!-- 6 Key Checklist Rows -->
+            <div class="h2-checklist-items-grid" role="group" aria-label="Print job planning checklist items">
+
+              <!-- Question 1 -->
+              <div class="h2-checklist-row" role="checkbox" aria-checked="false" tabindex="0">
+                <div class="h2-check-box-indicator" aria-hidden="true">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <div class="h2-check-row-content">
+                  <div class="h2-check-question">1. What are you printing?</div>
+                  <p class="h2-check-desc">
+                    Identify your document type: office report, legal dossier, study reader, color booklet, brochure, or blueprint plans.
+                  </p>
+                  <div class="h2-check-chips">
+                    <span class="h2-chip-item">Reports</span>
+                    <span class="h2-chip-item">Booklets</span>
+                    <span class="h2-chip-item">Forms</span>
+                    <span class="h2-chip-item">Stationery</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="h2-checklist-row" role="checkbox" aria-checked="false" tabindex="0">
+                <div class="h2-check-box-indicator" aria-hidden="true">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <div class="h2-check-row-content">
+                  <div class="h2-check-question">2. How many pages are needed?</div>
+                  <p class="h2-check-desc">
+                    Count the total digital pages in your file and decide if it will be printed single-sided or double-sided (duplex).
+                  </p>
+                  <div class="h2-check-chips">
+                    <span class="h2-chip-item">Single-Sided</span>
+                    <span class="h2-chip-item">Double-Sided</span>
+                    <span class="h2-chip-item">Page Count Known</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 3 -->
+              <div class="h2-checklist-row" role="checkbox" aria-checked="false" tabindex="0">
+                <div class="h2-check-box-indicator" aria-hidden="true">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <div class="h2-check-row-content">
+                  <div class="h2-check-question">3. How many copies do you require?</div>
+                  <p class="h2-check-desc">
+                    Determine whether you need an individual sample set (1 copy) or multiple collated duplicate sets for distribution.
+                  </p>
+                  <div class="h2-check-chips">
+                    <span class="h2-chip-item">1 Single Proof</span>
+                    <span class="h2-chip-item">10–50 Sets</span>
+                    <span class="h2-chip-item">100+ Bulk Sets</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 4 -->
+              <div class="h2-checklist-row" role="checkbox" aria-checked="false" tabindex="0">
+                <div class="h2-check-box-indicator" aria-hidden="true">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <div class="h2-check-row-content">
+                  <div class="h2-check-question">4. Do you prefer color or black-and-white?</div>
+                  <p class="h2-check-desc">
+                    Crisp monochrome black-and-white for high-volume text, or full vibrant CMYK color for charts, photos, and branding.
+                  </p>
+                  <div class="h2-check-chips">
+                    <span class="h2-chip-item">Black &amp; White</span>
+                    <span class="h2-chip-item">Full CMYK Color</span>
+                    <span class="h2-chip-item">Mixed Pages</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 5 -->
+              <div class="h2-checklist-row" role="checkbox" aria-checked="false" tabindex="0">
+                <div class="h2-check-box-indicator" aria-hidden="true">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <div class="h2-check-row-content">
+                  <div class="h2-check-question">5. What paper size do you need?</div>
+                  <p class="h2-check-desc">
+                    Select standard office A4 / Letter, spacious A3 / Tabloid, or specialized custom dimensions for your specific project.
+                  </p>
+                  <div class="h2-check-chips">
+                    <span class="h2-chip-item">Standard A4</span>
+                    <span class="h2-chip-item">US Letter</span>
+                    <span class="h2-chip-item">Large A3</span>
+                    <span class="h2-chip-item">Custom</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 6 -->
+              <div class="h2-checklist-row" role="checkbox" aria-checked="false" tabindex="0">
+                <div class="h2-check-box-indicator" aria-hidden="true">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <div class="h2-check-row-content">
+                  <div class="h2-check-question">6. Do you require binding or finishing?</div>
+                  <p class="h2-check-desc">
+                    Choose from wire loop binding, corner staple, 2-hole/4-hole punching, folding, lamination, or leave unbound for your folders.
+                  </p>
+                  <div class="h2-check-chips">
+                    <span class="h2-chip-item">Wire Bound</span>
+                    <span class="h2-chip-item">Corner Stapled</span>
+                    <span class="h2-chip-item">Hole Punched</span>
+                    <span class="h2-chip-item">Unbound Sheets</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Checklist Footer CTA -->
+            <div class="h2-checklist-footer">
+              <div style="font-size: 0.875rem; color: var(--text-muted);">
+                Ready with your specifications? Submit your details directly to our team.
+              </div>
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
+                <span>PREPARE YOUR ENQUIRY</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 7 — LET'S MAKE YOUR NEXT PRINT JOB SIMPLE (CLOSING BANNER)
+         ---------------------------------------------------------------------- -->
+    <section id="closing-cta" class="h2-section h2-closing-section" aria-labelledby="closing-title">
+      <div class="fg-container">
+
+        <div class="h2-closing-card">
+
+          <!-- Left Copy Column -->
+          <div class="h2-closing-content">
+            <div class="h2-closing-eyebrow">
+              <i class="bi bi-printer-fill" aria-hidden="true"></i>
+              <span>READY WHEN YOU ARE</span>
+            </div>
+            <h2 id="closing-title" class="h2-closing-title">
+              YOUR NEXT PRINT JOB STARTS HERE.
+            </h2>
+            <p class="h2-closing-desc">
+              Tell us what you need and explore the available printing options. Walk in with your files or send your specifications for an upfront quote today.
+            </p>
+            <div class="h2-closing-actions">
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
+                <span>GET A QUOTE</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="services.html" class="fg-btn fg-btn-secondary">
+                <span>EXPLORE SERVICES</span>
+                <i class="bi bi-grid" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Photographic Column (Stack of Paper) -->
+          <div class="h2-closing-img-wrap">
+            <img 
+              src="assets/images/home2/home2-closing.webp" 
+              alt="Crisp paper reams and custom packaged print orders tied with twine on wooden studio shelving"
+              class="h2-closing-img"
+              width="1600" 
+              height="900"
+              loading="lazy"
+            >
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER (EXACTLY THE SAME AS INDEX.HTML)
+       Reused identically with Home 2 in Explore menu
+       ======================================================================== -->
+  <footer class="fg-footer" role="contentinfo">
+    <div class="fg-container">
+
+      <!-- Main Footer Columns (5 Columns) -->
+      <div class="fg-footer-grid">
+
+        <!-- Column 1: Brand & Contact Overview -->
+        <div class="fg-footer-col fg-footer-brand-col">
+          <a href="index.html" class="fg-brand fg-footer-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+            <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img" width="220" height="44">
+          </a>
+          <span class="fg-footer-tagline">PRECISION PRINTS. PROUD RESULTS.</span>
+          <p class="fg-footer-desc">
+            Your neighborhood printing, photocopying, binding, and finishing specialists. Dedicated to crisp quality, fast turnarounds, and friendly service.
+          </p>
+          <div class="fg-footer-socials" aria-label="Social media channels">
+            <a href="https://instagram.com" class="fg-social-btn" aria-label="Follow PRINTWORKS on Instagram" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://facebook.com" class="fg-social-btn" aria-label="Follow PRINTWORKS on Facebook" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://linkedin.com" class="fg-social-btn" aria-label="Connect with PRINTWORKS on LinkedIn" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Explore Navigation -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Explore</h3>
+          <ul class="fg-footer-links">
+            <li><a href="index.html" class="fg-footer-link">Home 1 (Main)</a></li>
+            <li><a href="home2.html" class="fg-footer-link active" aria-current="page">Home 2 (Express)</a></li>
+            <li><a href="about.html" class="fg-footer-link">About</a></li>
+            <li><a href="services.html" class="fg-footer-link">Services</a></li>
+            <li><a href="pricing.html" class="fg-footer-link">Pricing</a></li>
+            <li><a href="blog.html" class="fg-footer-link">Blog</a></li>
+            <li><a href="contact.html" class="fg-footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Core Printing Services -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Services</h3>
+          <ul class="fg-footer-links">
+            <li><a href="services.html#copying" class="fg-footer-link">Document Copying</a></li>
+            <li><a href="services.html#blueprints" class="fg-footer-link">Architectural Plans</a></li>
+            <li><a href="services.html#booklets" class="fg-footer-link">Bound Booklets</a></li>
+            <li><a href="services.html#stationery" class="fg-footer-link">Business Cards</a></li>
+            <li><a href="services.html#stickers" class="fg-footer-link">Vinyl Stickers</a></li>
+            <li><a href="services.html#posters" class="fg-footer-link">Large Posters</a></li>
+            <li><a href="services.html#scanning" class="fg-footer-link">High-Res Scanning</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Paper & Finishes -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Paper &amp; Finishes</h3>
+          <ul class="fg-footer-links">
+            <li><a href="services.html#stocks" class="fg-footer-link">Silk Matte 350gsm</a></li>
+            <li><a href="services.html#stocks" class="fg-footer-link">Recycled Kraft Stock</a></li>
+            <li><a href="services.html#stocks" class="fg-footer-link">High-Gloss Coated</a></li>
+            <li><a href="services.html#finishing" class="fg-footer-link">Twin-Loop Wire Binding</a></li>
+            <li><a href="services.html#finishing" class="fg-footer-link">Soft-Touch Lamination</a></li>
+            <li><a href="services.html#finishing" class="fg-footer-link">Metallic Foil Stamping</a></li>
+            <li><a href="services.html#finishing" class="fg-footer-link">Perfect Spine Binding</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Store & Counter (Say Hello) -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Say Hello</h3>
+          <div class="fg-footer-contact-list">
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              <span>450 Printing Plaza, Suite 102, Downtown District</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-clock-fill" aria-hidden="true"></i>
+              <span>Mon – Fri: 8:00 AM – 7:00 PM<br>Saturday: 9:00 AM – 5:00 PM</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+              <span>(555) 789-3456</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+              <span>hello@printworksprint.com</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="fg-footer-bottom">
+        <div>
+          &copy; 2026 PRINTWORKS PRINT &amp; COPY. All rights reserved. Precision Prints. Proud Results.
+        </div>
+        <div class="fg-footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="accessibility.html">Accessibility Statement</a>
+        </div>
+        <button type="button" class="fg-back-to-top" aria-label="Scroll back to top of page" title="Back to top">
+          <i class="bi bi-arrow-up" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       ACCESSIBLE LOGIN MODAL
+       ======================================================================== -->
+  <div id="login-modal" class="fg-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="fg-modal-card">
+      <button type="button" class="fg-modal-close" aria-label="Close login dialog">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-light" style="height: 38px; margin: 0 auto 0.75rem auto;">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-dark" style="height: 38px; margin: 0 auto 0.75rem auto;">
+        <h2 id="modal-title" style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: var(--text-main);">
+          Customer Portal Login
+        </h2>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">
+          Track your print orders, download invoice proofs, or reorder past jobs.
+        </p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Demo customer account login. Please visit our front counter for portal registration.');">
+        <div class="fg-form-group" style="margin-bottom: 1rem;">
+          <label for="login-email" class="fg-form-label">Email Address</label>
+          <input type="email" id="login-email" class="fg-input" placeholder="name@company.com" required>
+        </div>
+        <div class="fg-form-group" style="margin-bottom: 1.5rem;">
+          <label for="login-password" class="fg-form-label">Password</label>
+          <input type="password" id="login-password" class="fg-input" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="fg-btn fg-btn-primary" style="width: 100%; margin-bottom: 0.75rem;">
+          <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+          <span>Sign In to Your Account</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/pages/home2.js"></script>
+</body>
+</html>

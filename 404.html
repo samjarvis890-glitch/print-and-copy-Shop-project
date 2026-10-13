@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Out of Print | PRINTWORKS PRINT &amp; COPY</title>
+  <meta name="description" content="Paper jam in Tray 404! The page you are looking for was not found. Return to PRINTWORKS PRINT &amp; COPY for high-quality printing, binding, and copying.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+  <!-- Instant Theme & Direction Initialization -->
+  <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem('printworks_theme');
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        const savedDir = localStorage.getItem('printworks_dir');
+        if (savedDir) {
+          document.documentElement.setAttribute('dir', savedDir);
+          document.documentElement.setAttribute('lang', savedDir === 'rtl' ? 'ar' : 'en');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/pages/error-404.css">
+</head>
+<body>
+
+  <!-- Fullscreen 404 Viewport (No Navbar, No Footer) -->
+  <main class="error-page-wrapper" role="main">
+    
+    <!-- Decorative Background Grid -->
+    <div class="error-bg-grid" aria-hidden="true"></div>
+
+    <!-- Top Header Bar: Brand Logo + Preferences (Theme & RTL) -->
+    <header class="error-top-bar" aria-label="Page Header">
+      <a href="index.html" class="error-top-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-light" width="220" height="44">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-dark" width="220" height="44">
+      </a>
+
+      <div class="error-top-controls" aria-label="Display Controls">
+        <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+          <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Central Creative Print Shop Error Stage -->
+    <section class="error-stage" aria-labelledby="error-main-heading">
+      
+      <!-- Simulated Printed Proof Sheet -->
+      <div class="error-document-sheet">
+
+        <!-- Physical Registration Crosshair Marks at 4 Corners -->
+        <span class="reg-mark reg-tl" aria-hidden="true"></span>
+        <span class="reg-mark reg-tr" aria-hidden="true"></span>
+        <span class="reg-mark reg-bl" aria-hidden="true"></span>
+        <span class="reg-mark reg-br" aria-hidden="true"></span>
+
+        <!-- CMYK Calibration Color Bar Strip -->
+        <div class="cmyk-strip" aria-label="CMYK calibration test swatches" title="CMYK Calibration Bars">
+          <span class="cmyk-block cmyk-cyan" title="Cyan"></span>
+          <span class="cmyk-block cmyk-magenta" title="Magenta"></span>
+          <span class="cmyk-block cmyk-yellow" title="Yellow"></span>
+          <span class="cmyk-block cmyk-black" title="Key Black"></span>
+        </div>
+
+        <!-- Animated Status Indicator -->
+        <div class="error-status-badge">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>Paper Jam in Tray 404 &bull; Page Out of Print</span>
+        </div>
+
+        <!-- Giant 404 Code & Printer Graphic -->
+        <div class="error-visual-row">
+          <h1 class="error-code" aria-label="Error 404">404</h1>
+          <div class="error-printer-illustration" aria-hidden="true">
+            <i class="bi bi-printer"></i>
+            <span class="paper-sheet-jammed">MISFEED</span>
+          </div>
+        </div>
+
+        <!-- Creative Headings -->
+        <h2 id="error-main-heading" class="error-title">
+          Whoops! This Page Was Never Sent to Print.
+        </h2>
+        <p class="error-desc">
+          The document you are looking for might have been shredded, misfed in the paper tray, or never queued in our digital press. Let’s get you back on track before ink dries!
+        </p>
+
+        <!-- Print Job Diagnostic Ticket -->
+        <div class="error-job-ticket" aria-label="Print Job Diagnostics">
+          <div class="ticket-item">
+            <i class="bi bi-file-earmark-break text-muted"></i>
+            <span>Job: <strong>#DOC-404-NOT-FOUND</strong></span>
+          </div>
+          <div class="ticket-item">
+            <i class="bi bi-exclamation-triangle text-muted"></i>
+            <span>Tray Status: <strong>Feeder Empty / Jammed</strong></span>
+          </div>
+          <div class="ticket-item">
+            <i class="bi bi-shield-check text-muted"></i>
+            <span>Resolution: <strong>Return to Counter</strong></span>
+          </div>
+        </div>
+
+        <!-- Recovery CTA Buttons -->
+        <div class="error-actions">
+          <a href="index.html" class="fg-btn fg-btn-primary">
+            <i class="bi bi-house-door-fill" aria-hidden="true"></i>
+            <span>Return to Storefront</span>
+          </a>
+          <a href="services.html" class="fg-btn fg-btn-secondary">
+            <i class="bi bi-printer-fill" aria-hidden="true"></i>
+            <span>Explore Services</span>
+          </a>
+          <a href="contact.html#order-enquiry" class="fg-btn fg-btn-outline">
+            <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
+            <span>Ask Counter Specialist</span>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Bottom Quick Directory Links (NO FOOTER, Compact Return Routes) -->
+    <nav class="error-quick-bar" aria-label="Quick site navigation">
+      <span class="error-quick-label">Reprint Route Directory</span>
+      <div class="error-quick-links">
+        <a href="index.html" class="error-quick-link">Home 1</a>
+        <span class="error-quick-dot">&bull;</span>
+        <a href="home2.html" class="error-quick-link">Home 2</a>
+        <span class="error-quick-dot">&bull;</span>
+        <a href="about.html" class="error-quick-link">About</a>
+        <span class="error-quick-dot">&bull;</span>
+        <a href="services.html" class="error-quick-link">Services</a>
+        <span class="error-quick-dot">&bull;</span>
+        <a href="pricing.html" class="error-quick-link">Pricing</a>
+        <span class="error-quick-dot">&bull;</span>
+        <a href="blog.html" class="error-quick-link">Blog</a>
+        <span class="error-quick-dot">&bull;</span>
+        <a href="contact.html" class="error-quick-link">Contact</a>
+      </div>
+    </nav>
+
+  </main>
+
+  <!-- Global JavaScript for Theme & RTL Toggling -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

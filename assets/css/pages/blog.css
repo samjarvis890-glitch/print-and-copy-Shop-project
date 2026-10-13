@@ -1,0 +1,1474 @@
+/* ==========================================================================
+   PRINTWORKS PRINT & COPY — BLOG EDITORIAL STYLESHEET
+   Page-Specific Styling for The Print Journal (blog.html)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. EDITORIAL LAYOUT UTILITIES & COMMON ELEMENTS
+   -------------------------------------------------------------------------- */
+.fg-blog-section {
+  padding-block: 5rem;
+  position: relative;
+  background-color: var(--bg-page);
+  transition: background-color var(--transition-normal);
+}
+
+.fg-blog-section-alt {
+  background-color: var(--bg-alt);
+}
+
+.fg-blog-section-header {
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.fg-blog-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--fg-blue);
+  margin-bottom: 0.75rem;
+}
+
+.fg-blog-eyebrow i {
+  font-size: 0.9rem;
+}
+
+.fg-blog-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.8vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.fg-blog-lead {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 680px;
+}
+
+/* Category Badge Pill */
+.fg-cat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: var(--radius-full);
+  background: var(--fg-blue-light);
+  color: var(--fg-blue);
+  transition: all var(--transition-fast);
+}
+
+[data-theme="dark"] .fg-cat-badge {
+  background: var(--fg-blue-light);
+  color: #79a4fc;
+}
+
+.fg-cat-badge.cat-paper {
+  background: var(--fg-yellow-light);
+  color: #996d00;
+}
+[data-theme="dark"] .fg-cat-badge.cat-paper {
+  background: #332805;
+  color: #fed96b;
+}
+
+.fg-cat-badge.cat-file {
+  background: var(--fg-mint-light);
+  color: #1a7850;
+}
+[data-theme="dark"] .fg-cat-badge.cat-file {
+  background: #0d2c1e;
+  color: #76dcb1;
+}
+
+.fg-cat-badge.cat-color {
+  background: var(--fg-lavender-light);
+  color: #5d42b8;
+}
+[data-theme="dark"] .fg-cat-badge.cat-color {
+  background: #251b47;
+  color: #b5a4ff;
+}
+
+.fg-cat-badge.cat-binding {
+  background: var(--fg-peach-light);
+  color: #a44820;
+}
+[data-theme="dark"] .fg-cat-badge.cat-binding {
+  background: #3a1a0d;
+  color: #ffab8b;
+}
+
+/* --------------------------------------------------------------------------
+   2. SECTION 1 — THE PRINT JOURNAL (OVERSIZED EDITORIAL MASTHEAD)
+   -------------------------------------------------------------------------- */
+.fg-blog-masthead {
+  padding-block: 3.5rem 5rem;
+  border-bottom: 1px solid var(--border-light);
+  background: linear-gradient(180deg, var(--bg-page) 0%, var(--bg-alt) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.fg-masthead-grid {
+  display: grid;
+  grid-template-columns: 80px 1.25fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* Vertical Typographic Margin */
+.fg-masthead-vertical-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-block: 1rem;
+  border-inline-end: 1px solid var(--border-light);
+}
+
+.fg-masthead-vert-issue {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--text-subtle);
+  text-transform: uppercase;
+}
+
+.fg-masthead-vert-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--fg-blue);
+  white-space: nowrap;
+  padding-block: 1rem;
+}
+
+[dir="rtl"] .fg-masthead-vert-text {
+  transform: rotate(0deg);
+}
+
+.fg-masthead-vert-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--fg-yellow);
+}
+
+/* Masthead Main Text Block */
+.fg-masthead-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fg-masthead-eyebrow-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.fg-masthead-issue-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.65rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+}
+
+.fg-masthead-h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+}
+
+.fg-masthead-h1 .fg-highlight-text {
+  color: var(--fg-blue);
+  position: relative;
+  display: inline-block;
+}
+
+.fg-masthead-desc {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  max-width: 580px;
+}
+
+.fg-masthead-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.fg-masthead-jump-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.6rem;
+  background-color: var(--fg-blue);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  box-shadow: 0 4px 14px rgba(53, 106, 230, 0.25);
+}
+
+.fg-masthead-jump-btn:hover {
+  background-color: var(--fg-blue-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(53, 106, 230, 0.35);
+}
+
+.fg-masthead-meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Offset Editorial Photo Inset */
+.fg-masthead-media-col {
+  position: relative;
+}
+
+.fg-masthead-inset-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-normal);
+}
+
+.fg-masthead-inset-card:hover {
+  transform: translateY(-4px);
+}
+
+.fg-masthead-inset-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.fg-masthead-inset-caption {
+  padding: 1rem 1.25rem;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.fg-masthead-caption-tag {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--fg-blue);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+/* --------------------------------------------------------------------------
+   3. SECTION 2 — EXPLORE THE KNOWLEDGE LIBRARY (NUMBERED EDITORIAL INDEX)
+   -------------------------------------------------------------------------- */
+.fg-blog-topics {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.fg-topics-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+}
+
+.fg-filter-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-inline-end: 0.5rem;
+}
+
+.fg-topic-filter-btn {
+  border: 1px solid var(--border-light);
+  background: var(--bg-page);
+  color: var(--text-main);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 44px;
+}
+
+.fg-topic-filter-btn:hover {
+  background: var(--fg-blue-light);
+  color: var(--fg-blue);
+  border-color: var(--fg-blue);
+}
+
+.fg-topic-filter-btn.is-active {
+  background: var(--fg-blue);
+  color: #ffffff;
+  border-color: var(--fg-blue);
+  box-shadow: 0 2px 8px rgba(53, 106, 230, 0.25);
+}
+
+/* Numbered Horizontal Topic List */
+.fg-topic-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.fg-topic-row {
+  display: grid;
+  grid-template-columns: 80px 1.5fr 2.5fr auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.75rem 1.25rem;
+  border-top: 1px solid var(--border-light);
+  background-color: transparent;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fg-topic-row:last-child {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.fg-topic-row:hover {
+  background-color: var(--bg-surface);
+  padding-inline-start: 1.75rem;
+}
+
+.fg-topic-row.is-filtered-match {
+  background-color: var(--fg-blue-light);
+  border-inline-start: 4px solid var(--fg-blue);
+}
+
+.fg-topic-num {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-subtle);
+  letter-spacing: -0.02em;
+}
+
+.fg-topic-row:hover .fg-topic-num {
+  color: var(--fg-blue);
+}
+
+.fg-topic-name {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.fg-topic-desc {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.fg-topic-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--fg-blue);
+  white-space: nowrap;
+  min-height: 44px;
+}
+
+.fg-topic-action i {
+  transition: transform var(--transition-fast);
+}
+
+.fg-topic-row:hover .fg-topic-action i {
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .fg-topic-row:hover .fg-topic-action i {
+  transform: translateX(-4px);
+}
+
+/* --------------------------------------------------------------------------
+   4. SECTION 3 — STORIES WORTH READING (ONE FEATURED + NARROW READING COLUMN)
+   -------------------------------------------------------------------------- */
+.fg-latest-articles {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.fg-stories-layout {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Featured Large Story Card */
+.fg-featured-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+  height: 100%;
+}
+
+.fg-featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--fg-blue);
+}
+
+.fg-featured-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background-color: var(--bg-alt);
+}
+
+.fg-featured-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.fg-featured-card:hover .fg-featured-media img {
+  transform: scale(1.03);
+}
+
+.fg-featured-tag-float {
+  position: absolute;
+  top: 1.25rem;
+  inset-inline-start: 1.25rem;
+  z-index: 2;
+}
+
+.fg-featured-body {
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.fg-featured-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.fg-featured-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.65rem, 2.5vw, 2.15rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.fg-featured-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.fg-featured-title a:hover {
+  color: var(--fg-blue);
+}
+
+.fg-featured-excerpt {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-bottom: 1.75rem;
+}
+
+.fg-featured-footer {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fg-read-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  background: var(--fg-blue);
+  color: #ffffff;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all var(--transition-fast);
+  min-height: 44px;
+}
+
+.fg-read-btn:hover {
+  background: var(--fg-blue-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Narrow Vertical Reading Column */
+.fg-sidebar-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fg-secondary-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+}
+
+.fg-secondary-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--fg-blue);
+}
+
+.fg-secondary-media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+
+.fg-secondary-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.fg-secondary-card:hover .fg-secondary-media img {
+  transform: scale(1.03);
+}
+
+.fg-secondary-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.fg-secondary-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.fg-secondary-read-time {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.fg-secondary-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.fg-secondary-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.fg-secondary-title a:hover {
+  color: var(--fg-blue);
+}
+
+.fg-secondary-excerpt {
+  font-size: 0.925rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.fg-secondary-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fg-inline-read-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--fg-blue);
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  min-height: 44px;
+}
+
+.fg-inline-read-link:hover {
+  color: var(--fg-blue-hover);
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   5. SECTION 4 — THE ANATOMY OF A PRINT JOB (VERTICAL EDITORIAL PROCESS)
+   -------------------------------------------------------------------------- */
+.fg-print-anatomy {
+  border-bottom: 1px solid var(--border-light);
+  background-color: var(--bg-alt);
+}
+
+.fg-process-timeline {
+  position: relative;
+  max-width: 1060px;
+  margin-inline: auto;
+}
+
+/* Subtle vertical line */
+.fg-process-timeline::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  inset-inline-start: 50%;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--border-medium) 0,
+    var(--border-medium) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.fg-process-stage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.fg-process-stage:last-child {
+  margin-bottom: 0;
+}
+
+/* Alternating rows */
+.fg-process-stage.is-reversed {
+  direction: rtl;
+}
+
+[dir="rtl"] .fg-process-stage.is-reversed {
+  direction: ltr;
+}
+
+.fg-process-stage.is-reversed > * {
+  direction: ltr;
+}
+
+[dir="rtl"] .fg-process-stage.is-reversed > * {
+  direction: rtl;
+}
+
+.fg-stage-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.fg-stage-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--fg-blue);
+}
+
+.fg-stage-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.fg-stage-number {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 800;
+  padding: 0.35rem 0.85rem;
+  background: var(--fg-blue);
+  color: #ffffff;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.05em;
+}
+
+.fg-stage-title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+}
+
+.fg-stage-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.fg-stage-checkpoints {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.fg-stage-checkpoints li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  color: var(--text-main);
+  line-height: 1.45;
+}
+
+.fg-stage-checkpoints li i {
+  color: #10b981;
+  font-size: 1rem;
+  margin-top: 1px;
+}
+
+/* Stage Photo Column */
+.fg-stage-media {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  background: var(--bg-surface);
+}
+
+.fg-stage-media img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.fg-stage-caption {
+  padding: 0.85rem 1.25rem;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-light);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --------------------------------------------------------------------------
+   6. SECTION 5 — A CLOSER LOOK AT PAPER (FLOATING ANNOTATION LABELS)
+   -------------------------------------------------------------------------- */
+.fg-paper-notes {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.fg-paper-display-wrapper {
+  position: relative;
+  max-width: 1100px;
+  margin-inline: auto;
+  border-radius: var(--radius-xl);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  padding: 3.5rem 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.fg-paper-hero-img-box {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
+  max-width: 780px;
+  margin-inline: auto;
+}
+
+.fg-paper-hero-img-box img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+/* 4 Floating Annotation Callout Pins (Desktop) */
+.fg-paper-annotations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.fg-annotation-card {
+  background: var(--bg-page);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.25rem;
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.fg-annotation-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--fg-blue);
+  box-shadow: var(--shadow-sm);
+}
+
+.fg-annotation-pin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--fg-blue-light);
+  color: var(--fg-blue);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.fg-annotation-card.pin-size .fg-annotation-pin {
+  background: var(--fg-blue-light);
+  color: var(--fg-blue);
+}
+.fg-annotation-card.pin-weight .fg-annotation-pin {
+  background: var(--fg-yellow-light);
+  color: #996d00;
+}
+.fg-annotation-card.pin-surface .fg-annotation-pin {
+  background: var(--fg-mint-light);
+  color: #1a7850;
+}
+.fg-annotation-card.pin-finish .fg-annotation-pin {
+  background: var(--fg-lavender-light);
+  color: #5d42b8;
+}
+
+.fg-annotation-label {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.4rem;
+}
+
+.fg-annotation-desc {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   7. SECTION 6 — PRACTICAL GUIDES (TYPOGRAPHIC READING SHELF)
+   -------------------------------------------------------------------------- */
+.fg-practical-guides {
+  border-bottom: 1px solid var(--border-light);
+  background-color: var(--bg-alt);
+}
+
+.fg-guides-shelf {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fg-guide-row {
+  display: grid;
+  grid-template-columns: 160px 1.5fr 2.5fr 140px;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.75rem 2rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.fg-guide-row:hover {
+  transform: translateX(4px);
+  border-color: var(--fg-blue);
+  box-shadow: var(--shadow-md);
+}
+
+[dir="rtl"] .fg-guide-row:hover {
+  transform: translateX(-4px);
+}
+
+.fg-guide-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-light);
+}
+
+.fg-guide-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.fg-guide-title-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fg-guide-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.fg-guide-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.fg-guide-title a:hover {
+  color: var(--fg-blue);
+}
+
+.fg-guide-meta-sub {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.fg-guide-desc-col {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.fg-guide-action-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* --------------------------------------------------------------------------
+   8. SECTION 7 — KEEP LEARNING, KEEP PRINTING (EDITORIAL INVITATION)
+   -------------------------------------------------------------------------- */
+.fg-blog-closing {
+  padding-block: 5.5rem;
+  background: linear-gradient(135deg, var(--bg-page) 0%, var(--bg-alt) 100%);
+}
+
+.fg-closing-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 3.5rem;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.fg-closing-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.fg-closing-h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+  margin-bottom: 1.25rem;
+}
+
+.fg-closing-desc {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-bottom: 2.25rem;
+}
+
+/* Staggered Typographic Next-Step Rows */
+.fg-staggered-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fg-staggered-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.15rem 1.5rem;
+  background: var(--bg-page);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  color: var(--text-main);
+  min-height: 44px;
+}
+
+.fg-staggered-item:hover {
+  background: var(--fg-blue-light);
+  border-color: var(--fg-blue);
+  transform: translateX(6px);
+  color: var(--fg-blue);
+}
+
+[dir="rtl"] .fg-staggered-item:hover {
+  transform: translateX(-6px);
+}
+
+.fg-staggered-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fg-staggered-idx {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: var(--text-subtle);
+  width: 24px;
+}
+
+.fg-staggered-label {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.fg-staggered-sub {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.fg-staggered-icon {
+  font-size: 1.1rem;
+  color: var(--fg-blue);
+  transition: transform var(--transition-fast);
+}
+
+.fg-staggered-item:hover .fg-staggered-icon {
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .fg-staggered-item:hover .fg-staggered-icon {
+  transform: translateX(-4px);
+}
+
+.fg-closing-media-col {
+  position: relative;
+}
+
+.fg-closing-card-inset {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  background: var(--bg-surface);
+}
+
+.fg-closing-card-inset img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   9. ARTICLE READER MODAL (ACCESSIBLE IN-PAGE JOURNAL READER)
+   -------------------------------------------------------------------------- */
+.fg-article-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 22, 34, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 1050;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.fg-article-modal-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fg-article-modal-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  width: 100%;
+  max-width: 860px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  transform: scale(0.96) translateY(20px);
+  transition: all var(--transition-normal);
+  padding: 3rem;
+}
+
+.fg-article-modal-backdrop.is-open .fg-article-modal-card {
+  transform: scale(1) translateY(0);
+}
+
+.fg-article-modal-close {
+  position: sticky;
+  top: 0;
+  float: right;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  z-index: 10;
+  box-shadow: var(--shadow-sm);
+}
+
+[dir="rtl"] .fg-article-modal-close {
+  float: left;
+}
+
+.fg-article-modal-close:hover {
+  background: var(--fg-blue-light);
+  color: var(--fg-blue);
+  border-color: var(--fg-blue);
+}
+
+.fg-article-reader-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.fg-article-reader-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.fg-article-reader-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 3.2vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.fg-article-reader-lead {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.fg-article-reader-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-main);
+}
+
+.fg-article-reader-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.fg-article-reader-content p {
+  margin-bottom: 1.25rem;
+  color: var(--text-main);
+}
+
+.fg-article-reader-content ul {
+  margin-bottom: 1.5rem;
+  padding-inline-start: 1.5rem;
+}
+
+.fg-article-reader-content li {
+  margin-bottom: 0.5rem;
+}
+
+.fg-article-key-takeaway {
+  background: var(--fg-blue-light);
+  border-inline-start: 4px solid var(--fg-blue);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  margin-block: 2rem;
+}
+
+.fg-article-key-takeaway h4 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--fg-blue);
+  margin-bottom: 0.5rem;
+}
+
+.fg-article-key-takeaway p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+/* --------------------------------------------------------------------------
+   10. RESPONSIVE BREAKPOINT REFINEMENTS
+   -------------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  .fg-masthead-grid {
+    grid-template-columns: 60px 1.2fr 1fr;
+    gap: 1.75rem;
+  }
+
+  .fg-stories-layout {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+  }
+
+  .fg-paper-annotations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fg-guide-row {
+    grid-template-columns: 140px 1.4fr 2fr 120px;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .fg-masthead-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .fg-masthead-vertical-col {
+    display: none;
+  }
+
+  .fg-stories-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .fg-topic-row {
+    grid-template-columns: 60px 1.5fr 2fr auto;
+    gap: 1.25rem;
+  }
+
+  .fg-process-timeline::before {
+    display: none;
+  }
+
+  .fg-process-stage {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .fg-process-stage.is-reversed {
+    direction: ltr;
+  }
+
+  .fg-guide-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .fg-guide-thumb {
+    max-width: 200px;
+  }
+
+  .fg-closing-panel {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .fg-blog-section {
+    padding-block: 3.5rem;
+  }
+
+  .fg-topic-row {
+    grid-template-columns: 1fr auto;
+    gap: 0.75rem;
+    padding: 1.25rem 0.75rem;
+  }
+
+  .fg-topic-desc {
+    grid-column: 1 / -1;
+  }
+
+  .fg-topic-num {
+    font-size: 1rem;
+  }
+
+  .fg-paper-display-wrapper {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .fg-paper-annotations-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .fg-article-modal-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .fg-featured-body {
+    padding: 1.5rem;
+  }
+
+  .fg-closing-panel {
+    padding: 1.75rem 1.25rem;
+  }
+}

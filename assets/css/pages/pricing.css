@@ -1,0 +1,1541 @@
+/* ==========================================================================
+   PRINTWORKS PRINT & COPY — PRICING PAGE STYLESHEET
+   Dedicated styling for pricing.html:
+   1. Section 1: Pricing Desk (Vertical index, typographic desk, banner)
+   2. Section 2: Printing Rate-Sheet Table (Structured rates, spec columns)
+   3. Section 3: Photocopying Comparison Board (Quantity scale & spec panel)
+   4. Section 4: Binding & Finishing Specimens (Horizontal material strip)
+   5. Section 5: Quotation Equation & Connected Factors Diagram
+   6. Section 6: Document Preparation Worksheet (Two-column prompts)
+   7. Section 7: Quotation Ticket Closing Panel (Outlined frame, ticket motif)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   SHARED PRICING DESIGN TOKENS & UTILITIES
+   -------------------------------------------------------------------------- */
+.pricing-section {
+  padding-block: 5.5rem;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.pricing-section-alt {
+  background-color: var(--bg-alt);
+}
+
+.pricing-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-full);
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  margin-bottom: 1rem;
+}
+
+.pricing-badge i {
+  font-size: 0.9rem;
+}
+
+.pricing-section-header {
+  margin-bottom: 3.5rem;
+  max-width: 780px;
+}
+
+.pricing-section-header.text-center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.pricing-section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 3.8vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.18;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+  word-break: break-word;
+}
+
+.pricing-section-subtitle {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Status Badges in Tables & Panels */
+.rate-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.rate-status-confirm {
+  background-color: var(--fg-yellow-light);
+  color: #8C660D;
+  border: 1px solid rgba(255, 215, 106, 0.45);
+}
+
+[data-theme="dark"] .rate-status-confirm {
+  color: #FFD76A;
+  border-color: rgba(255, 215, 106, 0.25);
+}
+
+.rate-status-quote {
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  border: 1px solid rgba(53, 106, 230, 0.25);
+}
+
+.rate-status-depends {
+  background-color: var(--fg-lavender-light);
+  color: #634CB8;
+  border: 1px solid rgba(232, 225, 255, 0.55);
+}
+
+[data-theme="dark"] .rate-status-depends {
+  color: #C0B4FF;
+  border-color: rgba(232, 225, 255, 0.25);
+}
+
+/* ==========================================================================
+   SECTION 1: PRICING DESK (Vertical Index + Editorial Typography + Banner)
+   ========================================================================== */
+.pricing-desk-section {
+  padding-block-start: 3.5rem;
+  padding-block-end: 5.5rem;
+  background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg-page) 100%);
+  border-bottom: 1px solid var(--border-light);
+  overflow: hidden;
+}
+
+.pricing-desk-grid {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 3.5rem;
+  align-items: start;
+  margin-bottom: 3.5rem;
+  min-width: 0;
+}
+
+/* Vertical Price Index Motif */
+.pricing-desk-index {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-block: 0.5rem;
+  border-inline-end: 2px solid var(--border-light);
+  padding-inline-end: 1.5rem;
+}
+
+.pricing-index-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.pricing-index-item:hover,
+.pricing-index-item:focus-visible {
+  color: var(--fg-blue);
+  transform: translateY(-2px);
+}
+
+.pricing-index-num {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-subtle);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.pricing-index-item:hover .pricing-index-num,
+.pricing-index-item.is-active .pricing-index-num {
+  border-color: var(--fg-blue);
+  background-color: var(--fg-blue);
+  color: var(--text-inverse);
+}
+
+.pricing-index-label {
+  font-family: var(--font-heading);
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Editorial Heading & Intro Content */
+.pricing-desk-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+.pricing-desk-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--fg-blue);
+}
+
+.pricing-desk-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background-color: var(--fg-yellow);
+}
+
+.pricing-desk-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4.8vw, 3.85rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  margin: 0;
+  text-transform: uppercase;
+  word-break: break-word;
+}
+
+.pricing-desk-heading-line {
+  display: block;
+}
+
+.pricing-desk-heading-line.highlight {
+  color: var(--fg-blue);
+}
+
+.pricing-desk-lead {
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 720px;
+  margin: 0;
+}
+
+.pricing-desk-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  padding-block-start: 0.5rem;
+}
+
+.pricing-desk-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  border-inline-start: 2px solid var(--border-light);
+  padding-inline-start: 1.25rem;
+}
+
+.pricing-desk-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pricing-desk-meta-item i {
+  color: var(--fg-blue);
+  font-size: 1rem;
+}
+
+/* Panoramic Photographic Strip */
+.pricing-desk-banner-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pricing-desk-banner-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.pricing-desk-banner-overlay {
+  position: absolute;
+  inset-inline-start: 2rem;
+  bottom: 2rem;
+  background: rgba(21, 29, 40, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1.25rem 1.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  max-width: 480px;
+  box-sizing: border-box;
+}
+
+.pricing-desk-banner-overlay-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #FFFFFF;
+}
+
+.pricing-desk-banner-overlay-title i {
+  color: var(--fg-yellow);
+}
+
+.pricing-desk-banner-overlay-text {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 2: PRINTING PRICE GUIDE (Rate-Sheet Table)
+   ========================================================================== */
+.rate-sheet-container {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rate-sheet-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.rate-sheet-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: start;
+}
+
+.rate-sheet-table th {
+  background-color: var(--bg-alt);
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-main);
+  padding: 1.25rem 1.5rem;
+  border-bottom: 2px solid var(--border-light);
+  white-space: nowrap;
+}
+
+.rate-sheet-table td {
+  padding: 1.35rem 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+  vertical-align: middle;
+  font-size: 0.9375rem;
+  color: var(--text-main);
+}
+
+.rate-sheet-table tbody tr {
+  transition: background-color var(--transition-fast);
+}
+
+.rate-sheet-table tbody tr:hover {
+  background-color: var(--bg-alt);
+}
+
+.rate-sheet-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.rate-item-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0 0 0.25rem 0;
+  font-size: 0.9375rem;
+}
+
+.rate-item-tag {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.rate-item-specs {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  max-width: 320px;
+}
+
+.rate-item-qty {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.rate-item-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--fg-blue);
+  text-decoration: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--fg-blue-light);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.rate-item-link:hover,
+.rate-item-link:focus-visible {
+  background-color: var(--fg-blue);
+  color: var(--text-inverse);
+}
+
+.rate-sheet-footer-note {
+  padding: 1.25rem 1.75rem;
+  background-color: var(--bg-alt);
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.rate-sheet-footer-note p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rate-sheet-footer-note p i {
+  color: var(--fg-blue);
+}
+
+/* ==========================================================================
+   SECTION 3: PHOTOCOPYING COST GUIDE (Comparison Board & Quantity Scale)
+   ========================================================================== */
+.copying-board-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: stretch;
+  min-width: 0;
+}
+
+/* Left: Oversized Quantity Scale */
+.copying-scale-panel {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.copying-scale-header {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 1.5rem;
+}
+
+.copying-scale-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0 0 0.5rem 0;
+}
+
+.copying-scale-header p {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.copying-tiers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.copying-tier-card {
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-light);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+  box-sizing: border-box;
+}
+
+.copying-tier-card:hover {
+  border-color: var(--fg-blue);
+  transform: translateY(-2px);
+}
+
+.copying-tier-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.copying-tier-label {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copying-tier-label i {
+  color: var(--fg-blue);
+}
+
+.copying-tier-desc {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Right: Specification Panel with Photography */
+.copying-spec-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+.copying-img-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  height: 240px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.copying-img-wrap img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.copying-checklist-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.copying-checklist-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0 0 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copying-checklist-card h4 i {
+  color: var(--fg-blue);
+}
+
+.copying-spec-items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.copying-spec-items li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--text-main);
+}
+
+.copying-spec-items li i {
+  color: var(--fg-blue);
+  font-size: 1rem;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   SECTION 4: BINDING AND FINISHING OPTIONS (Material Specimen Strip)
+   ========================================================================== */
+.specimen-gallery-banner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  min-width: 0;
+}
+
+.specimen-img-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  background-color: var(--bg-surface);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.specimen-img-card img {
+  width: 100%;
+  max-width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.specimen-caption {
+  position: absolute;
+  bottom: 0;
+  inset-inline: 0;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.9) 100%);
+  color: #FFFFFF;
+}
+
+.specimen-caption-title {
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.specimen-caption-sub {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.specimens-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  min-width: 0;
+}
+
+.specimen-detail-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.specimen-detail-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--fg-blue);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.specimen-card-num {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--fg-blue);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.specimen-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0 0 0.75rem 0;
+}
+
+.specimen-card-text {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0 0 1.25rem 0;
+}
+
+.specimen-card-params {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  border-top: 1px dashed var(--border-light);
+  padding-top: 1rem;
+}
+
+.specimen-card-params li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.specimen-card-params li i {
+  color: var(--fg-blue);
+  font-size: 0.75rem;
+}
+
+.specimen-notice-box {
+  background-color: var(--fg-yellow-light);
+  border: 1px solid rgba(255, 215, 106, 0.4);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #6C5000;
+  font-size: 0.9375rem;
+  box-sizing: border-box;
+}
+
+[data-theme="dark"] .specimen-notice-box {
+  color: #FFD76A;
+  border-color: rgba(255, 215, 106, 0.2);
+}
+
+.specimen-notice-box i {
+  font-size: 1.35rem;
+  flex-shrink: 0;
+  color: #D4A017;
+}
+
+/* ==========================================================================
+   SECTION 5: WHAT SHAPES YOUR FINAL QUOTE? (Quotation Factor Diagram)
+   ========================================================================== */
+.equation-diagram-wrapper {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  padding: 3.5rem 3rem;
+  box-shadow: var(--shadow-md);
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.equation-banner {
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 2rem;
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 1.25rem;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(0.875rem, 1.4vw, 1.0625rem);
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.equation-part {
+  color: var(--text-main);
+}
+
+.equation-symbol {
+  color: var(--fg-blue);
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.equation-result {
+  color: var(--fg-blue);
+  background-color: var(--fg-blue-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+}
+
+/* Connected 5 Factors Layout */
+.factors-diagram-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  position: relative;
+  margin-bottom: 3rem;
+  min-width: 0;
+}
+
+.factor-node {
+  background-color: var(--bg-page);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.factor-node:hover {
+  transform: translateY(-3px);
+  border-color: var(--fg-blue);
+}
+
+.factor-icon-wrap {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-full);
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.factor-node:hover .factor-icon-wrap {
+  background-color: var(--fg-blue);
+  color: var(--text-inverse);
+}
+
+.factor-node-num {
+  position: absolute;
+  top: 12px;
+  inset-inline-end: 12px;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--text-subtle);
+}
+
+.factor-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0 0 0.5rem 0;
+}
+
+.factor-desc {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.equation-confirm-note {
+  background-color: var(--bg-alt);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 2rem;
+  text-align: center;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border-light);
+  max-width: 820px;
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   SECTION 6: PREPARE YOUR PRINT QUOTE (Two-Column Specification Worksheet)
+   ========================================================================== */
+.worksheet-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 3rem;
+  align-items: start;
+  min-width: 0;
+}
+
+.worksheet-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  padding: 3rem;
+  box-shadow: var(--shadow-md);
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.worksheet-card-header {
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 1.75rem;
+  margin-bottom: 2.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.worksheet-doc-badge {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--fg-blue);
+  background-color: var(--fg-blue-light);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.worksheet-prompts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+  margin-bottom: 2.5rem;
+  min-width: 0;
+}
+
+.worksheet-prompt-item {
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  position: relative;
+  transition: border-color var(--transition-fast);
+  box-sizing: border-box;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.worksheet-prompt-item:hover {
+  border-color: var(--border-medium);
+}
+
+.worksheet-prompt-num {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--fg-blue);
+  margin-bottom: 0.35rem;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.worksheet-prompt-question {
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0 0 0.4rem 0;
+  line-height: 1.35;
+}
+
+.worksheet-prompt-hint {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.worksheet-action-row {
+  border-top: 1px solid var(--border-light);
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  box-sizing: border-box;
+}
+
+.worksheet-action-helper {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  max-width: 380px;
+  margin: 0;
+}
+
+.worksheet-action-btn {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.35;
+}
+
+/* Sidebar with Photograph */
+.worksheet-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  min-width: 0;
+}
+
+.worksheet-photo-wrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  background-color: var(--bg-surface);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.worksheet-photo-wrap img {
+  width: 100%;
+  max-width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.worksheet-tips-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.worksheet-tips-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0 0 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.worksheet-tips-card h4 i {
+  color: var(--fg-yellow);
+}
+
+.worksheet-tips-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.worksheet-tips-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.worksheet-tips-list li i {
+  color: var(--fg-blue);
+  font-size: 0.9rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   SECTION 7: REQUEST A PRICE (Outlined Quotation Ticket Closing Panel)
+   ========================================================================== */
+.pricing-ticket-outer {
+  max-width: 1080px;
+  margin-inline: auto;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.pricing-ticket-frame {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-xl);
+  border: 2px dashed var(--border-medium);
+  padding: 3.5rem;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.pricing-ticket-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  min-width: 0;
+}
+
+.ticket-header-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--fg-blue);
+  background-color: var(--fg-blue-light);
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1.25rem;
+}
+
+.ticket-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 3.8vw, 3rem);
+  font-weight: 900;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+  text-transform: uppercase;
+  margin: 0 0 1.25rem 0;
+  word-break: break-word;
+}
+
+.ticket-desc {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0 0 2rem 0;
+}
+
+.ticket-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.ticket-secondary-link {
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--fg-blue);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.ticket-secondary-link:hover,
+.ticket-secondary-link:focus-visible {
+  color: var(--fg-blue-hover);
+  transform: translateX(3px);
+}
+
+[dir="rtl"] .ticket-secondary-link:hover,
+[dir="rtl"] .ticket-secondary-link:focus-visible {
+  transform: translateX(-3px);
+}
+
+.ticket-counter-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  border-top: 1px solid var(--border-light);
+  padding-top: 1.5rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.ticket-meta-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.ticket-meta-box i {
+  color: var(--fg-blue);
+  font-size: 1rem;
+  margin-top: 0.15rem;
+}
+
+.ticket-image-container {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ticket-image-container img {
+  width: 100%;
+  max-width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   RESPONSIVE ADAPTATIONS FOR PRICING PAGE
+   Viewports: 320, 360, 375, 390, 414, 430, 480, 576, 768, 820, 834, 1024, 1280
+   ========================================================================== */
+
+/* Large Tablets & Medium Laptops (1025px - 1280px) */
+@media (max-width: 1280px) {
+  .factors-diagram-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .specimens-strip-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* iPad Pro 13" (1025px - 1280px) — bridge between laptop and tablet */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .pricing-desk-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .pricing-desk-index {
+    flex-direction: row;
+    border-inline-end: none;
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: 1.25rem;
+    padding-inline-end: 0;
+    justify-content: space-around;
+  }
+
+  .copying-board-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .worksheet-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .specimen-gallery-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-ticket-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .equation-diagram-wrapper {
+    padding: 2.5rem 2rem;
+  }
+}
+
+/* Tablets (769px - 1024px) */
+@media (max-width: 1024px) {
+  .pricing-desk-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .pricing-desk-index {
+    flex-direction: row;
+    border-inline-end: none;
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: 1.25rem;
+    padding-inline-end: 0;
+    justify-content: space-around;
+  }
+
+  .pricing-desk-meta {
+    border-inline-start: none;
+    padding-inline-start: 0;
+  }
+
+  .copying-board-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .worksheet-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .specimen-gallery-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-ticket-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .pricing-ticket-frame {
+    padding: 2.5rem;
+  }
+
+  .equation-diagram-wrapper {
+    padding: 2.5rem 2rem;
+  }
+}
+
+/* Small Tablets & Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+  .pricing-section {
+    padding-block: 4rem;
+  }
+
+  .pricing-desk-section {
+    padding-block-start: 2.5rem;
+    padding-block-end: 4rem;
+  }
+
+  .pricing-desk-banner-img {
+    height: 240px;
+  }
+
+  .pricing-desk-banner-overlay {
+    position: relative;
+    inset-inline-start: 0;
+    bottom: 0;
+    margin-top: 1rem;
+    max-width: 100%;
+    background: var(--bg-surface);
+    color: var(--text-main);
+    border: 1px solid var(--border-light);
+  }
+
+  .pricing-desk-banner-overlay-title {
+    color: var(--text-main);
+  }
+
+  .pricing-desk-banner-overlay-text {
+    color: var(--text-muted);
+  }
+
+  .factors-diagram-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .specimens-strip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .worksheet-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .worksheet-prompts-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .pricing-ticket-frame {
+    padding: 2rem 1.25rem;
+  }
+
+  .ticket-counter-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .equation-banner {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  /* Accessible mobile transformation for rate-sheet table */
+  .rate-sheet-table thead {
+    display: none;
+  }
+
+  .rate-sheet-table,
+  .rate-sheet-table tbody,
+  .rate-sheet-table tr,
+  .rate-sheet-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .rate-sheet-table tr {
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    background-color: var(--bg-surface);
+    padding: 1rem;
+  }
+
+  .rate-sheet-table td {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-light);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .rate-sheet-table td:last-child {
+    border-bottom: none;
+    padding-top: 0.75rem;
+  }
+
+  .rate-sheet-table td::before {
+    content: attr(data-label);
+    font-family: var(--font-heading);
+    font-size: 0.6875rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-subtle);
+  }
+}
+
+/* Extra Small Phones (320px - 480px) */
+@media (max-width: 480px) {
+  .pricing-section-title {
+    font-size: 1.65rem;
+  }
+
+  .pricing-desk-heading {
+    font-size: 1.75rem;
+  }
+
+  .ticket-title {
+    font-size: 1.55rem;
+  }
+
+  .copying-scale-panel {
+    padding: 1.25rem 0.85rem;
+  }
+
+  .copying-checklist-card {
+    padding: 1.25rem 0.85rem;
+  }
+
+  .worksheet-card {
+    padding: 1.25rem 0.85rem;
+  }
+
+  .worksheet-action-btn {
+    width: 100%;
+  }
+
+  .worksheet-tips-card {
+    padding: 1.25rem 0.85rem;
+  }
+
+  .pricing-ticket-frame {
+    padding: 1.5rem 0.85rem;
+  }
+
+  .ticket-image-container img {
+    height: 240px;
+  }
+
+  .copying-img-wrap {
+    height: 180px;
+  }
+
+  .equation-diagram-wrapper {
+    padding: 1.5rem 0.85rem;
+  }
+
+  .specimen-img-card img {
+    height: 200px;
+  }
+
+  .pricing-desk-index {
+    gap: 0.5rem;
+  }
+
+  .pricing-index-label {
+    font-size: 0.625rem;
+  }
+
+  .pricing-desk-meta {
+    gap: 0.75rem;
+  }
+}

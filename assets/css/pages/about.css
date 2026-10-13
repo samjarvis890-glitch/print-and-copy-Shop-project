@@ -1,0 +1,1208 @@
+/* ==========================================================================
+   PRINTWORKS PRINT & COPY — ABOUT PAGE STYLESHEET
+   Authentic, Welcoming, Professional, and Human Visual Identity
+   Sections:
+   1. The People and Purpose Behind Every Page (Full-Width Header & Panoramic Photo)
+   2. Why Printing Still Matters (Typographic Statement & Vertical Document Stack)
+   3. The Way We Approach a Print Job (Vertical Numbered Sequence)
+   4. The Details That Shape a Good Print (Photographic Detail Gallery)
+   5. Every Print Job Has Its Own Purpose (Asymmetrical Audience Panels)
+   6. A Practical, Friendly Experience (Asymmetrical Service Principles)
+   7. Let's Make Your Next Print Job Simple (Full-Width Closing Panel)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   GLOBAL ABOUT UTILITIES & ACCENTS
+   -------------------------------------------------------------------------- */
+.ab-section {
+  padding-block: 5.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ab-section-alt {
+  background-color: var(--bg-alt);
+}
+
+.ab-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  border: 1px solid rgba(53, 106, 230, 0.18);
+  margin-bottom: 1rem;
+}
+
+.ab-tag-yellow {
+  background-color: var(--fg-yellow-light);
+  color: #8C6B00;
+  border-color: rgba(255, 215, 106, 0.4);
+}
+[data-theme="dark"] .ab-tag-yellow {
+  color: var(--fg-yellow);
+}
+
+.ab-tag-mint {
+  background-color: var(--fg-mint-light);
+  color: #156E49;
+  border-color: rgba(191, 234, 216, 0.5);
+}
+[data-theme="dark"] .ab-tag-mint {
+  color: #6EE7B7;
+}
+
+.ab-tag-lavender {
+  background-color: var(--fg-lavender-light);
+  color: #5B3FB8;
+  border-color: rgba(232, 225, 255, 0.5);
+}
+[data-theme="dark"] .ab-tag-lavender {
+  color: #C4B5FD;
+}
+
+.ab-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-blue);
+  margin-bottom: 0.875rem;
+}
+
+.ab-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+.ab-desc {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 680px;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 1 — THE PEOPLE AND PURPOSE BEHIND EVERY PAGE (HEADER)
+   -------------------------------------------------------------------------- */
+.ab-intro-section {
+  padding-top: 3.5rem;
+  padding-bottom: 5.5rem;
+  background: linear-gradient(180deg, var(--bg-page) 0%, rgba(235, 241, 253, 0.3) 100%);
+  border-bottom: 1px solid var(--border-light);
+}
+[data-theme="dark"] .ab-intro-section {
+  background: linear-gradient(180deg, var(--bg-page) 0%, rgba(29, 45, 80, 0.2) 100%);
+}
+
+.ab-intro-header {
+  max-width: 860px;
+  margin-bottom: 3rem;
+}
+
+.ab-intro-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.35rem, 5.2vw, 4.25rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.ab-intro-title-highlight {
+  color: var(--fg-blue);
+  position: relative;
+  display: inline-block;
+}
+
+.ab-intro-title-highlight::after {
+  content: "";
+  position: absolute;
+  bottom: 0.06em;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 0.16em;
+  background-color: var(--fg-yellow);
+  z-index: -1;
+  opacity: 0.85;
+  border-radius: 2px;
+}
+
+.ab-intro-desc-wrap {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2.5rem;
+  align-items: end;
+  margin-bottom: 2rem;
+}
+
+.ab-intro-desc {
+  font-size: clamp(1.125rem, 1.8vw, 1.25rem);
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.ab-intro-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Large Panoramic Photography */
+.ab-panoramic-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-lg);
+  background-color: var(--bg-surface);
+}
+
+.ab-panoramic-img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 560px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ab-panoramic-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.ab-panoramic-card:hover .ab-panoramic-img {
+  transform: scale(1.02);
+}
+
+.ab-panoramic-caption-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-light);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ab-caption-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ab-caption-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+}
+
+.ab-caption-text-title {
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.ab-caption-text-sub {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.ab-caption-badges {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 0.8125rem;
+  color: var(--text-subtle);
+}
+
+.ab-caption-badge-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 2 — WHY PRINTING STILL MATTERS
+   -------------------------------------------------------------------------- */
+.ab-purpose-section {
+  background-color: var(--bg-page);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.ab-purpose-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.ab-purpose-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ab-purpose-points-deck {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.ab-purpose-point-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.ab-purpose-point-card:hover {
+  transform: translateX(4px);
+  border-color: var(--fg-blue);
+}
+[dir="rtl"] .ab-purpose-point-card:hover {
+  transform: translateX(-4px);
+}
+
+.ab-point-icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background-color: var(--fg-yellow-light);
+  color: #8C6B00;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+[data-theme="dark"] .ab-point-icon-box {
+  color: var(--fg-yellow);
+}
+
+.ab-point-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.ab-point-content p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Vertical Stack of Document Photography */
+.ab-purpose-media-stack {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.ab-stack-card-main {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.ab-stack-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  max-height: 520px;
+  overflow: hidden;
+}
+
+.ab-stack-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ab-stack-floating-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  inset-inline-start: 1.5rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.875rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-md);
+  max-width: 320px;
+}
+[data-theme="dark"] .ab-stack-floating-badge {
+  background: rgba(26, 34, 50, 0.94);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.ab-floating-badge-title {
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fg-blue);
+  margin-bottom: 0.25rem;
+}
+
+.ab-floating-badge-desc {
+  font-size: 0.8125rem;
+  color: var(--text-main);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 3 — THE WAY WE APPROACH A PRINT JOB (NUMBERED SEQUENCE)
+   -------------------------------------------------------------------------- */
+.ab-approach-section {
+  background-color: var(--bg-alt);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.ab-approach-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.ab-approach-sequence {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ab-sequence-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.ab-sequence-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--fg-blue);
+  box-shadow: var(--shadow-md);
+}
+
+.ab-sequence-num {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.ab-sequence-body {
+  flex-grow: 1;
+}
+
+.ab-sequence-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.ab-sequence-desc {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+/* Side Showcase Card */
+.ab-approach-side-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 100px;
+}
+
+.ab-approach-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.ab-approach-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ab-approach-card-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ab-approach-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.ab-approach-card-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.ab-approach-note {
+  background-color: var(--fg-mint-light);
+  border-inline-start: 4px solid #156E49;
+  border-radius: var(--radius-sm);
+  padding: 0.875rem 1rem;
+  font-size: 0.8125rem;
+  color: var(--text-main);
+}
+[data-theme="dark"] .ab-approach-note {
+  border-inline-start-color: #6EE7B7;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 4 — THE DETAILS THAT SHAPE A GOOD PRINT (DETAIL GALLERY)
+   -------------------------------------------------------------------------- */
+.ab-details-section {
+  background-color: var(--bg-page);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.ab-details-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3rem;
+  align-items: stretch;
+}
+
+/* Left Featured Large Photo Card */
+.ab-details-featured-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.ab-details-featured-img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+}
+
+.ab-details-featured-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.ab-details-featured-card:hover .ab-details-featured-img {
+  transform: scale(1.02);
+}
+
+.ab-details-featured-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.ab-details-featured-title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.ab-details-featured-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.ab-details-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.ab-detail-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-light);
+  color: var(--text-main);
+}
+
+/* Right Detail Column: 2 Close-up Cards + Descriptions */
+.ab-details-side-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ab-detail-mini-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  align-items: center;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.ab-detail-mini-card:hover {
+  border-color: var(--fg-blue);
+  transform: translateY(-2px);
+}
+
+.ab-detail-mini-img-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 140px;
+  overflow: hidden;
+}
+
+.ab-detail-mini-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ab-detail-mini-content {
+  padding: 1.25rem 1.5rem;
+}
+
+.ab-detail-mini-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.ab-detail-mini-desc {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.ab-detail-feature-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.ab-feature-box {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.ab-feature-box-icon {
+  font-size: 1.35rem;
+  color: var(--fg-blue);
+  margin-bottom: 0.5rem;
+}
+
+.ab-feature-box-title {
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.ab-feature-box-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 5 — EVERY PRINT JOB HAS ITS OWN PURPOSE (AUDIENCE PANELS)
+   -------------------------------------------------------------------------- */
+.ab-community-section {
+  background-color: var(--bg-alt);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.ab-community-banner {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.ab-community-banner-content {
+  padding: 2.5rem 3rem;
+}
+
+.ab-community-banner-img-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  overflow: hidden;
+}
+
+.ab-community-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Four Differently Sized Content Panels */
+.ab-audience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.ab-audience-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.ab-audience-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--fg-blue);
+  box-shadow: var(--shadow-md);
+}
+
+.ab-audience-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.ab-icon-student { background-color: var(--fg-mint-light); color: #156E49; }
+.ab-icon-pro { background-color: var(--fg-blue-light); color: var(--fg-blue); }
+.ab-icon-biz { background-color: var(--fg-yellow-light); color: #8C6B00; }
+.ab-icon-daily { background-color: var(--fg-lavender-light); color: #5B3FB8; }
+
+[data-theme="dark"] .ab-icon-student { color: #6EE7B7; }
+[data-theme="dark"] .ab-icon-biz { color: var(--fg-yellow); }
+[data-theme="dark"] .ab-icon-daily { color: #C4B5FD; }
+
+.ab-audience-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.ab-audience-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.ab-audience-footer {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-subtle);
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--border-light);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 6 — A PRACTICAL, FRIENDLY EXPERIENCE (ASYMMETRICAL PRINCIPLES)
+   -------------------------------------------------------------------------- */
+.ab-experience-section {
+  background-color: var(--bg-page);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.ab-experience-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.ab-experience-img-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.ab-experience-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.ab-experience-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ab-experience-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  inset-inline-end: 1.5rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.875rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-md);
+}
+[data-theme="dark"] .ab-experience-badge {
+  background: rgba(26, 34, 50, 0.94);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.ab-experience-principles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ab-exp-principle-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.ab-exp-principle-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--fg-blue);
+}
+
+.ab-exp-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background-color: var(--fg-mint-light);
+  color: #156E49;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+[data-theme="dark"] .ab-exp-icon {
+  color: #6EE7B7;
+}
+
+.ab-exp-body h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.ab-exp-body p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 7 — LET'S MAKE YOUR NEXT PRINT JOB SIMPLE (CLOSING PANEL)
+   -------------------------------------------------------------------------- */
+.ab-closing-section {
+  padding-block: 5rem;
+  background-color: var(--bg-page);
+}
+
+.ab-closing-panel {
+  background: linear-gradient(135deg, var(--fg-blue-light) 0%, var(--bg-surface) 100%);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  align-items: center;
+}
+[data-theme="dark"] .ab-closing-panel {
+  background: linear-gradient(135deg, var(--bg-surface) 0%, #162032 100%);
+}
+
+.ab-closing-content {
+  padding: 4rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ab-closing-eyebrow {
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-blue);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ab-closing-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--text-main);
+  letter-spacing: -0.025em;
+}
+
+.ab-closing-desc {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 520px;
+}
+
+.ab-closing-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.ab-closing-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  overflow: hidden;
+}
+
+.ab-closing-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE DESIGN ADAPTATIONS FOR ABOUT PAGE
+   -------------------------------------------------------------------------- */
+/* LARGE TABLET (1025px - 1280px) — iPad Pro 13" & similar */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .ab-section {
+    padding-block: 5rem;
+  }
+
+  .ab-intro-desc-wrap {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ab-purpose-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ab-approach-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ab-approach-side-card {
+    position: static;
+    max-width: 640px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .ab-details-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ab-experience-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ab-audience-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .ab-community-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .ab-closing-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* TABLET (<= 1024px) */
+@media (max-width: 1024px) {
+  .ab-section {
+    padding-block: 4.5rem;
+  }
+
+  .ab-intro-desc-wrap {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ab-intro-actions {
+    justify-content: flex-start;
+  }
+
+  .ab-purpose-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ab-purpose-media-stack {
+    max-width: 600px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .ab-approach-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ab-approach-side-card {
+    position: static;
+    max-width: 600px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .ab-details-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ab-community-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .ab-audience-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .ab-experience-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ab-closing-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .ab-closing-content {
+    padding: 2.5rem 2rem;
+  }
+
+  .ab-closing-img-wrap {
+    min-height: 280px;
+    max-height: 360px;
+  }
+}
+
+/* MOBILE (<= 768px) */
+@media (max-width: 768px) {
+  .ab-section {
+    padding-block: 3.5rem;
+  }
+
+  .ab-intro-section {
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .ab-intro-title {
+    font-size: 2.25rem;
+    line-height: 1.1;
+  }
+
+  .ab-panoramic-caption-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1.25rem;
+  }
+
+  .ab-caption-badges {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .ab-purpose-point-card {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .ab-sequence-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .ab-sequence-num {
+    width: 36px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+
+  .ab-detail-mini-card {
+    grid-template-columns: 1fr;
+  }
+
+  .ab-detail-mini-img-wrap {
+    min-height: 160px;
+  }
+
+  .ab-detail-feature-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .ab-audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ab-community-banner-content {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .ab-closing-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ab-closing-actions .fg-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* EXTRA SMALL SCREENS (<= 480px) */
+@media (max-width: 480px) {
+  .ab-intro-title {
+    font-size: 1.85rem;
+  }
+
+  .ab-title {
+    font-size: 1.75rem;
+  }
+
+  .ab-closing-content {
+    padding: 2rem 1.25rem;
+  }
+}

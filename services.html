@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services — PRINTWORKS PRINT &amp; COPY | Printing, Copying &amp; Finishing Catalogue</title>
+  <meta name="description" content="Explore printing, document photocopying, wire and comb binding, lamination, and presentation finishing services at PRINTWORKS PRINT &amp; COPY. Clean specifications and upfront guidance.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+  <!-- Instant Theme & Direction Initialization (Prevents visible flash) -->
+  <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem('printworks_theme');
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        const savedDir = localStorage.getItem('printworks_dir');
+        if (savedDir) {
+          document.documentElement.setAttribute('dir', savedDir);
+          document.documentElement.setAttribute('lang', savedDir === 'rtl' ? 'ar' : 'en');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages/services.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       GLOBAL NAVBAR (DESKTOP 1281px+ | TABLET & MOBILE COLLAPSE 1280px-)
+       Reused identically from index.html with Services marked as active
+       ======================================================================== -->
+  <header class="fg-navbar" role="banner">
+    <div class="fg-container fg-navbar-inner">
+
+      <!-- Brand Logo (Left Side) -->
+      <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-light" width="240" height="48">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-dark" width="240" height="48">
+      </a>
+
+      <!-- Desktop Navigation Menu (Visible on 1281px+) -->
+      <nav class="fg-nav-menu" aria-label="Primary Navigation">
+        <!-- Home Dropdown -->
+        <div class="fg-nav-dropdown">
+          <a href="index.html" class="fg-nav-link" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <i class="bi bi-chevron-down" style="font-size: 0.75rem;" aria-hidden="true"></i>
+          </a>
+          <div class="fg-dropdown-menu" role="menu">
+            <a href="index.html" class="fg-dropdown-link" role="menuitem">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home 1 (Main)</span>
+            </a>
+            <a href="home2.html" class="fg-dropdown-link" role="menuitem">
+              <i class="bi bi-layout-text-window-reverse" aria-hidden="true"></i>
+              <span>Home 2 (Express)</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="fg-nav-link">About</a>
+        <a href="services.html" class="fg-nav-link active" aria-current="page">Services</a>
+        <a href="pricing.html" class="fg-nav-link">Pricing</a>
+        <a href="blog.html" class="fg-nav-link">Blog</a>
+        <a href="contact.html" class="fg-nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Side Controls & Actions -->
+      <div class="fg-nav-controls">
+        <!-- Dark Mode Toggle Button -->
+        <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+        </button>
+
+        <!-- RTL / LTR Direction Toggle Button -->
+        <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+          <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+        </button>
+
+        <!-- Desktop Action Button (Get a Quote) -->
+        <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary fg-navbar-cta">
+          <span>Get a Quote</span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Mobile & Tablet Hamburger Menu Toggle (<= 1280px) -->
+        <button type="button" class="fg-hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MOBILE & TABLET DRAWER MENU (MANDATORY RULE COMPLIANCE)
+       Contains ALL navigation items, Home dropdown, utilities & login button
+       ======================================================================== -->
+  <div class="fg-drawer-backdrop" aria-hidden="true"></div>
+
+  <aside id="mobile-drawer" class="fg-drawer" aria-label="Mobile Navigation Drawer" aria-hidden="true">
+    <div class="fg-drawer-header">
+      <a href="index.html" class="fg-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-light" width="200" height="40">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img fg-brand-img-dark" width="200" height="40">
+      </a>
+      <button type="button" class="fg-drawer-close" aria-label="Close navigation menu">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="fg-drawer-body">
+      <nav class="fg-drawer-nav" aria-label="Mobile Menu Links">
+        <!-- Home Dropdown -->
+        <div class="fg-drawer-dropdown">
+          <button type="button" class="fg-drawer-link fg-drawer-dropdown-btn" aria-expanded="false">
+            <span class="fg-drawer-link-inner">
+              <i class="bi bi-house-door" aria-hidden="true"></i>
+              <span>Home</span>
+            </span>
+            <i class="bi bi-chevron-down fg-drawer-chevron" aria-hidden="true"></i>
+          </button>
+          <div class="fg-drawer-submenu">
+            <a href="index.html" class="fg-drawer-sublink">
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+              <span>Home 1</span>
+            </a>
+            <a href="home2.html" class="fg-drawer-sublink">
+              <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+              <span>Home 2</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- About -->
+        <a href="about.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-info-circle" aria-hidden="true"></i>
+            <span>About</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Services (Active) -->
+        <a href="services.html" class="fg-drawer-link active" aria-current="page">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-printer" aria-hidden="true"></i>
+            <span>Services</span>
+          </span>
+          <i class="bi bi-check2" aria-hidden="true"></i>
+        </a>
+
+        <!-- Pricing -->
+        <a href="pricing.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-tag" aria-hidden="true"></i>
+            <span>Pricing</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Blog -->
+        <a href="blog.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-journal-text" aria-hidden="true"></i>
+            <span>Blog</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- Contact -->
+        <a href="contact.html" class="fg-drawer-link">
+          <span class="fg-drawer-link-inner">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+            <span>Contact</span>
+          </span>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+      <div class="fg-drawer-divider"></div>
+
+      <!-- Drawer Theme & Direction Controls -->
+      <div class="fg-drawer-controls">
+        <span class="fg-drawer-controls-label">Preferences</span>
+        <div class="fg-drawer-toggle-group">
+          <button type="button" class="fg-icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="fg-icon-btn rtl-toggle-btn" aria-label="Toggle text direction" title="RTL / LTR Toggle">
+            <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drawer Footer with Login Button -->
+    <div class="fg-drawer-footer">
+      <button type="button" class="fg-btn fg-btn-primary fg-login-btn" style="width: 100%;">
+        <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+        <span>Login / Account</span>
+      </button>
+      <a href="contact.html#order-enquiry" class="fg-btn fg-btn-secondary" style="width: 100%;">
+        <i class="bi bi-calculator" aria-hidden="true"></i>
+        <span>Instant Quote</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       MAIN CONTENT: EXACTLY SEVEN UNIQUE SERVICES PAGE CONTENT SECTIONS
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 1 — FIND THE RIGHT PRINTING SERVICE (DIRECTORY HEADER)
+         ---------------------------------------------------------------------- -->
+    <section id="services-intro" class="sv-section sv-intro-section" aria-labelledby="services-intro-title">
+      <div class="fg-container">
+
+        <!-- Top Service Directory Header Block -->
+        <div class="sv-intro-header-grid">
+          <div>
+            <div class="sv-eyebrow">
+              <i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i>
+              <span>OUR PRINTING SERVICES</span>
+            </div>
+            <h1 id="services-intro-title" class="sv-intro-title">
+              THE RIGHT PRINT FOR <span class="sv-intro-title-highlight">EVERY TASK.</span>
+            </h1>
+          </div>
+
+          <div class="sv-intro-desc-wrap">
+            <p class="sv-desc">
+              From everyday document copies to organized reports and finishing options, explore practical printing services for your needs.
+            </p>
+            <div class="sv-intro-actions">
+              <a href="#printing" class="fg-btn fg-btn-primary">
+                <span>EXPLORE SERVICES</span>
+                <i class="bi bi-arrow-down-short" aria-hidden="true"></i>
+              </a>
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-secondary">
+                <span>REQUEST A QUOTE</span>
+                <i class="bi bi-chat-left-dots" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compact Service Directory Index Panel -->
+        <nav class="sv-directory-index-bar" aria-label="Service directory shortcuts">
+          <a href="#printing" class="sv-index-item">
+            <div class="sv-index-icon"><i class="bi bi-printer"></i></div>
+            <span class="sv-index-text">Printing</span>
+          </a>
+          <a href="#copying" class="sv-index-item">
+            <div class="sv-index-icon"><i class="bi bi-files"></i></div>
+            <span class="sv-index-text">Photocopying</span>
+          </a>
+          <a href="#binding" class="sv-index-item">
+            <div class="sv-index-icon"><i class="bi bi-book"></i></div>
+            <span class="sv-index-text">Binding &amp; Finishing</span>
+          </a>
+          <a href="#business-study" class="sv-index-item">
+            <div class="sv-index-icon"><i class="bi bi-file-earmark-text"></i></div>
+            <span class="sv-index-text">Business Documents</span>
+          </a>
+        </nav>
+
+        <!-- Horizontal Photographic Strip -->
+        <div class="sv-panoramic-strip">
+          <div class="sv-panoramic-img-wrap">
+            <img 
+              src="assets/images/services/services-intro.webp" 
+              alt="Clean modern digital printing equipment, paper samples, and neatly arranged document sets in production studio"
+              class="sv-panoramic-img"
+              width="1920" 
+              height="900"
+              loading="eager"
+            >
+          </div>
+          <div class="sv-panoramic-badge-overlay">
+            <div class="sv-overlay-icon">
+              <i class="bi bi-check2-all" aria-hidden="true"></i>
+            </div>
+            <div>
+              <div class="sv-overlay-title">Comprehensive Studio Capabilities</div>
+              <div class="sv-overlay-sub">Walk-in counter assistance &amp; express same-day turnaround</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 2 — DOCUMENT PRINTING (SPECIFICATION LAYOUT)
+         ---------------------------------------------------------------------- -->
+    <section id="printing" class="sv-section sv-printing-section" aria-labelledby="printing-title">
+      <div class="fg-container">
+
+        <div class="sv-printing-grid">
+
+          <!-- Left Column: Realistic Printer Photograph -->
+          <div class="sv-printing-media-card">
+            <div class="sv-printing-img-wrap">
+              <img 
+                src="assets/images/services/document-printing.webp" 
+                alt="Production digital color laser press running crisp printed pages into output tray with high color fidelity"
+                class="sv-printing-img"
+                width="1400" 
+                height="1000"
+                loading="lazy"
+              >
+            </div>
+          </div>
+
+          <!-- Right Column: Structured Specification Layout -->
+          <div class="sv-printing-content">
+            <div class="sv-eyebrow">
+              <i class="bi bi-printer" aria-hidden="true"></i>
+              <span>CORE DOCUMENT PRODUCTION</span>
+            </div>
+            <h2 id="printing-title" class="sv-title">
+              EVERYDAY PRINTING, MADE SIMPLE.
+            </h2>
+            <p class="sv-desc">
+              Prepare documents for study, work, presentations, and everyday tasks with the specifications that suit your needs.
+            </p>
+
+            <!-- Structured Options Grid -->
+            <div class="sv-spec-list">
+
+              <div class="sv-spec-card">
+                <div class="sv-spec-card-icon"><i class="bi bi-circle-half"></i></div>
+                <div>
+                  <h3 class="sv-spec-card-title">Black-and-White Printing</h3>
+                  <p class="sv-spec-card-desc">1200 DPI crisp monochrome text for multi-page dossiers and contracts.</p>
+                </div>
+              </div>
+
+              <div class="sv-spec-card">
+                <div class="sv-spec-card-icon"><i class="bi bi-palette"></i></div>
+                <div>
+                  <h3 class="sv-spec-card-title">Color Printing</h3>
+                  <p class="sv-spec-card-desc">Vibrant, balanced CMYK for marketing leave-behinds, diagrams, and photos.</p>
+                </div>
+              </div>
+
+              <div class="sv-spec-card">
+                <div class="sv-spec-card-icon"><i class="bi bi-file-earmark"></i></div>
+                <div>
+                  <h3 class="sv-spec-card-title">Single-Sided Printing</h3>
+                  <p class="sv-spec-card-desc">Simplex page format suitable for display notices and formal legal briefs.</p>
+                </div>
+              </div>
+
+              <div class="sv-spec-card">
+                <div class="sv-spec-card-icon"><i class="bi bi-file-earmark-diff"></i></div>
+                <div>
+                  <h3 class="sv-spec-card-title">Double-Sided Printing</h3>
+                  <p class="sv-spec-card-desc">Duplex sheet format that conserves paper bulk and simplifies reading.</p>
+                </div>
+              </div>
+
+              <div class="sv-spec-card">
+                <div class="sv-spec-card-icon"><i class="bi bi-aspect-ratio"></i></div>
+                <div>
+                  <h3 class="sv-spec-card-title">Supported Paper Sizes</h3>
+                  <p class="sv-spec-card-desc">Standard A4, US Letter, spacious A3, and customized trim sizes.</p>
+                </div>
+              </div>
+
+              <div class="sv-spec-card">
+                <div class="sv-spec-card-icon"><i class="bi bi-stack"></i></div>
+                <div>
+                  <h3 class="sv-spec-card-title">Flexible Quantities</h3>
+                  <p class="sv-spec-card-desc">From 1 individual proof copy to staged bulk distributions.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Practical Counter Note -->
+            <div class="sv-disclaimer-note">
+              <i class="bi bi-info-circle-fill" style="margin-inline-end: 0.35rem;" aria-hidden="true"></i>
+              <span>Actual paper sizes, print formats, and current stock weights are confirmed with our counter team upon file review.</span>
+            </div>
+
+            <div>
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
+                <span>ASK ABOUT PRINTING</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 3 — PHOTOCOPYING (VERTICAL IMAGE & USE-CASE COMPOSITION)
+         ---------------------------------------------------------------------- -->
+    <section id="copying" class="sv-section sv-copying-section" aria-labelledby="copying-title">
+      <div class="fg-container">
+
+        <div class="sv-copying-grid">
+
+          <!-- Left Column: Heading, Description & Use-Case Checklist -->
+          <div>
+            <div class="sv-eyebrow">
+              <i class="bi bi-files" aria-hidden="true"></i>
+              <span>DOCUMENT REPRODUCTION</span>
+            </div>
+            <h2 id="copying-title" class="sv-title">
+              COPIES FOR YOUR EVERYDAY DOCUMENTS.
+            </h2>
+            <p class="sv-desc">
+              Photocopying can help prepare additional copies of documents for study, office work, reference, and other everyday needs.
+            </p>
+
+            <div class="sv-copying-checklist">
+
+              <div class="sv-copy-item">
+                <div class="sv-copy-icon"><i class="bi bi-mortarboard"></i></div>
+                <div>
+                  <h3 class="sv-copy-item-title">Study notes and academic materials</h3>
+                  <p class="sv-copy-item-desc">Fast reproduction of lecture handouts, research articles, and student coursework.</p>
+                </div>
+              </div>
+
+              <div class="sv-copy-item">
+                <div class="sv-copy-icon"><i class="bi bi-briefcase"></i></div>
+                <div>
+                  <h3 class="sv-copy-item-title">Office paperwork and administration</h3>
+                  <p class="sv-copy-item-desc">Clear copies of invoices, staff guidelines, agendas, and operational records.</p>
+                </div>
+              </div>
+
+              <div class="sv-copy-item">
+                <div class="sv-copy-icon"><i class="bi bi-collection"></i></div>
+                <div>
+                  <h3 class="sv-copy-item-title">Multi-page collated documents</h3>
+                  <p class="sv-copy-item-desc">Automatic electronic sorting, collation, and neat corner stapling for multi-page sets.</p>
+                </div>
+              </div>
+
+              <div class="sv-copy-item">
+                <div class="sv-copy-icon"><i class="bi bi-bookmark-check"></i></div>
+                <div>
+                  <h3 class="sv-copy-item-title">Reference materials and manuals</h3>
+                  <p class="sv-copy-item-desc">Clean black-and-white or color copies of equipment schedules and training guides.</p>
+                </div>
+              </div>
+
+              <div class="sv-copy-item">
+                <div class="sv-copy-icon"><i class="bi bi-check2-circle"></i></div>
+                <div>
+                  <h3 class="sv-copy-item-title">Customer-specified copy quantities</h3>
+                  <p class="sv-copy-item-desc">Immediate walk-in service for quick duplicates or arranged volumes for later pickup.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
+                <span>ENQUIRE ABOUT COPYING</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Tall Vertical Photograph -->
+          <div class="sv-copying-media-card">
+            <div class="sv-copying-img-wrap">
+              <img 
+                src="assets/images/services/photocopying.webp" 
+                alt="Modern commercial digital photocopier and document scanner scanning multi-page documents"
+                class="sv-copying-img"
+                width="1000" 
+                height="1400"
+                loading="lazy"
+              >
+            </div>
+            <div class="sv-copying-badge">
+              <div style="font-family: var(--font-heading); font-size: 0.8125rem; font-weight: 700; color: var(--fg-blue); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.2rem;">
+                Front Desk Counter Service
+              </div>
+              <div style="font-size: 0.8125rem; color: var(--text-main); font-weight: 600;">
+                Walk-ins welcomed for immediate copies
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 4 — BINDING & FINISHING (HORIZONTAL SHOWCASE)
+         ---------------------------------------------------------------------- -->
+    <section id="binding" class="sv-section sv-binding-section" aria-labelledby="binding-title">
+      <div class="fg-container">
+
+        <!-- Top Featured Banner -->
+        <div class="sv-binding-featured-banner">
+          <div class="sv-binding-banner-content">
+            <div class="sv-eyebrow">
+              <i class="bi bi-book" aria-hidden="true"></i>
+              <span>DOCUMENT CRAFTSMANSHIP</span>
+            </div>
+            <h2 id="binding-title" class="sv-title" style="font-size: clamp(1.85rem, 3.2vw, 2.5rem);">
+              GIVE YOUR DOCUMENTS A NEAT FINISH.
+            </h2>
+            <p class="sv-desc">
+              Finishing choices can help keep pages organized and prepare documents for convenient handling or presentation.
+            </p>
+            <div>
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
+                <span>ASK ABOUT FINISHING</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="sv-binding-banner-img-wrap">
+            <img 
+              src="assets/images/services/binding-main.webp" 
+              alt="Neatly stacked bound documents and presentation booklets showcasing twin-loop wire binding"
+              class="sv-binding-banner-img"
+              width="1400" 
+              height="900"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <!-- Row of Smaller Detail Photographs & Finishing Cards -->
+        <div class="sv-binding-detail-grid">
+
+          <!-- Finishing Item 1 -->
+          <article class="sv-finish-card">
+            <div class="sv-finish-img-wrap">
+              <img 
+                src="assets/images/services/binding-detail.webp" 
+                alt="Close-up photograph of metal wire binding loops and plastic comb spine"
+                class="sv-finish-img"
+                width="800" 
+                height="600"
+                loading="lazy"
+              >
+            </div>
+            <div class="sv-finish-content">
+              <h3 class="sv-finish-title">Wire &amp; Spiral Binding</h3>
+              <p class="sv-finish-desc">Lie-flat 360-degree page turning in black, white, and silver for reports and manuals.</p>
+              <span class="sv-finish-tag">Lie-Flat Spines</span>
+            </div>
+          </article>
+
+          <!-- Finishing Item 2 -->
+          <article class="sv-finish-card">
+            <div class="sv-finish-img-wrap">
+              <img 
+                src="assets/images/services/finished-documents.webp" 
+                alt="Finished presentation booklets with frosted protective cover sheets and solid card backing"
+                class="sv-finish-img"
+                width="800" 
+                height="600"
+                loading="lazy"
+              >
+            </div>
+            <div class="sv-finish-content">
+              <h3 class="sv-finish-title">Protective Cover Sheets</h3>
+              <p class="sv-finish-desc">Frosted matte acetate fronts and solid black linen backings that guard against spills.</p>
+              <span class="sv-finish-tag">Spill Resistance</span>
+            </div>
+          </article>
+
+          <!-- Finishing Item 3 -->
+          <article class="sv-finish-card">
+            <div class="sv-finish-content" style="justify-content: center; height: 100%;">
+              <div style="font-size: 1.75rem; color: var(--fg-blue); margin-bottom: 0.75rem;"><i class="bi bi-paperclip"></i></div>
+              <h3 class="sv-finish-title">Stapling &amp; Booklet Stitching</h3>
+              <p class="sv-finish-desc">Heavy-duty corner stapling and dual saddle-stitch folding for notices and booklets.</p>
+              <span class="sv-finish-tag">Corner &amp; Saddle Stitch</span>
+            </div>
+          </article>
+
+          <!-- Finishing Item 4 -->
+          <article class="sv-finish-card">
+            <div class="sv-finish-content" style="justify-content: center; height: 100%;">
+              <div style="font-size: 1.75rem; color: var(--fg-blue); margin-bottom: 0.75rem;"><i class="bi bi-scissors"></i></div>
+              <h3 class="sv-finish-title">Trimming &amp; Hole Punching</h3>
+              <p class="sv-finish-desc">Hydraulic guillotine cutting for razor borders, plus 2-hole and 4-hole binder punching.</p>
+              <span class="sv-finish-tag">Custom Trimming</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 5 — BUSINESS & STUDY DOCUMENTS (TWO-SIDED COMPARISON)
+         ---------------------------------------------------------------------- -->
+    <section id="business-study" class="sv-section sv-comparison-section" aria-labelledby="comparison-title">
+      <div class="fg-container">
+
+        <!-- Section Header -->
+        <div style="margin-bottom: 3.5rem;">
+          <div class="sv-eyebrow">
+            <i class="bi bi-columns" aria-hidden="true"></i>
+            <span>TAILORED SOLUTIONS</span>
+          </div>
+          <h2 id="comparison-title" class="sv-title">
+            DOCUMENTS FOR EVERY SETTING.
+          </h2>
+          <p class="sv-desc">
+            Different documents have different requirements. Choose your specifications based on how the printed material will be used.
+          </p>
+        </div>
+
+        <!-- Two-Sided Editorial Comparison Deck -->
+        <div class="sv-comparison-deck">
+
+          <!-- Left Side: Study & Education -->
+          <div class="sv-compare-col sv-col-study">
+            <div class="sv-compare-img-wrap">
+              <img 
+                src="assets/images/services/study-documents.webp" 
+                alt="Open study materials, university textbooks, and student notes arranged for academic study"
+                class="sv-compare-img"
+                width="1000" 
+                height="750"
+                loading="lazy"
+              >
+            </div>
+            <div class="sv-compare-body">
+              <span class="sv-tag sv-tag-mint" style="width: fit-content;">ACADEMIC FOCUS</span>
+              <h3 class="sv-compare-title">Study &amp; Education</h3>
+              <p class="sv-compare-desc">
+                Organized for desk study, annotating lecture points, and long-term durability throughout the school term or semester.
+              </p>
+              <div class="sv-compare-items-list">
+                <div class="sv-compare-list-item"><i class="bi bi-check-circle-fill"></i> Assignments &amp; research papers</div>
+                <div class="sv-compare-list-item"><i class="bi bi-check-circle-fill"></i> Study notes &amp; revision dossiers</div>
+                <div class="sv-compare-list-item"><i class="bi bi-check-circle-fill"></i> Educational handouts &amp; syllabi</div>
+                <div class="sv-compare-list-item"><i class="bi bi-check-circle-fill"></i> Reference guides &amp; lab workbooks</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Business & Office -->
+          <div class="sv-compare-col sv-col-business">
+            <div class="sv-compare-img-wrap">
+              <img 
+                src="assets/images/services/business-documents.webp" 
+                alt="Corporate business reports, financial charts, and executive presentation folders on boardroom desk"
+                class="sv-compare-img"
+                width="1000" 
+                height="750"
+                loading="lazy"
+              >
+            </div>
+            <div class="sv-compare-body">
+              <span class="sv-tag sv-tag-peach" style="width: fit-content;">CORPORATE PRESENTATION</span>
+              <h3 class="sv-compare-title">Business &amp; Office</h3>
+              <p class="sv-compare-desc">
+                Prepared with crisp color calibration, heavier cover stocks, and professional binding that inspires stakeholder confidence.
+              </p>
+              <div class="sv-compare-items-list">
+                <div class="sv-compare-list-item"><i class="bi bi-check-circle-fill"></i> Executive annual &amp; quarterly reports</div>
+                <div class="sv-compare-list-item"><i class="bi bi-check-circle-fill"></i> Board meeting materials &amp; agendas</div>
+                <div class="sv-compare-list-item"><i class="bi bi-check-circle-fill"></i> Client presentation handouts &amp; pitch decks</div>
+                <div class="sv-compare-list-item"><i class="bi bi-check-circle-fill"></i> Everyday business paperwork &amp; forms</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 6 — CHOOSE YOUR PRINT SPECIFICATIONS (STRUCTURED GUIDE)
+         ---------------------------------------------------------------------- -->
+    <section id="specifications" class="sv-section sv-spec-guide-section" aria-labelledby="guide-title">
+      <div class="fg-container">
+
+        <!-- Section Header -->
+        <div style="margin-bottom: 3.5rem;">
+          <div class="sv-eyebrow">
+            <i class="bi bi-sliders" aria-hidden="true"></i>
+            <span>SPECIFICATION GUIDE</span>
+          </div>
+          <h2 id="guide-title" class="sv-title">
+            A FEW DETAILS MAKE PLANNING EASIER.
+          </h2>
+          <p class="sv-desc">
+            Having these details ready can help the shop understand your requirements and confirm the applicable price and availability.
+          </p>
+        </div>
+
+        <div class="sv-guide-layout">
+
+          <!-- Left: 7 Structured Horizontal Specification Rows -->
+          <div class="sv-matrix-rows">
+
+            <!-- Category 1 -->
+            <div class="sv-matrix-row-card">
+              <div class="sv-matrix-label">
+                <span class="sv-matrix-num">01</span>
+                <span class="sv-matrix-name">Document Size</span>
+              </div>
+              <div class="sv-matrix-options">
+                <span class="sv-opt-chip">Standard A4</span>
+                <span class="sv-opt-chip">US Letter</span>
+                <span class="sv-opt-chip">Large A3</span>
+                <span class="sv-opt-chip">Custom Trimming</span>
+              </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="sv-matrix-row-card">
+              <div class="sv-matrix-label">
+                <span class="sv-matrix-num">02</span>
+                <span class="sv-matrix-name">Number of Pages</span>
+              </div>
+              <div class="sv-matrix-options">
+                <span class="sv-opt-chip">Single Sheet</span>
+                <span class="sv-opt-chip">10–50 Pages</span>
+                <span class="sv-opt-chip">100+ Pages</span>
+                <span class="sv-opt-chip">Multi-Volume</span>
+              </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="sv-matrix-row-card">
+              <div class="sv-matrix-label">
+                <span class="sv-matrix-num">03</span>
+                <span class="sv-matrix-name">Number of Copies</span>
+              </div>
+              <div class="sv-matrix-options">
+                <span class="sv-opt-chip">1 Sample Proof</span>
+                <span class="sv-opt-chip">5–25 Sets</span>
+                <span class="sv-opt-chip">50–100 Sets</span>
+                <span class="sv-opt-chip">Volume Distribution</span>
+              </div>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="sv-matrix-row-card">
+              <div class="sv-matrix-label">
+                <span class="sv-matrix-num">04</span>
+                <span class="sv-matrix-name">Color / Black &amp; White</span>
+              </div>
+              <div class="sv-matrix-options">
+                <span class="sv-opt-chip">Monochrome Text</span>
+                <span class="sv-opt-chip">Full CMYK Color</span>
+                <span class="sv-opt-chip">Color Cover + B&amp;W Body</span>
+              </div>
+            </div>
+
+            <!-- Category 5 -->
+            <div class="sv-matrix-row-card">
+              <div class="sv-matrix-label">
+                <span class="sv-matrix-num">05</span>
+                <span class="sv-matrix-name">Single / Double-Sided</span>
+              </div>
+              <div class="sv-matrix-options">
+                <span class="sv-opt-chip">Single-Sided (Simplex)</span>
+                <span class="sv-opt-chip">Double-Sided (Duplex)</span>
+              </div>
+            </div>
+
+            <!-- Category 6 -->
+            <div class="sv-matrix-row-card">
+              <div class="sv-matrix-label">
+                <span class="sv-matrix-num">06</span>
+                <span class="sv-matrix-name">Paper Preference</span>
+              </div>
+              <div class="sv-matrix-options">
+                <span class="sv-opt-chip">80gsm Standard Bond</span>
+                <span class="sv-opt-chip">120gsm Smooth Text</span>
+                <span class="sv-opt-chip">250gsm Silk Card</span>
+                <span class="sv-opt-chip">350gsm Heavy Board</span>
+              </div>
+            </div>
+
+            <!-- Category 7 -->
+            <div class="sv-matrix-row-card">
+              <div class="sv-matrix-label">
+                <span class="sv-matrix-num">07</span>
+                <span class="sv-matrix-name">Binding &amp; Finishing</span>
+              </div>
+              <div class="sv-matrix-options">
+                <span class="sv-opt-chip">Unbound Loose</span>
+                <span class="sv-opt-chip">Corner Staple</span>
+                <span class="sv-opt-chip">Wire Loop Binding</span>
+                <span class="sv-opt-chip">Protective Covers</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Supporting Visual Guide Card -->
+          <div class="sv-guide-side-card">
+            <div class="sv-guide-img-wrap">
+              <img 
+                src="assets/images/services/specification-guide.webp" 
+                alt="Clipboard with print order specification checklist and metal pen on clean desk"
+                class="sv-guide-img"
+                width="1200" 
+                height="800"
+                loading="lazy"
+              >
+            </div>
+            <div class="sv-guide-side-body">
+              <span class="sv-tag sv-tag-yellow" style="width: fit-content; margin-bottom: 0;">CLEAR PLANNING</span>
+              <h3 class="sv-guide-side-title">Clear details ensure an accurate estimate.</h3>
+              <p class="sv-guide-side-desc">
+                When you share these specs with our team, we can immediately verify paper stock availability and provide itemized rates.
+              </p>
+              <a href="pricing.html" class="fg-btn fg-btn-secondary" style="justify-content: center;">
+                <span>VIEW PRICING</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 7 — LET'S GET YOUR PRINT JOB STARTED (CLOSING PANEL)
+         ---------------------------------------------------------------------- -->
+    <section id="services-closing" class="sv-section sv-closing-section" aria-labelledby="closing-title">
+      <div class="fg-container">
+
+        <div class="sv-closing-card">
+
+          <!-- Left: Compact Quotation Preparation Content -->
+          <div class="sv-closing-content">
+            <div class="sv-eyebrow">
+              <i class="bi bi-send-check" aria-hidden="true"></i>
+              <span>YOUR NEXT STEP</span>
+            </div>
+            <h2 id="closing-title" class="sv-title">
+              TELL US WHAT YOU NEED.
+            </h2>
+            <p class="sv-desc">
+              Share your document requirements so you can enquire about suitable services, pricing, and availability.
+            </p>
+
+            <div class="sv-closing-checklist-box">
+              <span class="sv-closing-check-item"><i class="bi bi-check-circle-fill"></i> Service type</span>
+              <span class="sv-closing-check-item"><i class="bi bi-check-circle-fill"></i> Page count</span>
+              <span class="sv-closing-check-item"><i class="bi bi-check-circle-fill"></i> Number of copies</span>
+              <span class="sv-closing-check-item"><i class="bi bi-check-circle-fill"></i> Color &amp; paper preferences</span>
+              <span class="sv-closing-check-item"><i class="bi bi-check-circle-fill"></i> Finishing requirements</span>
+            </div>
+
+            <div class="sv-closing-actions">
+              <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
+                <span>REQUEST A QUOTE</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="pricing.html" class="fg-btn fg-btn-secondary">
+                <span>VIEW PRICING</span>
+                <i class="bi bi-tag" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Neatly Packaged Print Job Photograph -->
+          <div class="sv-closing-img-wrap">
+            <img 
+              src="assets/images/services/services-closing.webp" 
+              alt="Neatly stacked and packaged printed documents ready for customer pickup at counter"
+              class="sv-closing-img"
+              width="1400" 
+              height="900"
+              loading="lazy"
+            >
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER (EXACTLY THE SAME AS INDEX.HTML)
+       Reused identically with Services marked in Explore menu
+       ======================================================================== -->
+  <footer class="fg-footer" role="contentinfo">
+    <div class="fg-container">
+
+      <!-- Main Footer Columns (5 Columns) -->
+      <div class="fg-footer-grid">
+
+        <!-- Column 1: Brand & Contact Overview -->
+        <div class="fg-footer-col fg-footer-brand-col">
+          <a href="index.html" class="fg-brand fg-footer-brand" aria-label="PRINTWORKS PRINT &amp; COPY Homepage">
+            <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img" width="220" height="44">
+          </a>
+          <span class="fg-footer-tagline">PRECISION PRINTS. PROUD RESULTS.</span>
+          <p class="fg-footer-desc">
+            Your neighborhood printing, photocopying, binding, and finishing specialists. Dedicated to crisp quality, fast turnarounds, and friendly service.
+          </p>
+          <div class="fg-footer-socials" aria-label="Social media channels">
+            <a href="https://instagram.com" class="fg-social-btn" aria-label="Follow PRINTWORKS on Instagram" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://facebook.com" class="fg-social-btn" aria-label="Follow PRINTWORKS on Facebook" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://linkedin.com" class="fg-social-btn" aria-label="Connect with PRINTWORKS on LinkedIn" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Explore Navigation -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Explore</h3>
+          <ul class="fg-footer-links">
+            <li><a href="index.html" class="fg-footer-link">Home 1 (Main)</a></li>
+            <li><a href="home2.html" class="fg-footer-link">Home 2 (Express)</a></li>
+            <li><a href="about.html" class="fg-footer-link">About</a></li>
+            <li><a href="services.html" class="fg-footer-link active" aria-current="page">Services</a></li>
+            <li><a href="pricing.html" class="fg-footer-link">Pricing</a></li>
+            <li><a href="blog.html" class="fg-footer-link">Blog</a></li>
+            <li><a href="contact.html" class="fg-footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Core Printing Services -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Services</h3>
+          <ul class="fg-footer-links">
+            <li><a href="services.html#printing" class="fg-footer-link">Document Printing</a></li>
+            <li><a href="services.html#copying" class="fg-footer-link">Document Copying</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Bound Booklets</a></li>
+            <li><a href="services.html#business-study" class="fg-footer-link">Business Documents</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Wire &amp; Spiral Binding</a></li>
+            <li><a href="services.html#printing" class="fg-footer-link">Large A3 Posters</a></li>
+            <li><a href="services.html#copying" class="fg-footer-link">High-Res Scanning</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Paper & Finishes -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Paper &amp; Finishes</h3>
+          <ul class="fg-footer-links">
+            <li><a href="services.html#specifications" class="fg-footer-link">Silk Matte 350gsm</a></li>
+            <li><a href="services.html#specifications" class="fg-footer-link">Recycled Kraft Stock</a></li>
+            <li><a href="services.html#specifications" class="fg-footer-link">High-Gloss Coated</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Twin-Loop Wire Binding</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Soft-Touch Lamination</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Metallic Foil Stamping</a></li>
+            <li><a href="services.html#binding" class="fg-footer-link">Perfect Spine Binding</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Store & Counter (Say Hello) -->
+        <div class="fg-footer-col">
+          <h3 class="fg-footer-heading">Say Hello</h3>
+          <div class="fg-footer-contact-list">
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              <span>450 Printing Plaza, Suite 102, Downtown District</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-clock-fill" aria-hidden="true"></i>
+              <span>Mon – Fri: 8:00 AM – 7:00 PM<br>Saturday: 9:00 AM – 5:00 PM</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+              <span>(555) 789-3456</span>
+            </div>
+            <div class="fg-footer-contact-item">
+              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+              <span>hello@printworksprint.com</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="fg-footer-bottom">
+        <div>
+          &copy; 2026 PRINTWORKS PRINT &amp; COPY. All rights reserved. Precision Prints. Proud Results.
+        </div>
+        <div class="fg-footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="accessibility.html">Accessibility Statement</a>
+        </div>
+        <button type="button" class="fg-back-to-top" aria-label="Scroll back to top of page" title="Back to top">
+          <i class="bi bi-arrow-up" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       ACCESSIBLE LOGIN MODAL
+       ======================================================================== -->
+  <div id="login-modal" class="fg-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="fg-modal-card">
+      <button type="button" class="fg-modal-close" aria-label="Close login dialog">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <img src="assets/icons/logo.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-light" style="height: 38px; margin: 0 auto 0.75rem auto;">
+        <img src="assets/icons/logo-light.svg" alt="PRINTWORKS PRINT &amp; COPY" class="fg-brand-img-dark" style="height: 38px; margin: 0 auto 0.75rem auto;">
+        <h2 id="modal-title" style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: var(--text-main);">
+          Customer Portal Login
+        </h2>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">
+          Track your print orders, download invoice proofs, or reorder past jobs.
+        </p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Demo customer account login. Please visit our front counter for portal registration.');">
+        <div class="fg-form-group" style="margin-bottom: 1rem;">
+          <label for="login-email" class="fg-form-label">Email Address</label>
+          <input type="email" id="login-email" class="fg-input" placeholder="name@company.com" required>
+        </div>
+        <div class="fg-form-group" style="margin-bottom: 1.5rem;">
+          <label for="login-password" class="fg-form-label">Password</label>
+          <input type="password" id="login-password" class="fg-input" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="fg-btn fg-btn-primary" style="width: 100%; margin-bottom: 0.75rem;">
+          <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+          <span>Sign In to Your Account</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/pages/services.js"></script>
+</body>
+</html>

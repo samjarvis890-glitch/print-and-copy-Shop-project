@@ -1,0 +1,1606 @@
+/* ==========================================================================
+   PRINTWORKS PRINT & COPY — HOME 2 (EDITORIAL CONCEPT) STYLESHEET
+   Unique Editorial, Print-Studio Inspired Visual Direction
+   Sections:
+   1. The Print Edit (Hero Spread & Issue Masthead)
+   2. The Printing Notebook (Magazine-Style Document Panels)
+   3. Paper Makes a Difference (Split Comparison Matrix)
+   4. From File to Finished Page (Horizontal Process Timeline)
+   5. Small Details, Better Presentation (Asymmetrical Finishing Gallery)
+   6. A Clearer Way to Plan Your Print Job (Document-Inspired Checklist Panel)
+   7. Let's Make Your Next Print Job Simple (Horizontal Closing Banner)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   EDITORIAL DESIGN SYSTEM FOUNDATIONS
+   -------------------------------------------------------------------------- */
+.h2-editorial-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  border: 1px solid rgba(53, 106, 230, 0.2);
+}
+
+.h2-editorial-tag-yellow {
+  background-color: var(--fg-yellow-light);
+  color: #8C6B00;
+  border-color: rgba(255, 215, 106, 0.4);
+}
+[data-theme="dark"] .h2-editorial-tag-yellow {
+  color: var(--fg-yellow);
+}
+
+.h2-editorial-tag-mint {
+  background-color: var(--fg-mint-light);
+  color: #156E49;
+  border-color: rgba(191, 234, 216, 0.5);
+}
+[data-theme="dark"] .h2-editorial-tag-mint {
+  color: #6EE7B7;
+}
+
+.h2-editorial-tag-peach {
+  background-color: var(--fg-peach-light);
+  color: #B4461B;
+  border-color: rgba(255, 224, 210, 0.5);
+}
+[data-theme="dark"] .h2-editorial-tag-peach {
+  color: #FFA07A;
+}
+
+.h2-editorial-tag-lavender {
+  background-color: var(--fg-lavender-light);
+  color: #5B3FB8;
+  border-color: rgba(232, 225, 255, 0.5);
+}
+[data-theme="dark"] .h2-editorial-tag-lavender {
+  color: #C4B5FD;
+}
+
+.h2-section {
+  padding-block: 5.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.h2-section-header {
+  margin-bottom: 3.5rem;
+}
+
+.h2-section-header.text-center {
+  text-align: center;
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.h2-section-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-blue);
+  margin-bottom: 0.875rem;
+}
+
+.h2-section-header.text-center .h2-section-eyebrow {
+  justify-content: center;
+}
+
+.h2-section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+.h2-section-lead {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 680px;
+}
+
+.h2-section-header.text-center .h2-section-lead {
+  margin-inline: auto;
+}
+
+/* Paper-inspired layered border accent */
+.h2-paper-shadow {
+  box-shadow: 
+    0 1px 3px rgba(38, 50, 56, 0.06),
+    0 8px 24px rgba(38, 50, 56, 0.08),
+    4px 4px 0px rgba(53, 106, 230, 0.08);
+}
+[data-theme="dark"] .h2-paper-shadow {
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.4),
+    0 8px 24px rgba(0, 0, 0, 0.5),
+    4px 4px 0px rgba(74, 126, 248, 0.12);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 1 — THE PRINT EDIT (HERO SPREAD)
+   -------------------------------------------------------------------------- */
+.h2-hero-section {
+  padding-top: 3.25rem;
+  padding-bottom: 5rem;
+  background: 
+    linear-gradient(180deg, var(--bg-page) 0%, rgba(235, 241, 253, 0.35) 50%, var(--bg-page) 100%);
+  border-bottom: 1px solid var(--border-light);
+  position: relative;
+}
+[data-theme="dark"] .h2-hero-section {
+  background: 
+    linear-gradient(180deg, var(--bg-page) 0%, rgba(29, 45, 80, 0.25) 50%, var(--bg-page) 100%);
+}
+
+.h2-hero-masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 2.5rem;
+}
+
+.h2-masthead-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.h2-masthead-vol {
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.h2-masthead-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 0.8125rem;
+  color: var(--text-subtle);
+}
+
+.h2-masthead-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.h2-hero-headline-block {
+  margin-bottom: 2.75rem;
+}
+
+.h2-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 4.75rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.h2-hero-title-accent {
+  color: var(--fg-blue);
+  display: inline-block;
+  position: relative;
+}
+
+.h2-hero-title-accent::after {
+  content: "";
+  position: absolute;
+  bottom: 0.08em;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 0.16em;
+  background-color: var(--fg-yellow);
+  z-index: -1;
+  opacity: 0.85;
+  border-radius: 2px;
+}
+
+.h2-hero-sub-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: end;
+  gap: 2rem;
+}
+
+.h2-hero-desc {
+  font-size: clamp(1.125rem, 2vw, 1.35rem);
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 620px;
+}
+
+.h2-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Panoramic Photographic Spread */
+.h2-hero-panoramic-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-lg);
+  margin-top: 2.5rem;
+}
+
+.h2-hero-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 580px;
+  overflow: hidden;
+}
+
+.h2-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.h2-hero-panoramic-card:hover .h2-hero-img {
+  transform: scale(1.02);
+}
+
+.h2-hero-badge-overlay {
+  position: absolute;
+  top: 1.5rem;
+  inset-inline-start: 1.5rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+[data-theme="dark"] .h2-hero-badge-overlay {
+  background: rgba(26, 34, 50, 0.92);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.h2-badge-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--fg-blue);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 0.875rem;
+}
+
+.h2-badge-text-title {
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.h2-badge-text-sub {
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.h2-hero-specs-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 1.75rem 2rem;
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-light);
+}
+
+.h2-spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.h2-spec-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-subtle);
+}
+
+.h2-spec-val {
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 2 — THE PRINTING NOTEBOOK
+   -------------------------------------------------------------------------- */
+.h2-notebook-section {
+  background-color: var(--bg-alt);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.h2-notebook-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.h2-notebook-featured-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.h2-notebook-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.h2-notebook-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.h2-notebook-featured-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.h2-notebook-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.h2-notebook-featured-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.25;
+  margin-bottom: 0.875rem;
+}
+
+.h2-notebook-featured-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.h2-notebook-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px dashed var(--border-light);
+}
+
+.h2-highlight-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.h2-highlight-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--fg-blue);
+  letter-spacing: 0.05em;
+}
+
+.h2-highlight-desc {
+  font-size: 0.8125rem;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+/* Notebook Panels Column Deck */
+.h2-notebook-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.h2-notebook-panel-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+  position: relative;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.h2-notebook-panel-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--fg-blue);
+}
+
+.h2-panel-index {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background-color: var(--fg-blue-light);
+  color: var(--fg-blue);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+}
+
+.h2-panel-content {
+  flex-grow: 1;
+}
+
+.h2-panel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.h2-panel-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.h2-panel-desc {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin-bottom: 0.875rem;
+}
+
+.h2-panel-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.h2-panel-specs {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-subtle);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.h2-panel-link {
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--fg-blue);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: transform var(--transition-fast);
+}
+
+.h2-panel-link:hover {
+  color: var(--fg-blue-hover);
+  transform: translateX(3px);
+}
+[dir="rtl"] .h2-panel-link:hover {
+  transform: translateX(-3px);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 3 — PAPER MAKES A DIFFERENCE (SPLIT COMPARISON)
+   -------------------------------------------------------------------------- */
+.h2-paper-section {
+  background-color: var(--bg-page);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.h2-paper-split-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.h2-paper-copy-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.h2-paper-matrix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.h2-matrix-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.h2-matrix-card:hover {
+  border-color: var(--fg-blue);
+  transform: translateY(-2px);
+}
+
+.h2-matrix-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.h2-matrix-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background-color: var(--fg-yellow-light);
+  color: #8C6B00;
+  display: grid;
+  place-items: center;
+  font-size: 0.95rem;
+}
+[data-theme="dark"] .h2-matrix-icon {
+  color: var(--fg-yellow);
+}
+
+.h2-matrix-title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.h2-matrix-list {
+  font-size: 0.825rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.h2-matrix-list strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.h2-paper-note {
+  background-color: var(--fg-mint-light);
+  border-inline-start: 4px solid #156E49;
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  color: var(--text-main);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+[data-theme="dark"] .h2-paper-note {
+  border-inline-start-color: #6EE7B7;
+}
+
+/* Paper Photo Showcase */
+.h2-paper-showcase {
+  position: relative;
+}
+
+.h2-paper-frame {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 0.75rem;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.h2-paper-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.h2-paper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.h2-paper-swatches-badge {
+  position: absolute;
+  bottom: 2rem;
+  inset-inline-end: 2rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.875rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-md);
+}
+[data-theme="dark"] .h2-paper-swatches-badge {
+  background: rgba(26, 34, 50, 0.94);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.h2-swatch-badge-title {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fg-blue);
+  margin-bottom: 0.25rem;
+}
+
+.h2-swatch-badge-desc {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 4 — FROM FILE TO FINISHED PAGE (HORIZONTAL PROCESS TIMELINE)
+   -------------------------------------------------------------------------- */
+.h2-workflow-section {
+  background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg-page) 100%);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.h2-workflow-timeline-wrapper {
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+/* Connecting Ruler Line on Desktop */
+.h2-timeline-track {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  position: relative;
+}
+
+.h2-timeline-track::before {
+  content: "";
+  position: absolute;
+  top: 36px;
+  inset-inline-start: 10%;
+  inset-inline-end: 10%;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--fg-blue) 0,
+    var(--fg-blue) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  z-index: 1;
+}
+
+.h2-timeline-step-card {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+  height: 100%;
+}
+
+.h2-timeline-step-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--fg-blue);
+  box-shadow: var(--shadow-md);
+}
+
+.h2-step-num-bubble {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--bg-page);
+  border: 2px solid var(--fg-blue);
+  color: var(--fg-blue);
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.h2-timeline-step-card:hover .h2-step-num-bubble {
+  background-color: var(--fg-blue);
+  color: #fff;
+}
+
+.h2-step-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.3;
+  margin-bottom: 0.6rem;
+}
+
+.h2-step-desc {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.h2-step-tip {
+  font-size: 0.75rem;
+  padding: 0.5rem 0.65rem;
+  background-color: var(--fg-yellow-light);
+  border-radius: var(--radius-sm);
+  color: #7A5C00;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+[data-theme="dark"] .h2-step-tip {
+  color: var(--fg-yellow);
+}
+
+/* Bottom Supporting Workflow Bar */
+.h2-workflow-banner {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  align-items: center;
+}
+
+.h2-workflow-banner-img-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  overflow: hidden;
+}
+
+.h2-workflow-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.h2-workflow-banner-content {
+  padding: 2.25rem 2.5rem;
+}
+
+.h2-workflow-banner-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.h2-workflow-banner-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 5 — SMALL DETAILS, BETTER PRESENTATION (ASYMMETRICAL GALLERY)
+   -------------------------------------------------------------------------- */
+.h2-finishing-section {
+  background-color: var(--bg-page);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.h2-finishing-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+/* Large Main Photograph Card */
+.h2-finishing-main-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.h2-finishing-main-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+}
+
+.h2-finishing-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.h2-finishing-main-card:hover .h2-finishing-main-img {
+  transform: scale(1.02);
+}
+
+.h2-finishing-main-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.h2-finishing-main-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.h2-finishing-main-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* Side Column: Detail Image + Cards */
+.h2-finishing-side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.h2-finishing-detail-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+}
+
+.h2-detail-img-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 130px;
+  overflow: hidden;
+}
+
+.h2-detail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.h2-detail-content {
+  padding: 1.25rem 1.5rem;
+}
+
+.h2-detail-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.h2-detail-desc {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Finishing Option Deck */
+.h2-finishing-options-deck {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  flex-grow: 1;
+}
+
+.h2-finish-opt-box {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.h2-finish-opt-box:hover {
+  border-color: var(--fg-blue);
+  transform: translateY(-2px);
+}
+
+.h2-finish-opt-icon {
+  font-size: 1.35rem;
+  color: var(--fg-blue);
+  margin-bottom: 0.6rem;
+}
+
+.h2-finish-opt-title {
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.h2-finish-opt-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 6 — A CLEARER WAY TO PLAN YOUR PRINT JOB (DOCUMENT CHECKLIST)
+   -------------------------------------------------------------------------- */
+.h2-checklist-section {
+  background-color: var(--bg-alt);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.h2-checklist-card-frame {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 360px 1fr;
+}
+
+/* Contrasting Sidebar */
+.h2-checklist-sidebar {
+  background-color: var(--fg-lavender-light);
+  border-inline-end: 1px solid var(--border-light);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.h2-checklist-sidebar-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.h2-sidebar-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.h2-sidebar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.h2-sidebar-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.h2-sidebar-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.h2-sidebar-tips-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--text-main);
+}
+
+.h2-sidebar-tip-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.h2-sidebar-tip-item i {
+  color: var(--fg-blue);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.h2-sidebar-counter-card {
+  margin-top: 2rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.h2-counter-card-title {
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.h2-counter-card-text {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Main Checklist Body */
+.h2-checklist-body {
+  padding: 3rem 3rem 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.h2-checklist-header {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.h2-checklist-progress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--bg-alt);
+  padding: 0.4rem 0.875rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-light);
+}
+
+.h2-progress-badge {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--fg-blue);
+}
+
+/* Checklist Items */
+.h2-checklist-items-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.h2-checklist-row {
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+  cursor: pointer;
+}
+
+.h2-checklist-row:hover {
+  border-color: var(--fg-blue);
+}
+
+.h2-checklist-row.is-completed {
+  background-color: var(--fg-mint-light);
+  border-color: rgba(191, 234, 216, 0.8);
+}
+
+.h2-check-box-indicator {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--border-medium);
+  background-color: var(--bg-surface);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  transition: all var(--transition-fast);
+}
+
+.h2-checklist-row.is-completed .h2-check-box-indicator {
+  background-color: var(--fg-blue);
+  border-color: var(--fg-blue);
+  color: #fff;
+}
+
+.h2-check-box-indicator i {
+  display: none;
+  font-size: 0.875rem;
+}
+
+.h2-checklist-row.is-completed .h2-check-box-indicator i {
+  display: block;
+}
+
+.h2-check-row-content {
+  flex-grow: 1;
+}
+
+.h2-check-question {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.h2-check-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 0.6rem;
+}
+
+.h2-check-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.h2-chip-item {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.h2-checklist-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 7 — LET'S MAKE YOUR NEXT PRINT JOB SIMPLE (CLOSING BANNER)
+   -------------------------------------------------------------------------- */
+.h2-closing-section {
+  padding-block: 5rem;
+  background-color: var(--bg-page);
+}
+
+.h2-closing-card {
+  background: 
+    linear-gradient(135deg, var(--fg-blue-light) 0%, var(--bg-surface) 100%);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+}
+[data-theme="dark"] .h2-closing-card {
+  background: 
+    linear-gradient(135deg, var(--bg-surface) 0%, #162032 100%);
+  border-color: var(--border-light);
+}
+
+.h2-closing-content {
+  padding: 4rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.h2-closing-eyebrow {
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-blue);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.h2-closing-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--text-main);
+  letter-spacing: -0.025em;
+}
+
+.h2-closing-desc {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 520px;
+}
+
+.h2-closing-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.h2-closing-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  overflow: hidden;
+}
+
+.h2-closing-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE LAYOUT ADJUSTMENTS FOR HOME 2
+   -------------------------------------------------------------------------- */
+/* LARGE TABLET (1025px - 1280px) — iPad Pro 13" & similar */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .h2-section {
+    padding-block: 5rem;
+  }
+
+  .h2-hero-sub-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .h2-notebook-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .h2-paper-split-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .h2-workflow-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .h2-finishing-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .h2-checklist-card-frame {
+    grid-template-columns: 1fr;
+  }
+
+  .h2-checklist-sidebar {
+    border-inline-end: none;
+    border-bottom: 1px solid var(--border-light);
+    padding: 2rem;
+  }
+
+  .h2-closing-card {
+    grid-template-columns: 1fr;
+  }
+
+  .h2-hero-specs-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+/* TABLET (<= 1024px) */
+@media (max-width: 1024px) {
+  .h2-section {
+    padding-block: 4.5rem;
+  }
+
+  .h2-hero-sub-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .h2-hero-actions {
+    justify-content: flex-start;
+  }
+
+  .h2-hero-specs-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  .h2-notebook-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .h2-paper-split-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .h2-workflow-timeline-wrapper {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+
+  .h2-timeline-track {
+    grid-template-columns: repeat(5, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  .h2-workflow-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .h2-finishing-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .h2-checklist-card-frame {
+    grid-template-columns: 1fr;
+  }
+
+  .h2-checklist-sidebar {
+    border-inline-end: none;
+    border-bottom: 1px solid var(--border-light);
+    padding: 2rem;
+  }
+
+  .h2-checklist-body {
+    padding: 2rem;
+  }
+
+  .h2-closing-card {
+    grid-template-columns: 1fr;
+  }
+
+  .h2-closing-content {
+    padding: 2.5rem 2rem;
+  }
+
+  .h2-closing-img-wrap {
+    min-height: 280px;
+    max-height: 360px;
+  }
+}
+
+/* MOBILE (<= 768px) */
+@media (max-width: 768px) {
+  .h2-section {
+    padding-block: 3.5rem;
+  }
+
+  .h2-hero-section {
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .h2-hero-masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .h2-hero-title {
+    font-size: 2.25rem;
+    line-height: 1.1;
+  }
+
+  .h2-hero-specs-strip {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+
+  .h2-hero-panoramic-card {
+    margin-top: 1.5rem;
+  }
+
+  .h2-notebook-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .h2-notebook-panel-card {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+
+  .h2-paper-matrix {
+    grid-template-columns: 1fr;
+  }
+
+  .h2-timeline-track {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .h2-timeline-track::before {
+    display: none;
+  }
+
+  .h2-timeline-step-card {
+    padding: 1.25rem;
+  }
+
+  .h2-finishing-options-deck {
+    grid-template-columns: 1fr;
+  }
+
+  .h2-finishing-detail-card {
+    grid-template-columns: 1fr;
+  }
+
+  .h2-detail-img-wrap {
+    min-height: 180px;
+  }
+
+  .h2-checklist-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .h2-checklist-footer .fg-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .h2-closing-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .h2-closing-actions .fg-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* EXTRA SMALL SCREENS (<= 480px) */
+@media (max-width: 480px) {
+  .h2-hero-title {
+    font-size: 1.85rem;
+  }
+
+  .h2-section-title {
+    font-size: 1.75rem;
+  }
+
+  .h2-checklist-body {
+    padding: 1.25rem;
+  }
+
+  .h2-checklist-row {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .h2-closing-content {
+    padding: 2rem 1.25rem;
+  }
+}

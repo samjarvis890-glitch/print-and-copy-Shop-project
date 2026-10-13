@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="64" height="64" role="img" aria-label="PRINTWORKS Favicon">
+  <!-- Rounded Squircle Background -->
+  <rect width="64" height="64" rx="16" fill="#356AE6"/>
+
+  <!-- Back Layer Paper (Lavender Accent) -->
+  <rect x="14" y="10" width="28" height="34" rx="4" fill="#E8E1FF" opacity="0.9" transform="rotate(-8 28 27)"/>
+
+  <!-- Mid Layer Paper (Fresh Mint Accent) -->
+  <rect x="22" y="10" width="28" height="34" rx="4" fill="#BFEAD8" opacity="0.95" transform="rotate(6 36 27)"/>
+
+  <!-- Main Front Printed Sheet -->
+  <rect x="16" y="18" width="32" height="36" rx="5" fill="#FFFDF8" stroke="#FFD76A" stroke-width="2.5"/>
+
+  <!-- Crisp Precision Print Lines -->
+  <line x1="22" y1="26" x2="42" y2="26" stroke="#356AE6" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="22" y1="32" x2="38" y2="32" stroke="#356AE6" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="22" y1="38" x2="32" y2="38" stroke="#FFD76A" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Precision Print Alignment Star / Sunshine Accent -->
+  <circle cx="48" cy="16" r="9" fill="#FFD76A"/>
+  <path d="M48 9.5 L50 14.5 L54.5 16 L50 17.5 L48 22.5 L46 17.5 L41.5 16 L46 14.5 Z" fill="#263238"/>
+</svg>
