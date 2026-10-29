@@ -78,8 +78,8 @@
         </div>
 
         <a href="about.html" class="fg-nav-link">About</a>
-        <a href="services.html" class="fg-nav-link">Services</a>
-        <a href="pricing.html" class="fg-nav-link">Pricing</a>
+        <a href="services.html" class="fg-nav-link">Products</a>
+        <a href="pricing.html" class="fg-nav-link">Deals</a>
         <a href="blog.html" class="fg-nav-link">Blog</a>
         <a href="contact.html" class="fg-nav-link">Contact</a>
       </nav>
@@ -97,10 +97,10 @@
         </button>
 
         <!-- Desktop Action Button (Get a Quote) -->
-        <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary fg-navbar-cta">
-          <span>Get a Quote</span>
-          <i class="bi bi-arrow-right" aria-hidden="true"></i>
-        </a>
+        <button type="button" class="fg-btn fg-btn-primary fg-login-btn fg-navbar-cta" data-modal="login">
+          <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+          <span>Login</span>
+        </button>
 
         <!-- Mobile & Tablet Hamburger Menu Toggle (<= 1280px) -->
         <button type="button" class="fg-hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
@@ -153,48 +153,24 @@
           </div>
         </div>
 
-        <!-- About -->
         <a href="about.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-info-circle" aria-hidden="true"></i>
-            <span>About</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-info-circle" aria-hidden="true"></i><span>About</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Services -->
         <a href="services.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-printer" aria-hidden="true"></i>
-            <span>Services</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-printer" aria-hidden="true"></i><span>Products</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Pricing -->
         <a href="pricing.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-tag" aria-hidden="true"></i>
-            <span>Pricing</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-tag" aria-hidden="true"></i><span>Deals</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Blog -->
         <a href="blog.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-journal-text" aria-hidden="true"></i>
-            <span>Blog</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-journal-text" aria-hidden="true"></i><span>Blog</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Contact -->
         <a href="contact.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-envelope" aria-hidden="true"></i>
-            <span>Contact</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-envelope" aria-hidden="true"></i><span>Contact</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
       </nav>
@@ -322,152 +298,62 @@
     </section>
 
     <!-- ----------------------------------------------------------------------
-         SECTION 2 — THE PRINTING NOTEBOOK (EDITORIAL PANELS)
+         SECTION 2 — THE PRINTING NOTEBOOK (DOCUMENT ANATOMY & WORKOUT LOGS)
          ---------------------------------------------------------------------- -->
     <section id="printing-notebook" class="h2-section h2-notebook-section" aria-labelledby="notebook-title">
       <div class="fg-container">
 
-        <!-- Section Header -->
-        <div class="h2-section-header">
-          <div class="h2-section-eyebrow">
-            <i class="bi bi-book-half" aria-hidden="true"></i>
-            <span>THE PRINTING NOTEBOOK</span>
-          </div>
+        <div class="h2-section-header text-center">
+          <span class="h2-editorial-tag h2-editorial-tag-yellow">
+            <i class="bi bi-journal-bookmark" aria-hidden="true"></i>
+            <span>Document Anatomy</span>
+          </span>
           <h2 id="notebook-title" class="h2-section-title">
-            Document formats tailored to your purpose.
+            Formats Engineered for Real-World Reading
           </h2>
-          <p class="h2-section-lead">
-            Whether for daily office workflow, scholarly coursework, executive decisions, or high-stakes pitches, explore how structured formatting elevates every document.
+          <p class="h2-section-desc">
+            From office reports to sweatproof fitness workout logs, each document format is tailored for durability and ergonomics.
           </p>
         </div>
 
-        <!-- Horizontal Magazine-Style Feature Strip Layout -->
-        <div class="h2-notebook-layout">
+        <div class="h2-notebook-grid" style="display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.75rem; align-items: stretch;">
 
-          <!-- Left Featured Overview Card -->
-          <div class="h2-notebook-featured-card">
-            <div class="h2-notebook-img-wrap">
-              <img 
-                src="assets/images/home2/home2-notebook.webp" 
-                alt="Neatly arranged stationery, spiral notebooks, and printed reports on a clean wooden studio surface"
-                class="h2-notebook-img"
-                width="1400" 
-                height="900"
-                loading="lazy"
-              >
+          <!-- Feature 1: General Business & Academic Notebooks (7 cols) -->
+          <article class="h2-doc-card" style="grid-column: span 7; background-color: var(--bg-surface); border: 1px solid var(--border-light); border-radius: var(--radius-xl); overflow: hidden; display: flex; flex-direction: column;">
+            <div style="max-height: 260px; overflow: hidden;">
+              <img src="assets/images/home2/home2-notebook.webp" alt="Neatly arranged stationery, spiral-bound notebooks, and business report folios on clean wood surface" style="width: 100%; height: 260px; object-fit: cover;" width="1400" height="900" loading="lazy">
             </div>
-            <div class="h2-notebook-featured-content">
-              <div class="h2-notebook-meta">
-                <span class="h2-editorial-tag h2-editorial-tag-yellow">CORE CATEGORIES</span>
-                <span style="font-size: 0.8125rem; color: var(--text-subtle);">Document Library</span>
-              </div>
-              <h3 class="h2-notebook-featured-title">
-                Crafted for clarity, durability, and reader engagement.
-              </h3>
-              <p class="h2-notebook-featured-desc">
-                Different documents have distinct reading ergonomics. A report needs clean page turns, while presentation handouts require immediate visual punch and tactile heft.
+            <div style="padding: 1.85rem; display: flex; flex-direction: column; flex-grow: 1;">
+              <span class="h2-editorial-tag" style="margin-bottom: 0.65rem; align-self: flex-start;">Office &amp; Research</span>
+              <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.5rem;">Corporate Reports &amp; Syllabi</h3>
+              <p style="font-size: 0.9375rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 1.25rem;">
+                High-speed duplex copying on 100gsm smooth laser stock with durable 2-hole or 4-hole precision punching.
               </p>
-              <div class="h2-notebook-highlights">
-                <div class="h2-highlight-box">
-                  <span class="h2-highlight-title">Crisp Text Rendering</span>
-                  <span class="h2-highlight-desc">1200 DPI razor-sharp black &amp; color typography</span>
-                </div>
-                <div class="h2-highlight-box">
-                  <span class="h2-highlight-title">Precision Binding</span>
-                  <span class="h2-highlight-desc">Lie-flat wire, comb, saddle stitch, and thermal spine</span>
-                </div>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: auto;">
+                <span class="fg-tag-pill"><i class="bi bi-clock"></i> 30-Min Rush</span>
+                <span class="fg-tag-pill"><i class="bi bi-check2"></i> High Opacity</span>
+                <span class="fg-tag-pill"><i class="bi bi-shield"></i> Clear Covers</span>
               </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Right: Four Editorial Category Panels -->
-          <div class="h2-notebook-panels">
-
-            <!-- Category 1: Everyday Documents -->
-            <article class="h2-notebook-panel-card">
-              <div class="h2-panel-index">01</div>
-              <div class="h2-panel-content">
-                <div class="h2-panel-top">
-                  <h3 class="h2-panel-title">Everyday Documents</h3>
-                  <span class="h2-editorial-tag h2-editorial-tag-mint">High Volume</span>
-                </div>
-                <p class="h2-panel-desc">
-                  High-speed double-sided copying, training dossiers, invoices, policy handbooks, and clear administrative paperwork with accurate collation and clean corner staples.
-                </p>
-                <div class="h2-panel-footer">
-                  <span class="h2-panel-specs"><i class="bi bi-file-earmark-text"></i> Standard 80–100gsm Bond · Black &amp; White or Color</span>
-                  <a href="services.html" class="h2-panel-link">
-                    <span>Explore details</span>
-                    <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
-                  </a>
-                </div>
+          <!-- Feature 2: Athletic & Fitness Workout Journals (5 cols with FITNESS IMAGERY) -->
+          <article class="h2-doc-card" style="grid-column: span 5; background-color: var(--bg-surface); border: 1px solid var(--border-light); border-radius: var(--radius-xl); padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="width: 52px; height: 52px; border-radius: var(--radius-lg); background-color: var(--fg-mint-light); color: #156E49; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;">
+                <i class="bi bi-activity" aria-hidden="true"></i>
               </div>
-            </article>
-
-            <!-- Category 2: Study Materials -->
-            <article class="h2-notebook-panel-card">
-              <div class="h2-panel-index">02</div>
-              <div class="h2-panel-content">
-                <div class="h2-panel-top">
-                  <h3 class="h2-panel-title">Study Materials</h3>
-                  <span class="h2-editorial-tag h2-editorial-tag-yellow">Academic</span>
-                </div>
-                <p class="h2-panel-desc">
-                  Academic dissertations, lecture packs, research papers, and revision workbooks bound with durable coil or wire for comfortable 360-degree flat folding on student desks.
-                </p>
-                <div class="h2-panel-footer">
-                  <span class="h2-panel-specs"><i class="bi bi-mortarboard"></i> 90–120gsm Smooth Stock · Frosted Protective Front</span>
-                  <a href="services.html" class="h2-panel-link">
-                    <span>Explore details</span>
-                    <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Category 3: Business Reports -->
-            <article class="h2-notebook-panel-card">
-              <div class="h2-panel-index">03</div>
-              <div class="h2-panel-content">
-                <div class="h2-panel-top">
-                  <h3 class="h2-panel-title">Business Reports</h3>
-                  <span class="h2-editorial-tag h2-editorial-tag-lavender">Corporate</span>
-                </div>
-                <p class="h2-panel-desc">
-                  Annual financial reviews, strategic audits, board room binders, and executive briefs featuring custom dividers, tabs, acetate covers, and solid card backs.
-                </p>
-                <div class="h2-panel-footer">
-                  <span class="h2-panel-specs"><i class="bi bi-briefcase"></i> 120–160gsm Silk Matte · Twin-Loop Silver Wire</span>
-                  <a href="services.html" class="h2-panel-link">
-                    <span>Explore details</span>
-                    <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Category 4: Presentation Handouts -->
-            <article class="h2-notebook-panel-card">
-              <div class="h2-panel-index">04</div>
-              <div class="h2-panel-content">
-                <div class="h2-panel-top">
-                  <h3 class="h2-panel-title">Presentation Handouts</h3>
-                  <span class="h2-editorial-tag h2-editorial-tag-peach">Client Pitch</span>
-                </div>
-                <p class="h2-panel-desc">
-                  Landscape leave-behinds, portfolio catalogs, marketing one-sheets, and conference takeaways printed with rich saturation and full-bleed borderless precision.
-                </p>
-                <div class="h2-panel-footer">
-                  <span class="h2-panel-specs"><i class="bi bi-easel"></i> 250–350gsm Heavy Art Card · Satin Finish</span>
-                  <a href="services.html" class="h2-panel-link">
-                    <span>Explore details</span>
-                    <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </article>
-
-          </div>
+              <span class="h2-editorial-tag h2-editorial-tag-mint" style="margin-bottom: 0.65rem;">Athletic &amp; Fitness</span>
+              <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.5rem;">Workout Logs &amp; Studio Guides</h3>
+              <p style="font-size: 0.9375rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 1.25rem;">
+                Sweat-resistant, 360-degree lay-flat wire binding engineered for gym sessions, personal trainers, and fitness studios.
+              </p>
+            </div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="fg-tag-pill fg-tag-pill-highlight"><i class="bi bi-droplet"></i> Sweatproof</span>
+              <span class="fg-tag-pill"><i class="bi bi-arrow-repeat"></i> Lay-Flat 360°</span>
+            </div>
+          </article>
 
         </div>
 

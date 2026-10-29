@@ -78,8 +78,8 @@
         </div>
 
         <a href="about.html" class="fg-nav-link">About</a>
-        <a href="services.html" class="fg-nav-link active" aria-current="page">Services</a>
-        <a href="pricing.html" class="fg-nav-link">Pricing</a>
+        <a href="services.html" class="fg-nav-link active" aria-current="page">Products</a>
+        <a href="pricing.html" class="fg-nav-link">Deals</a>
         <a href="blog.html" class="fg-nav-link">Blog</a>
         <a href="contact.html" class="fg-nav-link">Contact</a>
       </nav>
@@ -97,10 +97,10 @@
         </button>
 
         <!-- Desktop Action Button (Get a Quote) -->
-        <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary fg-navbar-cta">
-          <span>Get a Quote</span>
-          <i class="bi bi-arrow-right" aria-hidden="true"></i>
-        </a>
+        <button type="button" class="fg-btn fg-btn-primary fg-login-btn fg-navbar-cta" data-modal="login">
+          <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+          <span>Login</span>
+        </button>
 
         <!-- Mobile & Tablet Hamburger Menu Toggle (<= 1280px) -->
         <button type="button" class="fg-hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
@@ -133,8 +133,8 @@
     <div class="fg-drawer-body">
       <nav class="fg-drawer-nav" aria-label="Mobile Menu Links">
         <!-- Home Dropdown -->
-        <div class="fg-drawer-dropdown">
-          <button type="button" class="fg-drawer-link fg-drawer-dropdown-btn" aria-expanded="false">
+        <div class="fg-drawer-dropdown is-expanded">
+          <button type="button" class="fg-drawer-link fg-drawer-dropdown-btn" aria-expanded="true">
             <span class="fg-drawer-link-inner">
               <i class="bi bi-house-door" aria-hidden="true"></i>
               <span>Home</span>
@@ -153,48 +153,24 @@
           </div>
         </div>
 
-        <!-- About -->
         <a href="about.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-info-circle" aria-hidden="true"></i>
-            <span>About</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-info-circle" aria-hidden="true"></i><span>About</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Services (Active) -->
         <a href="services.html" class="fg-drawer-link active" aria-current="page">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-printer" aria-hidden="true"></i>
-            <span>Services</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-printer" aria-hidden="true"></i><span>Products</span></span>
           <i class="bi bi-check2" aria-hidden="true"></i>
         </a>
-
-        <!-- Pricing -->
         <a href="pricing.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-tag" aria-hidden="true"></i>
-            <span>Pricing</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-tag" aria-hidden="true"></i><span>Deals</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Blog -->
         <a href="blog.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-journal-text" aria-hidden="true"></i>
-            <span>Blog</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-journal-text" aria-hidden="true"></i><span>Blog</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Contact -->
         <a href="contact.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-envelope" aria-hidden="true"></i>
-            <span>Contact</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-envelope" aria-hidden="true"></i><span>Contact</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
       </nav>
@@ -317,6 +293,8 @@
     <!-- ----------------------------------------------------------------------
          SECTION 2 — DOCUMENT PRINTING (SPECIFICATION LAYOUT)
          ---------------------------------------------------------------------- -->
+    <div id="categories" style="scroll-margin-top: 100px;"></div>
+    <div id="products" style="scroll-margin-top: 100px;"></div>
     <section id="printing" class="sv-section sv-printing-section" aria-labelledby="printing-title">
       <div class="fg-container">
 
@@ -422,79 +400,78 @@
     </section>
 
     <!-- ----------------------------------------------------------------------
-         SECTION 3 — PHOTOCOPYING (VERTICAL IMAGE & USE-CASE COMPOSITION)
+         SECTION 3 — PHOTOCOPYING & HIGH-RESOLUTION SCANNING
          ---------------------------------------------------------------------- -->
     <section id="copying" class="sv-section sv-copying-section" aria-labelledby="copying-title">
       <div class="fg-container">
 
         <div class="sv-copying-grid">
 
-          <!-- Left Column: Heading, Description & Use-Case Checklist -->
+          <!-- Left Column: Heading, Description & Dual Service Cards (Copying + Scanning) -->
           <div>
             <div class="sv-eyebrow">
               <i class="bi bi-files" aria-hidden="true"></i>
-              <span>DOCUMENT REPRODUCTION</span>
+              <span>DUPLICATION &amp; DIGITIZATION</span>
             </div>
             <h2 id="copying-title" class="sv-title">
-              COPIES FOR YOUR EVERYDAY DOCUMENTS.
+              HIGH-SPEED PHOTOCOPYING &amp; DOCUMENT SCANNING.
             </h2>
             <p class="sv-desc">
-              Photocopying can help prepare additional copies of documents for study, office work, reference, and other everyday needs.
+              Immediate walk-in duplication and high-definition digital archiving. From single contracts to multi-volume binders, we handle everyday copying and scanning with precision.
             </p>
 
             <div class="sv-copying-checklist">
 
+              <!-- Service 1: Photocopying -->
               <div class="sv-copy-item">
-                <div class="sv-copy-icon"><i class="bi bi-mortarboard"></i></div>
+                <div class="sv-copy-icon"><i class="bi bi-printer"></i></div>
                 <div>
-                  <h3 class="sv-copy-item-title">Study notes and academic materials</h3>
-                  <p class="sv-copy-item-desc">Fast reproduction of lecture handouts, research articles, and student coursework.</p>
+                  <h3 class="sv-copy-item-title">High-Speed Document Photocopying</h3>
+                  <p class="sv-copy-item-desc">Clean monochrome and vivid full-color copying with automatic collation, double-sided duplexing, and corner stapling for reports and manuals.</p>
                 </div>
               </div>
 
+              <!-- Service 2: Scanning & Archiving -->
               <div class="sv-copy-item">
-                <div class="sv-copy-icon"><i class="bi bi-briefcase"></i></div>
+                <div class="sv-copy-icon"><i class="bi bi-upc-scan"></i></div>
                 <div>
-                  <h3 class="sv-copy-item-title">Office paperwork and administration</h3>
-                  <p class="sv-copy-item-desc">Clear copies of invoices, staff guidelines, agendas, and operational records.</p>
+                  <h3 class="sv-copy-item-title">High-Resolution Document &amp; Plan Scanning</h3>
+                  <p class="sv-copy-item-desc">300–600 DPI optical flatbed and feeder scanning. Direct export to searchable PDF, multi-page TIFF, or JPEG with OCR text recognition.</p>
                 </div>
               </div>
 
+              <!-- Service 3: Large Format & Blueprints -->
               <div class="sv-copy-item">
-                <div class="sv-copy-icon"><i class="bi bi-collection"></i></div>
+                <div class="sv-copy-icon"><i class="bi bi-aspect-ratio"></i></div>
                 <div>
-                  <h3 class="sv-copy-item-title">Multi-page collated documents</h3>
-                  <p class="sv-copy-item-desc">Automatic electronic sorting, collation, and neat corner stapling for multi-page sets.</p>
+                  <h3 class="sv-copy-item-title">Large-Format Scanning &amp; Blueprints</h3>
+                  <p class="sv-copy-item-desc">Wide-format color scanning up to 36 inches wide for architectural plans, CAD drawings, maps, and engineering schematics.</p>
                 </div>
               </div>
 
+              <!-- Service 4: Cloud & Counter Delivery -->
               <div class="sv-copy-item">
-                <div class="sv-copy-icon"><i class="bi bi-bookmark-check"></i></div>
+                <div class="sv-copy-icon"><i class="bi bi-cloud-arrow-up"></i></div>
                 <div>
-                  <h3 class="sv-copy-item-title">Reference materials and manuals</h3>
-                  <p class="sv-copy-item-desc">Clean black-and-white or color copies of equipment schedules and training guides.</p>
-                </div>
-              </div>
-
-              <div class="sv-copy-item">
-                <div class="sv-copy-icon"><i class="bi bi-check2-circle"></i></div>
-                <div>
-                  <h3 class="sv-copy-item-title">Customer-specified copy quantities</h3>
-                  <p class="sv-copy-item-desc">Immediate walk-in service for quick duplicates or arranged volumes for later pickup.</p>
+                  <h3 class="sv-copy-item-title">Scan-to-Email, USB &amp; Cloud Storage</h3>
+                  <p class="sv-copy-item-desc">Instant digital delivery straight to your email inbox, USB flash drive, or secure cloud download link while you wait.</p>
                 </div>
               </div>
 
             </div>
 
-            <div style="margin-top: 2rem;">
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
               <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
-                <span>ENQUIRE ABOUT COPYING</span>
+                <span>Place an Order / Enquire</span>
                 <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="pricing.html" class="fg-btn fg-btn-outline">
+                <span>View Copying Rates</span>
               </a>
             </div>
           </div>
 
-          <!-- Right Column: Tall Vertical Photograph -->
+          <!-- Right Column: Tall Vertical Photograph (Photocopier & Scanner) -->
           <div class="sv-copying-media-card">
             <div class="sv-copying-img-wrap">
               <img 
@@ -508,10 +485,10 @@
             </div>
             <div class="sv-copying-badge">
               <div style="font-family: var(--font-heading); font-size: 0.8125rem; font-weight: 700; color: var(--fg-blue); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.2rem;">
-                Front Desk Counter Service
+                Walk-In Counter Service
               </div>
-              <div style="font-size: 0.8125rem; color: var(--text-main); font-weight: 600;">
-                Walk-ins welcomed for immediate copies
+              <div style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.4;">
+                Instant self-serve or staff-assisted copying and multi-page scanning.
               </div>
             </div>
           </div>
@@ -522,31 +499,36 @@
     </section>
 
     <!-- ----------------------------------------------------------------------
-         SECTION 4 — BINDING & FINISHING (HORIZONTAL SHOWCASE)
+         SECTION 4 — BINDING, LAMINATING & FINISHING
          ---------------------------------------------------------------------- -->
+    <div id="accessories" style="scroll-margin-top: 100px;"></div>
     <section id="binding" class="sv-section sv-binding-section" aria-labelledby="binding-title">
       <div class="fg-container">
 
-        <!-- Top Featured Banner -->
+        <!-- Top Featured Banner: Wire Binding & Presentation Booklets -->
         <div class="sv-binding-featured-banner">
           <div class="sv-binding-banner-content">
             <div class="sv-eyebrow">
-              <i class="bi bi-book" aria-hidden="true"></i>
-              <span>DOCUMENT CRAFTSMANSHIP</span>
+              <i class="bi bi-journal-bookmark" aria-hidden="true"></i>
+              <span>BOOKBINDING &amp; SURFACE PROTECTION</span>
             </div>
             <h2 id="binding-title" class="sv-title" style="font-size: clamp(1.85rem, 3.2vw, 2.5rem);">
-              GIVE YOUR DOCUMENTS A NEAT FINISH.
+              PROFESSIONAL BINDING &amp; PROTECTIVE LAMINATION.
             </h2>
             <p class="sv-desc">
-              Finishing choices can help keep pages organized and prepare documents for convenient handling or presentation.
+              Transform loose sheets into durable, presentation-grade documents. We provide complete binding methods and heavy-duty thermal lamination for everyday use and executive presentations.
             </p>
-            <div>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
               <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary">
-                <span>ASK ABOUT FINISHING</span>
+                <span>Order Binding &amp; Lamination</span>
                 <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="pricing.html#finishing-prices" class="fg-btn fg-btn-outline">
+                <span>Compare Finishing Options</span>
               </a>
             </div>
           </div>
+
           <div class="sv-binding-banner-img-wrap">
             <img 
               src="assets/images/services/binding-main.webp" 
@@ -559,11 +541,11 @@
           </div>
         </div>
 
-        <!-- Row of Smaller Detail Photographs & Finishing Cards -->
+        <!-- 4-Part Finishing Grid: Wire-O, Spiral, Thermal Lamination, Trimming/Covers -->
         <div class="sv-binding-detail-grid">
 
-          <!-- Finishing Item 1 -->
-          <article class="sv-finish-card">
+          <!-- Detail 1: Wire-O Binding -->
+          <div class="sv-finish-card">
             <div class="sv-finish-img-wrap">
               <img 
                 src="assets/images/services/binding-detail.webp" 
@@ -574,51 +556,59 @@
                 loading="lazy"
               >
             </div>
-            <div class="sv-finish-content">
-              <h3 class="sv-finish-title">Wire &amp; Spiral Binding</h3>
-              <p class="sv-finish-desc">Lie-flat 360-degree page turning in black, white, and silver for reports and manuals.</p>
-              <span class="sv-finish-tag">Lie-Flat Spines</span>
+            <div class="sv-finish-body">
+              <h3 class="sv-finish-title">Twin-Loop Wire Binding</h3>
+              <p class="sv-finish-desc">True 360-degree flat opening in silver, white, or black metal loops. Ideal for executive summaries, calendars, and training manuals.</p>
+              <div class="sv-spec-micro">Up to 250 sheets · 360° lay-flat</div>
             </div>
-          </article>
+          </div>
 
-          <!-- Finishing Item 2 -->
-          <article class="sv-finish-card">
+          <!-- Detail 2: Spiral Coil Binding -->
+          <div class="sv-finish-card">
             <div class="sv-finish-img-wrap">
               <img 
                 src="assets/images/services/finished-documents.webp" 
-                alt="Finished presentation booklets with frosted protective cover sheets and solid card backing"
+                alt="Finished presentation booklets with plastic spiral binding and clear protective covers"
                 class="sv-finish-img"
                 width="800" 
                 height="600"
                 loading="lazy"
               >
             </div>
-            <div class="sv-finish-content">
-              <h3 class="sv-finish-title">Protective Cover Sheets</h3>
-              <p class="sv-finish-desc">Frosted matte acetate fronts and solid black linen backings that guard against spills.</p>
-              <span class="sv-finish-tag">Spill Resistance</span>
+            <div class="sv-finish-body">
+              <h3 class="sv-finish-title">Durable Spiral Coil Binding</h3>
+              <p class="sv-finish-desc">Flexible, crush-resistant plastic coils that bounce back under heavy daily handling. Perfect for student workbooks, cookbooks, and field guides.</p>
+              <div class="sv-spec-micro">Up to 450 sheets · Indestructible coil</div>
             </div>
-          </article>
+          </div>
 
-          <!-- Finishing Item 3 -->
-          <article class="sv-finish-card">
-            <div class="sv-finish-content" style="justify-content: center; height: 100%;">
-              <div style="font-size: 1.75rem; color: var(--fg-blue); margin-bottom: 0.75rem;"><i class="bi bi-paperclip"></i></div>
-              <h3 class="sv-finish-title">Stapling &amp; Booklet Stitching</h3>
-              <p class="sv-finish-desc">Heavy-duty corner stapling and dual saddle-stitch folding for notices and booklets.</p>
-              <span class="sv-finish-tag">Corner &amp; Saddle Stitch</span>
+          <!-- Detail 3: Thermal & Roll Lamination -->
+          <div class="sv-finish-card">
+            <div class="sv-finish-icon-wrap sv-icon-mint">
+              <div class="sv-icon-circle">
+                <i class="bi bi-shield-fill-check" aria-hidden="true"></i>
+              </div>
             </div>
-          </article>
+            <div class="sv-finish-body">
+              <h3 class="sv-finish-title">Thermal &amp; Matte Lamination</h3>
+              <p class="sv-finish-desc">Heavyweight gloss, satin, and velvet soft-touch lamination from 38 to 250 microns. Delivers 100% spill-proof and tearproof protection for menus and ID cards.</p>
+              <div class="sv-spec-micro">Waterproof · Gloss, Matte &amp; Soft-Touch</div>
+            </div>
+          </div>
 
-          <!-- Finishing Item 4 -->
-          <article class="sv-finish-card">
-            <div class="sv-finish-content" style="justify-content: center; height: 100%;">
-              <div style="font-size: 1.75rem; color: var(--fg-blue); margin-bottom: 0.75rem;"><i class="bi bi-scissors"></i></div>
-              <h3 class="sv-finish-title">Trimming &amp; Hole Punching</h3>
-              <p class="sv-finish-desc">Hydraulic guillotine cutting for razor borders, plus 2-hole and 4-hole binder punching.</p>
-              <span class="sv-finish-tag">Custom Trimming</span>
+          <!-- Detail 4: Saddle-Stitch & Covers -->
+          <div class="sv-finish-card">
+            <div class="sv-finish-icon-wrap sv-icon-yellow">
+              <div class="sv-icon-circle">
+                <i class="bi bi-book-half" aria-hidden="true"></i>
+              </div>
             </div>
-          </article>
+            <div class="sv-finish-body">
+              <h3 class="sv-finish-title">Saddle-Stitch &amp; Poly Covers</h3>
+              <p class="sv-finish-desc">Clean staple spine folding for multi-page brochures, event programs, and catalogs. Paired with clear frosted acetate fronts and rigid vinyl backing.</p>
+              <div class="sv-spec-micro">8 to 64 pages · Magazine-style trim</div>
+            </div>
+          </div>
 
         </div>
 

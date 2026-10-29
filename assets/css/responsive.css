@@ -229,9 +229,13 @@
 
   /* Print Estimator Calculator */
   .fg-calculator-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 2.5rem;
     padding: 2.25rem;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   /* Reviews (Stacked cleanly on tablet) */
@@ -342,16 +346,26 @@
 
   /* Instant Estimator Calculator Mobile Fix */
   .fg-calculator-card {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
     padding: 1.5rem 1.25rem;
     border-radius: var(--radius-lg);
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
   .fg-form-grid {
-    grid-template-columns: 1fr !important;
+    display: flex;
+    flex-direction: column;
     gap: 1.15rem;
     width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .fg-form-group,
@@ -359,19 +373,29 @@
   .fg-form-grid > * {
     grid-column: 1 / -1 !important;
     width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .fg-select,
   .fg-input {
     width: 100%;
+    min-width: 0;
+    max-width: 100%;
     min-height: 48px;
     font-size: 0.9375rem;
     box-sizing: border-box;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .fg-calc-result-panel {
     padding: 2rem 1.25rem;
     width: 100%;
+    min-width: 0;
+    max-width: 100%;
     box-sizing: border-box;
   }
 
@@ -382,6 +406,8 @@
   .fg-calc-perks {
     text-align: left;
     margin-bottom: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   /* Footer */
@@ -472,13 +498,25 @@
 
   /* Estimator Calculator Compact Mobile */
   .fg-calculator-card {
-    padding: 1.15rem 1rem;
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.15rem 0.85rem;
+    gap: 1.35rem;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
   .fg-form-grid {
-    grid-template-columns: 1fr !important;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .fg-form-group,
@@ -486,25 +524,50 @@
   .fg-form-grid > * {
     grid-column: 1 / -1 !important;
     width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .fg-form-label {
+    font-size: 0.8125rem;
+    margin-bottom: 0.2rem;
   }
 
   .fg-select,
   .fg-input {
-    padding: 0.75rem 0.85rem;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem 2.25rem 0.75rem 0.85rem;
     font-size: 0.875rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  [dir="rtl"] .fg-select {
+    padding: 0.75rem 0.85rem 0.75rem 2.25rem !important;
   }
 
   .fg-calc-result-panel {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0.85rem;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .fg-calc-price-display {
-    font-size: 2.35rem;
+    font-size: 2.25rem;
   }
 
   .fg-calc-perks {
     font-size: 0.8rem;
     margin-bottom: 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .fg-drawer {

@@ -52,6 +52,22 @@
 .contact-section-header.text-center {
   margin-inline: auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section-header.text-center .contact-badge {
+  margin-inline: auto;
+}
+
+.contact-section-header.text-center .contact-section-title {
+  text-align: center;
+}
+
+.contact-section-header.text-center .contact-section-subtitle {
+  text-align: center;
+  margin-inline: auto;
 }
 
 .contact-section-title {
@@ -373,10 +389,13 @@
    SECTION 3: SEND YOUR ENQUIRY (Enquiry Workspace & Accessible Form)
    ========================================================================== */
 .enquiry-workspace-grid {
-  display: grid;
-  grid-template-columns: 1.35fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 3rem;
-  align-items: start;
+  max-width: 880px;
+  margin-inline: auto;
+  width: 100%;
   min-width: 0;
 }
 
@@ -387,6 +406,8 @@
   padding: 3rem;
   box-shadow: var(--shadow-md);
   box-sizing: border-box;
+  width: 100%;
+  margin-inline: auto;
   min-width: 0;
 }
 
@@ -983,6 +1004,36 @@
   margin-bottom: 0;
 }
 
+.timeline-stage-spacer {
+  display: block;
+  width: 100%;
+}
+
+.timeline-stage-row:nth-child(odd) .timeline-stage-card {
+  grid-column: 1;
+}
+
+.timeline-stage-row:nth-child(odd) .timeline-stage-marker {
+  grid-column: 2;
+}
+
+.timeline-stage-row:nth-child(odd) .timeline-media-card,
+.timeline-stage-row:nth-child(odd) .timeline-stage-spacer {
+  grid-column: 3;
+}
+
+.timeline-stage-row:nth-child(even) .timeline-stage-spacer {
+  grid-column: 1;
+}
+
+.timeline-stage-row:nth-child(even) .timeline-stage-marker {
+  grid-column: 2;
+}
+
+.timeline-stage-row:nth-child(even) .timeline-stage-card {
+  grid-column: 3;
+}
+
 .timeline-stage-marker {
   width: 48px;
   height: 48px;
@@ -1235,12 +1286,25 @@
   }
 
   .timeline-stage-row {
-    grid-template-columns: 48px 1fr;
+    grid-template-columns: 48px 1fr !important;
+    align-items: start;
     gap: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 
+  .timeline-stage-spacer,
   .timeline-media-card {
-    display: none;
+    display: none !important;
+  }
+
+  .timeline-stage-marker {
+    grid-column: 1 !important;
+    margin: 0 !important;
+  }
+
+  .timeline-stage-card {
+    grid-column: 2 !important;
+    width: 100% !important;
   }
 
   .next-step-card {
@@ -1293,20 +1357,27 @@
   }
 
   .timeline-stage-row {
-    grid-template-columns: 48px 1fr;
+    grid-template-columns: 48px 1fr !important;
+    align-items: start;
     gap: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 
-  .timeline-stage-row:nth-child(even) .timeline-stage-card {
-    order: 2;
-  }
-
-  .timeline-stage-row:nth-child(even) .timeline-stage-marker {
-    order: 1;
-  }
-
+  .timeline-stage-spacer,
   .timeline-media-card {
-    display: none;
+    display: none !important;
+  }
+
+  .timeline-stage-marker {
+    grid-column: 1 !important;
+    margin: 0 !important;
+    order: initial !important;
+  }
+
+  .timeline-stage-card {
+    grid-column: 2 !important;
+    width: 100% !important;
+    order: initial !important;
   }
 
   .next-step-card {

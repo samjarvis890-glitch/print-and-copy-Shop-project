@@ -77,8 +77,8 @@
         </div>
 
         <a href="about.html" class="fg-nav-link">About</a>
-        <a href="services.html" class="fg-nav-link">Services</a>
-        <a href="pricing.html" class="fg-nav-link">Pricing</a>
+        <a href="services.html" class="fg-nav-link">Products</a>
+        <a href="pricing.html" class="fg-nav-link">Deals</a>
         <a href="blog.html" class="fg-nav-link">Blog</a>
         <a href="contact.html" class="fg-nav-link active" aria-current="page">Contact</a>
       </nav>
@@ -96,10 +96,10 @@
         </button>
 
         <!-- Desktop Action Button (Get a Quote) -->
-        <a href="#order-enquiry" class="fg-btn fg-btn-primary fg-navbar-cta">
-          <span>Get a Quote</span>
-          <i class="bi bi-arrow-right" aria-hidden="true"></i>
-        </a>
+        <button type="button" class="fg-btn fg-btn-primary fg-login-btn fg-navbar-cta" data-modal="login">
+          <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+          <span>Login</span>
+        </button>
 
         <!-- Mobile & Tablet Hamburger Menu Toggle (<= 1280px) -->
         <button type="button" class="fg-hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
@@ -132,8 +132,8 @@
     <div class="fg-drawer-body">
       <nav class="fg-drawer-nav" aria-label="Mobile Menu Links">
         <!-- Home Dropdown -->
-        <div class="fg-drawer-dropdown">
-          <button type="button" class="fg-drawer-link fg-drawer-dropdown-btn" aria-expanded="false">
+        <div class="fg-drawer-dropdown is-expanded">
+          <button type="button" class="fg-drawer-link fg-drawer-dropdown-btn" aria-expanded="true">
             <span class="fg-drawer-link-inner">
               <i class="bi bi-house-door" aria-hidden="true"></i>
               <span>Home</span>
@@ -152,48 +152,24 @@
           </div>
         </div>
 
-        <!-- About -->
         <a href="about.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-info-circle" aria-hidden="true"></i>
-            <span>About</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-info-circle" aria-hidden="true"></i><span>About</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Services -->
         <a href="services.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-printer" aria-hidden="true"></i>
-            <span>Services</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-printer" aria-hidden="true"></i><span>Products</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Pricing -->
         <a href="pricing.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-tag" aria-hidden="true"></i>
-            <span>Pricing</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-tag" aria-hidden="true"></i><span>Deals</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Blog -->
         <a href="blog.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-journal-text" aria-hidden="true"></i>
-            <span>Blog</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-journal-text" aria-hidden="true"></i><span>Blog</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Contact (Active) -->
         <a href="contact.html" class="fg-drawer-link active" aria-current="page">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-envelope" aria-hidden="true"></i>
-            <span>Contact</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-envelope" aria-hidden="true"></i><span>Contact</span></span>
           <i class="bi bi-check2" aria-hidden="true"></i>
         </a>
       </nav>
@@ -403,7 +379,7 @@
     <section id="order-enquiry" class="contact-section contact-section-alt" aria-labelledby="order-enquiry-heading">
       <div class="fg-container">
 
-        <div class="contact-section-header">
+        <div class="contact-section-header text-center">
           <span class="contact-badge">
             <i class="bi bi-envelope-check" aria-hidden="true"></i>
             <span>Enquiry Workspace</span>
@@ -464,7 +440,7 @@
                   <div id="error-contact-email" class="contact-field-error" aria-live="polite"></div>
                 </div>
 
-                <!-- Field 3: Phone Number (Optional) -->
+                <!-- Field 3: Phone Number -->
                 <div>
                   <label for="contact-phone" class="contact-form-label">
                     Phone Number <span style="font-size: 0.75rem; color: var(--text-subtle);">(Optional)</span>
@@ -472,43 +448,63 @@
                   <input type="tel" id="contact-phone" name="phone" class="contact-input" placeholder="(555) 000-0000" autocomplete="tel">
                 </div>
 
-                <!-- Field 4: Enquiry Type -->
+                <!-- Field 4: Required Service -->
                 <div>
                   <label for="enquiry-type" class="contact-form-label">
-                    Enquiry Type <span class="required-star" aria-hidden="true">*</span>
+                    Required Service <span class="required-star" aria-hidden="true">*</span>
                   </label>
                   <select id="enquiry-type" name="enquiry_type" class="contact-select" required>
-                    <option value="printing" selected>Document Printing</option>
-                    <option value="copying">Photocopying</option>
-                    <option value="finishing">Binding &amp; Finishing</option>
-                    <option value="general">General Enquiry</option>
+                    <option value="printing" selected>Document Printing (Laser Color / B&amp;W)</option>
+                    <option value="copying">Photocopying (Walk-In / Volume)</option>
+                    <option value="binding">Document Binding (Wire-O, Spiral, Tape)</option>
+                    <option value="scanning">Document &amp; Large Format Scanning</option>
+                    <option value="laminating">Thermal Lamination (Gloss / Matte)</option>
+                    <option value="blueprints">Architectural Plans &amp; Blueprints</option>
+                    <option value="general">General Print Enquiry</option>
                   </select>
                   <div id="error-enquiry-type" class="contact-field-error" aria-live="polite"></div>
                 </div>
 
-                <!-- Field 5: Subject -->
-                <div class="form-group-full">
-                  <label for="contact-subject" class="contact-form-label">
-                    Subject <span class="required-star" aria-hidden="true">*</span>
+                <!-- Field 5: Document Type -->
+                <div>
+                  <label for="contact-doc-type" class="contact-form-label">
+                    Document Type <span class="required-star" aria-hidden="true">*</span>
                   </label>
-                  <input type="text" id="contact-subject" name="subject" class="contact-input" placeholder="e.g. 50-Page Bound Report Quotation" required>
-                  <div id="error-contact-subject" class="contact-field-error" aria-live="polite"></div>
+                  <select id="contact-doc-type" name="doc_type" class="contact-select" required>
+                    <option value="booklet" selected>Bound Booklets, Manuals &amp; Handbooks</option>
+                    <option value="report">Executive Presentation &amp; Business Reports</option>
+                    <option value="plans">Architectural CAD Blueprints &amp; Plans</option>
+                    <option value="flyers">Flyers, Brochures &amp; Event Collateral</option>
+                    <option value="workout_logs">Workout Logs, Timetables &amp; Studio Passes</option>
+                    <option value="stationery">Business Cards &amp; Corporate Stationery</option>
+                    <option value="other">Loose Document Sheets / Other</option>
+                  </select>
                 </div>
 
-                <!-- Field 6: Message -->
-                <div class="form-group-full">
-                  <label for="contact-message" class="contact-form-label">
-                    Message &amp; Specifications <span class="required-star" aria-hidden="true">*</span>
+                <!-- Field 6: Quantity -->
+                <div>
+                  <label for="contact-quantity" class="contact-form-label">
+                    Quantity / Number of Copies <span class="required-star" aria-hidden="true">*</span>
                   </label>
-                  <textarea id="contact-message" name="message" class="contact-textarea" placeholder="Describe your job details..." required></textarea>
-                  <div id="error-contact-message" class="contact-field-error" aria-live="polite"></div>
-                  <p class="contact-field-hint">
-                    Tell us what you need, including paper size, color or black-and-white printing, quantity, and any finishing requirements you already know.
-                  </p>
+                  <input type="number" id="contact-quantity" name="quantity" class="contact-input" placeholder="e.g. 50" min="1" value="50" required>
                 </div>
 
-                <!-- Field 7: Preferred Contact Method -->
-                <div class="form-group-full">
+                <!-- Field 7: Print Format -->
+                <div>
+                  <label for="contact-format" class="contact-form-label">
+                    Print Format &amp; Color <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <select id="contact-format" name="print_format" class="contact-select" required>
+                    <option value="bw_duplex" selected>Double-Sided Black &amp; White (Duplex)</option>
+                    <option value="bw_simplex">Single-Sided Black &amp; White (Simplex)</option>
+                    <option value="color_duplex">Double-Sided Full Color (Duplex)</option>
+                    <option value="color_simplex">Single-Sided Full Color (Simplex)</option>
+                    <option value="cad_plot">Large Format Vector Plot (Arch D / Arch E)</option>
+                  </select>
+                </div>
+
+                <!-- Field 8: Preferred Contact Method -->
+                <div>
                   <label for="contact-pref" class="contact-form-label">
                     Preferred Response Method <span style="font-size: 0.75rem; color: var(--text-subtle);">(Optional)</span>
                   </label>
@@ -519,9 +515,30 @@
                   </select>
                 </div>
 
+                <!-- Field 9: Subject -->
+                <div class="form-group-full">
+                  <label for="contact-subject" class="contact-form-label">
+                    Subject / Project Title <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <input type="text" id="contact-subject" name="subject" class="contact-input" placeholder="e.g. 50-Copy Wire-Bound Manual with Clear Covers" required>
+                  <div id="error-contact-subject" class="contact-field-error" aria-live="polite"></div>
+                </div>
+
+                <!-- Field 10: Special Instructions -->
+                <div class="form-group-full">
+                  <label for="contact-message" class="contact-form-label">
+                    Special Instructions &amp; Specifications <span class="required-star" aria-hidden="true">*</span>
+                  </label>
+                  <textarea id="contact-message" name="message" class="contact-textarea" placeholder="Detail your paper stock requirements (e.g. 100gsm bond or 250gsm silk cover), binding preference (wire, spiral, saddle-stitch), laminating (gloss/matte), required deadline or cloud file download link..." required></textarea>
+                  <div id="error-contact-message" class="contact-field-error" aria-live="polite"></div>
+                  <p class="contact-field-hint">
+                    Include details like paper stock, binding styles, deadline dates, or cloud download links (Dropbox, Google Drive, WeTransfer).
+                  </p>
+                </div>
+
               </div>
 
-              <div class="enquiry-form-actions">
+              <div class="enquiry-form-actions">              <div class="enquiry-form-actions">
                 <button type="submit" class="fg-btn fg-btn-primary" style="width: 100%; justify-content: center;">
                   <span>Send Enquiry</span>
                   <i class="bi bi-send-fill" aria-hidden="true"></i>
@@ -841,9 +858,7 @@
 
           <!-- Stage 02 -->
           <div class="timeline-stage-row">
-            <div class="timeline-media-card" style="display: none;">
-              <!-- Responsive placeholder -->
-            </div>
+            <div class="timeline-stage-spacer" aria-hidden="true"></div>
             <div class="timeline-stage-marker" aria-label="Step 2">02</div>
             <div class="timeline-stage-card">
               <span class="timeline-stage-tag">Stage 02</span>
@@ -864,9 +879,7 @@
               </p>
             </div>
             <div class="timeline-stage-marker" aria-label="Step 3">03</div>
-            <div class="timeline-media-card" style="display: none;">
-              <!-- Responsive placeholder -->
-            </div>
+            <div class="timeline-stage-spacer" aria-hidden="true"></div>
           </div>
         </div>
 

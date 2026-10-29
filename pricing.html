@@ -77,8 +77,8 @@
         </div>
 
         <a href="about.html" class="fg-nav-link">About</a>
-        <a href="services.html" class="fg-nav-link">Services</a>
-        <a href="pricing.html" class="fg-nav-link active" aria-current="page">Pricing</a>
+        <a href="services.html" class="fg-nav-link">Products</a>
+        <a href="pricing.html" class="fg-nav-link active" aria-current="page">Deals</a>
         <a href="blog.html" class="fg-nav-link">Blog</a>
         <a href="contact.html" class="fg-nav-link">Contact</a>
       </nav>
@@ -96,10 +96,10 @@
         </button>
 
         <!-- Desktop Action Button (Get a Quote) -->
-        <a href="contact.html#order-enquiry" class="fg-btn fg-btn-primary fg-navbar-cta">
-          <span>Get a Quote</span>
-          <i class="bi bi-arrow-right" aria-hidden="true"></i>
-        </a>
+        <button type="button" class="fg-btn fg-btn-primary fg-login-btn fg-navbar-cta" data-modal="login">
+          <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+          <span>Login</span>
+        </button>
 
         <!-- Mobile & Tablet Hamburger Menu Toggle (<= 1280px) -->
         <button type="button" class="fg-hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
@@ -132,8 +132,8 @@
     <div class="fg-drawer-body">
       <nav class="fg-drawer-nav" aria-label="Mobile Menu Links">
         <!-- Home Dropdown -->
-        <div class="fg-drawer-dropdown">
-          <button type="button" class="fg-drawer-link fg-drawer-dropdown-btn" aria-expanded="false">
+        <div class="fg-drawer-dropdown is-expanded">
+          <button type="button" class="fg-drawer-link fg-drawer-dropdown-btn" aria-expanded="true">
             <span class="fg-drawer-link-inner">
               <i class="bi bi-house-door" aria-hidden="true"></i>
               <span>Home</span>
@@ -152,48 +152,24 @@
           </div>
         </div>
 
-        <!-- About -->
         <a href="about.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-info-circle" aria-hidden="true"></i>
-            <span>About</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-info-circle" aria-hidden="true"></i><span>About</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Services -->
         <a href="services.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-printer" aria-hidden="true"></i>
-            <span>Services</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-printer" aria-hidden="true"></i><span>Products</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Pricing (Active) -->
         <a href="pricing.html" class="fg-drawer-link active" aria-current="page">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-tag" aria-hidden="true"></i>
-            <span>Pricing</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-tag" aria-hidden="true"></i><span>Deals</span></span>
           <i class="bi bi-check2" aria-hidden="true"></i>
         </a>
-
-        <!-- Blog -->
         <a href="blog.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-journal-text" aria-hidden="true"></i>
-            <span>Blog</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-journal-text" aria-hidden="true"></i><span>Blog</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
-
-        <!-- Contact -->
         <a href="contact.html" class="fg-drawer-link">
-          <span class="fg-drawer-link-inner">
-            <i class="bi bi-envelope" aria-hidden="true"></i>
-            <span>Contact</span>
-          </span>
+          <span class="fg-drawer-link-inner"><i class="bi bi-envelope" aria-hidden="true"></i><span>Contact</span></span>
           <i class="bi bi-chevron-right" aria-hidden="true"></i>
         </a>
       </nav>
@@ -310,6 +286,7 @@
          SECTION 2: PRINTING PRICE GUIDE
          Concept: Clean, structured rate-sheet table with strong editorial typography
          ---------------------------------------------------------------------- -->
+    <div id="deals" style="scroll-margin-top: 100px;"></div>
     <section id="printing-prices" class="pricing-section" aria-labelledby="printing-prices-heading">
       <div class="fg-container">
 
